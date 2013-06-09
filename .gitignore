@@ -34,4 +34,6 @@ nbdist/
 nbactions.xml
 nb-configuration.xml
 
+#ignore SASS stuff and compiled css files
+library/css/
 .sass-cache/
