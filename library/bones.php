@@ -141,6 +141,9 @@ function bones_scripts_and_styles() {
 
     //adding scripts file in the footer
     wp_register_script( 'bones-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
+	
+	//this is for the balanced text polyfill
+	wp_register_script( 'balanced-text', get_stylesheet_directory_uri() . '/library/js/libs/jquery.balanced-text.js', array( 'jquery' ), '1.2.0', true );
 
     // enqueue styles and scripts
     wp_enqueue_script( 'bones-modernizr' );
@@ -155,9 +158,10 @@ function bones_scripts_and_styles() {
     and your site will load faster.
     */
 	wp_deregister_script( 'jquery' );
-	wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.9/jquery.min.js' );
+	wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js', array(), '1.10.1', false );
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'bones-js' );
+	wp_enqueue_script( 'balanced-text' );
 
   }
 }

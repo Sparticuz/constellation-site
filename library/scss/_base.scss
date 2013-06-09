@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name:
-Author:
+Site Name: Constellation & Co
+Author: Brad & Kyle McNally
 
 Stylesheet: Base Mobile Stylesheet
 
@@ -68,7 +68,7 @@ LAYOUT & GRID STYLES
 *********************/
 
 .wrap {
-	width: 96%;
+	width: 100%; /*96%;*/
 	margin: 0 auto;
 }
 
@@ -150,7 +150,10 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 
-.header {}
+.header {
+	text-align: center;
+	padding-top: 2.2em;
+}
 
 	#logo {}
 
@@ -169,6 +172,10 @@ and more scalable.
 .nav {
 	border: 1px solid #ccc;
 	border-bottom: 0;
+
+	/*TODO*/
+	/*until brad figures out what to do with nav, let's hide it so I can keep working */
+	display: none;
 
 	li {
 
@@ -255,7 +262,14 @@ POSTS & CONTENT STYLES
 		} /* end .hentry */
 
 		.single-title,
-		.page-title {}
+		.page-title {
+			border-bottom: 1px solid $light-border;
+			color: $bones-pink;
+			font-family: $serif;
+			font-size: 1.5em;
+			padding-left: 1.1em;
+			padding-bottom: .67em;
+		}
 
 		.single-title {}
 
@@ -266,7 +280,12 @@ POSTS & CONTENT STYLES
 		/* want to style individual post classes? Booya! */
 		.post-id {}         /* post by id (i.e. post-3) */
 		.post {}            /* general post style */
-		.page {}            /* general article on a page style */
+		.page {				/* general article on a page style */
+			.bleed, img.bleed{
+				width:100%;
+				height:auto;
+			}
+		}            
 		.attachment {}      /* general style on an attatchment */
 		.sticky {}          /* sticky post style */
 		.hentry {}          /* hentry class */
@@ -283,8 +302,9 @@ POSTS & CONTENT STYLES
 		/* entry content */
 		.entry-content {
 
-			p {}
+			margin-left: 1.1em;
 
+			p {}
 
 			ul, ol, table, dl {}
 
@@ -307,6 +327,9 @@ POSTS & CONTENT STYLES
 			}
 
 			blockquote {
+				
+				/* https://github.com/adobe-webplatform/balance-text */
+				text-wrap: balanced;
 
 				&:before {}
 
