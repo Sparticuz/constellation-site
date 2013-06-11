@@ -67,7 +67,7 @@ jQuery(document).ready(function($) {
     
 	
 	// add all your scripts here
-	
+	//$('blockquote').balanceText();
  
 }); /* end of as page load scripts */
 

@@ -33,6 +33,9 @@
 		<!-- wordpress head functions -->
 		<?php wp_head(); ?>
 		<!-- end of wordpress head -->
+		
+		<!-- Load the fonts -->
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 		<!-- drop Google Analytics Here -->
 		<script>(function(G,o,O,g,l){G.GoogleAnalyticsObject=O;G[O]||(G[O]=function(){(G[O].q=G[O].q||[]).push(arguments)});

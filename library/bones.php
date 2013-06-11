@@ -152,13 +152,18 @@ function bones_scripts_and_styles() {
 
     $wp_styles->add_data( 'bones-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
 
+	//let's load the typekit font too and gwf
+	wp_register_script( 'typekit', '//use.typekit.net/psw0mrb.js', array(), '', false );
+	wp_enqueue_script( 'typekit' );
+	wp_register_style( 'googlewf', '//fonts.googleapis.com/css?family=Montserrat', array(), '', 'all' );
+	
     /*
     I recommend using a plugin to call jQuery
     using the google cdn. That way it stays cached
     and your site will load faster.
     */
 	wp_deregister_script( 'jquery' );
-	wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js', array(), '1.10.1', false );
+	wp_register_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js', array(), '1.10.1', false );
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'bones-js' );
 	wp_enqueue_script( 'balanced-text' );
