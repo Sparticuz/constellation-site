@@ -32,6 +32,12 @@ the other stylesheets. Remember, keep it light: Speed is Important.
 @import "base";
 
 /*
+TYPOGRAPHY
+Contains all rules related to typography.
+*/
+@import "typography";
+
+/*
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
 larger than an iPhone but smaller than a tablet. Let's call them
