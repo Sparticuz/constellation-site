@@ -40,7 +40,7 @@ function register_products() {
 	); /* end of register post type */
 	
 	/* this adds your post categories to your custom post type */
-	register_taxonomy_for_object_type('product_types', 'product');
+	register_taxonomy_for_object_type('product_category', 'product');
 	
 }
 
