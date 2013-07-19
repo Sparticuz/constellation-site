@@ -29,6 +29,11 @@ require_once('library/bones.php'); // if you remove this, bones will break
 	- This adds the Product Post type
 */
 require_once('library/product-post-type.php');
+/*
+3. library/showcase-post-type.php
+	- This adds the Showcase Post type
+*/
+require_once('library/showcase-post-type.php');
 
 /************* THUMBNAIL SIZE OPTIONS *************/
 
