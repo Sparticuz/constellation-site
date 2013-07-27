@@ -23,8 +23,8 @@ The comments page for Bones
 
 	<nav id="comment-nav">
 		<ul class="clearfix">
-				<li><?php previous_comments_link() ?></li>
-				<li><?php next_comments_link() ?></li>
+			<li><?php previous_comments_link() ?></li>
+			<li><?php next_comments_link() ?></li>
 		</ul>
 	</nav>
 
@@ -34,8 +34,8 @@ The comments page for Bones
 
 	<nav id="comment-nav">
 		<ul class="clearfix">
-				<li><?php previous_comments_link() ?></li>
-				<li><?php next_comments_link() ?></li>
+			<li><?php previous_comments_link() ?></li>
+			<li><?php next_comments_link() ?></li>
 		</ul>
 	</nav>
 
