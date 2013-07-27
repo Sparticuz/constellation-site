@@ -3,20 +3,20 @@
 
 
 // let's create the function for the custom type
-function register_showcases() { 
+function register_showcase() { 
 	// creating (registering) the custom type 
 	register_post_type( 'showcase', /* (http://codex.wordpress.org/Function_Reference/register_post_type) */
 	 	// let's now add all the options for this post type
 		array('labels' => array(
 			'name' => __('Showcase', 'bonestheme'), /* This is the Title of the Group */
 			'singular_name' => __('Showcase', 'bonestheme'), /* This is the individual type */
-			'all_items' => __('All Items', 'bonestheme'), /* the all items menu item */
+			'all_items' => __('All Projects', 'bonestheme'), /* the all items menu item */
 			'add_new' => __('Add New', 'bonestheme'), /* The add new menu item */
-			'add_new_item' => __('Add New Item', 'bonestheme'), /* Add New Display Title */
+			'add_new_item' => __('Add New Project', 'bonestheme'), /* Add New Display Title */
 			'edit' => __( 'Edit', 'bonestheme' ), /* Edit Dialog */
-			'edit_item' => __('Edit Item', 'bonestheme'), /* Edit Display Title */
-			'new_item' => __('New Item', 'bonestheme'), /* New Display Title */
-			'view_item' => __('View Item', 'bonestheme'), /* View Display Title */
+			'edit_item' => __('Edit Project', 'bonestheme'), /* Edit Display Title */
+			'new_item' => __('New Project', 'bonestheme'), /* New Display Title */
+			'view_item' => __('View Project', 'bonestheme'), /* View Display Title */
 			'search_items' => __('Search Showcase', 'bonestheme'), /* Search Custom Type Title */ 
 			'not_found' =>  __('Nothing found in the Database.', 'bonestheme'), /* This displays if there are no entries yet */ 
 			'not_found_in_trash' => __('Nothing found in Trash', 'bonestheme'), /* This displays if there is nothing in the trash */
@@ -45,7 +45,7 @@ function register_showcases() {
 }
 
 	// adding the function to the Wordpress init
-	add_action( 'init', 'register_showcases');
+	add_action( 'init', 'register_showcase');
 	
 	/*
 	for more information on taxonomies, go here:
