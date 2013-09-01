@@ -36,3 +36,5 @@ nb-configuration.xml
 
 #ignore SASS stuff
 .sass-cache/
+
+sftp-config.json
