@@ -27,25 +27,62 @@ single-bookmarks.php
 
 					<header class="article-header">
 
-						<h1 class="single-title custom-post-type-title"><?php the_title(); ?></h1>
-						<p class="byline vcard"><?php
-							printf(__('Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span> <span class="amp">&</span> filed under %4$s.', 'bonestheme'), get_the_time('Y-m-j'), get_the_time(__('F jS, Y', 'bonestheme')), bones_get_the_author_posts_link(), get_the_term_list( $post->ID, 'custom_cat', ' ', ', ', '' ));
-						?></p>
+						<img id="hero-img" class="bleed" src="<?php the_field('hero_image'); ?>" alt="<?php the_title(); ?>"/>
 
+						<h1 class="single-title custom-post-type-title"><?php the_title(); ?></h1>
+						
 					</header> <!-- end article header -->
 
 					<section class="entry-content clearfix">
 
-						<?php the_content(); ?>
+						<?php while(has_sub_field("content")): ?>
+							
+							<?php if (get_row_layout() == "left_img_desc" ): //Photo + Description ?>
+								<img src="<?php the_sub_field("photo"); ?>" />
+								<div>
+									<?php the_sub_field("description"); ?>
+								</div>
+							<?php elseif(get_row_layout() == "double_img_desc"): //2 Photos + Description ?>
+								<img src="<?php the_sub_field("photo_one"); ?>" />
+								<img src="<?php the_sub_field("photo_two"); ?>" />
+								<div>
+									<?php the_sub_field("description"); ?>
+								</div>
+							<?php elseif(get_row_layout() == "left_img_double_right"): //1 Large + 2 Small Photos ?>
+								<img src="<?php the_sub_field("photo_one"); ?>" />
+								<img src="<?php the_sub_field("photo_two"); ?>" />
+								<img src="<?php the_sub_field("photo_three"); ?>" />
+							<?php elseif(get_row_layout() == "triple_threat"): ?>
+								<img src="<?php the_sub_field("photo_one"); ?>" />
+								<img src="<?php the_sub_field("photo_two"); ?>" />
+								<img src="<?php the_sub_field("photo_three"); ?>" />
+							<?php elseif(get_row_layout() == "small_img"): ?>
+								<img src="<?php the_sub_field("photo"); ?>" />
+							<?php elseif(get_row_layout() == "large_img"): ?>
+								<img src="<?php the_sub_field("photo"); ?>" />
+							<?php elseif(get_row_layout() == "quote"): ?>
+								<blockquote>
+									<?php the_sub_field("quote"); ?>
+								</blockquote>
+							<?php elseif(get_row_layout() == "double_img"): ?>
+								<img src="<?php the_sub_field("photo_one"); ?>" />
+								<img src="<?php the_sub_field("photo_two"); ?>" />
+							<?php elseif(get_row_layout() == "tall_img_double_wide"): ?>
+								<img src="<?php the_sub_field("photo_one"); ?>" />
+								<img src="<?php the_sub_field("photo_two"); ?>" />
+								<img src="<?php the_sub_field("photo_three"); ?>" />
+							<?php elseif(get_row_layout() == "dual_tall_img"): ?>
+								<img src="<?php the_sub_field("photo_one"); ?>" />
+								<img src="<?php the_sub_field("photo_two"); ?>" />
+							<?php endif; ?>
+						 
+						<?php endwhile; ?>
 
 					</section> <!-- end article section -->
 
-					<footer class="article-header">
-						<p class="tags"><?php echo get_the_term_list( get_the_ID(), 'custom_tag', '<span class="tags-title">' . __('Custom Tags:', 'bonestheme') . '</span> ', ', ' ) ?></p>
+					<footer class="article-footer">
 
 					</footer> <!-- end article footer -->
-
-					<?php comments_template(); ?>
 
 				</article> <!-- end article -->
 
@@ -68,8 +105,6 @@ single-bookmarks.php
 				<?php endif; ?>
 
 			</div> <!-- end #main -->
-
-			<?php get_sidebar(); ?>
 
 	</div> <!-- end #inner-content -->
 

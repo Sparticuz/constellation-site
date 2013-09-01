@@ -27,10 +27,9 @@ single-bookmarks.php
 
 					<header class="article-header">
 
+						<img id="hero-img" class="bleed" src="http://placekitten.com/930/300" alt="<?php the_title(); ?>"/>
+
 						<h1 class="single-title custom-post-type-title"><?php the_title(); ?></h1>
-						<p class="byline vcard"><?php
-							printf(__('Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span> <span class="amp">&</span> filed under %4$s.', 'bonestheme'), get_the_time('Y-m-j'), get_the_time(__('F jS, Y', 'bonestheme')), bones_get_the_author_posts_link(), get_the_term_list( $post->ID, 'custom_cat', ' ', ', ', '' ));
-						?></p>
 
 					</header> <!-- end article header -->
 
@@ -40,12 +39,10 @@ single-bookmarks.php
 
 					</section> <!-- end article section -->
 
-					<footer class="article-header">
-						<p class="tags"><?php echo get_the_term_list( get_the_ID(), 'custom_tag', '<span class="tags-title">' . __('Custom Tags:', 'bonestheme') . '</span> ', ', ' ) ?></p>
-
+					<footer class="article-footer">
+						<h2 class="caps">Colophon</h2>
+						<hr/>
 					</footer> <!-- end article footer -->
-
-					<?php comments_template(); ?>
 
 				</article> <!-- end article -->
 

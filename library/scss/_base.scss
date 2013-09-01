@@ -17,7 +17,7 @@ GENERAL STYLES
 
 body {
 	font-family: $serif;
-	font-size: 100%;
+	@include rem('font-size',18px);
 	line-height: 1.5;
 	color: #565656;
 }
@@ -251,6 +251,11 @@ POSTS & CONTENT STYLES
 
 #content {
 	margin-top: 2.2em;
+}
+
+img.bleed{
+	width:100%;
+	height:auto;
 }
 
 		.hentry {

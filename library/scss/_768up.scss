@@ -17,7 +17,10 @@ come into play. Have fun!
 GENERAL STYLES
 *********************/
 
-body {}
+body {
+	@include rem('font-size',18px);
+	text-decoration: underline;
+}
 
 /*********************
 LAYOUT & GRID STYLES
