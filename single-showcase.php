@@ -19,7 +19,7 @@ single-bookmarks.php
 
 	<div id="inner-content" class="wrap clearfix">
 
-			<div id="main" class="eightcol first clearfix" role="main">
+			<div id="main" class="twelve columns first clearfix" role="main">
 
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -38,42 +38,66 @@ single-bookmarks.php
 						<?php while(has_sub_field("content")): ?>
 							
 							<?php if (get_row_layout() == "left_img_desc" ): //Photo + Description ?>
-								<img src="<?php the_sub_field("photo"); ?>" />
-								<div>
-									<?php the_sub_field("description"); ?>
-								</div>
+								<section class="left_img_desc clearfix row">
+									<img src="<?php the_sub_field("photo"); ?>" class="eight columns first" />
+									<div class="four columns last">
+										<?php the_sub_field("description"); ?>
+									</div>
+								</section>
 							<?php elseif(get_row_layout() == "double_img_desc"): //2 Photos + Description ?>
-								<img src="<?php the_sub_field("photo_one"); ?>" />
-								<img src="<?php the_sub_field("photo_two"); ?>" />
-								<div>
-									<?php the_sub_field("description"); ?>
-								</div>
+								<section class="double_img_desc clearfix row">
+									<img src="<?php the_sub_field("photo_one"); ?>" class="four columns first" />
+									<img src="<?php the_sub_field("photo_two"); ?>" class="four columns" />
+									<div class="four columns last">
+										<?php the_sub_field("description"); ?>
+									</div>
+								</section>
 							<?php elseif(get_row_layout() == "left_img_double_right"): //1 Large + 2 Small Photos ?>
-								<img src="<?php the_sub_field("photo_one"); ?>" />
-								<img src="<?php the_sub_field("photo_two"); ?>" />
-								<img src="<?php the_sub_field("photo_three"); ?>" />
+								<section class="left_img_double_right clearfix">
+									<img src="<?php the_sub_field("photo_one"); ?>" class="eight columns first"/>
+									<div class="four columns last">
+										<img src="<?php the_sub_field("photo_two"); ?>" />
+										<img src="<?php the_sub_field("photo_three"); ?>" />
+									</div>
+								</section>
 							<?php elseif(get_row_layout() == "triple_threat"): ?>
-								<img src="<?php the_sub_field("photo_one"); ?>" />
-								<img src="<?php the_sub_field("photo_two"); ?>" />
-								<img src="<?php the_sub_field("photo_three"); ?>" />
+								<section class="triple_threat clearfix">
+									<img src="<?php the_sub_field("photo_one"); ?>" class="four columns first" />
+									<img src="<?php the_sub_field("photo_two"); ?>" class="four columns" />
+									<img src="<?php the_sub_field("photo_three"); ?>" class="four columns last" />
+								</section>
 							<?php elseif(get_row_layout() == "small_img"): ?>
-								<img src="<?php the_sub_field("photo"); ?>" />
+								<section class="small_img clearfix">
+									<img src="<?php the_sub_field("photo"); ?>" class="eight columns first" />
+								</section>
 							<?php elseif(get_row_layout() == "large_img"): ?>
-								<img src="<?php the_sub_field("photo"); ?>" />
+								<section class="large_img clearfix">
+									<img src="<?php the_sub_field("photo"); ?>" class="twelve columns first" />
+								</section>
 							<?php elseif(get_row_layout() == "quote"): ?>
-								<blockquote>
-									<?php the_sub_field("quote"); ?>
-								</blockquote>
+								<section class="quote twelve columns clearfix first">
+									<blockquote>
+										<?php the_sub_field("quote"); ?>
+									</blockquote>
+								</section>
 							<?php elseif(get_row_layout() == "double_img"): ?>
-								<img src="<?php the_sub_field("photo_one"); ?>" />
-								<img src="<?php the_sub_field("photo_two"); ?>" />
+								<section class="double_img clearfix">
+									<img src="<?php the_sub_field("photo_one"); ?>" class="six columns first" />
+									<img src="<?php the_sub_field("photo_two"); ?>" class="six columns last" />
+								</section>
 							<?php elseif(get_row_layout() == "tall_img_double_wide"): ?>
-								<img src="<?php the_sub_field("photo_one"); ?>" />
-								<img src="<?php the_sub_field("photo_two"); ?>" />
-								<img src="<?php the_sub_field("photo_three"); ?>" />
+								<section class="tall_img_double_wide clearfix">
+									<img src="<?php the_sub_field("photo_one"); ?>" class="six columns first" />
+									<div class="six columns last">
+										<img src="<?php the_sub_field("photo_two"); ?>" />
+										<img src="<?php the_sub_field("photo_three"); ?>" />
+									</div>
+								</section>
 							<?php elseif(get_row_layout() == "dual_tall_img"): ?>
-								<img src="<?php the_sub_field("photo_one"); ?>" />
-								<img src="<?php the_sub_field("photo_two"); ?>" />
+								<section class="dual_tall_img clearfix">
+									<img src="<?php the_sub_field("photo_one"); ?>" class="six columns first"/>
+									<img src="<?php the_sub_field("photo_two"); ?>" class="six columns last" />
+								</section>
 							<?php endif; ?>
 						 
 						<?php endwhile; ?>
