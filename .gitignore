@@ -38,3 +38,7 @@ nb-configuration.xml
 .sass-cache/
 
 sftp-config.json
+
+*.css
+
+*.css

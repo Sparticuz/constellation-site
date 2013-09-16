@@ -1,0 +1,52 @@
+$black: #000000;
+$base:	#1a1a1a;
+$gray: #808080;
+$white: #ffffff;
+$lightgray: #b3b3b3;
+
+body{
+	font-family:"garamond-premier-pro", serif;
+	color: $base;
+
+}
+
+.showcasetitle{
+	font-size:36px;
+}
+
+.smallheadline{
+	font-family: "Montserrat", sans-serif;
+	color:$base;
+	font-size:14px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.quote{
+	font-size:48px;
+	font-style: italic;
+}
+
+footer{
+	color:$lightgray;
+	font-size:17px;
+	background-color: #1a1a1a;
+	a{
+		text-decoration: none;
+		&:hover{
+			color:$white;
+		}
+	}
+	.smallheadline{
+		color:$white;
+	}
+}
+
+#handmade-footer{
+	background-color: $black;
+	height:140px;
+	text-align:center;
+	font-size:34px;
+	font-style: italic;
+	padding-top: 45px;
+}

@@ -9,7 +9,7 @@ the separate media queries. The base mobile goes outside any query
 and is called at the beginning, after that we call the rest
 of the styles inside media queries.
 ******************************************************************/
-/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
+/* normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -1051,6 +1051,7 @@ SIDEBARS & ASIDES
 FOOTER STYLES
 *********************/
 .footer {
+  background-color: #1a1a1a;
   clear: both; }
 
 /*
@@ -1063,39 +1064,6 @@ override these styles for the desktop
 view.
 */
 /* end .footer-links */
-/*
-TYPOGRAPHY
-Contains all rules related to typography.
-*/
-/*********************
-TYPOGRAPHY
-*********************/
-/* 	To embed your own fonts, use this syntax
-	and place your fonts inside the
-	library/fonts folder. For more information
-	on embedding fonts, go to:
-	http://www.fontsquirrel.com/
-	Be sure to remove the comment brackets.
-*/
-/*	@font-face {
-    	font-family: 'Font Name';
-    	src: url('library/fonts/font-name.eot');
-    	src: url('library/fonts/font-name.eot?#iefix') format('embedded-opentype'),
-             url('library/fonts/font-name.woff') format('woff'),
-             url('library/fonts/font-name.ttf') format('truetype'),
-             url('library/fonts/font-name.svg#font-name') format('svg');
-    	font-weight: normal;
-    	font-style: normal;
-	}
-*/
-/*
-use the best ampersand
-http://simplebits.com/notebook/2008/08/14/ampersands-2/
-*/
-span.amp {
-  font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif !important;
-  font-style: italic; }
-
 /*
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
@@ -1192,70 +1160,72 @@ you can add resource intensive styles.
   http://susy.oddbird.net/ - Grids using Compass. Very elegant.
   http://gridpak.com/ - Create your own responsive grid.
   
-  The grid below is a combination of the 1140 grid and Twitter Boostrap. 
-  I liked 1140 but Boostrap's grid was way more detailed so I merged them 
-  together, let's see how this works out. If you want to use 1140, the original 
-  values are commented out on each line.
-  
   ******************************************************************/
-  .onecol {
-    width: 5.801104972%; }
+  .one {
+    width: 8.33333333333%; }
 
   /* 4.85%;  } /* grid_1  */
-  .twocol {
-    width: 14.364640883%; }
+  .two {
+    width: 16.6666666667%; }
 
   /* 13.45%; } /* grid_2  */
-  .threecol {
-    width: 22.928176794%; }
+  .three {
+    width: 25.0000000000%; }
 
   /* 22.05%; } /* grid_3  */
-  .fourcol {
-    width: 31.491712705%; }
+  .four {
+    width: 33.3333333333%; }
 
   /* 30.75%; } /* grid_4  */
-  .fivecol {
-    width: 40.055248616%; }
+  .five {
+    width: 41.6666666667%; }
 
   /* 39.45%; } /* grid_5  */
-  .sixcol {
-    width: 48.618784527%; }
+  .six {
+    width: 50.0000000000%; }
 
   /* 48%;    } /* grid_6  */
-  .sevencol {
-    width: 57.182320438000005%; }
+  .seven {
+    width: 58.3333333333%; }
 
   /* 56.75%; } /* grid_7  */
-  .eightcol {
-    width: 65.74585634900001%; }
+  .eight {
+    width: 66.6666666667%; }
 
   /* 65.4%;  } /* grid_8  */
-  .ninecol {
-    width: 74.30939226%; }
+  .nine {
+    width: 75.0000000000%; }
 
   /* 74.05%; } /* grid_9  */
-  .tencol {
-    width: 82.87292817100001%; }
+  .ten {
+    width: 83.3333333333%; }
 
   /* 82.7%;  } /* grid_10 */
-  .elevencol {
-    width: 91.436464082%; }
+  .eleven {
+    width: 91.6666666667%; }
 
   /* 91.35%; } /* grid_11 */
-  .twelvecol {
-    width: 99.999999993%; }
+  .twelve {
+    width: 100.000000000%; }
 
   /* 100%;   } /* grid_12 */
-  .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
-    position: relative;
+  .column, .columns {
+    border: 0px solid rgba(0, 0, 0, 0);
+    border-left-width: 30px;
+    padding: 0 0px;
     float: left;
-    margin-left: 2.762430939%; }
-
-  .first {
-    margin-left: 0; }
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important; }
 
   .last {
     float: right; }
+
+  .row {
+    margin-left: -30px; }
 
   /******************************************************************
   Site Name:
