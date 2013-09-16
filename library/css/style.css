@@ -595,13 +595,6 @@ and will be used across all viewports.
 /*********************
 GENERAL STYLES
 *********************/
-body {
-  font-family: "garamond-premier-pro", serif;
-  font-size: 18px;
-  font-size: 1.125rem;
-  line-height: 1.5;
-  color: #565656; }
-
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
@@ -652,21 +645,6 @@ LAYOUT & GRID STYLES
 /*********************
 LINK STYLES
 *********************/
-a, a:visited {
-  color: #b9414d;
-  /* on hover */
-  /* on click */
-  /* mobile tap color */ }
-  a:hover, a:focus, a:visited:hover, a:visited:focus {
-    color: #97353f; }
-  a:link, a:visited:link {
-    /*
-    this highlights links on iPhones/iPads.
-    so it basically works like the :hover selector
-    for mobile devices.
-    */
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
-
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
@@ -1050,9 +1028,15 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
-.footer {
-  background-color: #1a1a1a;
-  clear: both; }
+#handmade-footer {
+  background-color: black;
+  text-align: center;
+  font-size: 34px;
+  font-size: 2.125rem;
+  font-style: italic;
+  padding: 45px 0 45px 0;
+  display: block;
+  color: #4d4e4e; }
 
 /*
 if you checked out the link above:
@@ -1064,6 +1048,44 @@ override these styles for the desktop
 view.
 */
 /* end .footer-links */
+body {
+  font-family: "garamond-premier-pro", serif;
+  color: #1a1a1a;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height:: 28px;
+  line-height:: 1.75rem; }
+
+.showcasetitle {
+  font-size: 36px;
+  font-size: 2.25rem; }
+
+.smallheadline {
+  font-family: "Montserrat", sans-serif;
+  color: #1a1a1a;
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+.quote {
+  font-size: 48px;
+  font-size: 3rem;
+  font-style: italic; }
+
+footer, #sidebar1 {
+  color: #b3b3b3;
+  font-size: 17px;
+  font-size: 1.0625rem;
+  background-color: #1a1a1a; }
+  footer a, #sidebar1 a {
+    text-decoration: none;
+    color: #b3b3b3; }
+    footer a:hover, #sidebar1 a:hover {
+      color: white; }
+  footer .smallheadline, #sidebar1 .smallheadline {
+    color: white; }
+
 /*
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
@@ -1243,11 +1265,6 @@ you can add resource intensive styles.
   /*********************
   GENERAL STYLES
   *********************/
-  body {
-    font-size: 18px;
-    font-size: 1.125rem;
-    text-decoration: underline; }
-
   /*********************
   LAYOUT & GRID STYLES
   *********************/
@@ -1316,18 +1333,10 @@ you can add resource intensive styles.
   /*********************
   SIDEBARS & ASIDES
   *********************/
-  .sidebar {
-    margin-top: 2.2em; }
-
-  .widgettitle {
-    border-bottom: 2px solid #444;
-    margin-bottom: 0.75em; }
-
   .widget {
     padding: 0 10px;
     margin: 2.2em 0; }
     .widget ul li {
-      margin-bottom: 0.75em;
       /* deep nesting */ }
       .widget ul li ul {
         margin-top: 0.75em;

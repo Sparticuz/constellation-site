@@ -17,11 +17,6 @@ come into play. Have fun!
 GENERAL STYLES
 *********************/
 
-body {
-	@include rem('font-size',18px);
-	text-decoration: underline;
-}
-
 /*********************
 LAYOUT & GRID STYLES
 *********************/
@@ -141,13 +136,7 @@ SIDEBARS & ASIDES
 *********************/
 
 .sidebar {
-	margin-top: 2.2em;
 }
-
-	.widgettitle {
-		border-bottom: 2px solid #444;
-		margin-bottom: 0.75em;
-	}
 
 	.widget {
 		padding: 0 10px;
@@ -155,8 +144,6 @@ SIDEBARS & ASIDES
 
 		ul {
 			li {
-				margin-bottom: 0.75em;
-
 				&:first-child {}
 				&:last-child {}
 				a {}

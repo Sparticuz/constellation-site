@@ -5,9 +5,9 @@
 					<?php get_sidebar(); ?>
 
 				</div> <!-- end #inner-footer -->
-				<div id="handmade-footer">
+				<span id="handmade-footer">
 					Handmade in the Pacific Northwest
-				</div>
+				</span>
 			</footer> <!-- end footer -->
 
 		</div> <!-- end #container -->
