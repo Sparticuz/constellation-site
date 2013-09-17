@@ -35,8 +35,52 @@ single-bookmarks.php
 
 					<section class="entry-content clearfix">
 
-						<?php the_content(); ?>
+						<div class="gallery">
+							<?php $images = get_field('images');
+							
+							if( $images ): //large images for gallery ?>
+								<div class="slider">
+									<ul class="slides">
+										<?php foreach( $images as $image ): ?>
+											<li>
+												<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+												<p><?php echo $image['caption']; ?></p>
+											</li>
+										<?php endforeach; ?>
+									</ul>
+								</div>
+							<?php //The following code creates the thumbnail navigation ?>
+							<div class="carousel">
+								<ul class="slides">
+									<?php foreach( $images as $image ): ?>
+										<li>
+											<img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
+										</li>
+									<?php endforeach; ?>
+								</ul>
+							</div>
+							<?php endif; ?>
+						</div>
 
+						<div class="side-info">
+
+							<p class="description">
+								<?php the_field('description'); ?>
+							</p>
+							<p class="spec-description">
+								<?php the_field('specification_description'); ?>
+							</p>
+							<?php $specs = get_field('specifications')?>
+							<?php if($specs): var_dump($specs); ?>
+								<ul class="specs">
+									<?php foreach( $specs as $spec ): ?>
+										<li>
+									<?php endforeach; ?>
+								</ul>
+							<?php endif; ?>
+							<a href="<?php the_field('etsy_link'); ?>">View on Etsy</a>
+						
+						</div>
 					</section> <!-- end article section -->
 
 					<footer class="article-footer">
