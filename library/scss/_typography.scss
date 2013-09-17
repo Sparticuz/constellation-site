@@ -1,5 +1,5 @@
 body{
-	font-family:"garamond-premier-pro", serif;
+	font-family:$serif;
 	color: $base;
 	@include rem('font-size',18px);
 	@include rem('line-height:',28px);
@@ -10,11 +10,12 @@ body{
 }
 
 .smallheadline{
-	font-family: "Montserrat", sans-serif;
+	font-family: $sans-serif;
 	color:$base;
-	@include rem('font-size',14px);
+	@include rem('font-size',13px);
 	text-transform: uppercase;
 	letter-spacing: 1px;
+	margin:0 0 10px 0;
 }
 
 .quote{

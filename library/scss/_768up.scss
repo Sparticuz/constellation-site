@@ -39,11 +39,14 @@ NAVIGATION STYLES
 
 .nav {
 	display: block;
-	background: #eee;
-	border: 0;
+	border: 1px solid red;
+	font-family: $sans-serif;
+	text-transform: uppercase;
+	@include rem('font-size',14px);
+
 
 	li {
-		float: left;
+		float: right;
 		position: relative;
 
 		a {
@@ -54,7 +57,6 @@ NAVIGATION STYLES
 			has the possibility of being a mobile device.
 			*/
 			&:hover, &:focus {
-				background-color: #dedede;
 
 			}
 		}
@@ -68,7 +70,6 @@ NAVIGATION STYLES
 		ul.sub-menu,
 		ul.children {
 			margin-top: 0;
-			border: 1px solid #ccc;
 			border-top: 0;
 			position: absolute;
 			display: none;
@@ -81,7 +82,6 @@ NAVIGATION STYLES
 					border-right: 0;
 					display: block;
 					width: 180px;
-					border-bottom: 1px solid #ccc;
 
 					&:hover,
 					&:focus {}
@@ -110,7 +110,6 @@ NAVIGATION STYLES
 			li.current-menu-item,
 			li.current_page_item,
 			li.current-page-ancestor {
-				a {}
 			}
 		}
 
@@ -126,7 +125,9 @@ NAVIGATION STYLES
 	li.current-menu-item,
 	li.current_page_item,
 	li.current-page-ancestor {
-		a {}
+		a {
+					color:$black;
+				}
 	}  /* end current highlighters */
 
 } /* end .nav */
@@ -139,19 +140,20 @@ SIDEBARS & ASIDES
 }
 
 	.widget {
-		padding: 0 10px;
-		margin: 2.2em 0;
+		padding:30px 0 30px 0;
 
 		ul {
 			li {
+				border-bottom: none;
+				padding: 0;
 				&:first-child {}
 				&:last-child {}
 				a {}
 				/* deep nesting */
 
 				ul {
-					margin-top: 0.75em;
-					padding-left: 1em;
+					//margin-top: 0.75em;
+					//padding-left: 1em;
 				}
 			}
 		}
