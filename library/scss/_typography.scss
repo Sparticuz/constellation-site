@@ -5,23 +5,49 @@ body{
 	@include rem('line-height:',28px);
 }
 
-.showcasetitle{
-	@include rem('font-size',36px);
+
+// Light gray text for sidebar body content
+
+.sidebarbody{
+	color:$lightgray;
+	@include rem('font-size',16px);
+	@include rem('line-height:',25px);
 }
 
-.smallheadline{
-	font-family: $sans-serif;
-	color:$base;
-	@include rem('font-size',13px);
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	margin:0 0 10px 0;
+// Metadata, Captions, Form Text, Categories
+
+.meta{
+	font-style: italic;
+	@include rem('font-size',16px);
+	@include rem('line-height:',25px);
+	a{
+		color:$base;
+	}
+	&.categories{
+	a{
+		color:$lightgray;
+	}
+	}
+}
+
+// Intro Paragraph
+
+.entry-content p:first-child {
+	@include rem('font-size',30px);
+	@include rem('line-height:',40px);
+}
+
+
+.showcasetitle{
+	@include rem('font-size',36px);
 }
 
 .quote{
 	@include rem('font-size',48px);
 	font-style: italic;
 }
+
+// Footer Body + Titles
 
 footer, #sidebar1{
 	color:$lightgray;
@@ -34,7 +60,7 @@ footer, #sidebar1{
 			color:$white;
 		}
 	}
-	.smallheadline{
+	h3{
 		color:$white;
 	}
 }

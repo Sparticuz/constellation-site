@@ -31,7 +31,9 @@ HEADER STYLES
 
 .header {}
 
-	#logo {}
+	#logo {
+		float:left;
+	}
 
 /*********************
 NAVIGATION STYLES
@@ -39,24 +41,25 @@ NAVIGATION STYLES
 
 .nav {
 	display: block;
-	border: 1px solid red;
 	font-family: $sans-serif;
 	text-transform: uppercase;
 	@include rem('font-size',14px);
-
+	float: right;
+	color:$lightgray;
+	padding: 10px 10px;
 
 	li {
-		float: right;
+		float:left;
 		position: relative;
 
 		a {
 			border-bottom: 0;
-
 			/*
 			you can use hover styles here even though this size
 			has the possibility of being a mobile device.
 			*/
 			&:hover, &:focus {
+				color:$black;
 
 			}
 		}
@@ -84,7 +87,8 @@ NAVIGATION STYLES
 					width: 180px;
 
 					&:hover,
-					&:focus {}
+					&:focus {
+					}
 
 					&:link {}
 				}
@@ -125,9 +129,7 @@ NAVIGATION STYLES
 	li.current-menu-item,
 	li.current_page_item,
 	li.current-page-ancestor {
-		a {
-					color:$black;
-				}
+		a { color:$black; }
 	}  /* end current highlighters */
 
 } /* end .nav */

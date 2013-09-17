@@ -30,7 +30,15 @@
 
 				</article> <!-- end article -->
 
-				<?php endwhile; else : ?>
+	<footer class="article-footer">
+
+					</footer> <!-- end article footer -->
+
+				</article> <!-- end article -->
+
+				<?php endwhile; ?>
+
+				<?php else : ?>
 
 						<article id="post-not-found" class="hentry clearfix">
 							<header class="article-header">
@@ -40,15 +48,13 @@
 								<p><?php _e("Uh Oh. Something is missing. Try double checking things.", "bonestheme"); ?></p>
 							</section>
 							<footer class="article-footer">
-									<p><?php _e("This is the error message in the page.php template.", "bonestheme"); ?></p>
+									<p><?php _e("This is the error message in the single-custom_type.php template.", "bonestheme"); ?></p>
 							</footer>
 						</article>
 
 				<?php endif; ?>
 
 			</div> <!-- end #main -->
-
-			<?php get_sidebar(); ?>
 
 	</div> <!-- end #inner-content -->
 

@@ -70,8 +70,8 @@ function bones_register_sidebars() {
 		'description' => __('The first (primary) sidebar.', 'bonestheme'),
 		'before_widget' => '<div id="%1$s" class="widget %2$s two columns">',
 		'after_widget' => '</div>',
-		'before_title' => '<h4 class="smallheadline">',
-		'after_title' => '</h4>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>',
 	));
 	
 } // don't remove this bracket!

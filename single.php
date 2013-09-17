@@ -32,27 +32,31 @@
 
 				</article> <!-- end article -->
 
-			<?php endwhile; ?>
+<footer class="article-footer">
 
-			<?php else : ?>
+					</footer> <!-- end article footer -->
 
-				<article id="post-not-found" class="hentry clearfix">
-						<header class="article-header">
-							<h1><?php _e("Oops, Post Not Found!", "bonestheme"); ?></h1>
-						</header>
-						<section class="entry-content">
-							<p><?php _e("Uh Oh. Something is missing. Try double checking things.", "bonestheme"); ?></p>
-						</section>
-						<footer class="article-footer">
-								<p><?php _e("This is the error message in the single.php template.", "bonestheme"); ?></p>
-						</footer>
-				</article>
+				</article> <!-- end article -->
 
-			<?php endif; ?>
+				<?php endwhile; ?>
 
-		</div> <!-- end #main -->
+				<?php else : ?>
 
-		<?php get_sidebar(); ?>
+						<article id="post-not-found" class="hentry clearfix">
+							<header class="article-header">
+								<h1><?php _e("Oops, Post Not Found!", "bonestheme"); ?></h1>
+							</header>
+							<section class="entry-content">
+								<p><?php _e("Uh Oh. Something is missing. Try double checking things.", "bonestheme"); ?></p>
+							</section>
+							<footer class="article-footer">
+									<p><?php _e("This is the error message in the single-custom_type.php template.", "bonestheme"); ?></p>
+							</footer>
+						</article>
+
+				<?php endif; ?>
+
+			</div> <!-- end #main -->
 
 	</div> <!-- end #inner-content -->
 

@@ -117,17 +117,30 @@ h1, .h1 {
 }
 
 h2, .h2 {
-	font-size: 1.75em;
-	line-height: 1.4em;
+	color:$base;
+
+	&.title{
+		font-family:$serif;
+		@include rem('font-size',36px);
+	}
+	&.blogtitle{
+		font-family:$sans-serif;
+		@include rem('font-size',34px);
+	}
 }
 
+
 h3, .h3 {
-	font-size: 1.125em;
+	font-family: $sans-serif;
+	color:$base;
+	@include rem('font-size',13px);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin:0 0 10px 0;
 }
 
 h4, .h4 {
-	font-size: 1.1em;
-	font-weight: 500;
+
 }
 
 h5, .h5 {
@@ -161,8 +174,7 @@ and more scalable.
 */
 
 .nav {
-	border: 1px solid #ccc;
-	border-bottom: 0;
+
 
 	/*TODO*/
 	/*until brad figures out what to do with nav, let's hide it so I can keep working */
@@ -174,8 +186,7 @@ and more scalable.
 			display: block;
 			text-decoration: none;
 			padding: 10px 10px;
-			background-color: #eee;
-			border-bottom: 1px solid #ccc;
+			color:$lightgray;
 
 			/*
 			remember this is for mobile ONLY, so there's no need
@@ -230,8 +241,8 @@ and more scalable.
 	li.current-page-ancestor {
 
 		a {
-					color:$black;
-				}
+			
+		}
 
 	}  /* end current highlighters */
 
