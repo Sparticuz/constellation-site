@@ -98,7 +98,6 @@ H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-	font-family: $sans-serif;
 	text-rendering: optimizelegibility;
 	font-weight: 500;
 	/*
@@ -120,7 +119,6 @@ h1, .h1 {
 h2, .h2 {
 	font-size: 1.75em;
 	line-height: 1.4em;
-	margin-bottom: 0.375em;
 }
 
 h3, .h3 {
@@ -129,7 +127,7 @@ h3, .h3 {
 
 h4, .h4 {
 	font-size: 1.1em;
-	font-weight: 700;
+	font-weight: 500;
 }
 
 h5, .h5 {
@@ -231,7 +229,9 @@ and more scalable.
 	li.current_page_item,
 	li.current-page-ancestor {
 
-		a {}
+		a {
+					color:$black;
+				}
 
 	}  /* end current highlighters */
 
@@ -802,7 +802,14 @@ COMMENT FORM STYLES
 SIDEBARS & ASIDES
 *********************/
 
-.sidebar {}
+.sidebar {
+
+	padding:30px;
+}
+
+	.widget_text{
+		padding-top:30px;
+	}
 
 	.widgettitle {}
 
@@ -810,7 +817,12 @@ SIDEBARS & ASIDES
 
 		ul {
 
+			margin: 0px;
+
 			li {
+
+				border-bottom: 1px solid black;
+				padding: 10px 0;
 
 				&:first-child {}
 
@@ -836,7 +848,7 @@ FOOTER STYLES
 	text-align:center;
 	@include rem('font-size',34px);
 	font-style: italic;
-	padding: 45px 0 45px 0;
+	padding: 45px 20px;
 	display: block;
 	color: #4d4e4e;
 }

@@ -649,7 +649,6 @@ LINK STYLES
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-  font-family: "Montserrat", sans-serif;
   text-rendering: optimizelegibility;
   font-weight: 500;
   /*
@@ -666,15 +665,14 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: 1.75em;
-  line-height: 1.4em;
-  margin-bottom: 0.375em; }
+  line-height: 1.4em; }
 
 h3, .h3 {
   font-size: 1.125em; }
 
 h4, .h4 {
   font-size: 1.1em;
-  font-weight: 700; }
+  font-weight: 500; }
 
 h5, .h5 {
   font-size: 0.846em;
@@ -731,6 +729,10 @@ and more scalable.
     .nav li ul.sub-menu li a,
     .nav li ul.children li a {
       padding-left: 30px; }
+  .nav li.current-menu-item a,
+  .nav li.current_page_item a,
+  .nav li.current-page-ancestor a {
+    color: black; }
 
 /* end .nav */
 /*********************
@@ -1022,8 +1024,18 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-.widget ul li {
-  /* deep nesting */ }
+.sidebar {
+  padding: 30px; }
+
+.widget_text {
+  padding-top: 30px; }
+
+.widget ul {
+  margin: 0px; }
+  .widget ul li {
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+    /* deep nesting */ }
 
 /*********************
 FOOTER STYLES
@@ -1034,7 +1046,7 @@ FOOTER STYLES
   font-size: 34px;
   font-size: 2.125rem;
   font-style: italic;
-  padding: 45px 0 45px 0;
+  padding: 45px 20px;
   display: block;
   color: #4d4e4e; }
 
@@ -1063,10 +1075,11 @@ body {
 .smallheadline {
   font-family: "Montserrat", sans-serif;
   color: #1a1a1a;
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 13px;
+  font-size: 0.8125rem;
   text-transform: uppercase;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  margin: 0 0 10px 0; }
 
 .quote {
   font-size: 48px;
@@ -1279,13 +1292,16 @@ you can add resource intensive styles.
   *********************/
   .nav {
     display: block;
-    background: #eee;
-    border: 0;
+    border: 1px solid red;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-size: 0.875rem;
     /* end .menu ul li */
     /* highlight current page */
     /* end current highlighters */ }
     .nav li {
-      float: left;
+      float: right;
       position: relative;
       /*
       plan your menus and drop-downs wisely.
@@ -1297,12 +1313,9 @@ you can add resource intensive styles.
         you can use hover styles here even though this size
         has the possibility of being a mobile device.
         */ }
-        .nav li a:hover, .nav li a:focus {
-          background-color: #dedede; }
       .nav li ul.sub-menu,
       .nav li ul.children {
         margin-top: 0;
-        border: 1px solid #ccc;
         border-top: 0;
         position: absolute;
         display: none;
@@ -1320,27 +1333,28 @@ you can add resource intensive styles.
             padding-left: 10px;
             border-right: 0;
             display: block;
-            width: 180px;
-            border-bottom: 1px solid #ccc; }
+            width: 180px; }
           .nav li ul.sub-menu li:last-child a,
           .nav li ul.children li:last-child a {
             border-bottom: 0; }
       .nav li:hover ul {
         top: auto;
         display: block; }
+    .nav li.current-menu-item a,
+    .nav li.current_page_item a,
+    .nav li.current-page-ancestor a {
+      color: black; }
 
   /* end .nav */
   /*********************
   SIDEBARS & ASIDES
   *********************/
   .widget {
-    padding: 0 10px;
-    margin: 2.2em 0; }
+    padding: 30px 0 30px 0; }
     .widget ul li {
+      border-bottom: none;
+      padding: 0;
       /* deep nesting */ }
-      .widget ul li ul {
-        margin-top: 0.75em;
-        padding-left: 1em; }
 
   /* links widget */
   /* meta widget */
