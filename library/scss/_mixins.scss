@@ -238,6 +238,15 @@ probably best not to use it. I mean, were you going to anyway? */
 BUTTONS
 *********************/
 
+// Button Hover
+@mixin backgroundColor($bg) {
+    background-color: $bg;
+
+    &:hover, &:focus {
+    	background-color: lighten($bg, 10%);
+    }
+}
+
 .button{
 	font-family:$sans-serif;
 	@include rem('font-size',14px);
@@ -248,37 +257,22 @@ BUTTONS
 	background-color: $black;
 	display:inline-block;
 	text-decoration: none;
-	
-	&:hover, &:focus {
-	background-color: lighten($black, 10);
-		
-	}
-
-	// Social Buttons
 
 	&.facebook{
-		background-color:#3b5998;
-		&:hover, &:focus {
-			background-color: darken(#3b5998, 7);
-		}
+		@include backgroundColor(#3b5998);
 	}
+
 	&.twitter{
-		background-color: #00a0d1;
-		&:hover, &:focus {
-			background-color: darken(#00a0d1, 7);
-		}
+		@include backgroundColor(#00a0d1);
 	}
+	
 	&.pinterest{
-		background-color: #c8232c;
-		&:hover, &:focus {
-			background-color: darken(#c8232c, 7);
-		}
+		@include backgroundColor(#c8232c);
 	}
+	
 	&.etsy{
-		background-color: #d5641c;
-		&:hover, &:focus {
-			background-color: darken(#d5641c, 7);
-		}
+		@include backgroundColor(#d5641c);
 	}
 
 }
+
