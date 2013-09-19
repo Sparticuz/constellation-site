@@ -276,8 +276,6 @@ img.bleed{
 			color: $bones-pink;
 			font-family: $serif;
 			font-size: 1.5em;
-			padding-left: 1.1em;
-			padding-bottom: .67em;
 		}
 
 		.single-title {}
@@ -311,7 +309,7 @@ img.bleed{
 		/* entry content */
 		.entry-content {
 
-			margin-left: 1.1em;
+			/*margin-left: 1.1em;*/
 
 			p {}
 
@@ -356,7 +354,6 @@ img.bleed{
 			}
 
 			img {
-				margin: 0 0 1.5em 0;
 				max-width: 100%;
 				height: auto;
 			}
