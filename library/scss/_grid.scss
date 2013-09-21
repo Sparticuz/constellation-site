@@ -34,13 +34,14 @@ http://gridpak.com/ - Create your own responsive grid.
 }
 
 .first{
-    @include pad(0 0 0 15px);
+    
 }
 
 .last{
-
+	
 }
 
 .row{
     @include row();
+    @include pad(0 15px 0 15px);
 }
