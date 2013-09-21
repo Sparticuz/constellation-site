@@ -16,43 +16,31 @@ http://gridpak.com/ - Create your own responsive grid.
 
 ******************************************************************/
 
-.one    { width: 8.33333333333%; }       /* 4.85%;  } /* grid_1  */
-.two    { width: 16.6666666667%; }       /* 13.45%; } /* grid_2  */
-.three  { width: 25.0000000000%; }       /* 22.05%; } /* grid_3  */
-.four   { width: 33.3333333333%; }       /* 30.75%; } /* grid_4  */
-.five   { width: 41.6666666667%; }       /* 39.45%; } /* grid_5  */
-.six    { width: 50.0000000000%; }       /* 48%;    } /* grid_6  */
-.seven  { width: 58.3333333333%; }       /* 56.75%; } /* grid_7  */
-.eight  { width: 66.6666666667%; }       /* 65.4%;  } /* grid_8  */
-.nine   { width: 75.0000000000%; }       /* 74.05%; } /* grid_9  */
-.ten    { width: 83.3333333333%; }       /* 82.7%;  } /* grid_10 */
-.eleven { width: 91.6666666667%; }       /* 91.35%; } /* grid_11 */
-.twelve { width: 100.000000000%; }       /* 100%;   } /* grid_12 */
+.one    { @include span-columns(1); }       /* 4.85%;  } /* grid_1  */
+.two    { @include span-columns(2); }       /* 13.45%; } /* grid_2  */
+.three  { @include span-columns(3); }       /* 22.05%; } /* grid_3  */
+.four   { @include span-columns(4); }       /* 30.75%; } /* grid_4  */
+.five   { @include span-columns(5); }       /* 39.45%; } /* grid_5  */
+.six    { @include span-columns(6); }       /* 48%;    } /* grid_6  */
+.seven  { @include span-columns(7); }       /* 56.75%; } /* grid_7  */
+.eight  { @include span-columns(8); }       /* 65.4%;  } /* grid_8  */
+.nine   { @include span-columns(9); }       /* 74.05%; } /* grid_9  */
+.ten    { @include span-columns(10); }       /* 82.7%;  } /* grid_10 */
+.eleven { @include span-columns(11); }       /* 91.35%; } /* grid_11 */
+.twelve { @include span-columns(12); }       /* 100%;   } /* grid_12 */
 
-// layout & column defaults
-.column, .columns {
-    padding-left:30px;
-    float:left;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-    -moz-background-clip:padding-box !important;
-    -webkit-background-clip:padding-box !important;
-    background-clip:padding-box !important;
+.wrap{
+    @include outer-container;
 }
-
-.row {
-    margin-bottom: 2em;
-    margin-left:15px;
-    margin-right: 15px;
-}
-
-.last{ float:right;}
 
 .first{
+    @include pad(0 0 0 15px);
+}
+
+.last{
 
 }
 
-/*.hentry{
-    border: 1px solid green;
-}*/
+.row{
+    @include row();
+}

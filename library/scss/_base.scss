@@ -258,8 +258,7 @@ POSTS & CONTENT STYLES
 }
 
 img.bleed{
-	width:100%;
-	height:auto;
+	@include fill-parent();
 }
 
 		.hentry {
