@@ -155,12 +155,12 @@ HEADER STYLES
 *********************/
 
 .header {
-	text-align: center;
 	padding-top: 2.2em;
 }
 
-	#logo {}
-
+	#logo { 
+		img{max-width: 200px;}
+}
 /*********************
 NAVIGATION STYLES
 *********************/
