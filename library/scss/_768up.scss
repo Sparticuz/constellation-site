@@ -29,10 +29,13 @@ LAYOUT & GRID STYLES
 HEADER STYLES
 *********************/
 
-.header {}
-
+.header {
+	text-align: left;
 	#logo {
+		float: left;
+		image-rendering: auto;
 	}
+}
 
 /*********************
 NAVIGATION STYLES
@@ -45,7 +48,8 @@ NAVIGATION STYLES
 	@include rem('font-size',14px);
 	float: right;
 	color:$lightgray;
-	padding: 10px 10px;
+	-webkit-margin-after: 0;
+	-webkit-margin-before: 0;
 
 	li {
 		float:left;

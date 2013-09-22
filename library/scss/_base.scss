@@ -157,11 +157,14 @@ HEADER STYLES
 
 .header {
 	padding-top: 2.2em;
+	@extend .text-center;
+
+	#logo {
+		//TODO - is this right?
+		img{max-width: 150px;}
+	}
 }
 
-	#logo { 
-		img{max-width: 150px;}
-}
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -287,12 +290,7 @@ img.bleed{
 		/* want to style individual post classes? Booya! */
 		.post-id {}         /* post by id (i.e. post-3) */
 		.post {}            /* general post style */
-		.page {				/* general article on a page style */
-			.bleed, img.bleed{
-				width:100%;
-				height:auto;
-			}
-		}            
+		.page {}			/* general article on a page style */     
 		.attachment {}      /* general style on an attatchment */
 		.sticky {}          /* sticky post style */
 		.hentry {}          /* hentry class */
@@ -425,6 +423,35 @@ img.bleed{
 		.size-large {}
 		.size-medium {}
 		.size-thumbnail {}
+
+.button{
+	font-family:$sans-serif;
+	@include rem('font-size',14px);
+	text-transform: uppercase;
+	color:$white;
+	padding:15px;
+	cursor:pointer;
+	background-color: $black;
+	display:inline-block;
+	text-decoration: none;
+
+	&.facebook{
+		@include backgroundColor(#3b5998);
+	}
+
+	&.twitter{
+		@include backgroundColor(#00a0d1);
+	}
+	
+	&.pinterest{
+		@include backgroundColor(#c8232c);
+	}
+	
+	&.etsy{
+		@include backgroundColor(#d5641c);
+	}
+
+}
 
 /******************************************************************
 PAGE NAVI STYLES
@@ -811,24 +838,25 @@ SIDEBARS & ASIDES
 *********************/
 
 .sidebar {
-
 	padding:30px;
 }
 
 	.widget_text{
 	}
 
-	.widgettitle {}
+	.widget-title {
+		@include pad(10px 0);
+	}
 
 	.widget {
+
+		@extend .text-center;
 
 		ul {
 
 			margin: 0px;
 
 			li {
-
-		
 
 				&:first-child {}
 
@@ -851,10 +879,10 @@ FOOTER STYLES
 
 #handmade-footer{
 	background-color: $black;
-	text-align:center;
+	@extend .text-center;
 	@include rem('font-size',34px);
 	font-style: italic;
-	padding: 45px 20px;
+	@include pad(45px 0 45px 0);
 	display: block;
 	color: #4d4e4e;
 }
