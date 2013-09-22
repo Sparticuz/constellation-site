@@ -61,8 +61,9 @@ LAYOUT & GRID STYLES
 *********************/
 
 .wrap {
-	width: 100%; /*96%;*/
-	margin: 0 auto;
+	//Set the base wrap to 100% for mobile
+	//this will be overwritten on larger sizes
+	@include fill-parent();
 }
 
 /*********************
@@ -155,12 +156,12 @@ HEADER STYLES
 *********************/
 
 .header {
-	text-align: center;
 	padding-top: 2.2em;
 }
 
-	#logo {}
-
+	#logo { 
+		img{max-width: 150px;}
+}
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -258,8 +259,7 @@ POSTS & CONTENT STYLES
 }
 
 img.bleed{
-	width:100%;
-	height:auto;
+	@include fill-parent();
 }
 
 		.hentry {
@@ -816,7 +816,6 @@ SIDEBARS & ASIDES
 }
 
 	.widget_text{
-		padding-top:30px;
 	}
 
 	.widgettitle {}
@@ -829,8 +828,7 @@ SIDEBARS & ASIDES
 
 			li {
 
-				border-bottom: 1px solid black;
-				padding: 10px 0;
+		
 
 				&:first-child {}
 
