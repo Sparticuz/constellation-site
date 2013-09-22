@@ -4,7 +4,7 @@
 
 	<div id="inner-content" class="wrap clearfix">
 
-			<div id="main" class="eight columns first clearfix" role="main">
+			<div id="main" class="twelve columns first clearfix" role="main">
 
 				<?php if (is_category()) { ?>
 					<h1 class="archive-title h2">
