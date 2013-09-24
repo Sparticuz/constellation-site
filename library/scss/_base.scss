@@ -838,7 +838,6 @@ SIDEBARS & ASIDES
 *********************/
 
 .sidebar {
-	padding:30px;
 }
 
 	.widget_text{
@@ -849,8 +848,7 @@ SIDEBARS & ASIDES
 	}
 
 	.widget {
-
-		@extend .text-center;
+		padding:30px 0 0 30px;
 
 		ul {
 
@@ -908,4 +906,10 @@ FOOTER STYLES
 
 
 	.copyright {}
+
+	.four.columns.last img:nth-child(2) { 
+		padding-top:22px;}
+
+	.six.columns.last img:nth-child(2) { 
+		padding-top:22px;}
 

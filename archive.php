@@ -64,44 +64,29 @@
 
 					<footer class="article-footer">
 
-					</footer> <!-- end article footer -->
+			</footer> <!-- end article footer -->
 
-				</article> <!-- end article -->
+		</article> <!-- end article -->
 
-				<?php endwhile; ?>
+		<?php endwhile; ?>
 
-						<?php if (function_exists('bones_page_navi')) { ?>
-							<?php bones_page_navi(); ?>
-						<?php } else { ?>
-							<nav class="wp-prev-next">
-								<ul class="clearfix">
-									<li class="prev-link"><?php next_posts_link(__('&laquo; Older Entries', "bonestheme")) ?></li>
-									<li class="next-link"><?php previous_posts_link(__('Newer Entries &raquo;', "bonestheme")) ?></li>
-								</ul>
-							</nav>
-						<?php } ?>
+		<?php else : ?>
 
-				<?php else : ?>
+				<article id="post-not-found" class="hentry clearfix">
+					<header class="article-header">
+						<h1><?php _e("Oops, Post Not Found!", "bonestheme"); ?></h1>
+					</header>
+					<section class="entry-content">
+						<p><?php _e("Uh Oh. Something is missing. Try double checking things.", "bonestheme"); ?></p>
+					</section>
+					<footer class="article-footer">
+							<p><?php _e("This is the error message in the single-custom_type.php template.", "bonestheme"); ?></p>
+					</footer>
+				</article>
 
-						<article id="post-not-found" class="hentry clearfix">
-							<header class="article-header">
-								<h1><?php _e("Oops, Post Not Found!", "bonestheme"); ?></h1>
-							</header>
-							<section class="entry-content">
-								<p><?php _e("Uh Oh. Something is missing. Try double checking things.", "bonestheme"); ?></p>
-							</section>
-							<footer class="article-footer">
-									<p><?php _e("This is the error message in the archive.php template.", "bonestheme"); ?></p>
-							</footer>
-						</article>
+		<?php endif; ?>
 
-				<?php endif; ?>
-
-			</div> <!-- end #main -->
-
-			<?php get_sidebar(); ?>
-
-					</div> <!-- end #inner-content -->
+	</div> <!-- end #inner-content -->
 
 </div> <!-- end #content -->
 
