@@ -838,9 +838,11 @@ SIDEBARS & ASIDES
 *********************/
 
 .sidebar {
+	border:1px solid white;
 }
 
 	.widget_text{
+		border:1px solid white;
 	}
 
 	.widget-title {
@@ -848,10 +850,10 @@ SIDEBARS & ASIDES
 	}
 
 	.widget {
-		padding:30px 0 0 30px;
+		padding:30px 0 30px 15px;
+		border:1px solid white;
 
 		ul {
-
 			margin: 0px;
 
 			li {
