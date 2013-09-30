@@ -224,6 +224,10 @@ BUTTONS
 	
 	&.etsy{
 		@include backgroundColor(#d5641c);
+		//add in last word
+		span {
+			font-family: $serif;
+		}
 	}
 
 }
