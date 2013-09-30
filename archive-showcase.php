@@ -1,18 +1,4 @@
-<?php
-/*
-This is the custom post type taxonomy template.
-If you edit the custom taxonomy name, you've got
-to change the name of this template to
-reflect that name change.
-
-i.e. if your custom taxonomy is called
-register_taxonomy( 'shoes',
-then your single template should be
-taxonomy-shoes.php
-
-*/
-?>
-
+<?php /* This is the page that will show ALL showcase items */ ?>
 <?php get_header(); ?>
 
 <div id="content">
@@ -31,7 +17,7 @@ taxonomy-shoes.php
 
 						<h3 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 						<p class="byline vcard"><?php
-							printf(__('Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span> <span class="amp">&</span> filed under %4$s.', 'bonestheme'), get_the_time('Y-m-j'), get_the_time(__('F jS, Y', 'bonestheme')), bones_get_the_author_posts_link(), get_the_term_list( get_the_ID(), 'custom_cat', "" ));
+							
 						?></p>
 
 					</header> <!-- end article header -->
