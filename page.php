@@ -1,3 +1,4 @@
+<?php //This is a normal page based on a page in wordpress ?>
 <?php get_header(); ?>
 
 <div id="content">
