@@ -3,6 +3,11 @@
 
 <div id="content">
 
+	<figure class="hero">
+		<img src="http://placehold.it/960x250" class="bleed"/>
+		<figcaption>Text on Top!</figcaption>
+	</figure>
+
 	<div id="inner-content" class="clearfix">
 
 		<div id="main" class="twelve columns first clearfix" role="main">
@@ -10,11 +15,6 @@
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
-
-				<header class="article-header">
-					<?php the_post_thumbnail('',array('class' => 'bleed')); ?>
-					<h1 class="page-title" itemprop="headline" class="wrap"><?php the_title(); ?></h1>
-				</header> <!-- end article header -->
 
 				<section class="entry-content clearfix wrap" itemprop="articleBody">
 					<?php the_content(); ?>
