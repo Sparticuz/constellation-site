@@ -4,9 +4,9 @@
 <div id="content">
 
 	<?php //Hero Image ?>
-	<figure>
+	<figure class="hero">
 		<img src="http://placehold.it/960x250" class="bleed"/>
-		<?php //Add in text that floats on top ?>
+		<figcaption>Text on Top!</figcaption>
 	</figure>
 
 	<div id="inner-content" class="wrap clearfix">
@@ -40,12 +40,26 @@
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix row'); ?> role="article">
 
-				<figure class="six columns">
-					<img src="http://placehold.it/350x350" class="bleed"/>
-					<img src="http://placehold.it/115x115" />
-					<img src="http://placehold.it/115x115" />
-					<img src="http://placehold.it/115x115" />
-				</figure>
+				<section class="six columns">
+					<?php $images = get_field('images');
+					if( $images ): ?>
+						<div class="flexslider">
+							<ul class="rslides_<?php the_ID(); ?> slides">
+								<?php foreach($images as $image): ?>
+									<li><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"/></li>
+								<?php endforeach; ?>
+							</ul>
+						</div>
+
+						<div class="flexslider">
+							<ul class="slides">
+								<?php foreach( $images as $image ): ?>
+									<li><img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" /></li>
+								<?php endforeach; ?>
+							</ul>
+						</div>
+					<?php endif ?>
+				</section>
 
 				<section class="six columns">
 					<header class="product-header">
@@ -68,6 +82,7 @@
 								<?php endforeach; ?>
 							</ul>
 						<?php endif; ?>	
+						<a href="<?php the_field("etsy_link"); ?>" class="etsy button">View on <span>Etsy</span></a>
 					</footer>
 				</section>
 
@@ -107,5 +122,14 @@
 	</div> <!-- end #inner-content -->
 
 </div> <!-- end #content -->
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(.flexslider).flexslider({
+			animation: "slide",
+			controlNav: "thumbnails"
+		});
+	});
+</script>
 
 <?php get_footer(); ?>
