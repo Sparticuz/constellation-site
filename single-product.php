@@ -70,15 +70,15 @@ single-bookmarks.php
 							<p class="spec-description">
 								<?php the_field('specification_description'); ?>
 							</p>
-							<?php $specs = get_field('specifications')?>
-							<?php if($specs): ?>
+							<?php $specs = get_field_object('specifications'); 
+								if($specs): ?>
 								<ul class="specs">
-									<?php foreach( $specs as $spec ): ?>
-										<li class="<?php echo $spec; ?>"><?php echo $spec; ?></li>
+									<?php foreach( $specs['value'] as $spec ): ?>
+										<li class="<?php echo $spec; ?>"><?php echo $specs['choices'][$spec]; ?></li>
 									<?php endforeach; ?>
 								</ul>
-							<?php endif; ?>
-							<a href="<?php the_field('etsy_link'); ?>" class="etsy button">View on <span>Etsy</span></a>
+							<?php endif; ?>	
+						<a href="<?php the_field('etsy_link'); ?>" class="etsy button">View on <span>Etsy</span></a>
 						
 						</div>
 					</section> <!-- end article section -->
