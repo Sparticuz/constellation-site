@@ -49,7 +49,7 @@ body{
 
 // Footer Body + Titles
 
-footer, #sidebar1{
+.footer{
 	color:$lightgray;
 	@include rem('font-size',17px);
 	background-color: #1a1a1a;

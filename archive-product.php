@@ -5,7 +5,7 @@
 
 	<?php //Hero Image ?>
 	<figure>
-		<img src="http://lorempixel.com/960/250/" class="bleed"/>
+		<img src="http://placehold.it/960x250" class="bleed"/>
 		<?php //Add in text that floats on top ?>
 	</figure>
 
@@ -41,10 +41,10 @@
 			<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix row'); ?> role="article">
 
 				<figure class="six columns">
-					<img src="http://lorempixel.com/350/350/" class="bleed"/>
-					<img src="http://lorempixel.com/115/115/" />
-					<img src="http://lorempixel.com/115/115/" />
-					<img src="http://lorempixel.com/115/115/" />
+					<img src="http://placehold.it/350x350" class="bleed"/>
+					<img src="http://placehold.it/115x115" />
+					<img src="http://placehold.it/115x115" />
+					<img src="http://placehold.it/115x115" />
 				</figure>
 
 				<section class="six columns">
@@ -57,16 +57,14 @@
 
 						<h3>SPECS</h3>
 						<?php the_field('specification_description'); ?>
-
 					</section>
 
 					<footer class="product-footer">
-						<?php $specs = get_field('specifications')?>
-						<?php if($specs): ?>
+						<?php $specs = get_field_object('specifications'); 
+							if($specs): ?>
 							<ul class="specs">
-								<?php foreach( $specs as $spec ): //var_dump($spec); // die(); ?>
-
-									<li class="<?php echo $spec; ?>"><?php echo $spec; ?></li>
+								<?php foreach( $specs['value'] as $spec ): ?>
+									<li class="<?php echo $spec; ?>"><?php echo $specs['choices'][$spec]; ?></li>
 								<?php endforeach; ?>
 							</ul>
 						<?php endif; ?>	
