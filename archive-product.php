@@ -46,16 +46,27 @@
 				</figure>
 
 				<section class="six columns">
-					<header class="article-header">
+					<header class="product-header">
 						<h2 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 					</header>
 
-					<section class="entry-content">
+					<section class="product-content">
 						<?php the_field('description'); ?>
+
+						<h3>SPECS</h3>
+						<?php the_field('specification_description'); ?>
+
 					</section>
 
-					<footer class="article-footer">
-
+					<footer class="product-footer">
+						<?php $specs = get_field('specifications')?>
+						<?php if($specs): ?>
+							<ul class="specs">
+								<?php foreach( $specs as $spec ): ?>
+									<li class="<?php echo $spec; ?>"><?php echo $spec; ?></li>
+								<?php endforeach; ?>
+							</ul>
+						<?php endif; ?>	
 					</footer>
 				</section>
 

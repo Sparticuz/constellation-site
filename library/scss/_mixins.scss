@@ -149,27 +149,6 @@ $baseline-px: 16px;
 }
 
 /*********************
-TRANSITION
-*********************/
-
-/*
-I totally rewrote this to be cleaner and easier to use.
-You'll need to be using Sass 3.2+ for these to work.
-Thanks to @anthonyshort for the inspiration on these.
-USAGE: @include transition(all 0.2s ease-in-out);
-*/
-
-@mixin transition($transition...) {
-	// defining prefixes so we can use them in mixins below
-	$prefixes:      ("-webkit", "-ms", "-o",  "");
-  @each $prefix in $prefixes {
-    #{$prefix}-transition: $transition;
-  }
-
-  transition: $transition;
-}
-
-/*********************
 CSS3 GRADIENTS
 Be careful with these since they can
 really slow down your CSS. Don't overdo it.
@@ -196,8 +175,11 @@ BUTTONS
 
     &:hover, &:focus {
     	background-color: lighten($bg, 10%);
+    	@include transition (background-color 0.5s ease-in-out);
     }
 }
+
+//i will also put re-occuring styles here
 
 .button{
 	font-family:$sans-serif;
@@ -209,6 +191,7 @@ BUTTONS
 	background-color: $black;
 	display:inline-block;
 	text-decoration: none;
+	@include transition (background-color 0.5s ease-in-out);
 
 	&.facebook{
 		@include backgroundColor(#3b5998);
@@ -227,7 +210,35 @@ BUTTONS
 		//add in last word
 		span {
 			font-family: $serif;
+			text-transform: capitalize;
+			@include rem('font-size',20px);
 		}
+	}
+
+}
+
+//colophon styles
+
+ul.specs {
+
+	li {
+
+		&.Recycled {
+			list-style-image: url("data:image/gif;base64,R0lGOD lhCwAOAMQfAP////7+/vj4+Hh4eHd3d/v7+/Dw8HV1dfLy8ubm5vX19e3t7fr 6+nl5edra2nZ2dnx8fMHBwYODg/b29np6eujo6JGRkeHh4eTk5LCwsN3d3dfX 13Jycp2dnevr6////yH5BAEAAB8ALAAAAAALAA4AAAVq4NFw1DNAX/o9imAsB tKpxKRd1+YEWUoIiUoiEWEAApIDMLGoRCyWiKThenkwDgeGMiggDLEXQkDoTh CKNLpQDgjeAsY7MHgECgx8YR8oHwNHfwADBACGh4EDA4iGAYAEBAcQIg0Dk gcEIQA7");
+		}
+		&.Envelope {
+			list-style-image: url("data:image/gif;base64,R0lGOD lhCwAOAMQfAP////7+/vj4+Hh4eHd3d/v7+/Dw8HV1dfLy8ubm5vX19e3t7fr 6+nl5edra2nZ2dnx8fMHBwYODg/b29np6eujo6JGRkeHh4eTk5LCwsN3d3dfX 13Jycp2dnevr6////yH5BAEAAB8ALAAAAAALAA4AAAVq4NFw1DNAX/o9imAsB tKpxKRd1+YEWUoIiUoiEWEAApIDMLGoRCyWiKThenkwDgeGMiggDLEXQkDoTh CKNLpQDgjeAsY7MHgECgx8YR8oHwNHfwADBACGh4EDA4iGAYAEBAcQIg0Dk gcEIQA7");
+		}
+		&.Vintage {
+			list-style-image: url("data:image/gif;base64,R0lGOD lhCwAOAMQfAP////7+/vj4+Hh4eHd3d/v7+/Dw8HV1dfLy8ubm5vX19e3t7fr 6+nl5edra2nZ2dnx8fMHBwYODg/b29np6eujo6JGRkeHh4eTk5LCwsN3d3dfX 13Jycp2dnevr6////yH5BAEAAB8ALAAAAAALAA4AAAVq4NFw1DNAX/o9imAsB tKpxKRd1+YEWUoIiUoiEWEAApIDMLGoRCyWiKThenkwDgeGMiggDLEXQkDoTh CKNLpQDgjeAsY7MHgECgx8YR8oHwNHfwADBACGh4EDA4iGAYAEBAcQIg0Dk gcEIQA7");
+		}
+		&.Wholesale {
+			list-style-image: url("data:image/gif;base64,R0lGOD lhCwAOAMQfAP////7+/vj4+Hh4eHd3d/v7+/Dw8HV1dfLy8ubm5vX19e3t7fr 6+nl5edra2nZ2dnx8fMHBwYODg/b29np6eujo6JGRkeHh4eTk5LCwsN3d3dfX 13Jycp2dnevr6////yH5BAEAAB8ALAAAAAALAA4AAAVq4NFw1DNAX/o9imAsB tKpxKRd1+YEWUoIiUoiEWEAApIDMLGoRCyWiKThenkwDgeGMiggDLEXQkDoTh CKNLpQDgjeAsY7MHgECgx8YR8oHwNHfwADBACGh4EDA4iGAYAEBAcQIg0Dk gcEIQA7");
+		}
+		&.Size\: {
+			list-style-image: url("data:image/gif;base64,R0lGOD lhCwAOAMQfAP////7+/vj4+Hh4eHd3d/v7+/Dw8HV1dfLy8ubm5vX19e3t7fr 6+nl5edra2nZ2dnx8fMHBwYODg/b29np6eujo6JGRkeHh4eTk5LCwsN3d3dfX 13Jycp2dnevr6////yH5BAEAAB8ALAAAAAALAA4AAAVq4NFw1DNAX/o9imAsB tKpxKRd1+YEWUoIiUoiEWEAApIDMLGoRCyWiKThenkwDgeGMiggDLEXQkDoTh CKNLpQDgjeAsY7MHgECgx8YR8oHwNHfwADBACGh4EDA4iGAYAEBAcQIg0Dk gcEIQA7");
+		}
+
 	}
 
 }

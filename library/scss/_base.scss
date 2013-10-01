@@ -424,35 +424,6 @@ img.bleed{
 		.size-medium {}
 		.size-thumbnail {}
 
-.button{
-	font-family:$sans-serif;
-	@include rem('font-size',14px);
-	text-transform: uppercase;
-	color:$white;
-	padding:15px;
-	cursor:pointer;
-	background-color: $black;
-	display:inline-block;
-	text-decoration: none;
-
-	&.facebook{
-		@include backgroundColor(#3b5998);
-	}
-
-	&.twitter{
-		@include backgroundColor(#00a0d1);
-	}
-	
-	&.pinterest{
-		@include backgroundColor(#c8232c);
-	}
-	
-	&.etsy{
-		@include backgroundColor(#d5641c);
-	}
-
-}
-
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
