@@ -1,0 +1,3 @@
+[submodule "library/js/libs/FlexSlider"]
+	path = library/js/libs/FlexSlider
+	url = https://github.com/woothemes/FlexSlider.git
