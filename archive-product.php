@@ -13,6 +13,7 @@
 
 		<section class="two columns first">
 			<nav id="categories">
+				<ul>
 				<?php $args = array(
 					'orderby'            => 'ID',
 					'hide_empty'         => 0, //this
@@ -23,6 +24,7 @@
 				); 
 				
 				wp_list_categories($args); ?>
+				</ul>
 			</nav>
 			<br/>
 			<a href="https://www.etsy.com/" class="etsy button">Shop on <span>Etsy</span></a>
@@ -62,7 +64,8 @@
 						<?php $specs = get_field('specifications')?>
 						<?php if($specs): ?>
 							<ul class="specs">
-								<?php foreach( $specs as $spec ): ?>
+								<?php foreach( $specs as $spec ): //var_dump($spec); // die(); ?>
+
 									<li class="<?php echo $spec; ?>"><?php echo $spec; ?></li>
 								<?php endforeach; ?>
 							</ul>
