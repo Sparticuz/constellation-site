@@ -27,10 +27,10 @@
 				</ul>
 			</nav>
 			<br/>
-			<a href="https://www.etsy.com/" class="etsy button">Shop on <span>Etsy</span></a>
-			<p>Intereseted in Wholesale?</p>
+			<a href="https://www.etsy.com/shop/constellationco" class="etsy button">Shop on <span>Etsy</span></a>
+			<a href="">Intereseted in Wholesale?</a>
 			<hr/>
-			<p>Find a Store</p>
+			<a href="">Find a Store</a>
 
 		</section>
 

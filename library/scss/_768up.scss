@@ -141,6 +141,22 @@ NAVIGATION STYLES
 
 } /* end .nav */
 
+/* Product Navigation */
+#categories{
+	ul{
+		li{
+			font-family: $sans-serif;
+			text-transform: uppercase;
+			@include rem('font-size',13px);
+			padding-bottom:10px;
+			a{
+				color:$lightgray;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
 /*********************
 SIDEBARS & ASIDES
 *********************/
