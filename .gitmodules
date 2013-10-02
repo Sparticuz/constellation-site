@@ -1,3 +1,6 @@
 [submodule "library/js/libs/FlexSlider"]
 	path = library/js/libs/FlexSlider
 	url = https://github.com/woothemes/FlexSlider.git
+[submodule "library/js/libs/stickem"]
+	path = library/js/libs/stickem
+	url = https://github.com/davist11/jQuery-Stickem.git
