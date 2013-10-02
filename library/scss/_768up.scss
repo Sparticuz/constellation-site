@@ -141,6 +141,10 @@ NAVIGATION STYLES
 
 } /* end .nav */
 
+#inner-content{
+	margin-top: 2em;
+}
+
 /* Product Navigation */
 #categories{
 	border-top: 1px solid $lightgray;
@@ -159,6 +163,24 @@ NAVIGATION STYLES
 			}
 		}
 	}
+}
+
+//stickem css
+.stickem-container {
+  position: relative;
+  @include span-columns(2);
+}
+
+.stickit {
+    margin-left: 660px;
+    position: fixed;
+    top: 0;
+}
+
+.stickit-end {
+    bottom: 40px;
+    position: absolute;
+    right: 0;
 }
 
 /*********************

@@ -427,6 +427,20 @@ img.bleed{
 		.size-medium {}
 		.size-thumbnail {}
 
+//this targets products
+.product{
+	border-top: 1px solid $lightgray;
+	padding-top: 1em !important;
+
+	.product-header{
+		h2{
+			-webkit-margin-before: 0;
+			-webkit-margin-after: 0;
+		}
+	}
+
+}
+
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
@@ -850,6 +864,13 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
+
+#inner-footer{
+	abbr[title]{
+		//take out dotted border on state abbr
+		border-bottom: 0;
+	}
+}
 
 #handmade-footer{
 	background-color: $black;
