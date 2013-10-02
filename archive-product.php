@@ -3,7 +3,6 @@
 
 <div id="content">
 
-	<?php //Hero Image ?>
 	<figure class="hero">
 		<img src="http://placehold.it/960x250" class="bleed"/>
 		<figcaption>Text on Top!</figcaption>
@@ -11,81 +10,76 @@
 
 	<div id="inner-content" class="wrap clearfix">
 
-		<section class="two columns first">
-			<nav id="categories">
-				<ul>
-				<?php $args = array(
-					'orderby'            => 'ID',
-					'hide_empty'         => 0, //this
-					'use_desc_for_title' => 0, //this
-					'title_li'           => '', //this
-					'current_category'   => 1, //this
-					'taxonomy'           => 'product_category' //this
-				); 
-				
-				wp_list_categories($args); ?>
-				</ul>
-			</nav>
-			<a href="https://www.etsy.com/shop/constellationco" class="etsy button">Shop on <span>Etsy</span></a>
-			<a href="">Intereseted in Wholesale?</a>
-			<hr/>
-			<a href="">Find a Store</a>
+		<div class="two columns first stickem-container">
+			<section class="stickem">
+				<nav id="categories">
+					<ul>
+						<?php $args = array(
+							'orderby'            => 'ID',
+							'hide_empty'         => 0, //this
+							'use_desc_for_title' => 0, //this
+							'title_li'           => '', //this
+							'current_category'   => 1, //this
+							'taxonomy'           => 'product_category' //this
+						); 		
+						wp_list_categories($args); ?>
+					</ul>
+				</nav>
+				<a href="https://www.etsy.com/shop/constellationco" class="etsy button">Shop on <span>Etsy</span></a>
+				<a href="#">Intereseted in Wholesale?</a>
+				<hr/>
+				<a href="#" class="map-icon">Find a Store</a>
 
-		</section>
+			</section>
+		</div>
 
-		<div id="main" class="ten columns last" role="main">
+		<section id="main" class="ten columns last" role="main">
 
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-			<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix row'); ?> role="article">
+				<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix row product'); ?> role="article">
 
-				<section class="six columns">
-					<?php $images = get_field('images');
-					if( $images ): ?>
-						<div class="flexslider">
-							<ul class="rslides_<?php the_ID(); ?> slides">
-								<?php foreach($images as $image): ?>
-									<li><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"/></li>
-								<?php endforeach; ?>
-							</ul>
-						</div>
-
-						<div class="flexslider">
-							<ul class="slides">
-								<?php foreach( $images as $image ): ?>
-									<li><img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" /></li>
-								<?php endforeach; ?>
-							</ul>
-						</div>
-					<?php endif ?>
-				</section>
-
-				<section class="six columns">
-					<header class="product-header">
-						<h2 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-					</header>
-
-					<section class="product-content">
-						<?php the_field('description'); ?>
-
-						<h3>SPECS</h3>
-						<?php the_field('specification_description'); ?>
+					<section class="six columns">
+						<?php $images = get_field('images');
+						if( $images ): ?>
+							<div class="flexslider">
+								<ul class="slider_<?php the_ID(); ?> slides">
+									<?php foreach($images as $image): ?>
+										<li data-thumb="<?php echo $image['sizes']['thumbnail']; ?>">
+											<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"/>
+										</li>
+									<?php endforeach; ?>
+								</ul>
+							</div>
+						<?php endif ?>
 					</section>
 
-					<footer class="product-footer">
-						<?php $specs = get_field_object('specifications'); 
-							if($specs): ?>
-							<ul class="specs">
-								<?php foreach( $specs['value'] as $spec ): ?>
-									<li class="<?php echo $spec; ?>"><?php echo $specs['choices'][$spec]; ?></li>
-								<?php endforeach; ?>
-							</ul>
-						<?php endif; ?>	
-						<a href="<?php the_field("etsy_link"); ?>" class="etsy button">View on <span>Etsy</span></a>
-					</footer>
-				</section>
+					<section class="six columns">
+						<header class="product-header">
+							<h2 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+						</header>
 
-			</article> <!-- end article -->
+						<section class="product-content">
+							<?php the_field('description'); ?>
+
+							<h3>SPECS</h3>
+							<?php the_field('specification_description'); ?>
+						</section>
+
+						<footer class="product-footer">
+							<?php $specs = get_field_object('specifications'); 
+								if($specs): ?>
+								<ul class="specs">
+									<?php foreach( $specs['value'] as $spec ): ?>
+										<li class="<?php echo $spec; ?>"><?php echo $specs['choices'][$spec]; ?></li>
+									<?php endforeach; ?>
+								</ul>
+							<?php endif; ?>	
+							<a href="<?php the_field("etsy_link"); ?>" class="etsy button">View on <span>Etsy</span></a>
+						</footer>
+					</section>
+
+				</article> <!-- end article -->
 
 			<?php endwhile; ?>
 
@@ -116,19 +110,22 @@
 
 			<?php endif; ?>
 
-		</div> <!-- end #main -->
+		</section> <!-- end #main -->
 
 	</div> <!-- end #inner-content -->
 
 </div> <!-- end #content -->
 
 <script type="text/javascript">
-	$(document).ready(function(){
-		$(.flexslider).flexslider({
-			animation: "slide",
-			controlNav: "thumbnails"
-		});
-	});
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "fade",
+    controlNav: "thumbnails",
+    slideshow: false,
+    directionNav: false
+  });
+  $('.content').stickem();
+});
 </script>
 
 <?php get_footer(); ?>

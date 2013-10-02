@@ -22,13 +22,9 @@
 
 				<section class="search">
 
-						<p><?php get_search_form(); ?></p>
+					<p><?php get_search_form(); ?></p>
 
 				</section> <!-- end search section -->
-
-				<footer class="article-footer">
-
-				</footer> <!-- end article footer -->
 
 			</article> <!-- end article -->
 
