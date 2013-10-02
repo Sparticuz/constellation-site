@@ -26,7 +26,6 @@
 				wp_list_categories($args); ?>
 				</ul>
 			</nav>
-			<br/>
 			<a href="https://www.etsy.com/shop/constellationco" class="etsy button">Shop on <span>Etsy</span></a>
 			<a href="">Intereseted in Wholesale?</a>
 			<hr/>

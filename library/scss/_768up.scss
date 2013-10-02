@@ -143,6 +143,8 @@ NAVIGATION STYLES
 
 /* Product Navigation */
 #categories{
+	border-top: 1px solid $lightgray;
+
 	ul{
 		li{
 			font-family: $sans-serif;
@@ -152,6 +154,8 @@ NAVIGATION STYLES
 			a{
 				color:$lightgray;
 				text-decoration: none;
+				&:hover, &:focus {
+				color:$black;}
 			}
 		}
 	}
