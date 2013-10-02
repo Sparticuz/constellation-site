@@ -4,12 +4,16 @@
 					<?php //footer ?>
 					<div class="two columns widget">
 						<h3>Navigate</h3>
-						<?php //page nav ?>
+						<ul>
+							<?php wp_list_pages('title_li='); ?>
+						</ul>
 					</div>
 					<div class="three columns widget">
 						<h3>Contact</h3>
-						<a href="mailto:hello@constellationco.com">hello@constellationco.com</a><br/>
-						<a href="tel:2064149817">(206)414-9817</a>
+						<ul>
+							<li><a href="mailto:hello@constellationco.com">hello@constellationco.com</a></li>
+							<li><a href="tel:2064149817">(206)414-9817</a></li>
+						</ul>
 					</div>
 					<div class="two columns widget">
 						<h3>Studio</h3>
@@ -26,11 +30,13 @@
 					</div>
 					<div class="two columns widget">
 						<h3>Follow Us</h3>
-						<a href="https://facebook.com/constellationco">Facebook</a><br/>
-						<a href="https://twitter.com/constellationco">Twitter</a><br/>
-						<a href="http://pinterest.com/constellationco/">Pinterest</a><br/>
-						<a href="http://instagram.com/constellationco">Instagram</a><br/>
-						<a href="http://www.etsy.com/shop/constellationco">Etsy</a>
+						<ul>
+							<li><a href="https://facebook.com/constellationco">Facebook</a></li>
+							<li><a href="https://twitter.com/constellationco">Twitter</a></li>
+							<li><a href="http://pinterest.com/constellationco/">Pinterest</a></li>
+							<li><a href="http://instagram.com/constellationco">Instagram</a></li>
+							<li><a href="http://www.etsy.com/shop/constellationco">Etsy</a></li>
+						</ul>
 					</div>
 					<div class="three columns widget">
 						<h3>Copyright</h3>
