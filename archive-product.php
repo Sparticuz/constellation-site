@@ -4,8 +4,8 @@
 <div id="content">
 
 	<figure class="hero">
-		<img src="http://placehold.it/960x250" class="bleed"/>
-		<figcaption>Text on Top!</figcaption>
+		<img src="http://beta.constellationco.com/wp-content/uploads/2013/10/peruse_test.jpg" class="bleed"/>
+		<figcaption>Peruse the<br />Merchandise</figcaption>
 	</figure>
 
 	<div id="inner-content" class="wrap clearfix">
@@ -26,9 +26,11 @@
 					</ul>
 				</nav>
 				<a href="https://www.etsy.com/shop/constellationco" class="etsy button">Shop on <span>Etsy</span></a>
-				<a href="#">Intereseted in Wholesale?</a>
-				<hr/>
-				<a href="#" class="map-icon">Find a Store</a>
+				<span id="stores">
+				<a href="http://beta.constellationco.com/wholesale/" class="wholesale">Wholesale Inquiries</a>
+				<hr />
+				<a href="#" class="map-icon">Find a store</a>
+			</span>
 
 			</section>
 		</div>
@@ -62,7 +64,7 @@
 						<section class="product-content">
 							<?php the_field('description'); ?>
 
-							<h3>SPECS</h3>
+							<h3 class="paddedspec">SPECS</h3>
 							<?php the_field('specification_description'); ?>
 						</section>
 

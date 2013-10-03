@@ -70,11 +70,18 @@ LAYOUT & GRID STYLES
 	//needs to be position relative in order to correctly position the figcaption
 	position:relative;
 	text-align:center;
+	height:400px;
+	overflow: hidden;
 
 	figcaption{
 		position:absolute;
-		top:50%;
+		top:25%;
 		@include fill-parent;
+		font-family:$sans-serif;
+		@include rem('font-size',77px);
+		color:$white;
+		text-transform: uppercase;
+		font-weight: 800;
 	}
 
 }
@@ -429,13 +436,21 @@ img.bleed{
 
 //this targets products
 .product{
-	border-top: 1px solid $lightgray;
+	border-top: 1px solid #e6e6e6;
 	padding-top: 1em !important;
 
 	.product-header{
 		h2{
 			-webkit-margin-before: 0;
 			-webkit-margin-after: 0;
+			@include rem('font-size',36px);
+		a{
+			color:$black;
+		&:hover{
+			color:$gray;
+		}
+
+		}
 		}
 	}
 
@@ -826,11 +841,9 @@ SIDEBARS & ASIDES
 *********************/
 
 .sidebar {
-	border:1px solid white;
 }
 
 	.widget_text{
-		border:1px solid white;
 	}
 
 	.widget-title {
@@ -838,8 +851,7 @@ SIDEBARS & ASIDES
 	}
 
 	.widget {
-		padding:30px 0 30px 15px;
-		border:1px solid white;
+		padding:30px 0;
 
 		ul {
 			margin: 0px;
