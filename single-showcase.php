@@ -24,11 +24,10 @@ single-bookmarks.php
 		<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
 
 			<header class="article-header">
-
-				<img id="hero-img" class="bleed" src="<?php the_field('hero_image'); ?>" alt="<?php the_title(); ?>"/>
-
-				<div class="wrap"><h1 class="single-title custom-post-type-title first twelve columns"><?php the_title(); ?></h1></div>
-				
+				<figure class="hero">
+					<img id="hero-img" class="bleed" src="<?php the_field('hero_image'); ?>" alt="<?php the_title(); ?>"/>
+					<figcaption><?php the_title(); ?></figcaption>
+				</figure>	
 			</header> <!-- end article header -->
 
 			<section class="entry-content clearfix wrap">

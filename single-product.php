@@ -1,75 +1,67 @@
-<?php
-/*
-This is the custom post type post template.
-If you edit the post type name, you've got
-to change the name of this template to
-reflect that name change.
-
-i.e. if your custom post type is called
-register_post_type( 'bookmarks',
-then your single template should be
-single-bookmarks.php
-
-*/
-?>
-
+<?php /* This is the page that will show ALL products */ ?>
 <?php get_header(); ?>
 
 <div id="content">
 
 	<div id="inner-content" class="wrap clearfix">
 
-			<div id="main" class="twelve columns first clearfix" role="main">
+		<div class="two columns first stickem-container">
+			<section class="stickem">
+				<nav id="categories">
+					<ul>
+						<?php $args = array(
+							'orderby'            => 'ID',
+							'hide_empty'         => 0, //this
+							'use_desc_for_title' => 0, //this
+							'title_li'           => '', //this
+							'current_category'   => 1, //this
+							'taxonomy'           => 'product_category' //this
+						); 		
+						wp_list_categories($args); ?>
+					</ul>
+				</nav>
+				<a href="https://www.etsy.com/shop/constellationco" class="etsy button">Shop on <span>Etsy</span></a>
+				<a href="#">Intereseted in Wholesale?</a>
+				<hr/>
+				<a href="#" class="map-icon">Find a Store</a>
 
-				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+			</section>
+		</div>
 
-				<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
+		<section id="main" class="ten columns last" role="main">
 
-					<header class="article-header">
+			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-						<img id="hero-img" class="bleed" src="http://placekitten.com/930/300" alt="<?php the_title(); ?>"/>
+				<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix row product'); ?> role="article">
 
-						<h1 class="single-title custom-post-type-title"><?php the_title(); ?></h1>
-
-					</header> <!-- end article header -->
-
-					<section class="entry-content clearfix">
-
-						<div class="gallery">
-							<?php $images = get_field('images');
-							
-							if( $images ): //large images for gallery ?>
-								<div class="slider">
-									<ul class="slides">
-										<?php foreach( $images as $image ): ?>
-											<li>
-												<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-												<p><?php echo $image['caption']; ?></p>
-											</li>
-										<?php endforeach; ?>
-									</ul>
-								</div>
-							<?php //The following code creates the thumbnail navigation ?>
-							<div class="carousel">
-								<ul class="slides">
-									<?php foreach( $images as $image ): ?>
-										<li>
-											<img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
+					<section class="six columns">
+						<?php $images = get_field('images');
+						if( $images ): ?>
+							<div class="flexslider">
+								<ul class="slider_<?php the_ID(); ?> slides">
+									<?php foreach($images as $image): ?>
+										<li data-thumb="<?php echo $image['sizes']['thumbnail']; ?>">
+											<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"/>
 										</li>
 									<?php endforeach; ?>
 								</ul>
 							</div>
-							<?php endif; ?>
-						</div>
+						<?php endif ?>
+					</section>
 
-						<div class="side-info">
+					<section class="six columns">
+						<header class="product-header">
+							<h2 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+						</header>
 
-							<p class="description">
-								<?php the_field('description'); ?>
-							</p>
-							<p class="spec-description">
-								<?php the_field('specification_description'); ?>
-							</p>
+						<section class="product-content">
+							<?php the_field('description'); ?>
+
+							<h3>SPECS</h3>
+							<?php the_field('specification_description'); ?>
+						</section>
+
+						<footer class="product-footer">
 							<?php $specs = get_field_object('specifications'); 
 								if($specs): ?>
 								<ul class="specs">
@@ -78,20 +70,26 @@ single-bookmarks.php
 									<?php endforeach; ?>
 								</ul>
 							<?php endif; ?>	
-						<a href="<?php the_field('etsy_link'); ?>" class="etsy button">View on <span>Etsy</span></a>
-						
-						</div>
-					</section> <!-- end article section -->
+							<a href="<?php the_field("etsy_link"); ?>" class="etsy button">View on <span>Etsy</span></a>
+						</footer>
+					</section>
 
-								<footer class="article-footer">
+				</article> <!-- end article -->
 
-			</footer> <!-- end article footer -->
+			<?php endwhile; ?>
 
-		</article> <!-- end article -->
+				<?php if (function_exists('bones_page_navi')) { ?>
+						<?php bones_page_navi(); ?>
+				<?php } else { ?>
+						<nav class="wp-prev-next">
+								<ul class="clearfix">
+									<li class="prev-link"><?php next_posts_link(__('&laquo; Older Entries', "bonestheme")) ?></li>
+									<li class="next-link"><?php previous_posts_link(__('Newer Entries &raquo;', "bonestheme")) ?></li>
+								</ul>
+						</nav>
+				<?php } ?>
 
-		<?php endwhile; ?>
-
-		<?php else : ?>
+			<?php else : ?>
 
 				<article id="post-not-found" class="hentry clearfix">
 					<header class="article-header">
@@ -101,14 +99,28 @@ single-bookmarks.php
 						<p><?php _e("Uh Oh. Something is missing. Try double checking things.", "bonestheme"); ?></p>
 					</section>
 					<footer class="article-footer">
-							<p><?php _e("This is the error message in the single-custom_type.php template.", "bonestheme"); ?></p>
+							<p><?php _e("This is the error message in the taxonomy-custom_cat.php template.", "bonestheme"); ?></p>
 					</footer>
 				</article>
 
-		<?php endif; ?>
+			<?php endif; ?>
+
+		</section> <!-- end #main -->
 
 	</div> <!-- end #inner-content -->
 
 </div> <!-- end #content -->
+
+<script type="text/javascript">
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "fade",
+    controlNav: "thumbnails",
+    slideshow: false,
+    directionNav: false
+  });
+  $('.content').stickem();
+});
+</script>
 
 <?php get_footer(); ?>
