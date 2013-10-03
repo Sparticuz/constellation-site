@@ -1,7 +1,3 @@
-Bones.esproj/user.Eddie.espressostorage
-Bones.esproj/Project.espressostorage
-.project
-
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -24,21 +20,12 @@ Icon
 .Spotlight-V100
 .Trashes
 
-#Netbeans
-nbproject/
-nbproject/private/
-build/
-nbbuild/
-dist/
-nbdist/
-nbactions.xml
-nb-configuration.xml
-
 #ignore SASS stuff
 .sass-cache/
 
+#sftp for sublime
+#this needs to be here because the plaintext password is in it
 sftp-config.json
 
-*.css
-
+#don't commit css files to git
 *.css
