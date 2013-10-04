@@ -28,7 +28,6 @@
 				<a href="https://www.etsy.com/shop/constellationco" class="etsy button">Shop on <span>Etsy</span></a>
 				<span id="stores">
 				<a href="http://beta.constellationco.com/wholesale/" class="wholesale">Wholesale Inquiries</a>
-				<hr />
 				<a href="#" class="map-icon">Find a store</a>
 			</span>
 
