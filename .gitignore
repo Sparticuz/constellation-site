@@ -29,5 +29,3 @@ sftp-config.json
 
 #don't commit css files to git
 *.css
-
-library/js/libs/FlexSlider
