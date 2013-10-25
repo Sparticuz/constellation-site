@@ -19,7 +19,6 @@
 							'hide_empty'         => 0, //this
 							'use_desc_for_title' => 0, //this
 							'title_li'           => '', //this
-							'current_category'   => 1, //this
 							'taxonomy'           => 'product_category' //this
 						); 		
 						wp_list_categories($args); ?>

@@ -161,11 +161,17 @@ NAVIGATION STYLES
 			text-transform: uppercase;
 			@include rem('font-size',13px);
 			padding-bottom:10px;
-			a{
+			
+			a {
 				color:$lightgray;
 				text-decoration: none;
 				&:hover, &:focus {
-				color:$black;}
+					color:$black;
+				}
+			}
+
+			.current-cat a {
+				color: $black;
 			}
 		}
 	}

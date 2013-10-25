@@ -19,7 +19,6 @@
 							'hide_empty'         => 0, //this
 							'use_desc_for_title' => 0, //this
 							'title_li'           => '', //this
-							'current_category'   => 1, //this
 							'taxonomy'           => 'product_category' //this
 						); 		
 						wp_list_categories($args); ?>
@@ -27,10 +26,9 @@
 				</nav>
 				<a href="https://www.etsy.com/shop/constellationco" class="etsy button">Shop on <span>Etsy</span></a>
 				<span id="stores">
-				<a href="http://beta.constellationco.com/wholesale/" class="wholesale">Wholesale Inquiries</a>
-				<a href="#" class="map-icon">Find a store</a>
-			</span>
-
+					<a href="http://beta.constellationco.com/wholesale/" class="wholesale">Wholesale Inquiries</a>
+					<a href="#" class="map-icon">Find a store</a>
+				</span>
 			</section>
 		</div>
 
