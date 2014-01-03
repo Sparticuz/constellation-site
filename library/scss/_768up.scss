@@ -181,6 +181,7 @@ NAVIGATION STYLES
 	@include rem('font-size',15px);
 	position: absolute;
 padding-top: 15px;
+display:block;
 	a{
 		color:$gray;
 		text-decoration: none;

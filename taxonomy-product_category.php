@@ -25,10 +25,10 @@
 					</ul>
 				</nav>
 				<a href="https://www.etsy.com/shop/constellationco" class="etsy button">Shop on <span>Etsy</span></a>
-				<a href="#">Intereseted in Wholesale?</a>
-				<hr/>
-				<a href="#" class="map-icon">Find a Store</a>
-
+				<span id="stores">
+					<a href="http://beta.constellationco.com/wholesale/" class="wholesale">Wholesale Inquiries</a>
+					<a href="#" class="map-icon">Find a store</a>
+				</span>
 			</section>
 		</div>
 
@@ -60,9 +60,6 @@
 
 						<section class="product-content">
 							<?php the_field('description'); ?>
-
-							<h3>SPECS</h3>
-							<?php the_field('specification_description'); ?>
 						</section>
 
 						<footer class="product-footer">
@@ -74,7 +71,6 @@
 									<?php endforeach; ?>
 								</ul>
 							<?php endif; ?>	
-							<a href="<?php the_field("etsy_link"); ?>" class="etsy button">View on <span>Etsy</span></a>
 						</footer>
 					</section>
 
