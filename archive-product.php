@@ -63,7 +63,6 @@
 						</section>
 
 						<footer class="product-footer">
-							<h3 class="paddedspec">SPECS</h3>
 							<?php $specs = get_field_object('specifications'); 
 								if($specs): ?>
 								<ul class="specs">
