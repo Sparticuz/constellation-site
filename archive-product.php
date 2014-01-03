@@ -4,7 +4,7 @@
 <div id="content">
 
 	<figure class="hero">
-		<img src="http://beta.constellationco.com/wp-content/uploads/2013/10/peruse_test.jpg" class="bleed"/>
+		<img src="http://beta.constellationco.com/wp-content/uploads/2014/01/peruse_test.jpg" class="bleed"/>
 		<figcaption>Peruse the<br />Merchandise</figcaption>
 	</figure>
 
@@ -74,7 +74,6 @@
 									<?php endforeach; ?>
 								</ul>
 							<?php endif; ?>	
-							<a href="<?php the_field("etsy_link"); ?>" class="etsy button">View on <span>Etsy</span></a>
 						</footer>
 					</section>
 
