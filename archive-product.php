@@ -60,12 +60,10 @@
 
 						<section class="product-content">
 							<?php the_field('description'); ?>
-
-							<h3 class="paddedspec">SPECS</h3>
-							<?php the_field('specification_description'); ?>
 						</section>
 
 						<footer class="product-footer">
+							<h3 class="paddedspec">SPECS</h3>
 							<?php $specs = get_field_object('specifications'); 
 								if($specs): ?>
 								<ul class="specs">
