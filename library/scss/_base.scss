@@ -142,7 +142,7 @@ h2, .h2 {
 
 	&.title{
 		font-family:$serif;
-		@include rem('font-size',36px);
+		@include rem('font-size',30px);
 	}
 	&.blogtitle{
 		font-family:$sans-serif;
@@ -443,7 +443,7 @@ img.bleed{
 		h2{
 			-webkit-margin-before: 0;
 			-webkit-margin-after: 0;
-			@include rem('font-size',36px);
+			@include rem('font-size',30px);
 		a{
 			color:$black;
 		&:hover{
