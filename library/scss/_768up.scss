@@ -186,6 +186,7 @@ width: 135px;
 .stickem-container {
   position: relative;
   @include span-columns(2);
+  text-align: left;
 }
 
 .stickit {
@@ -345,4 +346,24 @@ mobile. Make sure to double check these!
 .addy{
 	margin-left: -20px;
 margin-right: 40px;
+}
+
+.hero{
+	//needs to be position relative in order to correctly position the figcaption
+	position:relative;
+	text-align:center;
+	height:400px;
+	overflow: hidden;
+
+	figcaption{
+		position:absolute;
+		top:25%;
+		@include fill-parent;
+		font-family:$sans-serif;
+		@include rem('font-size',77px);
+		color:$white;
+		text-transform: uppercase;
+		font-weight: 800;
+	}
+
 }

@@ -70,7 +70,6 @@ LAYOUT & GRID STYLES
 	//needs to be position relative in order to correctly position the figcaption
 	position:relative;
 	text-align:center;
-	height:400px;
 	overflow: hidden;
 
 	figcaption{
@@ -78,7 +77,7 @@ LAYOUT & GRID STYLES
 		top:25%;
 		@include fill-parent;
 		font-family:$sans-serif;
-		@include rem('font-size',77px);
+		@include rem('font-size',30px);
 		color:$white;
 		text-transform: uppercase;
 		font-weight: 800;
@@ -951,4 +950,26 @@ FOOTER STYLES
 
 	.six.columns.last img:nth-child(2) { 
 		padding-top:22px;}
+
+.stickem-container {
+	text-align:center;
+}
+
+.etsy.button{
+	clear:both;
+	text-align:center;
+}
+
+.wholesale{
+	clear:both;
+	display:block;
+	padding:15px 0;
+}
+
+.map-icon{
+clear:both;
+display:block;
+position:relative;
+}
+
 
