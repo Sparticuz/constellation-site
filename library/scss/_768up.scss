@@ -149,8 +149,11 @@ NAVIGATION STYLES
 
 /* Product*/
 
-.row.product{
-
+.product{
+@include rem('padding',30px 0 30px 0);
+}
+.product-header, .product-content, .product-footer{
+	padding:0 !important;
 }
 
 #categories{

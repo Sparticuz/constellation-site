@@ -165,7 +165,7 @@ function bones_scripts_and_styles() {
 	//let's load the typekit font too and gwf
 	wp_register_script( 'typekit', '//use.typekit.net/psw0mrb.js', array(), '', false );
 	wp_enqueue_script( 'typekit' );
-	wp_register_style( 'googlewf', '//fonts.googleapis.com/css?family=Montserrat', array(), '', 'all' );
+	
 	
     /*
     I recommend using a plugin to call jQuery

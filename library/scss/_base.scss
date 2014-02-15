@@ -437,7 +437,11 @@ img.bleed{
 //this targets products
 .product{
 	border-top: 1px solid #e6e6e6;
-	@include rem('padding',30px 0 30px 0);
+	
+
+.product-header, .product-content, .product-footer{
+	@include rem('padding',0 15px 0 15px);
+}
 
 	.product-header{
 		h2{
