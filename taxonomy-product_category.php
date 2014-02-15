@@ -4,8 +4,8 @@
 <div id="content">
 
 	<figure class="hero">
-		<img src="http://placehold.it/960x250" class="bleed"/>
-		<figcaption>Text on Top!</figcaption>
+		<img src="http://beta.constellationco.com/wp-content/uploads/2014/01/peruse_test.jpg" class="bleed"/>
+		<figcaption>Peruse the<br />Merchandise</figcaption>
 	</figure>
 
 	<div id="inner-content" class="wrap clearfix">
