@@ -49,7 +49,8 @@ NAVIGATION STYLES
 	display: block;
 	font-family: $sans-serif;
 	text-transform: uppercase;
-	@include rem('font-size',13px);
+	@include rem('font-size',14px);
+	letter-spacing: 0.0625em;
 	float: right;
 	color:$lightgray;
 	-webkit-margin-after: 0;
@@ -149,7 +150,7 @@ NAVIGATION STYLES
 /* Product*/
 
 .row.product{
-	padding: 0 0 30px 0;
+
 }
 
 #categories{

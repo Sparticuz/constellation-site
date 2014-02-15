@@ -43,5 +43,4 @@ http://gridpak.com/ - Create your own responsive grid.
 
 .row{
     @include row();
-    @include pad(0 15px 30px 15px);
 }
