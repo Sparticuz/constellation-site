@@ -5,7 +5,7 @@
 					<div class="two columns widget">
 						<h3>Navigate</h3>
 						<ul>
-							<?php wp_list_pages('title_li='); ?>
+							<?php wp_list_pages('exclude=342,24&sort_column=menu_order&title_li='); ?>
 						</ul>
 					</div>
 					<div class="three columns widget">
@@ -15,7 +15,7 @@
 							<li><a href="tel:2064149817">(206)414-9817</a></li>
 						</ul>
 					</div>
-					<div class="two columns widget">
+					<div class="two columns widget addy">
 						<h3>Studio</h3>
 						<a href="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=110+cherry+street+seattle+wa+98104&amp;aq=&amp;sll=47.602631,-122.333898&amp;sspn=0.008377,0.01929&amp;vpsrc=0&amp;g=110+cherry+street+seattle+wa&amp;ie=UTF8&amp;hq=110+cherry+street+seattle+wa+98104&amp;hnear=&amp;radius=15000&amp;t=m&amp;cid=6147024036454479109&amp;z=12&amp;iwloc=A">
 						<address>
@@ -40,7 +40,7 @@
 					</div>
 					<div class="three columns widget">
 						<h3>Copyright</h3>
-						<span>©2013 Constellation &amp; Co.<br/>All Rights Reserved.</span>
+						<span>©2014 Constellation &amp; Co.<br/>All Rights Reserved.</span>
 					</div>
 				</div> <!-- end #inner-footer -->
 
