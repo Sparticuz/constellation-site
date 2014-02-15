@@ -35,6 +35,8 @@ require_once('library/product-post-type.php');
 */
 require_once('library/showcase-post-type.php');
 
+require_once('library/store-post-type.php');
+
 /************* THUMBNAIL SIZE OPTIONS *************/
 
 // Thumbnail sizes
