@@ -461,6 +461,31 @@ img.bleed{
 
 }
 
+#categories{
+	border-top: 1px solid #e6e6e6;
+
+	ul{
+		li{
+			font-family: $sans-serif;
+			text-transform: uppercase;
+			@include rem('font-size',13px);
+			padding-bottom:10px;
+			
+			a {
+				color:$lightgray;
+				text-decoration: none;
+				&:hover, &:focus {
+					color:$black;
+				}
+			}
+
+			&.current-cat a {
+				color: $black;
+			}
+		}
+	}
+}
+
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
