@@ -1,5 +1,5 @@
 <?php
-/* This add's the Product custom type */
+/* This add's the Store custom type */
 
 // let's create the function for the custom type
 function register_stores() { 
@@ -11,7 +11,7 @@ function register_stores() {
 			'singular_name' => __('Store', 'bonestheme'), /* This is the individual type */
 			'all_items' => __('All Stores', 'bonestheme'), /* the all items menu item */
 			'add_new' => __('Add New', 'bonestheme'), /* The add new menu item */
-			'add_new_item' => __('Add New Product', 'bonestheme'), /* Add New Display Title */
+			'add_new_item' => __('Add New Store', 'bonestheme'), /* Add New Display Title */
 			'edit' => __( 'Edit', 'bonestheme' ), /* Edit Dialog */
 			'edit_item' => __('Edit Store', 'bonestheme'), /* Edit Display Title */
 			'new_item' => __('New Store', 'bonestheme'), /* New Display Title */
