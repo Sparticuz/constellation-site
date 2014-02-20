@@ -119,7 +119,7 @@ $(window).load(function() {
     slideshow: false,
     directionNav: false
   });
-  $('.content').stickem();
+  $('#inner-content').stickem-container();
 });
 </script>
 
