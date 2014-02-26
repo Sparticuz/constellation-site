@@ -190,6 +190,10 @@ width: 135px;
   text-align: left;
 }
 
+.stickem{
+	background:blue;
+}
+
 .stickit {
     margin-left: 660px;
     position: fixed;
@@ -373,4 +377,9 @@ margin-right: 40px;
 
 .row{
 	padding-top: 30px;
+}
+
+
+.flexslider{
+padding: 0 !important;
 }
