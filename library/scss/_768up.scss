@@ -366,7 +366,6 @@ margin-right: 40px;
 		@include fill-parent;
 		font-family:$sans-serif;
 		@include rem('font-size',77px);
-		@include rem('line-height',85px);
 		color:$white;
 		text-transform: uppercase;
 		font-weight: 800;

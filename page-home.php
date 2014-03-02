@@ -5,8 +5,8 @@
 
 	<figure class="hero homepage">
 		<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/homepage_bg.jpg" class="bleed"/>
-		<figcaption class="why">Using the Historic<br>Craft of Letterpress<br><span class="together">to bring people together</span></figcaption>
-		<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/card.png" class="littleguy">
+		<figcaption class="why">Using the Historic<br>Craft of Letterpress<span class="together">to bring people together</span><img src="http://beta.constellationco.com/wp-content/uploads/2014/03/card.png" class="littleguy"></figcaption>
+		
 	</figure>
 
 <div id="inner-content" class="wrap clearfix">
