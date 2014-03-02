@@ -179,7 +179,18 @@ HEADER STYLES
 	@extend .text-center;
 
 	#logo {
-		img{max-width: 180px;}
+		width:180px;
+		height:55px;
+		display:block;
+		background-image:url('http://beta.constellationco.com/wp-content/themes/constellation-site/library/images/logo.png');
+		background-size:100%;
+		background-repeat: no-repeat;
+	}
+}
+
+.page-id-24,.page-id-10,.page-id-16{
+	& #logo{
+		background-position:0 -56px;
 	}
 }
 
@@ -1007,3 +1018,4 @@ top: -300px;
 		}
 	}
 }
+

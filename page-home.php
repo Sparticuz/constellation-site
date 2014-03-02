@@ -19,7 +19,7 @@
 		<p>We celebrate tailor-made over generic, heritage over novelty, and process over expediency. Each of our products are printed on antique hand-fed and treadle-operated printing presses in our Seattle studio.</p>
 		<a href="" class="button">Learn More</a>
 		</section>
-		<section class="three column">
+		<section class="three column sidebarbody">
 		<span class="">
 		<h3>Shop Our Line</h3>
 		<p>Vestibulum a nibh quis dolor rutrum congue. Maecenas fermentum eget massa in iaculis.</p>
