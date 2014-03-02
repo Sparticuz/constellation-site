@@ -986,3 +986,24 @@ position:relative;
 .flexslider{
 	padding: 15px !important;
 }
+
+.homepage{
+	height:100% !important;
+	top: -137px;
+z-index: -9999;
+}
+
+.littleguy{
+	position: relative;
+top: -300px;
+}
+
+
+.page-id-24{
+	.nav li a{
+		color:$white;
+		&:hover{
+			color:$gray;
+		}
+	}
+}
