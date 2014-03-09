@@ -139,14 +139,15 @@ h1, .h1 {
 
 h2, .h2 {
 	color:$base;
+	font-family:$sans-serif;
+	@include rem('font-size',34px);
+	text-transform:uppercase;
 
 	&.title{
 		font-family:$serif;
 		@include rem('font-size',30px);
 	}
 	&.blogtitle{
-		font-family:$sans-serif;
-		@include rem('font-size',34px);
 	}
 }
 
@@ -1071,4 +1072,21 @@ label{
 
 input{
 	border: 1px solid $lightgray;
+}
+
+.intro{
+	font-style:italic;
+	@include rem('font-size',30px);
+}
+
+.bigquote{
+	font-family: $serif;
+	color:$white;
+	@include rem('font-size',48px);
+	line-height:57px;
+	font-style:italic;
+	background-color:$base;
+	display:block;
+	clear:both;
+	padding:75px 0;
 }

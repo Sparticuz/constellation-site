@@ -17,7 +17,7 @@
 <img src="http://beta.constellationco.com/wp-content/uploads/2014/03/woodtype_bg.jpg" class="bleed" />
 <article class="eight column">
 <h2>We bring old school to another level.</h2>
-<p>This is Gutenberg.This is the eighteenth century.This is corsets and petticoats and embroidery.</p>
+<p class="intro">This is Gutenberg.This is the eighteenth century.This is corsets and petticoats and embroidery.</p>
 <p>Our equipment is time-tested and well-worn, but we have restored everything with love—from rust and grime back to pristine printing condition. All of our presses are foot or hand powered and completely hand fed. Each sheet of paper goes through the press one at a time, and once through for each color printed. Same goes for type setting. We use traditional wood and lead type and carefully hand set one letter at a time. To say this is a labor of love is an understatement—but we wouldn’t have it any other way</p>
 </article>
 
@@ -45,7 +45,7 @@
 
 <article class="eight column">
 <h2>We like to think of our cards as no matter what, no matter when cards.</h2>
-<p>These sentiments transcend occasions. You are home to me. You’re my favorite. I like you. These are anytime cards. They won’t go out of season or out of style.</p>
+<p class="intro">These sentiments transcend occasions. You are home to me. You’re my favorite. I like you. These are anytime cards. They won’t go out of season or out of style.</p>
 <p>And they are anywhere cards, not meant to be tucked away in a drawer or tossed aside. They are pieces of art imbued with intimacy and emotion, meant for keeping and displaying. They look good framed, hung in your home. And with your sincere handwritten message? People will keep them forever.</p>
 
 <p>Remember the box of cards, photos, and letters you found at your grandma’s house? I want my grandkids to find that box at my house. That heirloom ephemera won’t happen by itself, we have to build a collection. (And somehow I doubt that our grandkids will care about our online paper trail.)</p>
@@ -78,6 +78,28 @@ to hear from you.</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac mollis dolor. Etiam tellus elit, hendrerit eu odio sit amet, interdum fringilla ante. Aliquam felis tortor, condimentum eget erat vitae, faucibus sodales nisi. Cras imperdiet justo metus, nec elementum arcu facilisis non. Sed vehicula congue turpis non aliquam. Nam convallis lobortis vestibulum. Cras dignissim quam venenatis pharetra pretium. Quisque placerat imperdiet nisl, at bibendum elit pulvinar et. Vivamus cursus magna a turpis dictum, eget condimentum risus dictum. Integer nec tellus non augue auctor sagittis. Donec aliquam ipsum sit amet diam imperdiet, ac commodo leo porta.</p>
 </article>
 
+		<section class="three column sidebarbody">
+		<h3>Work With Us</h3>
+		<p>Vestibulum a nibh quis dolor rutrum congue. Maecenas fermentum eget massa in iaculis.</p>
+		<a href="">Request an Estimate</a>
+		</section>
+
+		<span class="bigquote">It’s all about life. Life shouldn’t just happen to you. You’re meant to live it, to experience the joys and the sorrows and everything in between to the fullest.</span>
+
+<article class="twelve columns">
+<span class="four columns"><h2>Meet Our<br />Team</h2></span>
+<span class="four columns"><img src="http://placehold.it/290x200"/><h3>Sara McNally</h3>Co-Founder, Designer, & Printer</span>
+<span class="four columns"><img src="http://placehold.it/290x200"/><h3>Brad McNally</h3>Co-Founder & Secret Art Director</span></article>
+<article class="twelve columns">
+<span class="four columns"><img src="http://placehold.it/290x200"/><h3>Suzi Mantle</h3>Bookkeeping</span>
+<span class="four columns"><img src="http://placehold.it/290x200"/><h3>Holly Power</h3>Adminisitration</span>
+</article>
+
+<article class="eight column">
+<h2>Seattle</h2>
+<p>This city is home to me in a way I couldn’t have predicted. Four years later, I’m still homesick when we leave and giddy when we return home. There’s nowhere in the world like Seattle. It fits us like a glove. This is where we’ve planted our feet, started our careers, grown our business, and made lifelong friends. This is where we’ll raise our kids. This is where we’ll grow old. This city—water & mountains, gold rush & midcentury modern, large yet small—it’s home.
+</p>
+</article>
 
 		</div> <!-- end #main -->
 
