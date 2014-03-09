@@ -187,6 +187,7 @@ HEADER STYLES
 		background-image:url('http://beta.constellationco.com/wp-content/themes/constellation-site/library/images/logo.png');
 		background-size:100%;
 		background-repeat: no-repeat;
+		margin: 0 auto;
 	}
 }
 
@@ -449,10 +450,6 @@ img.bleed{
 .product{
 	border-top: 1px solid #e6e6e6;
 	
-
-.product-header, .product-content, .product-footer{
-	@include rem('padding',0 15px 0 15px);
-}
 
 	.product-header{
 		h2{
@@ -904,7 +901,8 @@ SIDEBARS & ASIDES
 	}
 
 	.widget {
-		padding:30px 0;
+		padding: 30px 0 0 0;
+
 
 		ul {
 			margin: 0px;
@@ -931,6 +929,7 @@ FOOTER STYLES
 *********************/
 
 #inner-footer{
+	padding: 0 30px;
 	abbr[title]{
 		//take out dotted border on state abbr
 		border-bottom: 0;
@@ -945,6 +944,7 @@ FOOTER STYLES
 	@include pad(45px 0 45px 0);
 	display: block;
 	color: #4d4e4e;
+	padding:30px;
 }
 
 	/*
@@ -967,7 +967,9 @@ FOOTER STYLES
 	} /* end .footer-links */
 
 
-	.copyright {}
+	.copyright {
+		padding-bottom:30px;
+	}
 
 	.four.columns.last img:nth-child(2) { 
 		padding-top:22px;}
@@ -997,7 +999,7 @@ position:relative;
 }
 
 .flexslider{
-	padding: 15px !important;
+	padding: 15px 0 !important;
 }
 
 .homepage{
@@ -1032,6 +1034,7 @@ z-index: -9999;
 		}
 	}
 }
+
 
 .contact{
 	padding:50px 0;
@@ -1072,6 +1075,11 @@ label{
 
 input{
 	border: 1px solid $lightgray;
+	font-style:italic;
+	outline: none;
+	&:focus { 
+border:solid 1px $black;
+}
 }
 
 .intro{
@@ -1089,4 +1097,20 @@ input{
 	display:block;
 	clear:both;
 	padding:75px 0;
+	& q{
+		max-width: 960px;
+display: block;
+margin: auto;
+	}
+}
+
+#main{
+	padding: 0 30px;
+
+}
+
+.manifesto{
+	font-size:20px;
+	line-height:35px;
+	hyphens: none;
 }

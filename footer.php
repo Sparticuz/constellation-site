@@ -5,7 +5,7 @@
 					<div class="two columns widget">
 						<h3>Navigate</h3>
 						<ul>
-							<?php wp_list_pages('exclude=342,24&sort_column=menu_order&title_li='); ?>
+							<?php wp_list_pages('exclude=342,331&sort_column=menu_order&title_li='); ?>
 						</ul>
 					</div>
 					<div class="three columns widget">
@@ -38,7 +38,7 @@
 							<li><a href="http://www.etsy.com/shop/constellationco">Etsy</a></li>
 						</ul>
 					</div>
-					<div class="three columns widget">
+					<div class="three columns widget copyright">
 						<h3>Copyright</h3>
 						<span>©2014 Constellation &amp; Co.<br/>All Rights Reserved.</span>
 					</div>

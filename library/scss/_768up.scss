@@ -214,6 +214,7 @@ SIDEBARS & ASIDES
 }
 
 	.widget {
+		padding: 30px 0;
 		
 
 		ul {
@@ -382,4 +383,17 @@ margin-right: 40px;
 
 .flexslider{
 padding: 0 !important;
+}
+
+#main{
+	padding:0;
+}
+
+.manifesto{
+	@include rem('font-size',28px);
+	line-height:50px !important;
+}
+
+#inner-footer{
+	padding:0;
 }

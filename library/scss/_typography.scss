@@ -88,11 +88,6 @@ address{
 	font-style:normal;
 }
 
-.manifesto{
-	@include rem('font-size',28px);
-	line-height:50px !important;
-}
-
 .why{
 	font-size:60px !important;
 	letter-spacing:2px;

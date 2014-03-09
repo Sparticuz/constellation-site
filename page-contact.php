@@ -39,14 +39,14 @@
 				<a href="http://www.etsy.com/shop/constellationco" class="etsy button">Etsy</a>
 				</article>
 
-				<section class="nine columns">
+				<section class="eight columns" style="border:1px solid blue;">
 				<form id="form" method="get" action="http://www.constellationco.com/wp-content/themes/constellation/process.php" enctype="multipart/form-data">
       <ul>
        <fieldset>
-        <li><label>Name*</label><input type="text" name="name" /></li>
-        <li><label>Company</label><input type="text" name="company" /></li>
-        <li><label>Email</label><input type="email" name="email"/></li>
-        <li><label>Phone</label><input type="text" name="phone" placeholder="e.g, 206-414-9817"/></li>
+        <li class="four"><label>Name*</label><input type="text" name="name" /></li>
+        <li class="four"><label>Company</label><input type="text" name="company" /></li>
+        <li class="four"><label>Email</label><input type="email" name="email"/></li>
+        <li class="four"><label>Phone</label><input type="text" name="phone"/></li>
         </fieldset>
         <fieldset>
         <li>
@@ -54,9 +54,9 @@
           <input type="checkbox" name="design"/> Design<br />
           <input type="checkbox" name="specs"/> Letterpress<br />
         </li>
-        <li style="clear:both;"><label>What type of project is it?</label>
-        <textarea cols="40" rows="5" name="piece" placeholder="Logo Design, Business Card, Wedding, Etc."></textarea></li>
-        <li style="clear:both;"><label>When do you need it?</label><input type="text" size="40" name="due_date" placeholder="MM/DD/YYYY"/></li>
+        <li class="eight"><label>What type of project is it?</label>
+        <textarea cols="55" rows="5" name="piece" placeholder="Logo Design, Business Card, Wedding, Etc."></textarea></li>
+        <li style="clear:both;"><label>When do you need it?</label><input type="text" id="datepicker"></li>
         </fieldset>
         <fieldset class="specs">
         <li>
@@ -75,7 +75,7 @@
              <fieldset>   
         </fieldset>
         <li>
-          <input type="submit" name="submit" value="SUBMIT" />
+          <input type="submit" name="submit" value="SUBMIT" class="formbutton" />
 		<input type="hidden" name="submitted" value="TRUE" />
         </li>
       </ul>

@@ -181,7 +181,7 @@ BUTTONS
 
 //i will also put re-occuring styles here
 
-.button{
+.button, .formbutton{
 	font-family:$sans-serif;
 	@include rem('font-size',14px);
 	text-transform: uppercase;
