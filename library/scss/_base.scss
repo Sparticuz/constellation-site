@@ -80,7 +80,8 @@ LAYOUT & GRID STYLES
 		@include rem('font-size',30px);
 		color:$white;
 		text-transform: uppercase;
-		font-weight: 800;
+		font-weight:400;
+		line-height: 90px;
 	}
 
 }
@@ -1000,8 +1001,18 @@ position:relative;
 
 .homepage{
 	height:100% !important;
+	& figcaption{
+		top:25% !important;
+	}
+}
+
+.topbleed{
 	top: -137px;
+	margin-bottom: -137px;
 z-index: -9999;
+&.specialpage{
+	height:530px !important;
+}
 }
 
 .littleguy{
@@ -1012,12 +1023,52 @@ z-index: -9999;
 }
 
 
-.page-id-24{
+.page-id-24, .page-id-16, .page-id-10{
 	.nav li a{
 		color:$white;
+		&:hover{
+			color:$lightgray;
+		}
+	}
+}
+
+.contact{
+	padding:50px 0;
+	&.general{
+		border-right:1px solid #e6e6e6;
+	}
+	&.wholesaleinquiries{
+		border-top:1px solid #e6e6e6;
+		border-bottom:1px solid #e6e6e6;
+	}
+	& a{
+		text-decoration: none;
+		color:$black;
 		&:hover{
 			color:$gray;
 		}
 	}
 }
 
+.contactinfo{
+		@include rem('font-size',36px);
+		display:block;
+}
+
+.learnmore{
+	margin-bottom: 30px;
+}
+
+label{
+		font-family: $sans-serif;
+	color:$base;
+	@include rem('font-size',13px);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin:0 0 10px 0;
+	display:block;
+}
+
+input{
+	border: 1px solid $lightgray;
+}

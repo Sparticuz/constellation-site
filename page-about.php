@@ -3,7 +3,7 @@
 
 <div id="content">
 
-	<figure class="hero">
+	<figure class="hero topbleed specialpage">
 		<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/about_bg.jpg" class="bleed"/>
 		<figcaption>About</figure>
 

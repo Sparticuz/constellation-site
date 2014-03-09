@@ -9,9 +9,19 @@ body{
 // Light gray text for sidebar body content
 
 .sidebarbody{
-	color:$lightgray;
+	color:#808080;
 	@include rem('font-size',16px);
 	@include rem('line-height:',25px);
+	margin-top:30px;
+	& p{
+		margin:0;
+	}
+	& a{
+		display: block;
+		padding-bottom: 30px;
+		color:black;
+		text-decoration:none;
+	}
 }
 
 // Metadata, Captions, Form Text, Categories
@@ -86,7 +96,7 @@ address{
 .why{
 	font-size:60px !important;
 	letter-spacing:2px;
-	line-height:72px;
+	line-height:72px !important;
 	font-weight:400 !important;
 	text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }

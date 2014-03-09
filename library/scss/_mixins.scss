@@ -185,7 +185,7 @@ BUTTONS
 	font-family:$sans-serif;
 	@include rem('font-size',14px);
 	text-transform: uppercase;
-	color:$white;
+	color:$white !important;
 	padding: 8px 14px;
 	cursor:pointer;
 	background-color: $black;
@@ -204,6 +204,10 @@ BUTTONS
 	&.pinterest{
 		@include backgroundColor(#c8232c);
 	}
+
+  &.instagram{
+    @include backgroundColor(#3f729b);
+  }
 	
 	&.etsy{
 		@include backgroundColor(#d5641c);
