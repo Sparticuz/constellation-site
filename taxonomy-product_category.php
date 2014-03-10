@@ -8,10 +8,9 @@
 		<figcaption>Peruse the<br />Merchandise</figcaption>
 	</figure>
 
-	<div id="inner-content" class="wrap clearfix">
-
-		<div class="two columns first stickem-container">
-			<section class="stickem">
+	<div id="inner-content" class="wrap clearfix container">
+<div class="row stickem-container">
+		<div class="two columns first stickem">
 				<nav id="categories">
 					<ul>
 						<?php $args = array(
@@ -25,14 +24,11 @@
 					</ul>
 				</nav>
 				<a href="https://www.etsy.com/shop/constellationco" class="etsy button">Shop on <span>Etsy</span></a>
-				<span id="stores">
-					<a href="http://beta.constellationco.com/wholesale/" class="wholesale">Wholesale Inquiries</a>
-					<a href="#" class="map-icon">Find a store</a>
-				</span>
-			</section>
+<a href="http://beta.constellationco.com/wholesale/" class="sidebarlink">Wholesale Inquiries</a>
+					<a href="#" class="map-icon sidebarlink">Find a store</a>
 		</div>
 
-		<section id="main" class="ten columns last" role="main">
+		<section id="main" class="ten columns last content" role="main">
 
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -75,7 +71,6 @@
 					</section>
 
 				</article> <!-- end article -->
-
 			<?php endwhile; ?>
 
 				<?php if (function_exists('bones_page_navi')) { ?>
@@ -119,7 +114,7 @@ $(window).load(function() {
     slideshow: false,
     directionNav: false
   });
-  $('#inner-content').stickem-container();
+  $('.container').stickem();
 });
 </script>
 
