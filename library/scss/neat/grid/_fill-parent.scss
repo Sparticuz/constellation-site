@@ -1,6 +1,6 @@
 @mixin fill-parent() {
   width: 100%;
-  height: auto;
+
   @if $border-box-sizing == false {
     @include box-sizing(border-box);
   }
