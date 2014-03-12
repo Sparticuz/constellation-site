@@ -71,19 +71,21 @@ LAYOUT & GRID STYLES
 	position:relative;
 	text-align:center;
 	overflow: hidden;
+	margin: 0;
 
 	figcaption{
 		position:absolute;
 		top:25%;
 		@include fill-parent;
 		font-family:$sans-serif;
-		@include rem('font-size',30px);
 		color:$white;
 		text-transform: uppercase;
 		font-weight:400;
-		line-height: 90px;
-	}
 
+		//base mobile style, override on _768up
+		@include rem('font-size',25px);
+		line-height: 30px;
+	}
 }
 
 /*********************

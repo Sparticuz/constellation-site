@@ -37,6 +37,14 @@ HEADER STYLES
 	}
 }
 
+.hero {
+	figcaption{
+		@include rem('font-size',30px);
+		line-height: 90px;
+	}
+}
+		
+
 .article-header .wrap{
 	padding: 0 15px;
 }
