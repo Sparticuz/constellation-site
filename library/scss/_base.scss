@@ -211,6 +211,7 @@ nav{
 			//show below the hamburger
 			z-index: 9998;
 			display:table;
+			visibility: hidden;
 			height:0;
 			opacity:0;
 			@include transition (all 1.0s ease);
@@ -218,6 +219,7 @@ nav{
 			&.shown{
 				height:100%;
 				opacity: 1;
+				visibility: visible;
 			}
 
 			li {
