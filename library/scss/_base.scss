@@ -56,7 +56,7 @@ LAYOUT & GRID STYLES
 		z-index: -9999;
 	
 		&.specialpage{
-			height:530px !important;
+			max-height:530px;
 		}
 	}
 }
@@ -214,7 +214,7 @@ nav{
 			visibility: hidden;
 			height:0;
 			opacity:0;
-			@include transition (all 1.0s ease);
+			@include transition (all 1.0s);
 
 			&.shown{
 				height:100%;
@@ -231,10 +231,8 @@ nav{
 					display: table-cell;
 					text-decoration: none;
 					padding: 10px 10px;
-					color:$lightgray;
-
 					//style the text here!
-
+					color:$lightgray;
 					/*
 					remember this is for mobile ONLY, so there's no need
 					to even declare hover styles here, you can do it in
@@ -261,8 +259,17 @@ nav{
 					color:$black;
 				}
 
-			}  /* end current highlighters */
-		} /* end .nav */
+			}
+		}
+	}
+}
+
+.page-id-24, .page-id-16, .page-id-10{
+	.nav li a{
+		color:$white;
+		&:hover{
+			color:$lightgray;
+		}
 	}
 }
 
@@ -285,14 +292,6 @@ img{
 	}
 }
 
-		.hentry {
-
-			header {}
-
-			footer {}
-
-		} /* end .hentry */
-
 		.single-title,
 		.page-title {
 			border-bottom: 1px solid $light-border;
@@ -300,22 +299,6 @@ img{
 			font-family: $serif;
 			font-size: 1.5em;
 		}
-
-		.single-title {}
-
-		.page-title {}
-
-		.archive-title { }
-
-		/* want to style individual post classes? Booya! */
-		.post-id {}         /* post by id (i.e. post-3) */
-		.post {}            /* general post style */
-		.page {}			/* general article on a page style */     
-		.attachment {}      /* general style on an attatchment */
-		.sticky {}          /* sticky post style */
-		.hentry {}          /* hentry class */
-		.category-slug {}   /* style by category (i.e. category-videos) */
-		.tag-slug {}        /* style by tag (i.e. tag-news) */
 
 		/* post meta */
 		.byline {
@@ -409,30 +392,11 @@ img{
 
 		} /* end .wp-caption */
 
-		/* image gallery styles */
-		.gallery {
-
-			dl {
-
-				a {}
-
-				img {}
-
-			}
-
-			dt {}
-
-			dd {}
-
-		} /* end .gallery */
-
-		/* gallery caption styles */
-		.gallery-caption {}
-
 		.size-full {}
 		.size-large {}
 		.size-medium {}
 		.size-thumbnail {}
+
 
 //this targets products
 .product{
@@ -1004,14 +968,7 @@ position:relative;
 }
 
 
-.page-id-24, .page-id-16, .page-id-10{
-	.nav li a{
-		color:$white;
-		&:hover{
-			color:$lightgray;
-		}
-	}
-}
+
 
 
 .contact{
