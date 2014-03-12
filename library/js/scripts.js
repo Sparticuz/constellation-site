@@ -40,15 +40,14 @@ jQuery(document).ready(function($) {
     /* getting viewport width */
     var responsive_viewport = $(window).width();
     
-    /* if is below 481px */
-    if (responsive_viewport < 481) {
-    
-    } /* end smallest screen */
-    
-    /* if is larger than 481px */
-    if (responsive_viewport > 481) {
-        
-    } /* end larger than 481px */
+    /* if is below 768px */
+    //comment out so i can run it!
+    //if (responsive_viewport < 768) {
+        //attach hook to hamburger on mobile
+        $('#navtoggle').click(function(){
+            $('.nav').toggleClass('shown');
+        });
+    //} /* end less than 768px */
     
     /* if is above or equal to 768px */
     if (responsive_viewport >= 768) {
