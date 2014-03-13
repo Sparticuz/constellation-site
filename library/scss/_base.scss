@@ -19,6 +19,7 @@ LAYOUT & GRID STYLES
 	//Set the base wrap to 100% for mobile
 	//this will be overwritten on larger sizes
 	@include fill-parent;
+	padding: 0 25px;
 }
 
 .hero{
@@ -117,6 +118,8 @@ h2, .h2 {
 	font-family:$sans-serif;
 	@include rem('font-size',34px);
 	text-transform:uppercase;
+	line-height: 1.3em;
+	margin: .65em 0;
 
 	&.title{
 		font-family:$serif;
@@ -185,20 +188,30 @@ and more scalable.
 */
 nav{
 	&#navigation{
+
 		//this is the main nav menu
 		#navtoggle{
 			position:absolute;
-			right:3%;
-			top:3%;
+			text-rendering: optimizeLegibility;
+			right:6%;
+			top:2%;
 			text-decoration: none;
 			@include rem('font-size',30px);
+			transform: scale(1.25, .85);
+			-webkit-transform: scale(1.25, .85);
+			-moz-transform: scale(1.25, .85);
+			-o-transform: scale(1.25, .85);
+			-ms-transform: scale(1.25, .85);
+			font-weight:100;
+
 			//show above the nav menu
 			z-index: 9999;
-			
+	
 			&:visited{
 				color:$white;
 			}
 		}
+
 
 		.nav {
 
@@ -206,21 +219,26 @@ nav{
 			top:-1em;
 			left:0;
 			@include fill-parent();
-			background-color: $white;
-			background-color: rgba(255,255,255,0.8);
+			background-color: rgba($black,0.9);
+			font-family: $sans-serif;
+			text-transform: uppercase;
+			@include rem('font-size',30px);
+			letter-spacing: 0.0625em;
 			//show below the hamburger
 			z-index: 9998;
 			display:table;
 			visibility: hidden;
 			height:0;
 			opacity:0;
-			@include transition (all 1.0s);
+			
 
 			&.shown{
 				height:100%;
 				opacity: 1;
 				visibility: visible;
+
 			}
+
 
 			li {
 
@@ -232,7 +250,7 @@ nav{
 					text-decoration: none;
 					padding: 10px 10px;
 					//style the text here!
-					color:$lightgray;
+					color:$white;
 					/*
 					remember this is for mobile ONLY, so there's no need
 					to even declare hover styles here, you can do it in
@@ -240,7 +258,6 @@ nav{
 					keep this file as small as possible!
 					*/
 					&:hover, &:focus {
-
 					}
 				}
 
@@ -256,7 +273,7 @@ nav{
 			li.current-page-ancestor {
 
 				a {
-					color:$black;
+					color:$white;
 				}
 
 			}
@@ -883,12 +900,14 @@ FOOTER STYLES
 *********************/
 
 #inner-footer{
-	padding: 0 30px;
+	padding: 0 25px;
+	@include rem('font-size',20px);
 	abbr[title]{
 		//take out dotted border on state abbr
 		border-bottom: 0;
 	}
 }
+
 
 #handmade-footer{
 	background-color: $black;
@@ -943,14 +962,14 @@ display:block;
 position:relative;
 }
 
-.sidebarlink{
-	@include rem('font-size',14px);
-	display:block;
-	padding-top:10px;
-}
 
 .flexslider{
-	padding: 15px 0 !important;
+	padding: 25px 0 0 0 !important;
+}
+
+
+.flex-control-thumbs li {
+	margin:0 15px 15px 0;
 }
 
 .homepage{
@@ -968,18 +987,14 @@ position:relative;
 }
 
 
-
+.sidebarbody{
+	border-top:1px solid #e6e6e6;
+}
 
 
 .contact{
-	padding:50px 0;
-	&.general{
-		border-right:1px solid #e6e6e6;
-	}
-	&.wholesaleinquiries{
-		border-top:1px solid #e6e6e6;
-		border-bottom:1px solid #e6e6e6;
-	}
+	padding:25px 0;
+	border-bottom:1px solid #e6e6e6;
 	& a{
 		text-decoration: none;
 		color:$black;
@@ -987,15 +1002,15 @@ position:relative;
 			color:$gray;
 		}
 	}
+	
+	.button{
+		margin:0 15px 17px 0;
+	}
 }
 
 .contactinfo{
-		@include rem('font-size',36px);
+		@include rem('font-size',30px);
 		display:block;
-}
-
-.learnmore{
-	margin-bottom: 30px;
 }
 
 label{
@@ -1020,32 +1035,64 @@ border:solid 1px $black;
 .intro{
 	font-style:italic;
 	@include rem('font-size',30px);
+	margin:0;
 }
 
 .bigquote{
 	font-family: $serif;
 	color:$white;
-	@include rem('font-size',48px);
-	line-height:57px;
+	@include rem('font-size',28px);
 	font-style:italic;
 	background-color:$base;
 	display:block;
 	clear:both;
-	padding:75px 0;
+	padding:25px;
+
 	& q{
 		max-width: 960px;
 display: block;
-margin: auto;
+margin: 0 auto;
+
 	}
 }
 
 #main{
-	padding: 0 30px;
-
 }
 
 .manifesto{
 	font-size:20px;
 	line-height:35px;
-	hyphens: none;
+	padding-bottom:30px;
 }
+
+.seattle{
+	background-color:#edeef1;
+	background-image:url('http://beta.constellationco.com/wp-content/uploads/2014/03/seattle_bg.jpg');
+	background-position:center bottom;
+	background-repeat:no-repeat;
+	background-size:100%;
+	width:100%;
+
+	p:last-child{
+		padding-bottom: 8em;
+	}
+
+	.team{
+		h3{margin:0;}
+	}
+	& .occupation{
+		margin-bottom: 25px;
+display: block;
+	}
+
+}
+
+.learnmore{
+	display:block;
+	text-align: center;
+}
+
+.button{
+	padding: 10px 17px;
+}
+

@@ -391,3 +391,15 @@ padding: 0 !important;
 #inner-footer{
 	padding:0;
 }
+
+.sidebarbody{
+	@include rem('font-size',16px);
+}
+
+
+.bigquote{
+@include rem('font-size',48px);
+	line-height:57px;
+		padding:75px 0;
+
+}

@@ -181,16 +181,16 @@ BUTTONS
 
 //i will also put re-occuring styles here
 
-.button, .formbutton{
+.button{
 	font-family:$sans-serif;
 	@include rem('font-size',14px);
 	text-transform: uppercase;
 	color:$white !important;
-	padding: 8px 14px;
 	cursor:pointer;
 	background-color: $black;
-	display:inline-block;
+  display: inline-block;
 	text-decoration: none;
+  letter-spacing: 1px;
 	@include transition (background-color 0.5s ease-in-out);
 
 	&.facebook{

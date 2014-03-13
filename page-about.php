@@ -11,7 +11,7 @@
 	<div class="wrap clearfix">
 		<section class="eight column">
 			<h2>Our Studio</h2>
-			<p>Every day I walk into the studio, flip the light switch, tie my apron, and get to work. The studio is a special space—it is the fruition of a lot of dreams and hopes and hard work. It’s a place that feels like home. It’s a place infused with heritage. Our building is rich with history—it’s ornate and strong, built in the wave of new construction after the 1889 Seattle fire. I love the exposed brick, the aged wood floors, and the huge window and the natural light it lets in. But what I love most are the possibilities that this place holds. This is why I do what I love—and every day here is a blessing. We take this blessing seriously. Our work is truly a manifestation of our philosophy: to use ink and paper to connect people.</p>
+			<p>Every day I walk into the studio, flip the light switch, tie my apron, and get to work. The studio is a special space—it is the fruition of a lot of dreams and hopes and hard work. It’s a place that feels like home. It’s a place infused with heritage. Our building is rich with history—it’s ornate and strong, built in the wave of new construction after the 1889 Seattle fire. I love the exposed brick, the aged wood floors, and the huge window with the natural light it lets in. But what I love most are the possibilities that this place holds. This is where I do what I love—and every day here is a blessing. We take this blessing seriously. Our work is truly a manifestation of our philosophy: to use ink and paper to connect people.</p>
 		</section>
 	</div> <!-- end #inner-content -->
 	
@@ -20,8 +20,8 @@
 	<div class="wrap clearfix">
 		<section class="eight column">
 			<h2>We bring old school to another level.</h2>
-			<p class="intro">This is Gutenberg.This is the eighteenth century.This is corsets and petticoats and embroidery.</p>
-			<p>Our equipment is time-tested and well-worn, but we have restored everything with love—from rust and grime back to pristine printing condition. All of our presses are foot or hand powered and completely hand fed. Each sheet of paper goes through the press one at a time, and once through for each color printed. Same goes for type setting. We use traditional wood and lead type and carefully hand set one letter at a time. To say this is a labor of love is an understatement—but we wouldn’t have it any other way</p>
+			<p class="intro">This is Gutenberg. This is the eighteenth century. This is corsets and petticoats and embroidery.</p>
+			<p>Our equipment is time-tested and well-worn, but we have restored everything with love—from rust and grime back to pristine printing condition. All of our presses are foot or hand powered and completely hand fed. Each sheet of paper goes through the press one at a time, and once through for each color printed. Same goes for type setting and image making. We use traditional wood and lead type and carefully hand set one letter at a time. Many of our pieces feature one of my hand-carved wood engravings. To say this is a labor of love is an understatement—but we wouldn’t have it any other way.</p>
 		</section>
 
 		<section class="large_img clearfix row">
@@ -38,8 +38,12 @@
 
 		<article class="eight">
 			<h2>Wood Engraving</h2>
-			<p>Wood engraving is a printmaking technique in which an image is worked into a block of wood. It uses relief printing, where the artist applies ink the face of the block and prints using pressure. Dating back to the 15th century, wood engraving is a perfect historic complement to letterpress printing.</p>
-			<p>I really didn’t expect to fall in love with engraving. It’s infinitely satisfying to see my ideas become sketches, then printing blocks, then beautiful letterpress prints. Wood engraving and printing on the iron handpress provide me an opportunity to express myself, to experiment, and to create. My platen press is a finely tuned piece of machinery for production. It’s all business. But my iron handpress? It’s forgiving, welcoming of trial and error and artist friendly. </p>
+			<p>Wood engraving is a printmaking technique in which an image is carved into an end grain block of wood with sharp metal tools. The image is inked and printed using pressure, much like the letterpress printing process. Dating back to the 15th century, wood engraving is
+the perfect historic complement to wood and lead type.</p>
+			<p>For my birthday one year, Brad gave me unlimited
+wood engraving lessons. My teacher, Carl Montford,
+is absolutely a master of his craft, and I am honored to call him mentor and friend. He was the “matchmaker” who brought us together with the seller of our first press, and he even helped us move the press into our studio, which was not an easy task! Carl is an absolute treasure to the Seattle letterpress community. But more that that, he’s like family to us.</p>
+<p>I’ve fallen in love with the historic craft of engraving. It’s infinitely satisfying to see my ideas become sketches, then printing blocks, then beautiful letterpress prints. Wood engraving and printing on the iron handpress give me new opportunities to express myself, to experiment, and to create in a new medium. Letterpress and wood engraving? A match made in history!</p>
 		</article>
 	</div> <!-- end #inner-content -->
 
@@ -65,7 +69,8 @@
 
 		<article class="eight column">
 			<h2>Product partnering</h2>
-			<p>We strongly believe that the best part of owning a business is the opportunities it creates to work with other creative people! We love to collaborate with local small businesses to create products, experiences and relationships! Our collaborations with Seattle Seed Co. and Treehouse Point have produced beautiful products that neither business could create alone. If you’re interested in collaborating, let us know! We’d love to hear from you.</p>
+			<p>We strongly believe that the best part of owning a business is the opportunities it creates to work with other creative people! We love to collaborate with other small businesses to create products, experiences and relationships! Our collaborations with Seattle Seed Co. and Treehouse Point have produced beautiful products that neither business could create alone. If you’re interested in collaborating, let us know! We’d love
+to hear from you.</p>
 		</article>
 
 		<section class="double_img clearfix row">
@@ -95,23 +100,25 @@
 
 	<span class="bigquote"><q>It’s all about life. Life shouldn’t just happen to you. You’re meant to live it, to experience the joys and the sorrows and everything in between to the fullest.</q></span>
 	
+	<div class="seattle">
 	<div class="wrap clearfix">
-		<article class="twelve columns">
+		<article class="twelve columns team">
 			<span class="four columns"><h2>Meet Our<br />Team</h2></span>
-			<span class="four columns"><img src="http://placehold.it/290x200"/><h3>Sara McNally</h3>Co-Founder, Designer, &amp; Printer</span>
-			<span class="four columns"><img src="http://placehold.it/290x200"/><h3>Brad McNally</h3>Co-Founder &amp; Secret Art Director</span>
+			<span class="four columns"><img src="http://beta.constellationco.com/wp-content/uploads/2014/03/sara_portrait.jpg" /><h3>Sara McNally</h3>
+			<span class="occupation">Co-Founder, Designer, &amp; Printer</span></span>
+			<span class="four columns"><img src="http://beta.constellationco.com/wp-content/uploads/2014/03/brad_portrait.jpg" /><h3>Brad McNally</h3><span class="occupation">Co-Founder &amp; Secret Art Director</span></span>
 		</article>
-		
-		<article class="twelve columns">
-			<span class="four columns"><img src="http://placehold.it/290x200"/><h3>Suzi Mantle</h3>Bookkeeping</span>
-			<span class="four columns"><img src="http://placehold.it/290x200"/><h3>Holly Power</h3>Adminisitration</span>
+		<article class="twelve columns team">
+			<span class="four columns"><img src="http://beta.constellationco.com/wp-content/uploads/2014/03/suzi_portrait.jpg" /><h3>Suzi Mantle</h3><span class="occupation">Bookkeeping</span></span>
+			<span class="four columns"><img src="http://beta.constellationco.com/wp-content/uploads/2014/03/holly_portrait.jpg" /><h3>Holly Power</h3><span class="occupation">Adminisitration</span></span>
 		</article>
-	</div>
 
 	<section class="eight">
 		<h2>Seattle</h2>
 		<p>This city is home to me in a way I couldn’t have predicted. Four years later, I’m still homesick when we leave and giddy when we return home. There’s nowhere in the world like Seattle. It fits us like a glove. This is where we’ve planted our feet, started our careers, grown our business, and made lifelong friends. This is where we’ll raise our kids. This is where we’ll grow old. This city—water &amp; mountains, gold rush &amp; midcentury modern, large yet small—it’s home.</p>
 	</section>
+	</div>
+	</div>
 
 </div> <!-- end #content -->
 

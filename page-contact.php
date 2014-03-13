@@ -36,10 +36,19 @@
 				<a href="https://www.facebook.com/constellationco" class="facebook button">Facebook</a>
 				<a href="https://twitter.com/constellationco" class="twitter button">Twitter</a>
 				<a href="http://www.pinterest.com/constellationco/" class="pinterest button">Pinterest</a>
-				<a href="http://instagram.com/constellationco" class="instagram button">Instagram</a>
 				<a href="http://www.etsy.com/shop/constellationco" class="etsy button">Etsy</a>
+				<a href="http://instagram.com/constellationco" class="instagram button">Instagram</a>
 			</article>
+					</div> <!-- end #main -->
+						</div> <!-- end #inner-content -->
+				<span class="bigquote">This is where something goes</span>
+					<div id="inner-content" class="wrap clearfix">
 
+		<div id="main" class="twelve columns first clearfix" role="main">
+		<section class="three column sidebarbody">
+				<h3>Notice</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque auctor libero, id consequat lectus pretium eu. Nulla adipiscing turpis vitae nisi ultrices egestas. Curabitur vitae mauris sed sem volutpat lacinia. In placerat volutpat odio sit amet rutrum. Suspendisse potenti.</p>
+			</section>
 			<section class="eight columns" style="border:1px solid blue;">
 				<form id="form" method="get" action="http://www.constellationco.com/wp-content/themes/constellation/process.php" enctype="multipart/form-data">
 					<ul>
@@ -77,21 +86,19 @@
 						<fieldset>   
 						</fieldset>
 						<li>
-							<input type="submit" name="submit" value="SUBMIT" class="button formbutton" />
+							<input type="submit" name="submit" value="SUBMIT" class="button" />
 							<input type="hidden" name="submitted" value="TRUE" />
 						</li>
 					</ul>
 				</form>
 			</section>
 
-			<section class="three column sidebarbody">
-				<h3>Notice</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque auctor libero, id consequat lectus pretium eu. Nulla adipiscing turpis vitae nisi ultrices egestas. Curabitur vitae mauris sed sem volutpat lacinia. In placerat volutpat odio sit amet rutrum. Suspendisse potenti.</p>
-			</section>
+	
+				</div> <!-- end #main -->
+						</div> <!-- end #inner-content -->
 
-		</div> <!-- end #main -->
 
-	</div> <!-- end #inner-content -->
+
 
 </div> <!-- end #content -->
 
