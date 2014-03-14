@@ -1097,7 +1097,7 @@ label{
 	display:block;
 }
 
-input[type="text"], input[type="email"]{
+input[type="text"], input[type="email"], textarea{
 	border: 1px solid $lightgray;
 	font-style:italic;
 	outline: none;
@@ -1114,10 +1114,6 @@ input[type="submit"]{
 	width: 100%;
 	border: 0;
 	margin-top:25px;
-}
-
-textarea{
-	width:100%;
 }
 
 select{
