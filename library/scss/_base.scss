@@ -1013,25 +1013,6 @@ position:relative;
 		display:block;
 }
 
-label{
-		font-family: $sans-serif;
-	color:$base;
-	@include rem('font-size',13px);
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	margin:0 0 10px 0;
-	display:block;
-}
-
-input{
-	border: 1px solid $lightgray;
-	font-style:italic;
-	outline: none;
-	&:focus { 
-border:solid 1px $black;
-}
-}
-
 .intro{
 	font-style:italic;
 	@include rem('font-size',30px);
@@ -1095,4 +1076,52 @@ display: block;
 .button{
 	padding: 10px 17px;
 }
+
+	/*
+	Form styles
+	*/
+
+fieldset{
+	border:0;
+	margin:0;
+	padding:0;
+}
+
+label{
+	font-family: $sans-serif;
+	color:$base;
+	@include rem('font-size',13px);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin:15px 0 5px 0;
+	display:block;
+}
+
+input[type="text"], input[type="email"]{
+	border: 1px solid $lightgray;
+	font-style:italic;
+	outline: none;
+	width:100%;
+	&:focus { 
+border:solid 1px $black;
+}
+}
+
+input[type="checkbox"]{
+}
+
+input[type="submit"]{
+	width: 100%;
+	border: 0;
+	margin-top:25px;
+}
+
+textarea{
+	width:100%;
+}
+
+select{
+	width:100%;
+}
+
 

@@ -49,7 +49,7 @@
 				<h3>Notice</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque auctor libero, id consequat lectus pretium eu. Nulla adipiscing turpis vitae nisi ultrices egestas. Curabitur vitae mauris sed sem volutpat lacinia. In placerat volutpat odio sit amet rutrum. Suspendisse potenti.</p>
 			</section>
-			<section class="eight columns" style="border:1px solid blue;">
+			<section class="eight columns">
 				<form id="form" method="get" action="http://www.constellationco.com/wp-content/themes/constellation/process.php" enctype="multipart/form-data">
 					<ul>
 						<fieldset>
@@ -65,7 +65,7 @@
 								<input type="checkbox" name="specs"/> Letterpress<br />
 							</li>
 							<li class="eight"><label>What type of project is it?</label>
-								<textarea cols="55" rows="5" name="piece" placeholder="Logo Design, Business Card, Wedding, Etc."></textarea>
+								<textarea name="piece" placeholder="Logo Design, Business Card, Wedding, Etc."></textarea>
 							</li>
 							<li style="clear:both;"><label>When do you need it?</label><input type="text" id="datepicker"></li>
 						</fieldset>
