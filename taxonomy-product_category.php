@@ -34,7 +34,7 @@
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix row product'); ?> role="article">
 
-					<section class="seven columns">
+					<section class="eight columns">
 						<?php $images = get_field('images');
 						if( $images ): ?>
 							<div class="flexslider">
@@ -49,7 +49,7 @@
 						<?php endif ?>
 					</section>
 
-					<section class="five columns">
+					<section class="four columns">
 						<header class="product-header">
 							<h2 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 						</header>
