@@ -25,18 +25,18 @@
 		</section>
 
 		<section class="large_img clearfix row">
-			<img src="http://placehold.it/930x655" class="twelve columns first" />
+			<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/studio_large.jpg" class="twelve columns first" />
 		</section>
 
-		<section class="tall_img_double_wide clearfix row">
-			<img src="http://placehold.it/450x638" class="six columns first" />
-			<div class="six columns last">
-				<img src="http://placehold.it/450x304" />
-				<img src="http://placehold.it/450x304" />
-			</div>
-		</section>
+		<section class="entry-content tall_img_double_wide clearfix row">
+							<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/studio_vertical.jpg" class="six columns first">
+							<div class="six columns last">
+								<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/studio_small_1.jpg">
+								<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/studio_small_2.jpg">
+							</div>
+						</section>
 
-		<article class="eight">
+		<article class="eight engraving">
 			<h2>Wood Engraving</h2>
 			<p>Wood engraving is a printmaking technique in which an image is carved into an end grain block of wood with sharp metal tools. The image is inked and printed using pressure, much like the letterpress printing process. Dating back to the 15th century, wood engraving is
 the perfect historic complement to wood and lead type.</p>
@@ -81,7 +81,7 @@ to hear from you.</p>
 	</div> <!-- end #inner-content -->
 
 	<figure class="hero">
-		<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/products_bg.jpg" class="bleed"/>
+		<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/clientwork_bg.jpg" class="bleed"/>
 		<figcaption>Client Work</figcaption>
 	</figure>
 	
@@ -101,7 +101,7 @@ to hear from you.</p>
 	<span class="bigquote"><q>It’s all about life. Life shouldn’t just happen to you. You’re meant to live it, to experience the joys and the sorrows and everything in between to the fullest.</q></span>
 	
 	<div class="seattle">
-	<div class="wrap clearfix">
+	<div class="wrap clearfix entry-content">
 		<article class="twelve columns team">
 			<span class="four columns"><h2>Meet Our<br />Team</h2></span>
 			<span class="four columns"><img src="http://beta.constellationco.com/wp-content/uploads/2014/03/sara_portrait.jpg" /><h3>Sara McNally</h3>
