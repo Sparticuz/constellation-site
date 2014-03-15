@@ -125,8 +125,6 @@ h2, .h2 {
 		font-family:$serif;
 		@include rem('font-size',30px);
 	}
-	&.blogtitle{
-	}
 }
 
 
@@ -290,6 +288,18 @@ nav{
 	}
 }
 
+.single{
+	& #content{
+		border-top:1px solid #e6e6e6;
+	}
+}
+
+.entry-content{
+	p:first-child{
+		@include rem('font-size',30px);
+	}
+}
+
 
 /*********************
 POSTS & CONTENT STYLES
@@ -310,11 +320,19 @@ img{
 }
 
 		.single-title,
-		.page-title {
-			border-bottom: 1px solid $light-border;
-			color: $bones-pink;
-			font-family: $serif;
-			font-size: 1.5em;
+		.page-title, .h2 {
+			color: $base;
+			font-family: $sans-serif;
+		@include rem('font-size',34px);
+		text-transform:uppercase;
+		margin: 0.25em 0 0.5em 0;
+		}
+
+		.blogdate{
+			font-style:italic;
+			color:$base;
+			letter-spacing: 1px;
+			margin: 0;
 		}
 
 		/* post meta */

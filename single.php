@@ -4,18 +4,18 @@
 
 	<div id="inner-content" class="wrap clearfix">
 
-		<div id="main" class="eight columns first clearfix" role="main">
+		<div id="main" class="nine columns first clearfix" role="main">
 
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
 					<header class="article-header">
-
-						<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
-						<p class="byline vcard"><?php
-							printf(__('Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span> <span class="amp">&amp;</span> filed under %4$s.', 'bonestheme'), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), bones_get_the_author_posts_link(), get_the_category_list(', '));
+						<p class="blogdate"><?php
+							printf(__('<time class="updated" datetime="%1$s" pubdate>%2$s</time>', 'bonestheme'), get_the_time('Y-m-j'), get_the_time(get_option('date_format')));
 						?></p>
+						<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
+					
 
 					</header> <!-- end article header -->
 
