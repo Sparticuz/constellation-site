@@ -23,6 +23,8 @@ LAYOUT & GRID STYLES
 
 .wrap {
 	max-width: 960px;
+	padding-left:0;
+	padding-right:0;
 }
 
 /*********************
@@ -47,6 +49,10 @@ HEADER STYLES
 
 .article-header .wrap{
 	padding: 0 15px;
+}
+
+.seattle p:last-child {
+padding-bottom: 16em;
 }
 
 /*********************
@@ -342,6 +348,9 @@ mobile. Make sure to double check these!
 	}
 } /* end .footer-links */
 
+.footer{
+	@include rem('font-size',13px);
+}
 
 .addy{
 	margin-left: -20px;
@@ -388,12 +397,27 @@ padding: 0 !important;
 	line-height:50px !important;
 }
 
+
 #inner-footer{
-	padding:0;
+	padding: 0;
+	@include rem('font-size',17px);
 }
+
 
 .sidebarbody{
 	@include rem('font-size',16px);
+	border:0;
+}
+
+.sidebarlink{
+	@include rem('font-size',16px);
+	display:inline-block;
+}
+
+.wholesalelink{
+	border-top:1px solid #e6e6e6;
+	margin-top:15px;
+	padding-top:15px;
 }
 
 
@@ -401,5 +425,27 @@ padding: 0 !important;
 @include rem('font-size',48px);
 	line-height:57px;
 		padding:75px 0;
+
+}
+
+#navtoggle{
+	display:none;
+}
+
+.notice{
+	float:right;
+}
+
+.contact{
+border:0;
+}
+
+.contact.general{
+	border-right:1px solid #e6e6e6;
+}
+
+.contact.wholesaleinquiries{
+	border-top:1px solid #e6e6e6;
+	border-bottom:1px solid #e6e6e6;
 
 }

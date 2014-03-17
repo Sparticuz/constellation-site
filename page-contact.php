@@ -45,7 +45,7 @@
 					<div id="inner-content" class="wrap clearfix">
 
 		<div id="main" class="twelve columns first clearfix" role="main">
-		<section class="three column sidebarbody">
+		<section class="three column sidebarbody notice">
 				<h3>Notice</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque auctor libero, id consequat lectus pretium eu. Nulla adipiscing turpis vitae nisi ultrices egestas. Curabitur vitae mauris sed sem volutpat lacinia. In placerat volutpat odio sit amet rutrum. Suspendisse potenti.</p>
 			</section>
@@ -83,7 +83,10 @@
 							</li>
 							<li><label>Quantity: (How many do you need?)</label><input type="text" size="40" name="quantity"/></li> 
 						</fieldset>
-						<fieldset>   
+						<fieldset> 
+							<li class="newsletter">
+								<input type="checkbox" name="design"/> Sign up to be notified about news, events, and specials!
+							</li>  
 						</fieldset>
 						<li>
 							<input type="submit" name="submit" value="SUBMIT" class="button" />

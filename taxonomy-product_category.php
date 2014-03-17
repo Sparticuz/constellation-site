@@ -23,8 +23,8 @@
 						wp_list_categories($args); ?>
 					</ul>
 				</nav>
-				<a href="https://www.etsy.com/shop/constellationco" class="etsy button">Shop on <span>Etsy</span></a>
-<a href="http://beta.constellationco.com/wholesale/" class="sidebarlink">Wholesale Inquiries</a>
+				<a href="https://www.etsy.com/shop/constellationco" class="etsy button">Etsy Shop</a>
+<a href="http://beta.constellationco.com/wholesale/" class="sidebarlink wholesalelink">Wholesale Inquiries</a>
 					<a href="#" class="map-icon sidebarlink">Find a store</a>
 		</div>
 

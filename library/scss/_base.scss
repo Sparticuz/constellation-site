@@ -323,7 +323,7 @@ img{
 		.page-title, .h2 {
 			color: $base;
 			font-family: $sans-serif;
-		@include rem('font-size',34px);
+		@include rem('font-size',28px);
 		text-transform:uppercase;
 		margin: 0.25em 0 0.5em 0;
 		}
@@ -957,6 +957,10 @@ FOOTER STYLES
 
 	} /* end .footer-links */
 
+.footer{
+	@include rem('font-size',17px);
+}
+
 
 	.copyright {
 		padding-bottom:30px;
@@ -1147,4 +1151,8 @@ select{
 	width:100%;
 }
 
-
+.newsletter{
+	border-top:1px solid #e6e6e6;
+	padding-top:15px;
+	margin-top:25px;
+}

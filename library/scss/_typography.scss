@@ -61,7 +61,6 @@ body{
 
 .footer{
 	color:$lightgray;
-	@include rem('font-size',17px);
 	background-color: #1a1a1a;
 	a{
 		text-decoration: none;
