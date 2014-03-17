@@ -462,24 +462,81 @@ img{
 	border-top: 1px solid #e6e6e6;
 
 	ul{
+		text-align: center;
+
 		li{
 			font-family: $sans-serif;
 			text-transform: uppercase;
 			@include rem('font-size',13px);
 			padding-bottom:10px;
-			
-			a {
-				color:$lightgray;
-				text-decoration: none;
-				&:hover, &:focus {
-					color:$black;
+
+			&.product_category{
+				//This targets the header
+				color: blue;
+				visibility: visible;
+				height: 100%;
+				opacity: 1;
+				cursor: pointer;
+
+				ul{
+					//This is the menu
+					visibility: hidden;
+					height: 0;
+					opacity: 0;
+					padding-top:10px;
+
+					&.shown{
+						height:100%;
+						opacity: 1;
+						visibility: visible;
+						//@include animation(all 1s);
+					}
+
+					li {
+						a {
+							color:$lightgray;
+							text-decoration: none;
+							&:hover, &:focus {
+								color:$black;
+							}
+						}
+
+						&.current-cat a{
+							color: black;
+						}
+					}
 				}
 			}
-
-			&.current-cat a {
-				color: $black;
-			}
 		}
+	}
+}
+
+.sidebar-links{
+
+	border-top: 1px solid #e6e6e6;
+	color:$black;
+	margin-top: 15px;
+
+	text-align:center;
+
+	a{
+		text-decoration: none;
+		&:active,&:hover{
+
+		}
+		&:visited{
+			color:$black;
+		}
+	}
+	
+	.wholesale-link{	
+		
+	}
+
+	.etsy.button{
+	}
+
+	.map-icon{
 	}
 }
 
@@ -973,18 +1030,10 @@ FOOTER STYLES
 		padding-top:22px;}
 
 
-.etsy.button{
-	clear:both;
-	text-align:center;
 }
-
-.map-icon{
-clear:both;
 display:block;
 position:relative;
 }
-
-
 .flexslider{
 	padding: 25px 0 0 0 !important;
 }

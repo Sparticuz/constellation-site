@@ -18,7 +18,7 @@
 							'orderby'            => 'ID',
 							'hide_empty'         => 0, //this
 							'use_desc_for_title' => 0, //this
-							'title_li'           => '', //this
+							'title_li'           => 'Select A Category &#9660;', //this
 							'taxonomy'           => 'product_category' //this
 						); 		
 						wp_list_categories($args); ?>

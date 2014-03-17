@@ -41,13 +41,15 @@ jQuery(document).ready(function($) {
     var responsive_viewport = $(window).width();
     
     /* if is below 768px */
-    //comment out so i can run it!
-    //if (responsive_viewport < 768) {
+    if (responsive_viewport < 768) {
         //attach hook to hamburger on mobile
         $('#navtoggle').click(function(){
             $('.nav').toggleClass('shown');
         });
-    //} /* end less than 768px */
+        $('.product_category').click(function(){
+            $('.product_category ul').toggleClass('shown');
+        })
+    } /* end less than 768px */
     
     /* if is above or equal to 768px */
     if (responsive_viewport >= 768) {

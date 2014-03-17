@@ -10,22 +10,24 @@
 
 	<div id="inner-content" class="wrap clearfix container">
 <div class="row stickem-container">
-		<div class="two columns first stickem">
+		<div class="two columns first stickem sidebar">
 				<nav id="categories">
 					<ul>
 						<?php $args = array(
 							'orderby'            => 'ID',
 							'hide_empty'         => 0, //this
 							'use_desc_for_title' => 0, //this
-							'title_li'           => '', //this
+							'title_li'           => 'Select A Category &#9660;', //this
 							'taxonomy'           => 'product_category' //this
 						); 		
 						wp_list_categories($args); ?>
 					</ul>
 				</nav>
-				<a href="https://www.etsy.com/shop/constellationco" class="etsy button">Etsy Shop</a>
-<a href="http://beta.constellationco.com/wholesale/" class="sidebarlink wholesalelink">Wholesale Inquiries</a>
+				<div class="sidebar-links">
+					<a href="https://www.etsy.com/shop/constellationco" class="etsy button">Etsy Shop</a>
+					<a href="http://beta.constellationco.com/wholesale/" class="sidebarlink wholesale-link">Wholesale Inquiries</a>
 					<a href="#" class="map-icon sidebarlink">Find a store</a>
+				</div>
 		</div>
 
 		<section id="main" class="ten columns last content" role="main">
