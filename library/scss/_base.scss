@@ -1115,8 +1115,8 @@ margin: 0 auto;
 }
 
 .seattle{
-	background-color:#edeef1;
-	background-image:url('http://beta.constellationco.com/wp-content/uploads/2014/03/seattle_bg.jpg');
+ 	@include background-image(url('http://beta.constellationco.com/wp-content/uploads/2014/03/seattle_bg.jpg'), linear-gradient($white, #edeef1));
+	//background-image:url('http://beta.constellationco.com/wp-content/uploads/2014/03/seattle_bg.jpg');
 	background-position:center bottom;
 	background-repeat:no-repeat;
 	background-size:100%;
