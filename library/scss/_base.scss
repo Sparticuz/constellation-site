@@ -31,6 +31,8 @@ LAYOUT & GRID STYLES
 
 	figcaption{
 		position:absolute;
+		//for mobile, override on >768
+		//default
 		top:25%;
 		@include fill-parent;
 		font-family:$sans-serif;
@@ -59,7 +61,27 @@ LAYOUT & GRID STYLES
 		&.specialpage{
 			max-height:530px;
 		}
+
+		figcaption{
+			//ceiling
+			top:65%;
+		}
+
+		//ceiling needs to change the hamburger
 	}
+}
+
+.homepage{
+	img{
+		max-height:440px;
+		width: auto !important;
+	}
+	
+	& figcaption{
+		//homepage
+		top:35% !important;
+	}
+
 }
 
 /*********************
@@ -204,6 +226,8 @@ nav{
 
 			//show above the nav menu
 			z-index: 9999;
+
+			//need to look at ceiling and make it black or white
 	
 			&:visited{
 				color:$white;
@@ -216,7 +240,7 @@ nav{
 			position:absolute;
 			top:-1em;
 			left:0;
-			@include fill-parent();
+			@include fill-parent;
 			background-color: rgba($black,0.9);
 			font-family: $sans-serif;
 			text-transform: uppercase;
@@ -1038,13 +1062,6 @@ FOOTER STYLES
 
 .flex-control-thumbs li {
 	margin:0 15px 15px 0;
-}
-
-.homepage{
-	height:100% !important;
-	& figcaption{
-		top:25% !important;
-	}
 }
 
 .littleguy{
