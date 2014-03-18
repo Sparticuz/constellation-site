@@ -483,50 +483,63 @@ img{
 }
 
 #categories{
-	border-top: 1px solid #e6e6e6;
 
 	ul{
 		text-align: center;
+		letter-spacing: 1px;
 
 		li{
 			font-family: $sans-serif;
 			text-transform: uppercase;
-			@include rem('font-size',13px);
-			padding-bottom:10px;
+			@include rem('font-size',16px);
 
 			&.product_category{
 				//This targets the header
-				color: blue;
+				color: $white;
 				visibility: visible;
 				height: 100%;
 				opacity: 1;
 				cursor: pointer;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				background-color:$base;
 
 				ul{
 					//This is the menu
 					visibility: hidden;
 					height: 0;
 					opacity: 0;
-					padding-top:10px;
 
 					&.shown{
 						height:100%;
 						opacity: 1;
 						visibility: visible;
+						margin-top: 20px;
+						margin-bottom: -20px;
+						background-color: $white;
+						border:1px solid #e6e6e6;
 						//@include animation(all 1s);
 					}
 
 					li {
 						a {
 							color:$lightgray;
+							width:100%;
+							display:inline-block;
 							text-decoration: none;
+							padding:15px 0;
 							&:hover, &:focus {
 								color:$black;
 							}
 						}
 
+						&.cat-item-4{
+							border:none;
+						}
+
 						&.current-cat a{
 							color: black;
+							background-color:#e6e6e6;
 						}
 					}
 				}
@@ -537,16 +550,16 @@ img{
 
 .sidebar-links{
 
-	border-top: 1px solid #e6e6e6;
 	color:$black;
 	margin-top: 15px;
 	padding:15px 0;
-
 	text-align:center;
+	display:none;
 
 	a{
 		text-decoration: none;
 		&:active,&:hover{
+			color:$black;
 
 		}
 		&:visited{
@@ -559,6 +572,7 @@ img{
 	}
 
 	.etsy.button{
+		display:block;
 	}
 
 	.map-icon{
@@ -577,7 +591,7 @@ PAGE NAVI STYLES
 
 		li {
 			float: left;
-			margin: 0 15px 0 0;
+			margin: 0 15px 15px 0;
 
 			&:hover{
 				background-color:#e6e6e6;
@@ -1062,6 +1076,10 @@ FOOTER STYLES
 
 .flex-control-thumbs li {
 	margin:0 15px 15px 0;
+}
+
+.flex-control-thumbs li:nth-child(4) {
+	margin-right:0;
 }
 
 .littleguy{
