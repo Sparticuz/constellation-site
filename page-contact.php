@@ -101,7 +101,19 @@
 						</div> <!-- end #inner-content -->
 
 
-
+<script type="text/javascript" charset="utf-8">
+  
+      $(function () {
+    $('fieldset.specs').hide();
+    $('input[name="specs"]').click(function () {
+        if (this.checked) {
+            $('fieldset.specs').show();
+        } else {
+            $('fieldset.specs').hide();
+        }
+    });
+});
+    </script>
 
 </div> <!-- end #content -->
 

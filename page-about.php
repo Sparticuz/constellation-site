@@ -36,7 +36,7 @@
 							</div>
 						</section>
 
-		<article class="eight engraving">
+		<article class="eight">
 			<h2>Wood Engraving</h2>
 			<p>Wood engraving is a printmaking technique in which an image is carved into an end grain block of wood with sharp metal tools. The image is inked and printed using pressure, much like the letterpress printing process. Dating back to the 15th century, wood engraving is
 the perfect historic complement to wood and lead type.</p>
