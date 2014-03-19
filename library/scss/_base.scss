@@ -1276,11 +1276,15 @@ select{
 	@include prefixer(box-shadow, inherit, webkit moz ms o spec);
 }
 
-.flex-control-thumbs li {
-	margin:0 15px 15px 0;
-	width: 20%;
-}
+.flex-control-thumbs {
+	margin-top: 15px;
 
-.flex-control-thumbs li:nth-child(4) {
-	margin-right:0;
+	li {
+		margin:0 15px 15px 0;
+		width: 20%;
+
+		&:nth-child(4){
+			margin-right:0;
+		}
+	}
 }
