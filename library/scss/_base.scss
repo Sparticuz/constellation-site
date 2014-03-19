@@ -1110,19 +1110,6 @@ FOOTER STYLES
 		padding-top:22px;}
 
 
-.flexslider{
-	padding: 25px 0 0 0 !important;
-}
-
-
-.flex-control-thumbs li {
-	margin:0 15px 15px 0;
-}
-
-.flex-control-thumbs li:nth-child(4) {
-	margin-right:0;
-}
-
 .littleguy{
 	clear:both;
 	display:block;
@@ -1276,4 +1263,24 @@ select{
 	border-top:1px solid #e6e6e6;
 	padding-top:15px;
 	margin-top:25px;
+}
+
+//FlexSlider overrides
+//don't use /library/js/libs/FlexSlider/FlexSlider.css!!!
+.flexslider{
+	padding: 25px 0 0 0 !important;
+	margin: 0;
+	background: inherit;
+	border: inherit;
+	border-radius: inherit;
+	@include prefixer(box-shadow, inherit, webkit moz ms o spec);
+}
+
+.flex-control-thumbs li {
+	margin:0 15px 15px 0;
+	width: 20%;
+}
+
+.flex-control-thumbs li:nth-child(4) {
+	margin-right:0;
 }
