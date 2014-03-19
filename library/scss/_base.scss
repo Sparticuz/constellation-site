@@ -33,7 +33,7 @@ LAYOUT & GRID STYLES
 		position:absolute;
 		//for mobile, override on >768
 		//default
-		top:25%;
+		top: 35%;
 		@include fill-parent;
 		font-family:$sans-serif;
 		color:$white;
@@ -74,6 +74,38 @@ LAYOUT & GRID STYLES
 
 		//ceiling needs to change the hamburger
 	}
+}
+
+.page-id-10,.page-id-16{
+	figure{
+		img{
+		max-height: 325px;
+		width: auto !important;
+		}
+	}
+
+	figcaption{
+		top: 45% !important;
+	}
+
+	.ceiling{
+		figcaption{
+			top: 55% !important;
+		}
+	}
+}
+
+//insuring that the card will be in view on iphone 5
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+.page-id-10,.page-id-16{
+	figure{
+		img{
+		max-height: 325px;
+		width: auto !important;
+		margin-left:-250px;
+		}
+	}
+}
 }
 
 .homepage{
