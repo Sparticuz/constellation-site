@@ -41,13 +41,11 @@ LAYOUT & GRID STYLES
 		font-weight:400;
 
 		//base mobile style, override further up
-		@include rem('font-size',25px);
-		line-height: 30px;
+		@include rem('font-size',30px);
+		line-height:35px;
 
 		&.why{
-			@include rem('font-size',30px);
 			letter-spacing:2px;
-			line-height:35px;
 			font-weight:400;
 			text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 			padding:0 30px;
