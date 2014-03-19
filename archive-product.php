@@ -8,31 +8,29 @@
 		<figcaption>Peruse the<br />Merchandise</figcaption>
 	</figure>
 
-	<div id="inner-content" class="wrap clearfix">
-
-		<div class="two columns first stickem-container">
-			<section class="stickem">
+	<div id="inner-content" class="wrap clearfix container">
+<div class="row stickem-container">
+		<div class="two columns first stickem sidebar">
 				<nav id="categories">
 					<ul>
 						<?php $args = array(
 							'orderby'            => 'ID',
 							'hide_empty'         => 0, //this
 							'use_desc_for_title' => 0, //this
-							'title_li'           => 'Select A Category &#9660;', //this
+							'title_li'           => 'Select A Category &#8595;', //this
 							'taxonomy'           => 'product_category' //this
 						); 		
 						wp_list_categories($args); ?>
 					</ul>
 				</nav>
-				<a href="https://www.etsy.com/shop/constellationco" class="etsy button">Shop on <span>Etsy</span></a>
-				<span id="stores">
-					<a href="http://beta.constellationco.com/wholesale/" class="wholesale">Wholesale Inquiries</a>
-					<a href="#" class="map-icon">Find a store</a>
-				</span>
-			</section>
+				<div class="sidebar-links">
+					<a href="https://www.etsy.com/shop/constellationco" class="etsy button">Etsy Shop</a>
+					<a href="http://beta.constellationco.com/wholesale/" class="sidebarlink wholesale-link">Wholesale Inquiries</a>
+					<a href="#" class="map-icon sidebarlink">Find a store</a>
+				</div>
 		</div>
 
-		<section id="main" class="ten columns last" role="main">
+		<section id="main" class="ten columns last content" role="main">
 
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -75,7 +73,6 @@
 					</section>
 
 				</article> <!-- end article -->
-
 			<?php endwhile; ?>
 
 				<?php if (function_exists('bones_page_navi')) { ?>
@@ -93,13 +90,13 @@
 
 				<article id="post-not-found" class="hentry clearfix">
 					<header class="article-header">
-						<h1><?php _e("Oops, Post Not Found!", "bonestheme"); ?></h1>
+						<h1>There are no products in this category!</h1>
 					</header>
 					<section class="entry-content">
-						<p><?php _e("Uh Oh. Something is missing. Try double checking things.", "bonestheme"); ?></p>
+						<p>Check back later or search for other products below!</p>
 					</section>
-					<footer class="article-footer">
-							<p><?php _e("This is the error message in the taxonomy-custom_cat.php template.", "bonestheme"); ?></p>
+					<footer class="article-footer search">
+						<p><?php get_search_form(); ?></p>
 					</footer>
 				</article>
 
@@ -119,7 +116,7 @@ $(window).load(function() {
     slideshow: false,
     directionNav: false
   });
-  $('.content').stickem();
+  $('.container').stickem();
 });
 </script>
 
