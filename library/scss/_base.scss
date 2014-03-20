@@ -173,7 +173,7 @@ h1, .h1 {
 h2, .h2 {
 	color:$base;
 	font-family:$sans-serif;
-	@include rem('font-size',34px);
+	@include rem('font-size',28px);
 	text-transform:uppercase;
 	line-height: 1.3em;
 	margin: .65em 0;
@@ -1096,6 +1096,7 @@ FOOTER STYLES
 
 .footer{
 	@include rem('font-size',17px);
+	margin-top: 30px;
 }
 
 
@@ -1146,7 +1147,7 @@ FOOTER STYLES
 
 .intro{
 	font-style:italic;
-	@include rem('font-size',30px);
+	@include rem('font-size',24px);
 	margin:0;
 }
 

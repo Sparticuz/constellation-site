@@ -39,12 +39,27 @@ HEADER STYLES
 	}
 }
 
-.hero {
+
+.page-id-10,.page-id-16{
+	figure{
+		img{
+		max-height: none;
+		width: auto !important;
+		}
+	}
+
 	figcaption{
-		@include rem('font-size',30px);
-		line-height: 90px;
+		top: 40% !important;
+	}
+
+	.ceiling{
+		figcaption{
+			top: 45% !important;
+		}
 	}
 }
+
+
 		
 
 .article-header .wrap{
@@ -53,6 +68,14 @@ HEADER STYLES
 
 .seattle p:last-child {
 padding-bottom: 16em;
+}
+
+h2{
+	@include rem('font-size',34px);
+}
+
+.intro{
+	@include rem('font-size',30px);
 }
 
 /*********************
@@ -395,6 +418,7 @@ padding: 0 !important;
 .manifesto{
 	@include rem('font-size',28px);
 	line-height:50px !important;
+	padding-bottom:0;
 }
 
 
@@ -440,6 +464,10 @@ padding: 0 !important;
 border:0;
 }
 
+.contactinfo{
+	@include rem('font-size',36px);
+}
+
 .contact.general{
 	border-right:1px solid #e6e6e6;
 }
@@ -448,4 +476,8 @@ border:0;
 	border-top:1px solid #e6e6e6;
 	border-bottom:1px solid #e6e6e6;
 
+}
+
+.learnmore{
+	display:inline-block;
 }

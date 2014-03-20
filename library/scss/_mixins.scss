@@ -189,6 +189,7 @@ BUTTONS
 	cursor:pointer;
 	background-color: $black;
   display: inline-block;
+  line-height:25px;
 	text-decoration: none;
   letter-spacing: 1px;
 	@include transition (background-color 0.5s ease-in-out);
