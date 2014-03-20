@@ -82,8 +82,8 @@ yMMM-         :hMNddNMNy:yMN   hMs            `MMm
 			<a href="<?php echo home_url(); ?>" rel="nofollow" id="logo"></a>
 
 			<nav role="navigation" id="navigation">
-				<a href="#" id="navtoggle"><div id="hamburger">&#9776;</div></a>
 				<?php bones_main_nav(); ?>
+				<a href="#" id="navtoggle"><div id="hamburger">&#9776;</div></a>
 			</nav>
 
 		</header> <!-- end header -->

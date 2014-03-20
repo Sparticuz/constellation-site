@@ -71,6 +71,7 @@ LAYOUT & GRID STYLES
 		}
 
 		//ceiling needs to change the hamburger
+
 	}
 }
 
@@ -228,6 +229,9 @@ HEADER STYLES
 	& #logo{
 		background-position:0 -56px;
 	}
+	#hamburger {
+		color: $white;
+	}
 }
 
 /*********************
@@ -263,9 +267,14 @@ nav{
 			z-index: 9999;
 
 			//need to look at ceiling and make it black or white
-	
-			&:visited{
-				color:$white;
+
+			color: $black;
+
+		}
+
+		.shown {
+			&+a #hamburger {
+				color: $white;
 			}
 		}
 
@@ -293,6 +302,10 @@ nav{
 				height:100%;
 				opacity: 1;
 				visibility: visible;
+
+				//&~#navigation #hamburger{
+				//	color: $white;
+				//}
 
 			}
 
