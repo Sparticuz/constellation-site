@@ -1117,15 +1117,22 @@ FOOTER STYLES
 		padding-bottom:30px;
 	}
 
-	.four.columns.last img:nth-child(2) { 
+.four.columns.last img:nth-child(2) { 
 		padding-top: 20px;}
 
-	.six.columns.last img:nth-child(1) { 
+.six.columns.last img:nth-child(1) { 
 		padding-top: 20px;}
 
-		.six.columns.last img:nth-child(2) { 
+.six.columns.last img:nth-child(2) { 
 		padding-top: 20px;}
 
+.double_img img{
+	padding-bottom:20px;
+}
+
+.triple_threat img{
+	padding-bottom:20px !important;
+}
 
 .littleguy{
 	clear:both;
