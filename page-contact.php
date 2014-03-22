@@ -28,7 +28,7 @@
 
 			<article class="twelve columns contact wholesaleinquiries">
 				<h3>Wholesale Inquiries</h3>
-				<span class="contactinfo"><a href="mailto:hello@constellationco.com">wholesale@constellationco.com</a></span>
+				<span class="contactinfo"><a href="mailto:wholesale@constellationco.com">wholesale@constellationco.com</a></span>
 			</article>
 
 			<article class="twelve columns contact">
@@ -53,8 +53,7 @@
 				<form id="form" method="get" action="http://www.constellationco.com/wp-content/themes/constellation/process.php" enctype="multipart/form-data">
 					<ul>
 						<fieldset>
-							<li class="four"><label>Name*</label><input type="text" name="name" /></li>
-							<li class="four"><label>Company</label><input type="text" name="company" /></li>
+							<li class="four"><label>Name*</label><input type="text" name="name" required/></li>
 							<li class="four"><label>Email</label><input type="email" name="email"/></li>
 							<li class="four"><label>Phone</label><input type="text" name="phone"/></li>
 						</fieldset>
@@ -67,7 +66,7 @@
 							<li class="eight"><label>What type of project is it?</label>
 								<textarea name="piece" placeholder="Logo Design, Business Card, Wedding, Etc."></textarea>
 							</li>
-							<li style="clear:both;"><label>When do you need it?</label><input type="text" id="datepicker"></li>
+							<li style="clear:both;"><label>When do you need it?</label><input type="date" id="datepicker"/></li>
 						</fieldset>
 						<fieldset class="specs">
 							<li>
