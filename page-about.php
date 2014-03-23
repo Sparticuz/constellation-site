@@ -62,9 +62,9 @@ is absolutely a master of his craft, and I am honored to call him mentor and fri
 		</article>
 
 		<section class="triple_threat clearfix row">
-			<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/studio_small_1.jpg" class="four columns first" />
-			<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/studio_small_1.jpg" class="four columns" />
-			<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/studio_small_1.jpg" class="four columns last" />
+			<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/product_bear.jpg" class="four columns first" />
+			<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/product_journey.jpg" class="four columns" />
+			<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/product_youme.jpg" class="four columns last" />
 		</section>
 
 		<article class="eight column">
@@ -74,8 +74,8 @@ to hear from you.</p>
 		</article>
 
 		<section class="double_img clearfix row">
-			<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/studio_small_1.jpg" class="six columns first" />
-			<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/studio_small_1.jpg" class="six columns last" />
+			<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/treehouse_partnering.jpg" class="six columns first" />
+			<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/seedco_partnering.jpg" class="six columns last" />
 		</section>
 
 	</div> <!-- end #inner-content -->
