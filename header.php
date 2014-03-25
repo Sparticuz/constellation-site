@@ -83,7 +83,7 @@ yMMM-         :hMNddNMNy:yMN   hMs            `MMm
 
 			<nav role="navigation" id="navigation">
 				<?php bones_main_nav(); ?>
-				<a href="#" id="navtoggle"><div id="hamburger">&#9776;</div></a>
+				<a href="#" id="navtoggle"><div id="hamburger">&#x2261;</div></a>
 			</nav>
 
 		</header> <!-- end header -->
