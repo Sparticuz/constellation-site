@@ -223,11 +223,18 @@ HEADER STYLES
 }
 
 .page-id-24,.page-id-10,.page-id-16{
+	//this targets the pages usually associated with 'ceiling'
 	& #logo{
 		background-position:0 -56px;
 	}
 	#hamburger {
 		color: $white;
+	}
+	.nav li a{
+		color:$white;
+		&:hover{
+			color:$lightgray;
+		}
 	}
 }
 
@@ -344,12 +351,7 @@ nav{
 }
 
 .page-id-24, .page-id-16, .page-id-10{
-	.nav li a{
-		color:$white;
-		&:hover{
-			color:$lightgray;
-		}
-	}
+	
 }
 
 .page-id-24{
