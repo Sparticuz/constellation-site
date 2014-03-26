@@ -72,17 +72,16 @@ HEADER STYLES
 	}
 
 	&.ceiling{	
-		
-	
-		&.specialpage{
-			max-height:530px;
-		}
 
 		figcaption{
 			//ceiling
 			
 		}
 
+	}
+
+	&.specialpage{
+		max-height:530px;
 	}
 }
 
