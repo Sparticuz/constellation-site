@@ -71,7 +71,7 @@ function register_products() {
     		'show_admin_column' => true, 
     		'show_ui' => true,
     		'query_var' => true,
-    		'rewrite' => array( 'slug' => 'product-category' ),
+    		'rewrite' => array( 'slug' => 'category' ),
     	)
     );
 ?>
