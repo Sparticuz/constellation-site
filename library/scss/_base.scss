@@ -29,6 +29,18 @@ LAYOUT & GRID STYLES
 	overflow: hidden;
 	margin: 0;
 
+	&.homepage{
+		img{
+			max-height:440px;
+			width: auto;
+		}
+		
+		& figcaption{
+			//homepage
+			top:35% !important;
+		}
+	}
+
 	figcaption{
 		position:absolute;
 		//for mobile, override on >768
@@ -59,27 +71,25 @@ LAYOUT & GRID STYLES
 	&.ceiling{	
 		top: -137px;
 		margin-bottom: -137px;
-		z-index: -9999;
+		z-index: -1;
 	
-		&.specialpage{
-			max-height:530px;
-		}
+		//&.specialpage{
+		//	max-height:530px;
+		//}
 
 		figcaption{
 			//ceiling
 			top:65%;
 		}
 
-		//ceiling needs to change the hamburger
-
 	}
 }
 
 .page-id-10,.page-id-16{
-	figure{
-		img{
-		max-height: 325px;
-		width: auto !important;
+	.hero {
+		img {
+			max-height: 325px;
+			width: auto;
 		}
 	}
 
@@ -99,25 +109,12 @@ LAYOUT & GRID STYLES
 .page-id-10,.page-id-16{
 	figure{
 		img{
-		max-height: 325px;
-		width: auto !important;
-		margin-left:-250px;
+			max-height: 325px;
+			width: auto !important;
+			margin-left:-250px;
 		}
 	}
 }
-}
-
-.homepage{
-	img{
-		max-height:440px;
-		width: auto !important;
-	}
-	
-	& figcaption{
-		//homepage
-		top:35% !important;
-	}
-
 }
 
 /*********************
@@ -1187,9 +1184,8 @@ FOOTER STYLES
 
 	& q{
 		max-width: 960px;
-display: block;
-margin: 0 auto;
-
+		display: block;
+		margin: 0 auto;
 	}
 }
 
