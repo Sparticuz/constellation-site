@@ -73,10 +73,6 @@ LAYOUT & GRID STYLES
 		margin-bottom: -137px;
 		z-index: -1;
 	
-		//&.specialpage{
-		//	max-height:530px;
-		//}
-
 		figcaption{
 			//ceiling
 			top:65%;
@@ -350,10 +346,6 @@ nav{
 	}
 }
 
-.page-id-24, .page-id-16, .page-id-10{
-	
-}
-
 .page-id-24{
 	#content{
 		margin-top:.5em;
@@ -395,9 +387,9 @@ img{
 		.page-title, .h2 {
 			color: $base;
 			font-family: $sans-serif;
-		@include rem('font-size',28px);
-		text-transform:uppercase;
-		margin: 0.25em 0 0.5em 0;
+			@include rem('font-size',28px);
+			text-transform:uppercase;
+			margin: 0.25em 0 0.5em 0;
 		}
 
 		.blogdate{
