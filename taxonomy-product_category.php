@@ -1,4 +1,4 @@
-<?php /* This is the page that will show ALL products */ ?>
+<?php /* This is the page that will show ALL products IN a category */ ?>
 <?php get_header(); ?>
 
 <div id="content">

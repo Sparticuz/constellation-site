@@ -1,9 +1,9 @@
-<?php /* This is the page that will show ALL products */ ?>
+<?php /* This is the page that will show a SINGLE product */ ?>
 <?php get_header(); ?>
 
 <div id="content">
 
-	<figure class="hero">
+	<figure class="hero specialpage">
 		<img src="http://beta.constellationco.com/wp-content/uploads/2014/01/peruse_test.jpg" class="bleed"/>
 		<figcaption>Peruse the<br />Merchandise</figcaption>
 	</figure>
