@@ -46,7 +46,7 @@ tweeners.
 @media only screen and (min-width: 481px) {
 
 	// styles in 481up.scss
-//	@import "481up";
+	@import "481up";
 
 } // end of media query
 
@@ -59,10 +59,10 @@ you can add resource intensive styles.
 @media only screen and (min-width: 768px) {
 
 	// import grids
-//	@import "grid";
+	@import "grid";
 
 	// styles in 768up.scss
-//	@import "768up";
+	@import "768up";
 
 } // end of media query
 
