@@ -488,7 +488,12 @@ border:0;
 .contact.wholesaleinquiries{
 	border-top:1px solid #e6e6e6;
 	border-bottom:1px solid #e6e6e6;
+}
 
+.wholesaleinquiries{
+	.contactinfo{
+		@include rem('font-size',36px);
+	}
 }
 
 .learnmore{
@@ -503,3 +508,9 @@ border:0;
 
 .six.columns.last img:nth-child(1) { 
 		padding-top:0;}
+
+fieldset{
+	li{
+		padding-top: 5px;
+	}
+}

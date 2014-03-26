@@ -255,12 +255,7 @@ nav{
 			right:6%;
 			top:2%;
 			text-decoration: none;
-			@include rem('font-size',30px);
-			transform: scale(1.25, .85);
-			-webkit-transform: scale(1.25, .85);
-			-moz-transform: scale(1.25, .85);
-			-o-transform: scale(1.25, .85);
-			-ms-transform: scale(1.25, .85);
+			@include rem('font-size',38px);
 			font-weight:100;
 
 			//show above the nav menu
@@ -1164,8 +1159,14 @@ FOOTER STYLES
 }
 
 .contactinfo{
-		@include rem('font-size',30px);
+		@include rem('font-size',24px);
 		display:block;
+}
+
+.wholesaleinquiries{
+	.contactinfo{
+		@include rem('font-size',22px);
+	}
 }
 
 .intro{
@@ -1259,6 +1260,17 @@ label{
 	letter-spacing: 1px;
 	margin:15px 0 5px 0;
 	display:block;
+
+	span{
+		font-family: $serif;
+		text-transform: none;
+		letter-spacing:normal;
+		font-style:italic;
+			@include rem('font-size',17px);
+			color:$lightgray;
+			clear:both;
+			display:block;
+	}
 }
 
 input[type="text"], input[type="email"], textarea{
@@ -1283,6 +1295,7 @@ input[type="submit"]{
 select{
 	width:100%;
 }
+
 
 .newsletter{
 	border-top:1px solid #e6e6e6;

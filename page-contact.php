@@ -53,9 +53,8 @@
 				<form id="form" method="get" action="http://www.constellationco.com/wp-content/themes/constellation/process.php" enctype="multipart/form-data">
 					<ul>
 						<fieldset>
-							<li class="four"><label>Name*</label><input type="text" name="name" required/></li>
-							<li class="four"><label>Email</label><input type="email" name="email"/></li>
-							<li class="four"><label>Phone</label><input type="text" name="phone"/></li>
+							<li class="six"><label>Name*</label><input type="text" name="name" required/></li>
+							<li class="six"><label>Email</label><input type="email" name="email"/></li>
 						</fieldset>
 						<fieldset>
 							<li>
@@ -63,14 +62,14 @@
 								<input type="checkbox" name="design"/> Design<br />
 								<input type="checkbox" name="specs"/> Letterpress<br />
 							</li>
-							<li class="eight"><label>What type of project is it?</label>
+							<li class="twelve"><label>What type of project is it?</label>
 								<textarea name="piece" placeholder="Logo Design, Business Card, Wedding, Etc."></textarea>
 							</li>
 							<li style="clear:both;"><label>When do you need it?</label><input type="date" id="datepicker"/></li>
 						</fieldset>
 						<fieldset class="specs">
 							<li>
-								<label>How many pieces? (Example: Save the Date, Invitation &amp; RSVP Card are 3 pieces.)</label>
+								<label>How many pieces?<span>Save the Date, Invitation &amp; RSVP Card are 3 pieces.</span></label>
 								<select name="number_of_pieces">
 									<option value="0">&mdash;</option>
 									<option value="1">1</option>
@@ -80,7 +79,7 @@
 									<option value="5">5</option>
 								</select>
 							</li>
-							<li><label>Quantity: (How many do you need?)</label><input type="text" size="40" name="quantity"/></li> 
+							<li><label>Quantity:<span>How many do you need?</span></label><input type="text" size="40" name="quantity"/></li> 
 						</fieldset>
 						<fieldset> 
 							<li class="newsletter">
@@ -88,7 +87,7 @@
 							</li>  
 						</fieldset>
 						<li>
-							<input type="submit" name="submit" value="SUBMIT" class="button" />
+							<input type="submit" name="submit" value="SUBMIT ESTIMATE" class="button" />
 							<input type="hidden" name="submitted" value="TRUE" />
 						</li>
 					</ul>
