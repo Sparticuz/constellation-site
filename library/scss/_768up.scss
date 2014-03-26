@@ -61,8 +61,8 @@ HEADER STYLES
 
 
 .homepage img{
-			height:auto !important;
-			max-height:none;
+	width: 100% !important;
+	max-height:none;
 }
 
 
@@ -95,103 +95,62 @@ h2{
 NAVIGATION STYLES
 *********************/
 
-.nav {
-	display: block;
-	font-family: $sans-serif;
-	text-transform: uppercase;
-	@include rem('font-size',14px);
-	letter-spacing: 0.0625em;
-	float: right;
-	color:$lightgray;
-	-webkit-margin-after: 0;
-	-webkit-margin-before: 0;
-	padding-top: 5px;
+nav{
+	&#navigation{
 
-	li {
-		float:left;
-		position: relative;
-
-		a {
-			border-bottom: 0;
-			/*
-			you can use hover styles here even though this size
-			has the possibility of being a mobile device.
-			*/
-			&:hover, &:focus {
-				color:$black;
-
-			}
+		//this is the main nav menu
+		#navtoggle{
+			display: none;
 		}
 
-		&:first-child {}
-		&:last-child {}
+		.nav {
+			display: block !important;
+			font-family: $sans-serif;
+			text-transform: uppercase;
+			@include rem('font-size',14px);
+			letter-spacing: 0.0625em;
+			float: right;
+			color:$lightgray;
+			-webkit-margin-after: 0;
+			-webkit-margin-before: 0;
+			padding-top: 5px;
+			z-index: inherit;
+			visibility: visible;
+			height: auto;
+			opacity: 1;
+			position: inherit;
+			width: inherit;
+			background-color: transparent;
 
-		/*
-		plan your menus and drop-downs wisely.
-		*/
-		ul.sub-menu,
-		ul.children {
-			margin-top: 0;
-			border-top: 0;
-			position: absolute;
-			display: none;
-			z-index: 8999;
 
 			li {
+				float:left;
 
 				a {
-					padding-left: 10px;
-					border-right: 0;
-					display: block;
-					width: 180px;
+					//links
+					border-bottom: 0;
+					/*
+					you can use hover styles here even though this size
+					has the possibility of being a mobile device.
+					*/
+					&:hover, &:focus {
+						color:$black;
 
-					&:hover,
-					&:focus {
-					}
-
-					&:link {}
-				}
-
-				&:first-child {}
-
-				&:last-child {
-
-					a {
-						border-bottom: 0;
 					}
 				}
 
-				/*
-				if you need to go deeper, go nuts
-				just remember deeper menus suck
-				for usability. k, bai.
-				*/
-				ul {}
-			}
+			} /* end .menu ul li */
 
-			/* highlight sub-menu current page */
+			/* highlight current page */
 			li.current-menu-item,
 			li.current_page_item,
 			li.current-page-ancestor {
-			}
-		}
+				a { color:$black; }
+			}  /* end current highlighters */
 
-		/* showing sub-menus */
-		&:hover ul {
-			top: auto;
-			display: block;
-		}
-
-	} /* end .menu ul li */
-
-	/* highlight current page */
-	li.current-menu-item,
-	li.current_page_item,
-	li.current-page-ancestor {
-		a { color:$black; }
-	}  /* end current highlighters */
-
-} /* end .nav */
+		} /* end .nav */
+	}
+}
 
 #inner-content{
 	margin-top: 2em;
