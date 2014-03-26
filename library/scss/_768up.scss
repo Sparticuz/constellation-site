@@ -134,19 +134,11 @@ nav{
 		}
 
 		.nav {
-			display: block !important;
-			font-family: $sans-serif;
-			text-transform: uppercase;
 			@include rem('font-size',14px);
-			letter-spacing: 0.0625em;
 			float: right;
-			color:$lightgray;
 			-webkit-margin-after: 0;
 			-webkit-margin-before: 0;
-			padding-top: 5px;
-			z-index: inherit;
 			visibility: visible;
-			height: auto;
 			opacity: 1;
 			position: inherit;
 			width: inherit;
@@ -158,14 +150,12 @@ nav{
 
 				a {
 					//links
-					border-bottom: 0;
 					/*
 					you can use hover styles here even though this size
 					has the possibility of being a mobile device.
 					*/
 					&:hover, &:focus {
 						color:$black;
-
 					}
 				}
 
@@ -185,7 +175,6 @@ nav{
 #inner-content{
 	margin-top: 2em;
 }
-
 
 /* Product*/
 
