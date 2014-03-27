@@ -47,7 +47,7 @@
 		<div id="main" class="twelve columns first clearfix" role="main">
 		<section class="three column sidebarbody notice">
 				<h3>Notice</h3>
-				<p>Getting married? Starting a business? Want to collaborate on a product? We’d love to chat. If you're a designer looking to have a project printed, we recommend searching for a printer on Letterpress Commons.</p>
+				<p>Getting married? Starting a business? Want to collaborate on a product? We’d love to chat. If you're a designer looking to have a project printed, we recommend searching for a printer on <a href="http://letterpresscommons.com/printtrip/">Letterpress Commons.</a></p>
 			</section>
 			<section class="eight columns">
 				<form id="form" method="get" action="http://www.constellationco.com/wp-content/themes/constellation/process.php" enctype="multipart/form-data">
