@@ -37,12 +37,9 @@
 						</section>
 
 		<article class="eight">
-			<h2>Wood Engraving</h2>
-			<p>Wood engraving is a printmaking technique in which an image is carved into an end grain block of wood with sharp metal tools. The image is inked and printed using pressure, much like the letterpress printing process. Dating back to the 15th century, wood engraving is
-the perfect historic complement to wood and lead type.</p>
-			<p>For my birthday one year, Brad gave me unlimited
-wood engraving lessons. My teacher, Carl Montford,
-is absolutely a master of his craft, and I am honored to call him mentor and friend. He was the “matchmaker” who brought us together with the seller of our first press, and he even helped us move the press into our studio, which was not an easy task! Carl is an absolute treasure to the Seattle letterpress community. But more that that, he’s like family to us.</p>
+			<h2>Letterpress &amp; Wood Engraving</h2>
+			<p>Wood engraving is a printmaking technique in which an image is carved into an end grain block of wood with sharp metal tools. The image is inked and printed using pressure, much like the letterpress printing process. Dating back to the 15th century, wood engraving is the perfect historic complement to wood and lead type.</p>
+
 <p>I’ve fallen in love with the historic craft of engraving. It’s infinitely satisfying to see my ideas become sketches, then printing blocks, then beautiful letterpress prints. Wood engraving and printing on the iron handpress give me new opportunities to express myself, to experiment, and to create in a new medium. Letterpress and wood engraving? A match made in history!</p>
 		</article>
 	</div> <!-- end #inner-content -->
@@ -69,8 +66,7 @@ is absolutely a master of his craft, and I am honored to call him mentor and fri
 
 		<article class="eight column">
 			<h2>Product partnering</h2>
-			<p>We strongly believe that the best part of owning a business is the opportunities it creates to work with other creative people! We love to collaborate with other small businesses to create products, experiences and relationships! Our collaborations with Seattle Seed Co. and Treehouse Point have produced beautiful products that neither business could create alone. If you’re interested in collaborating, let us know! We’d love
-to hear from you.</p>
+			<p>We strongly believe that the best part of owning a business is the opportunities it creates to work with other creative people! We love to collaborate with other small businesses to create products, experiences and relationships. Our collaborations with Seattle Seed Co. and Treehouse Point have produced beautiful products that neither business could create alone. If you’re interested in collaborating, let us know. We’d love to hear from you.</p>
 		</article>
 
 		<section class="double_img clearfix row">
@@ -87,7 +83,7 @@ to hear from you.</p>
 	
 	<div class="wrap clearfix">
 		<article class="eight column">
-			<p>We founded Constellation & Co. on the idea that community is important in life and in business, and that business and life should work well together. We work closely with our clients, getting to know them beyond their preferences about paper and pantone colors, so we can offer them a design that feels authentic. Our clients bring us into their lives at important moments like planning a wedding or launching a business, and we take our involvement in those times seriously. Outside of our company, we work with a large network of creative people and small businesses whose skills and products enable us to tackle bigger projects and offer more exciting work to our customers. The big picture for us is, we can’t do this alone.</p>
+			<p>We founded Constellation &amp; Co. on the idea that community is important in life and in business, and that business and life should work well together. We work closely with our clients, getting to know them beyond their preferences about paper and pantone colors, so we can offer them a design that feels authentic. Our clients bring us into their lives at important moments like planning a wedding or launching a business, and we take our involvement in those times seriously. Outside of our company, we work with a large network of creative people and small businesses whose skills and products enable us to tackle bigger projects and offer more exciting work to our customers. The big picture for us is, we can’t do this alone.</p>
 			<p>We offer full service graphic design and letterpress printing for a variety of client projects including wedding invitations, branding and print collateral for small businesses, and a line of letterpress greeting cards and paper gifts available in stores in Seattle and nationwide. We use a mixture of modern and historical technologies to produce work that is sometimes sweet, sometimes sarcastic, but always inspired by handmade processes, vintage ephemera, and collaboration.</p>
 		</article>
 
@@ -105,12 +101,12 @@ to hear from you.</p>
 		<article class="twelve columns team">
 			<span class="four columns"><h2>Meet Our<br />Team</h2></span>
 			<span class="four columns"><img src="http://beta.constellationco.com/wp-content/uploads/2014/03/sara_portrait.jpg" /><h3>Sara McNally</h3>
-			<span class="occupation">Co-Founder, Designer, &amp; Printer</span></span>
-			<span class="four columns"><img src="http://beta.constellationco.com/wp-content/uploads/2014/03/brad_portrait.jpg" /><h3>Brad McNally</h3><span class="occupation">Co-Founder &amp; Secret Art Director</span></span>
+			<span class="occupation">Co-founder, Designer, &amp; Printer</span></span>
+			<span class="four columns"><img src="http://beta.constellationco.com/wp-content/uploads/2014/03/brad_portrait.jpg" /><h3>Brad McNally</h3><span class="occupation">Co-founder &amp; Web Director</span></span>
 		</article>
 		<article class="twelve columns team">
-			<span class="four columns"><img src="http://beta.constellationco.com/wp-content/uploads/2014/03/suzi_portrait.jpg" /><h3>Suzi Mantle</h3><span class="occupation">Bookkeeping</span></span>
-			<span class="four columns"><img src="http://beta.constellationco.com/wp-content/uploads/2014/03/holly_portrait.jpg" /><h3>Holly Power</h3><span class="occupation">Adminisitration</span></span>
+			<span class="four columns"><img src="http://beta.constellationco.com/wp-content/uploads/2014/03/suzi_portrait.jpg" /><h3>Suzi Mantle</h3><span class="occupation">Bookkeeper</span></span>
+			<span class="four columns"><img src="http://beta.constellationco.com/wp-content/uploads/2014/03/holly_portrait.jpg" /><h3>Holly Power</h3><span class="occupation">Administrative Assistant</span></span>
 		</article>
 
 	<section class="eight">

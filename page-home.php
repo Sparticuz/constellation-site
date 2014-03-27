@@ -21,7 +21,7 @@
 
 			<section class="three column sidebarbody">
 				<h3>Shop Our Line</h3>
-				<p>We like to think of our products as no matter what, no matter when products. These sentiments transcend occasions and anytime messages. You are home to me. They won’t go out of season or out of style.</p>
+				<p>We like to think of our products as no matter what, no matter when products. These sentiments transcend occasions and are anytime messages. They won’t go out of season or out of style.</p>
 				<a href="">View Our Products</a>
 				<h3>Work With Us</h3>
 				<p>We’d prefer to meet you for a coffee in downtown Seattle, but that’s not always possible. Fill out our estimate request form so we can start a conversation about your project.</p>
