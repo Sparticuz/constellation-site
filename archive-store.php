@@ -10,75 +10,57 @@
 
 	<div id="inner-content" class="wrap clearfix container">
 
-		<section id="main" class="ten columns last content" role="main">
+		<section id="main" class="twelve columns last content" role="main">
 
-			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+			<?php 
+				//setup posts to sort alphabetically by the location
+				$posts = get_posts(array(
+					'posts_per_page'=>	-1,
+					'post_type'		=>	'store',
+					'meta_key'		=>	'location',
+					'orderby'		=>	'meta_value',
+					'order'			=>	'ASC'
+				));
+				//setup variables for location grouping
+				$last_location = "";
+				$current_location = "";
+				$loop_num = 1;
+			?>
 
-				<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix row product'); ?> role="article">
+			<?php if ($posts) : foreach ($posts as $post) : setup_postdata($post);
+				//setup current_location
+				$current_location = get_field('location');
+				//setup last_location if it's the first run
+				if($loop_num == 1){
+					$last_location = $current_location; 
+				} //end of 1st loop
 
-					<section class="eight columns">
-						<?php $images = get_field('images');
-						if( $images ): ?>
-							<div class="flexslider">
-								<ul class="slider_<?php the_ID(); ?> slides">
-									<?php foreach($images as $image): ?>
-										<li data-thumb="<?php echo $image['sizes']['thumbnail']; ?>">
-											<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"/>
-										</li>
-									<?php endforeach; ?>
-								</ul>
-							</div>
-						<?php endif ?>
-					</section>
+				if(strcmp($last_location,$current_location) || $loop_num == 1){
+					//runs if they are NOT the same || it's the first loop
+					//also, (below), if the loop is > than 1, end the previous location
+					if($loop_num > 1){ ?> </section> <?php	} ?>
+					<section class="location row <?php echo $current_location; ?>">
+						<article class="four columns"><h3><?php echo $current_location; ?></h3></article>
+				<?php $last_location = $current_location;
+				} //below is the actual store post ?>
 
-					<section class="four columns">
-						<header class="product-header">
-							<h2 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+				<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix store four columns'); ?> role="article">
+
+					<section>
+						<header class="store-name">
+							<h3><?php the_title(); ?></h3>
 						</header>
 
-						<section class="product-content">
-							<?php the_field('description'); ?>
+						<section class="store-location">
+							<?php the_field('store_info'); ?>
 						</section>
-
-						<footer class="product-footer">
-							<?php $specs = get_field_object('specifications'); 
-								if($specs): ?>
-								<ul class="specs">
-									<?php foreach( $specs['value'] as $spec ): ?>
-										<li class="<?php echo $spec; ?>"><?php echo $specs['choices'][$spec]; ?></li>
-									<?php endforeach; ?>
-								</ul>
-							<?php endif; ?>	
-						</footer>
 					</section>
 
-				</article> <!-- end article -->
-			<?php endwhile; ?>
+				</article> <!-- end store -->
 
-				<?php if (function_exists('bones_page_navi')) { ?>
-						<?php bones_page_navi(); ?>
-				<?php } else { ?>
-						<nav class="wp-prev-next">
-								<ul class="clearfix">
-									<li class="prev-link"><?php next_posts_link(__('&laquo; Older Entries', "bonestheme")) ?></li>
-									<li class="next-link"><?php previous_posts_link(__('Newer Entries &raquo;', "bonestheme")) ?></li>
-								</ul>
-						</nav>
-				<?php } ?>
+				<?php $loop_num++; ?>
 
-			<?php else : ?>
-
-				<article id="post-not-found" class="hentry clearfix">
-					<header class="article-header">
-						<h1>There are no products in this category!</h1>
-					</header>
-					<section class="entry-content">
-						<p>Check back later or search for other products below!</p>
-					</section>
-					<footer class="article-footer search">
-						<p><?php get_search_form(); ?></p>
-					</footer>
-				</article>
+			<?php endforeach; ?>
 
 			<?php endif; ?>
 
@@ -87,17 +69,5 @@
 	</div> <!-- end #inner-content -->
 
 </div> <!-- end #content -->
-
-<script type="text/javascript">
-$(window).load(function() {
-  $('.flexslider').flexslider({
-    animation: "fade",
-    controlNav: "thumbnails",
-    slideshow: false,
-    directionNav: false
-  });
-  $('.container').stickem();
-});
-</script>
 
 <?php get_footer(); ?>

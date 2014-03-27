@@ -1265,6 +1265,13 @@ select{
 	margin-top:25px;
 }
 
+.location {
+	article {
+		//set up automatic grid :)
+		@include omega(3n);
+	}
+}
+
 //FlexSlider overrides
 //don't use /library/js/libs/FlexSlider/FlexSlider.css!!!
 .flexslider{
