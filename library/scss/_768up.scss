@@ -81,7 +81,7 @@ HEADER STYLES
 	}
 
 	&.specialpage{
-		max-height:530px;
+		max-height:450px;
 	}
 }
 
@@ -226,6 +226,7 @@ nav{
 .stickem{
 	position: relative;
 	text-align: left;
+	border-top:1px solid #e6e6e6;
 	& a{
 		color:$black;
 		text-decoration:none;
@@ -249,6 +250,8 @@ nav{
 }
 
 #categories{
+	display:inline-block;
+
 
 	ul{
 		text-align:left;
@@ -270,6 +273,8 @@ nav{
 					}
 
 					li {
+						@include rem('font-size',14px);
+						padding-bottom: 7px;
 						a {
 							width: auto;
 							padding: 0;
@@ -289,6 +294,28 @@ nav{
 		}
 	}
 }
+
+.sidebar-links{
+	display:block;
+		color:$black;
+	text-align:left;
+
+	.etsy.button{
+			margin: 10px 0;
+	}
+
+	a{
+		text-decoration: none;
+		&:active,&:hover{
+			color:$black;
+
+		}
+		&:visited{
+			color:$black;
+		}
+	}
+}
+
 
 /*********************
 SIDEBARS & ASIDES

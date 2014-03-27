@@ -589,35 +589,7 @@ img{
 }
 
 .sidebar-links{
-
-	color:$black;
-	margin-top: 15px;
-	padding:15px 0;
-	text-align:center;
-	display:none;
-
-	a{
-		text-decoration: none;
-		&:active,&:hover{
-			color:$black;
-
-		}
-		&:visited{
-			color:$black;
-		}
-	}
-	
-	.wholesale-link{	
-		
-	}
-
-	.etsy.button{
-		display:block;
-	}
-
-	.map-icon{
-	}
-}
+	display:none;}
 
 /******************************************************************
 PAGE NAVI STYLES
