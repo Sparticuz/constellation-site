@@ -153,6 +153,7 @@ nav{
 					you can use hover styles here even though this size
 					has the possibility of being a mobile device.
 					*/
+					color:$lightgray;
 					&:hover, &:focus {
 						color:$black;
 					}
@@ -164,11 +165,41 @@ nav{
 			li.current-menu-item,
 			li.current_page_item,
 			li.current-page-ancestor {
-				a { color:$black; }
+				a { color:$black; 
+					&:hover{
+						color:$black;
+						}}
 			}  /* end current highlighters */
 
 		} /* end .nav */
 	}
+}
+
+
+.page-id-24,.page-id-10,.page-id-16{
+	nav{
+	&#navigation{
+	.nav{
+		li{
+			a{
+				color:$white;
+					&:hover, &:focus {
+						color:$lightgray;}
+			}
+		}
+
+		li.current-menu-item,
+			li.current_page_item,
+			li.current-page-ancestor {
+				a { color:$white; 
+					&:hover{
+						color:$lightgray;
+						}
+					}
+					}
+	}
+	}
+}
 }
 
 #inner-content{
