@@ -439,6 +439,11 @@ padding: 0 !important;
 @include rem('font-size',48px);
 	line-height:57px;
 		padding:75px 0;
+		p{
+			max-width: 960px;
+display: block;
+margin: 0 auto;
+		}
 
 }
 
@@ -489,5 +494,16 @@ border:0;
 fieldset{
 	li{
 		padding-top: 5px;
+	}
+}
+
+.page-id-10{
+	section, article{
+		&.eight{
+			padding:40px 0;
+		}
+		&.sidebarbody{
+			padding:40px 0;
+		}
 	}
 }

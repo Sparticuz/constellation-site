@@ -41,13 +41,13 @@
 			</article>
 					</div> <!-- end #main -->
 						</div> <!-- end #inner-content -->
-				<span class="bigquote">This is where something goes</span>
+				<span class="bigquote" id="estimaterequest"><p>We want to hear about your project. Fill out this estimate request form and we'll get back to you.</p></span>
 					<div id="inner-content" class="wrap clearfix">
 
 		<div id="main" class="twelve columns first clearfix" role="main">
 		<section class="three column sidebarbody notice">
 				<h3>Notice</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque auctor libero, id consequat lectus pretium eu. Nulla adipiscing turpis vitae nisi ultrices egestas. Curabitur vitae mauris sed sem volutpat lacinia. In placerat volutpat odio sit amet rutrum. Suspendisse potenti.</p>
+				<p>Getting married? Starting a business? Want to collaborate on a product? We’d love to chat. If you're a designer looking to have a project printed, we recommend searching for a printer on Letterpress Commons.</p>
 			</section>
 			<section class="eight columns">
 				<form id="form" method="get" action="http://www.constellationco.com/wp-content/themes/constellation/process.php" enctype="multipart/form-data">
