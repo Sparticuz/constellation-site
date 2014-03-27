@@ -4,7 +4,7 @@
 <div id="content">
 
 	<figure class="hero specialpage">
-		<img src="http://beta.constellationco.com/wp-content/uploads/2014/01/peruse_test.jpg" class="bleed"/>
+		<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/studio_large1.jpg" class="bleed"/>
 		<figcaption>Wholesale</figcaption>
 	</figure>
 

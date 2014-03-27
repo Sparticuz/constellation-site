@@ -60,8 +60,8 @@ HEADER STYLES
 	figcaption{
 		
 		top:30%;
-		@include rem('font-size',77px);
-		line-height: 90px;
+		@include rem('font-size',60px);
+		line-height: 70px;
 
 		&.why{
 			

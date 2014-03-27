@@ -13,3 +13,15 @@ be seen on the Desktop.
 	max-width: 1200px;
 }
 */
+
+
+.hero{
+  //needs to be position relative in order to correctly position the figcaption
+
+  figcaption{
+    
+    @include rem('font-size',77px);
+    line-height: 90px;
+  }
+
+}
