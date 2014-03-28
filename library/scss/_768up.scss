@@ -501,7 +501,12 @@ fieldset{
 	section, article{
 		&.eight{
 			padding:40px 0;
+
+			p:first-child{
+			margin-top:0;
 		}
+		}
+		
 		&.sidebarbody{
 			padding:40px 0;
 		}

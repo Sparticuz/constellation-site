@@ -1165,7 +1165,7 @@ FOOTER STYLES
 }
 
 .seattle{
- 	@include background-image(url('http://beta.constellationco.com/wp-content/uploads/2014/03/seattle_bg.jpg'), linear-gradient($white, #edeef1));
+ 	@include background-image(url('http://beta.constellationco.com/wp-content/uploads/2014/03/seattle_bg.jpg'));
 	//background-image:url('http://beta.constellationco.com/wp-content/uploads/2014/03/seattle_bg.jpg');
 	background-position:center bottom;
 	background-repeat:no-repeat;
@@ -1274,7 +1274,7 @@ select{
 		margin-bottom:25px;
 	}
 	.store-location{
-		color:#808080;
+		color:$lightgray;
 		line-height:25px;
 	}
 	.store-name{
