@@ -129,5 +129,60 @@ function bones_wpsearch($form) {
 	return $form;
 } // don't remove this bracket!
 
+//Insert content after second paragraph of single post content.
+add_filter( 'the_content', 'prefix_insert_post_ads' );
+function prefix_insert_post_ads( $content ) {
+	if ( is_single() && ! is_admin() ) {
+		$code = '<div class="the_rest row">';
+		$code.= '<aside class="blog-metadata three columns">';
+		$code.= '<span class="author">by '.bones_get_the_author_posts_link().'</span>';
+
+		//comments
+		$num_comments = get_comments_number();
+		if( $num_comments == 0)
+			$comments = "No comments";
+		else if ( $num_comments == 1)
+			$comments = "1 comment";
+		else
+			$comments = $num_comments." comments";
+
+		$code.= '<span class="num-comments">'.$comments.'</span>';
+
+		//categories
+		$the_categories = get_the_category();
+		$categories = "";
+		if($the_categories){
+			foreach($the_categories as $the_category){
+				$categories .= '<a href="'.get_category_link($the_category->term_id).'" title="'.esc_attr($the_category->name).'">'.$the_category->cat_name.'</a>';
+			}
+		}
+		$code.= '<span class="category_title">Filed Under</span>';
+		$code.= $categories;
+
+		//the sharing code
+		$code.= '<span class="share_title">Share</span>';
+
+		$code.= '</aside>';
+		$code.= '<div class="rest_of_post nine columns">';
+
+		return prefix_insert_after_paragraph( $code, 2, $content );
+	}
+	return $content;
+}
+ 
+// Parent Function that makes the magic happen
+function prefix_insert_after_paragraph( $insertion, $paragraph_id, $content ) {
+	$closing_p = '</p>';
+	$paragraphs = explode( $closing_p, $content );
+	foreach ($paragraphs as $index => $paragraph) {
+		if ( trim( $paragraph ) ) {
+			$paragraphs[$index] .= $closing_p;
+		}
+		if ( $paragraph_id == $index + 1 ) {
+			$paragraphs[$index] .= $insertion;
+		}
+	}
+	return implode( '', $paragraphs );
+}
 
 ?>
