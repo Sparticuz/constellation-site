@@ -515,3 +515,8 @@ fieldset{
 .team{
 	padding-top:50px;
 }
+
+.store-location{
+		@include rem('font-size',17px);
+
+}

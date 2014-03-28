@@ -1268,7 +1268,23 @@ select{
 .location {
 	article {
 		//set up automatic grid :)
-		@include omega(3n);
+		@include omega(4n);
+		border-top:1px solid #e6e6e6;
+		padding-top:15px;
+		margin-bottom:25px;
+	}
+	.store-location{
+		color:#808080;
+		line-height:25px;
+	}
+	.store-name{
+		h3{
+			font-family: $serif;
+			text-transform: none;
+			@include rem('font-size',17px);
+			letter-spacing: 0;
+			margin:0;
+		}
 	}
 }
 
@@ -1295,3 +1311,4 @@ select{
 		}
 	}
 }
+

@@ -4,7 +4,7 @@
 <div id="content">
 
 	<figure class="hero specialpage">
-		<img src="http://beta.constellationco.com/wp-content/uploads/2014/01/peruse_test.jpg" class="bleed"/>
+		<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/stores_bg.jpg" class="bleed"/>
 		<figcaption>Find a Store</figcaption>
 	</figure>
 
@@ -40,11 +40,11 @@
 					//also, (below), if the loop is > than 1, end the previous location
 					if($loop_num > 1){ ?> </section> <?php	} ?>
 					<section class="location row <?php echo $current_location; ?>">
-						<article class="four columns"><h3><?php echo $current_location; ?></h3></article>
+						<article class="three columns"><h3><?php echo $current_location; ?></h3></article>
 				<?php $last_location = $current_location;
 				} //below is the actual store post ?>
 
-				<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix store four columns'); ?> role="article">
+				<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix store three columns'); ?> role="article">
 
 					<section>
 						<header class="store-name">
