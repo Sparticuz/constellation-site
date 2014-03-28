@@ -4,7 +4,7 @@
 // let's create the function for the custom type
 function register_stores() { 
 	// creating (registering) the custom type 
-	register_post_type( 'store', /* (http://codex.wordpress.org/Function_Reference/register_post_type) */
+	register_post_type( 'stores', /* (http://codex.wordpress.org/Function_Reference/register_post_type) */
 	 	// let's now add all the options for this post type
 		array('labels' => array(
 			'name' => __('Stores', 'bonestheme'), /* This is the Title of the Group */
@@ -29,17 +29,14 @@ function register_stores() {
 			'query_var' => true,
 			'menu_position' => 8, /* this is what order you want it to appear in on the left hand side menu */ 
 			'menu_icon' => get_stylesheet_directory_uri() . '/library/images/custom-post-icon.png', /* the icon for the custom post type menu */
-			'rewrite'	=> array( 'slug' => 'store', 'with_front' => false ), /* you can specify its url slug */
-			'has_archive' => 'store', /* you can rename the slug here */
+			'rewrite'	=> array( 'slug' => 'stores', 'with_front' => false ), /* you can specify its url slug */
+			'has_archive' => 'stores', /* you can rename the slug here */
 			'capability_type' => 'post',
 			'hierarchical' => false,
 			/* the next one is important, it tells what's enabled in the post editor */
 			'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'trackbacks', 'custom-fields', 'comments', 'revisions', 'sticky')
 	 	) /* end of options */
 	); /* end of register post type */
-	
-	/* this adds your post categories to your custom post type */
-	register_taxonomy_for_object_type('store_category', 'store');
 	
 }
 
@@ -53,7 +50,7 @@ function register_stores() {
 	
 	// now let's add custom categories (these act like categories)
     register_taxonomy( 'store_category', 
-    	array('store'), /* if you change the name of register_post_type( 'custom_type', then you have to change this */
+    	array('stores'), /* if you change the name of register_post_type( 'custom_type', then you have to change this */
     	array('hierarchical' => true,     /* if this is true, it acts like categories */             
     		'labels' => array(
     			'name' => __( 'Store Categories', 'bonestheme' ), /* name of the custom taxonomy */
