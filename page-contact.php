@@ -39,17 +39,20 @@
 				<a href="http://www.etsy.com/shop/constellationco" class="etsy button">Etsy</a>
 				<a href="http://instagram.com/constellationco" class="instagram button">Instagram</a>
 			</article>
-					</div> <!-- end #main -->
-						</div> <!-- end #inner-content -->
-				<span class="bigquote" id="estimaterequest"><p>We want to hear about your project. Fill out this estimate request form and we'll get back to you.</p></span>
-					<div id="inner-content" class="wrap clearfix">
+		</div> <!-- end #main -->
+	</div> <!-- end #inner-content -->
+	
+	<span class="bigquote" id="estimaterequest"><p>We want to hear about your project. Fill out this estimate request form and we'll get back to you.</p></span>
 
+	<div class="wrap clearfix">
 		<div id="main" class="twelve columns first clearfix" role="main">
-		<section class="three column sidebarbody notice">
+			<section class="three column sidebarbody notice">
 				<h3>Notice</h3>
 				<p>Getting married? Starting a business? Want to collaborate on a product? We’d love to chat. If you're a designer looking to have a project printed, we recommend searching for a printer on <a href="http://letterpresscommons.com/printtrip/">Letterpress Commons.</a></p>
 			</section>
+			
 			<section class="eight columns">
+				
 				<form id="form" method="get" action="http://www.constellationco.com/wp-content/themes/constellation/process.php" enctype="multipart/form-data">
 					<ul>
 						<fieldset>
@@ -93,11 +96,9 @@
 					</ul>
 				</form>
 			</section>
-
-	
-				</div> <!-- end #main -->
-						</div> <!-- end #inner-content -->
-
+		</div> <!-- end #main -->
+	</div>
+</div> <!-- end #content -->
 
 <script type="text/javascript" charset="utf-8">
 	jQuery(document).ready(function($) {
@@ -106,7 +107,5 @@
 		});
 	});
 </script>
-
-</div> <!-- end #content -->
 
 <?php get_footer(); ?>

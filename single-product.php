@@ -9,8 +9,8 @@
 	</figure>
 
 	<div id="inner-content" class="wrap clearfix container">
-<div class="row stickem-container">
-		<div class="two columns first stickem sidebar">
+		<div class="row stickem-container">
+			<div class="two columns first stickem sidebar">
 				<nav id="categories">
 					<ul>
 						<?php $args = array(
@@ -29,11 +29,11 @@
 					<a href="mailto:wholesale@constellationco.com?body=Store URL:" class="sidebarlink wholesale-link">Wholesale Inquiries</a>
 					<a href="http://beta.constellationco.com/stores/" class="map-icon sidebarlink">Find a store</a>
 				</div>
-		</div>
+			</div>
 
-		<section id="main" class="ten columns last content" role="main">
+			<section id="main" class="ten columns last content" role="main">
 
-			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix row product'); ?> role="article">
 
@@ -75,50 +75,41 @@
 					</section>
 
 				</article> <!-- end article -->
-			<?php endwhile; ?>
 
-				<?php if (function_exists('bones_page_navi')) { ?>
-						<?php bones_page_navi(); ?>
-				<?php } else { ?>
-						<nav class="wp-prev-next">
-								<ul class="clearfix">
-									<li class="prev-link"><?php next_posts_link(__('&laquo; Older Entries', "bonestheme")) ?></li>
-									<li class="next-link"><?php previous_posts_link(__('Newer Entries &raquo;', "bonestheme")) ?></li>
-								</ul>
-						</nav>
-				<?php } ?>
+				<?php endwhile; ?>
 
-			<?php else : ?>
+				<?php bones_page_navi(); ?>
+				
+				<?php else : ?>
 
-				<article id="post-not-found" class="hentry clearfix">
-					<header class="article-header">
-						<h1>There are no products in this category!</h1>
-					</header>
-					<section class="entry-content">
-						<p>Check back later or search for other products below!</p>
-					</section>
-					<footer class="article-footer search">
-						<p><?php get_search_form(); ?></p>
-					</footer>
-				</article>
+					<article id="post-not-found" class="hentry clearfix">
+						<header class="article-header">
+							<h1>There are no products in this category!</h1>
+						</header>
+						<section class="entry-content">
+							<p>Check back later or search for other products below!</p>
+						</section>
+						<footer class="article-footer search">
+							<p><?php get_search_form(); ?></p>
+						</footer>
+					</article>
 
-			<?php endif; ?>
+				<?php endif; ?>
 
-		</section> <!-- end #main -->
-
+			</section> <!-- end #main -->
+		</div>
 	</div> <!-- end #inner-content -->
-
 </div> <!-- end #content -->
 
 <script type="text/javascript">
 $(window).load(function() {
-  $('.flexslider').flexslider({
-    animation: "fade",
-    controlNav: "thumbnails",
-    slideshow: false,
-    directionNav: false
-  });
-  $('.container').stickem();
+	$('.flexslider').flexslider({
+		animation: "fade",
+		controlNav: "thumbnails",
+		slideshow: false,
+		directionNav: false
+	});
+	$('.container').stickem();
 });
 </script>
 

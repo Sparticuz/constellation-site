@@ -13,7 +13,7 @@
 			<h2>Our Studio</h2>
 			<p>Every day I walk into the studio, flip the light switch, tie my apron, and get to work. The studio is a special space—it is the fruition of a lot of dreams and hopes and hard work. It’s a place that feels like home. It’s a place infused with heritage. Our building is rich with history—it’s ornate and strong, built in the wave of new construction after the 1889 Seattle fire. I love the exposed brick, the aged wood floors, and the huge window with the natural light it lets in. But what I love most are the possibilities that this place holds. This is where I do what I love—and every day here is a blessing. We take this blessing seriously. Our work is truly a manifestation of our philosophy: to use ink and paper to connect people.</p>
 		</section>
-	</div> <!-- end #inner-content -->
+	</div> 
 	
 	<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/woodtype_bg.jpg" class="bleed" />
 	
@@ -29,20 +29,19 @@
 		</section>
 
 		<section class="entry-content tall_img_double_wide clearfix row">
-							<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/studio_vertical.jpg" class="six columns first">
-							<div class="six columns last">
-								<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/studio_small_1.jpg">
-								<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/studio_small_2.jpg">
-							</div>
-						</section>
+			<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/studio_vertical.jpg" class="six columns first">
+			<div class="six columns last">
+				<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/studio_small_1.jpg">
+				<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/studio_small_2.jpg">
+			</div>
+		</section>
 
 		<article class="eight">
 			<h2>Letterpress &amp; Wood Engraving</h2>
 			<p>Wood engraving is a printmaking technique in which an image is carved into an end grain block of wood with sharp metal tools. The image is inked and printed using pressure, much like the letterpress printing process. Dating back to the 15th century, wood engraving is the perfect historic complement to wood and lead type.</p>
-
-<p>I’ve fallen in love with the historic craft of engraving. It’s infinitely satisfying to see my ideas become sketches, then printing blocks, then beautiful letterpress prints. Wood engraving and printing on the iron handpress give me new opportunities to express myself, to experiment, and to create in a new medium. Letterpress and wood engraving? A match made in history!</p>
+			<p>I’ve fallen in love with the historic craft of engraving. It’s infinitely satisfying to see my ideas become sketches, then printing blocks, then beautiful letterpress prints. Wood engraving and printing on the iron handpress give me new opportunities to express myself, to experiment, and to create in a new medium. Letterpress and wood engraving? A match made in history!</p>
 		</article>
-	</div> <!-- end #inner-content -->
+	</div>
 
 	<figure class="hero">
 		<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/products_bg.jpg" class="bleed"/>
@@ -74,7 +73,7 @@
 			<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/seedco_partnering.jpg" class="six columns last" />
 		</section>
 
-	</div> <!-- end #inner-content -->
+	</div>
 
 	<figure class="hero">
 		<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/clientwork_bg.jpg" class="bleed"/>
@@ -97,25 +96,23 @@
 	<span class="bigquote"><q>It’s all about life. Life shouldn’t just happen to you. You’re meant to live it, to experience the joys and the sorrows and everything in between to the fullest.</q></span>
 	
 	<div class="seattle">
-	<div class="wrap clearfix entry-content">
-		<article class="twelve columns team">
-			<span class="four columns"><h2>Meet Our<br />Team</h2></span>
-			<span class="four columns"><img src="http://beta.constellationco.com/wp-content/uploads/2014/03/sara_portrait.jpg" /><h3>Sara McNally</h3>
-			<span class="occupation">Co-founder, Designer, &amp; Printer</span></span>
-			<span class="four columns"><img src="http://beta.constellationco.com/wp-content/uploads/2014/03/brad_portrait.jpg" /><h3>Brad McNally</h3><span class="occupation">Co-founder &amp; Web Director</span></span>
-		</article>
-		<article class="twelve columns team">
-			<span class="four columns"><img src="http://beta.constellationco.com/wp-content/uploads/2014/03/suzi_portrait.jpg" /><h3>Suzi Mantle</h3><span class="occupation">Bookkeeper</span></span>
-			<span class="four columns"><img src="http://beta.constellationco.com/wp-content/uploads/2014/03/holly_portrait.jpg" /><h3>Holly Power</h3><span class="occupation">Administrative Assistant</span></span>
-		</article>
-
-	<section class="eight">
-		<h2>Seattle</h2>
-		<p>This city is home to me in a way I couldn’t have predicted. Four years later, I’m still homesick when we leave and giddy when we return home. There’s nowhere in the world like Seattle. It fits us like a glove. This is where we’ve planted our feet, started our careers, grown our business, and made lifelong friends. This is where we’ll raise our kids. This is where we’ll grow old. This city—water &amp; mountains, gold rush &amp; midcentury modern, large yet small—it’s home.</p>
-	</section>
+		<div class="wrap clearfix entry-content">
+			<article class="twelve columns team">
+				<span class="four columns"><h2>Meet Our<br />Team</h2></span>
+				<span class="four columns"><img src="http://beta.constellationco.com/wp-content/uploads/2014/03/sara_portrait.jpg" /><h3>Sara McNally</h3>
+				<span class="occupation">Co-founder, Designer, &amp; Printer</span></span>
+				<span class="four columns"><img src="http://beta.constellationco.com/wp-content/uploads/2014/03/brad_portrait.jpg" /><h3>Brad McNally</h3><span class="occupation">Co-founder &amp; Web Director</span></span>
+			</article>
+			<article class="twelve columns team">
+				<span class="four columns"><img src="http://beta.constellationco.com/wp-content/uploads/2014/03/suzi_portrait.jpg" /><h3>Suzi Mantle</h3><span class="occupation">Bookkeeper</span></span>
+				<span class="four columns"><img src="http://beta.constellationco.com/wp-content/uploads/2014/03/holly_portrait.jpg" /><h3>Holly Power</h3><span class="occupation">Administrative Assistant</span></span>
+			</article>
+			<section class="eight">
+				<h2>Seattle</h2>
+				<p>This city is home to me in a way I couldn’t have predicted. Four years later, I’m still homesick when we leave and giddy when we return home. There’s nowhere in the world like Seattle. It fits us like a glove. This is where we’ve planted our feet, started our careers, grown our business, and made lifelong friends. This is where we’ll raise our kids. This is where we’ll grow old. This city—water &amp; mountains, gold rush &amp; midcentury modern, large yet small—it’s home.</p>
+			</section>
+		</div>
 	</div>
-	</div>
-
-</div> <!-- end #content -->
+</div>
 
 <?php get_footer(); ?>

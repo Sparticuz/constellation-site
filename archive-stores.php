@@ -45,17 +45,13 @@
 				} //below is the actual store post ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix store three columns'); ?> role="article">
+					<header class="store-name">
+						<h3><?php the_title(); ?></h3>
+					</header>
 
-					<section>
-						<header class="store-name">
-							<h3><?php the_title(); ?></h3>
-						</header>
-
-						<section class="store-location">
-							<?php the_field('store_info'); ?>
-						</section>
+					<section class="store-location">
+						<?php the_field('store_info'); ?>
 					</section>
-
 				</article> <!-- end store -->
 
 				<?php $loop_num++; ?>

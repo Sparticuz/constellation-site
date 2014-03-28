@@ -61,6 +61,7 @@
 			</footer> <!-- end footer -->
 
 		</div> <!-- end #container -->
+		
 		<div class="bleed">Page Template: <?php global $template; echo basename($template); ?></div>
 		<!-- all js scripts are loaded in library/bones.php -->
 		<?php wp_footer(); ?>
