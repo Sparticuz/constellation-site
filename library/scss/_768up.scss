@@ -165,12 +165,13 @@ nav{
 			li.current-menu-item,
 			li.current_page_item,
 			li.current-page-ancestor {
-				a { color:$black; 
+				a { 
+					color:$black; 
 					&:hover{
 						color:$black;
-						}}
+					}
+				}
 			}  /* end current highlighters */
-
 		} /* end .nav */
 	}
 }
@@ -178,28 +179,30 @@ nav{
 
 .page-id-24,.page-id-10,.page-id-16{
 	nav{
-	&#navigation{
-	.nav{
-		li{
-			a{
-				color:$white;
-					&:hover, &:focus {
-						color:$lightgray;}
-			}
-		}
-
-		li.current-menu-item,
-			li.current_page_item,
-			li.current-page-ancestor {
-				a { color:$white; 
-					&:hover{
-						color:$lightgray;
+		&#navigation{
+			.nav{
+				li{
+					a{
+						color:$white;
+						&:hover, &:focus {
+							color:$lightgray;
 						}
 					}
+				}
+
+				li.current-menu-item,
+				li.current_page_item,
+				li.current-page-ancestor {
+					a { 
+						color:$white; 
+						&:hover{
+							color:$lightgray;
+						}
 					}
+				}
+			}
+		}
 	}
-	}
-}
 }
 
 #content{
