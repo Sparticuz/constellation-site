@@ -70,7 +70,7 @@ function bones_register_sidebars() {
 		'id' => 'sidebar1',
 		'name' => __('Sidebar 1', 'bonestheme'),
 		'description' => __('The first (primary) sidebar.', 'bonestheme'),
-		'before_widget' => '<div id="%1$s" class="widget %2$s two columns">',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => '</div>',
 		'before_title' => '<h3>',
 		'after_title' => '</h3>',
