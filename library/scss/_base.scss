@@ -796,10 +796,10 @@ COMMENT STYLES
 	/* general comment classes */
 	.alt {}
 	.odd {
-		background: #eee;
+		//background: #eee;
 	}
 	.even {
-		background: #fefefe;
+		//background: #fefefe;
 	}
 	.parent {}
 	.comment {}
@@ -880,14 +880,14 @@ COMMENT STYLES
 	/* comment reply link */
 	.comment-reply-link {
 		text-decoration: none;
-		float: right;
-		background: #4598bb;
-		padding: 3px 5px;
-		color: #fff;
+		//float: right;
+		//background: #4598bb;
+		//padding: 3px 5px;
+		color: #ccc;
 		opacity: 0.65;
-		margin-bottom: 10px;
-		font-weight: 700;
-		font-size: 0.9em;
+		//margin-bottom: 10px;
+		//font-weight: 700;
+		//font-size: 0.9em;
 
 		&:hover,
 		&:focus {
