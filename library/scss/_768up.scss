@@ -23,8 +23,8 @@ LAYOUT & GRID STYLES
 
 .wrap {
 	max-width: 960px;
-	padding-left:0;
-	padding-right:0;
+	padding-left:25px;
+	padding-right:25px;
 }
 
 /*********************
@@ -438,7 +438,7 @@ padding: 0 !important;
 .bigquote{
 @include rem('font-size',48px);
 	line-height:57px;
-		padding:75px 0;
+		padding:75px 25px;
 		p{
 			max-width: 960px;
 display: block;
