@@ -358,13 +358,6 @@ nav{
 	}
 }
 
-.entry-content{
-	p:first-child{
-		@include rem('font-size',30px);
-	}
-}
-
-
 /*********************
 POSTS & CONTENT STYLES
 *********************/
@@ -409,9 +402,20 @@ img{
 		/* entry content */
 		.entry-content {
 
-			/*margin-left: 1.1em;*/
+			img:first-child{
+				@extend .twelve;
+			}
+			p:nth-child(2){
+				@extend .twelve;
+				@include rem('font-size',30px);
+			}
 
-			p {}
+			p {
+				
+			}
+			img {
+				
+			}
 
 			ul, ol, table, dl {}
 
@@ -1334,4 +1338,10 @@ display:block;
 font-family: $serif;
 @include rem('font-size',36px);
 text-transform:none;
+}
+
+.blog-metadata{
+	span{
+		display:block;
+	}
 }
