@@ -218,7 +218,7 @@ HEADER STYLES
 	}
 }
 
-.page-id-24,.page-id-10,.page-id-16{
+.page-id-24,.page-id-10,.page-id-16,.error404{
 	//this targets the pages usually associated with 'ceiling'
 	& #logo{
 		background-position:0 -56px;
@@ -1271,7 +1271,7 @@ select{
 		@include omega(4n);
 		border-top:1px solid #e6e6e6;
 		padding-top:15px;
-		margin-bottom:25px;
+		margin-bottom:50px;
 	}
 	.store-location{
 		color:$lightgray;
@@ -1312,3 +1312,26 @@ select{
 	}
 }
 
+//404
+.errorlabel{
+			font-family: $sans-serif;
+			text-transform: uppercase;
+			@include rem('font-size',36px);
+			display:block;
+			clear:both;
+			padding-bottom: 50px;
+}
+
+.fourohfour{
+font-family: $serif;
+@include rem('font-size',275px);
+display:block;
+			clear:both;
+			padding-bottom: 15px;
+}
+
+.sorts{
+font-family: $serif;
+@include rem('font-size',36px);
+text-transform:none;
+}

@@ -28,7 +28,7 @@
 
 			<article class="twelve columns contact wholesaleinquiries">
 				<h3>Wholesale Inquiries</h3>
-				<span class="contactinfo"><a href="mailto:wholesale@constellationco.com">wholesale@constellationco.com</a></span>
+				<span class="contactinfo"><a href="mailto:wholesale@constellationco.com?body=Store URL:">wholesale@constellationco.com</a></span>
 			</article>
 
 			<article class="twelve columns contact">
