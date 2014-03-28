@@ -313,7 +313,7 @@ nav{
 			margin: 10px 0;
 	}
 
-	.map-icon{
+	.map-icon, .wholesale-link{
 		display:block;
 	}
 
@@ -428,7 +428,7 @@ padding: 0 !important;
 
 .sidebarlink{
 	@include rem('font-size',16px);
-	display:inline-block;
+
 }
 
 .wholesalelink{
