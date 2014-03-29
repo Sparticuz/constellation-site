@@ -692,11 +692,13 @@ PAGE NAVI STYLES
 
 		/* previous link */
 		li.bpn-prev-link {
+			display:none;
 			a {
 				&:hover,
 				&:focus {}
 			}
 		}
+
 
 		/* next page link */
 		li.bpn-next-link {
@@ -738,6 +740,16 @@ PAGE NAVI STYLES
 		}
 
 	} /* end .wp-prev-next */
+
+.paged{
+			li.bpn-prev-link {
+			display:inline-block;
+			a {
+				&:hover,
+				&:focus {}
+			}
+		}
+}
 
 /******************************************************************
 COMMENT STYLES
