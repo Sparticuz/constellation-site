@@ -237,6 +237,16 @@ HEADER STYLES
 	}
 }
 
+.error404{
+//no idea why this isn't working just above here
+	.nav li a{
+			color:$white !important;
+			&:hover{
+			color:$lightgray !important;
+		}
+	}
+}
+
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -1408,23 +1418,23 @@ select{
 .errorlabel{
 			font-family: $sans-serif;
 			text-transform: uppercase;
-			@include rem('font-size',36px);
+			@include rem('font-size',24px);
 			display:block;
 			clear:both;
-			padding-bottom: 50px;
+			padding-bottom: 55px;
 }
 
 .fourohfour{
 font-family: $serif;
-@include rem('font-size',275px);
+@include rem('font-size',150px);
 display:block;
 			clear:both;
-			padding-bottom: 15px;
+			padding-bottom: 50px;
 }
 
 .sorts{
 font-family: $serif;
-@include rem('font-size',36px);
+@include rem('font-size',30px);
 text-transform:none;
 }
 
@@ -1472,3 +1482,13 @@ font-style:italic;
 }
 }
 
+
+.error404{
+.hero.ceiling{
+		margin-bottom: -145px;
+}
+
+	.footer{
+		margin-top:0;
+	}
+}

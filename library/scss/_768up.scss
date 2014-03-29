@@ -566,3 +566,16 @@ fieldset{
 @include rem('font-size',16px);
 	}
 }
+
+
+.errorlabel{
+	@include rem('font-size',36px);
+}
+
+.fourohfour{
+@include rem('font-size',275px);
+}
+
+.sorts{
+@include rem('font-size',36px);
+}

@@ -7,8 +7,6 @@
 		<figcaption class="errorfig"><span class="errorlabel">Error</span><span class="fourohfour">404</span><span class="sorts">It looks like we’re out of sorts</span></figcaption>
 	</figure>
 
-	<?php get_search_form(); ?>
-
 </div> <!-- end #content -->
 
 <?php get_footer(); ?>
