@@ -40,3 +40,26 @@ be seen on the Desktop.
 #inner-footer{
   padding:0;
 }
+
+.contactinfo{
+  @include rem('font-size',36px);
+}
+
+.wholesaleinquiries{
+  .contactinfo{
+    @include rem('font-size',36px);
+  }
+}
+
+
+.footer{
+
+  .contact-info{
+    margin-left: -30px;
+margin-right: 15px;
+  }
+.addy{
+  margin-left: -20px;
+  margin-right: 40px;
+}
+}

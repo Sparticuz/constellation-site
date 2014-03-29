@@ -20,7 +20,7 @@
 							)); ?>
 						</ul>
 					</div>
-					<div class="three columns widget">
+					<div class="three columns widget contact-info">
 						<h3>Contact</h3>
 						<ul>
 							<li><a href="mailto:hello@constellationco.com">hello@constellationco.com</a></li>
