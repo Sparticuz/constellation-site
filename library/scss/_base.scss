@@ -352,7 +352,7 @@ nav{
 	}
 }
 
-.single{
+.single, .blog{
 	& #content{
 		border-top:1px solid #e6e6e6;
 	}
@@ -1005,6 +1005,7 @@ SIDEBARS & ASIDES
 		padding: 30px 0 0 0;
 
 
+
 		ul {
 			margin: 0px;
 
@@ -1025,6 +1026,31 @@ SIDEBARS & ASIDES
 
 	}
 
+#sidebar1{
+	.widget{
+		border-top: 1px solid #e6e6e6;
+		padding:25px 0;
+		@include rem('font-size',20px);
+		.textwidget{
+			line-height:25px;
+			color:$lightgray;
+		}
+		a{
+			color:$lightgray;
+			text-decoration:none;
+			&:hover{
+			color:$black;
+		}
+		}
+		#connect-widget{
+.button{
+	display:block;
+	text-align:center;
+	margin-bottom:10px;
+}
+		}
+	}
+}
 /*********************
 FOOTER STYLES
 *********************/

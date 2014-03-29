@@ -358,6 +358,16 @@ SIDEBARS & ASIDES
 		}
 	}
 
+#sidebar1{
+	.widget{
+		@include rem('font-size',16px);
+		&:first-child{
+			border:0;
+			padding-top:0;
+		}
+	}
+}
+
 
 /*********************
 FOOTER STYLES
