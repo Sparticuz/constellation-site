@@ -12,7 +12,7 @@
 
 		<div id="main" class="twelve columns first clearfix" role="main">
 
-			<section class="eight column manifesto">
+			<section class="nine column manifesto">
 				<p>Everything we do is inspired by conviction, craftsmanship, and community.</p>
 				<p>We love to make beautiful things, but our inmost desire is to facilitate meaningful connections, to use the time-honored tradition of letterpress to bring people together.</p>
 				<p>We celebrate tailor-made over generic, heritage over novelty, and process over expediency. Each of our products are printed on antique hand-fed and treadle-operated printing presses in our Seattle studio.</p>

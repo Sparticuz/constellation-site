@@ -60,12 +60,14 @@ HEADER STYLES
 	figcaption{
 		
 		top:30%;
-		@include rem('font-size',60px);
-		line-height: 70px;
+		@include rem('font-size',55px);
+		line-height: 65px;
 
 		&.why{
 			
 			& img{
+				max-width: 85px;
+				padding-top: 15px;
 				
 			}
 		}
@@ -422,6 +424,7 @@ padding: 0 !important;
 	@include rem('font-size',28px);
 	line-height:50px !important;
 	padding-bottom:0;
+	padding-right: 30px;
 	p{margin-top:0;}
 }
 
@@ -542,6 +545,8 @@ fieldset{
 
 }
 
+
+
 .entry-content{
 	p:nth-child(2){
 				@extend .twelve;
@@ -559,6 +564,8 @@ fieldset{
 		margin-bottom: 25px;
 	}
 }
+
+
 
 
 .blog-metadata{

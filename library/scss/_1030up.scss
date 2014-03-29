@@ -24,6 +24,15 @@ be seen on the Desktop.
     
     @include rem('font-size',77px);
     line-height: 90px;
+
+        &.why{
+      
+      & img{
+        max-width: 100px;
+        padding-top: 25px;
+        
+      }
+    }
   }
 
 }

@@ -28,7 +28,7 @@
 			<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/studio_large.jpg" class="twelve columns first" />
 		</section>
 
-		<section class="entry-content tall_img_double_wide clearfix row">
+		<section class="tall_img_double_wide clearfix row">
 			<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/studio_vertical.jpg" class="six columns first">
 			<div class="six columns last">
 				<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/studio_small_1.jpg">
@@ -96,7 +96,7 @@
 	<span class="bigquote"><q>It’s all about life. Life shouldn’t just happen to you. You’re meant to live it, to experience the joys and the sorrows and everything in between to the fullest.</q></span>
 	
 	<div class="seattle">
-		<div class="wrap clearfix entry-content">
+		<div class="wrap clearfix">
 			<article class="twelve columns team">
 				<span class="four columns"><h2>Meet Our<br />Team</h2></span>
 				<span class="four columns"><img src="http://beta.constellationco.com/wp-content/uploads/2014/03/sara_portrait.jpg" /><h3>Sara McNally</h3>
