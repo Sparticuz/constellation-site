@@ -422,6 +422,7 @@ padding: 0 !important;
 	@include rem('font-size',28px);
 	line-height:50px !important;
 	padding-bottom:0;
+	p{margin-top:0;}
 }
 
 
@@ -434,6 +435,7 @@ padding: 0 !important;
 .sidebarbody{
 	@include rem('font-size',16px);
 	border:0;
+	padding-top: 5px;
 }
 
 .sidebarlink{
@@ -537,4 +539,30 @@ fieldset{
 .store-location{
 		@include rem('font-size',17px);
 
+}
+
+.entry-content{
+	p:nth-child(2){
+				@extend .twelve;
+				@include rem('font-size',30px);
+			}
+		}
+
+		.byline{
+			margin-top: 0;
+			margin-bottom: -15px;
+		}
+
+.blog{
+	.post{
+		margin-bottom: 25px;
+	}
+}
+
+
+.blog-metadata{
+	@include rem('font-size',16px);
+		.category_link_title{
+@include rem('font-size',16px);
+	}
 }

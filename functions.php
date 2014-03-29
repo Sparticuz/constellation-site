@@ -142,7 +142,7 @@ function prefix_insert_post_ads( $content ) {
 		$categories = "";
 		if($the_categories){
 			foreach($the_categories as $the_category){
-				$categories .= '<a href="'.get_category_link($the_category->term_id).'" title="'.esc_attr($the_category->name).'">'.$the_category->cat_name.'</a>';
+				$categories .= '<a href="'.get_category_link($the_category->term_id).'" title="'.esc_attr($the_category->name).'" class="category_link_title">'.$the_category->cat_name.'</a>';
 			}
 		}
 		$code.= '<span class="category_title">Filed Under</span>';

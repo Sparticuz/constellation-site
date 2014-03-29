@@ -176,6 +176,9 @@ h2, .h2 {
 		font-family:$serif;
 		@include rem('font-size',30px);
 	}
+	a{
+		color:$base;
+	}
 }
 
 
@@ -394,7 +397,9 @@ img{
 
 		/* post meta */
 		.byline {
-			color: #999;
+			color: $black;
+margin-bottom: -10px;
+font-style:italic;
 
 			time {}
 		}
@@ -402,19 +407,25 @@ img{
 		/* entry content */
 		.entry-content {
 
+			a{
+		color:$gray;
+		text-decoration:none;
+
+			}
+
 			img:first-child{
 				@extend .twelve;
 			}
 			p:nth-child(2){
 				@extend .twelve;
-				@include rem('font-size',30px);
+				@include rem('font-size',24px);
 			}
 
 			p {
 				
 			}
 			img {
-				
+			padding: 10px 0;
 			}
 
 			ul, ol, table, dl {}
@@ -724,9 +735,12 @@ COMMENT STYLES
 
 /* h3 comment title */
 #comments {
-
+	font-family:$serif;
+	text-transform:none;
 	/* number of comments span */
-	span {}
+	span {
+
+	}
 
 }
 
@@ -747,8 +761,12 @@ COMMENT STYLES
 		clear: both;
 		overflow: hidden;
 		list-style-type: none;
-		margin-bottom: 1.5em;
-		padding: 0.7335em 10px;
+		padding:0;
+
+
+		article{
+			padding:15px 0;
+		}
 
 		&:last-child {
 			margin-bottom: 0;
@@ -773,7 +791,7 @@ COMMENT STYLES
 	}
 
 	li[class*=depth-] {
-		margin-top: 1.1em;
+		
 	}
 
 	li.depth-1 {
@@ -788,10 +806,18 @@ COMMENT STYLES
 		padding-bottom: 0;
 	}
 
-	li.depth-2 {}
-	li.depth-3 {}
-	li.depth-4 {}
-	li.depth-5 {}
+	li.depth-2 {
+		padding-left:40px;
+	}
+	li.depth-3 {
+		padding-left:40px;
+	}
+	li.depth-4 {
+		padding-left:40px;
+	}
+	li.depth-5 {
+		padding-left:40px;
+	}
 
 	/* general comment classes */
 	.alt {}
@@ -802,7 +828,9 @@ COMMENT STYLES
 		//background: #fefefe;
 	}
 	.parent {}
-	.comment {}
+	.comment {
+		border-top:1px solid #e6e6e6;
+	}
 	.children {}
 	.pingback {}
 	.bypostauthor {}
@@ -814,21 +842,24 @@ COMMENT STYLES
 
 	/* vcard */
 	.vcard {
-		margin-left: 50px;
+	
 
 		cite.fn {
 			font-weight: 700;
 			font-style: normal;
+			font-family:$sans-serif;
+			text-transform:uppercase;
 
 			a.url {}
 
 		}
 
 		time {
-			float: right;
+			font-style:italic;
+			padding-left:15px;
 
 			a {
-				color: #999;
+				color: $lightgray;
 				text-decoration: none;
 
 				&:hover {
@@ -867,7 +898,7 @@ COMMENT STYLES
 
 	/* comment content */
 	.comment_content {
-		margin-left: 50px;
+
 
 		p {
 			margin: 0.7335em 0 1.5em;
@@ -877,14 +908,21 @@ COMMENT STYLES
 
 	} /* end .commentlist .comment_content */
 
+.comment-edit-link{
+	color:$gray;
+	padding-left:5px;
+	font-family:$sans-serif;
+	text-transform:uppercase;
+	@include rem('font-size',13px);
+}
+
 	/* comment reply link */
 	.comment-reply-link {
 		text-decoration: none;
 		//float: right;
 		//background: #4598bb;
 		//padding: 3px 5px;
-		color: #ccc;
-		opacity: 0.65;
+		color: $lightgray;
 		//margin-bottom: 10px;
 		//font-weight: 700;
 		//font-size: 0.9em;
@@ -903,7 +941,7 @@ COMMENT FORM STYLES
 ******************************************************************/
 
 .respond-form {
-	margin: 1.5em 10px;
+	margin: 0;
 	padding-bottom: 2.2em;
 
 	form {
@@ -912,7 +950,7 @@ COMMENT FORM STYLES
 		li {
 			list-style-type: none;
 			clear: both;
-			margin-bottom: 0.7335em;
+			margin-bottom: -1px;
 
 			label,
 			small {
@@ -924,13 +962,13 @@ COMMENT FORM STYLES
 		input[type=email],
 		input[type=url],
 		textarea {
-			padding: 3px 6px;
-			background: #efefef;
-			border: 2px solid #cecece;
+			padding: 5px 10px;
+			background: #fff;
+			border:1px solid #b3b3b3;
 			line-height: 1.5em;
 
 			&:focus {
-				background: #fff;
+				border:1px solid $black;
 			}
 
 			/* form validation */
@@ -945,16 +983,19 @@ COMMENT FORM STYLES
 			}
 		}
 
+		input[type=submit]{
+			margin:0;
+		}
+
 		input[type=text],
 		input[type=email],
 		input[type=url] {
-			max-width: 400px;
-			min-width: 250px;
+			width:100%;
 		}
 
 		textarea {
 			resize: none;
-			width: 97.3%;
+			width: 100%;
 			height: 150px;
 		}
 
@@ -971,11 +1012,28 @@ COMMENT FORM STYLES
 
 	/* cancel comment reply link */
 	#cancel-comment-reply {
-		a {}
+		a {
+					text-transform:uppercase;
+		font-family:$sans-serif;
+		@include rem('font-size',13px);
+		color:$base;
+		}
 	}
 
 	/* logged in comments */
-	.comments-logged-in-as {}
+	.comments-logged-in-as {
+		a{
+			color:$gray;
+			text-decoration:none;
+		}
+	}
+
+	.logout_button{
+		text-transform:uppercase;
+		font-family:$sans-serif;
+		@include rem('font-size',13px);
+		float:right;
+	}
 
 	/* allowed tags */
 	#allowed_tags {
@@ -986,6 +1044,7 @@ COMMENT FORM STYLES
 	.nocomments {
 		margin: 0 20px 1.1em;
 	}
+
 
 /*********************
 SIDEBARS & ASIDES
@@ -1042,11 +1101,14 @@ SIDEBARS & ASIDES
 			color:$black;
 		}
 		}
+		input[type="text"]{
+			padding: 5px 9px;
+		}
 		#connect-widget{
-.button{
-	display:block;
-	text-align:center;
-	margin-bottom:10px;
+			.button{
+				display:block;
+				text-align:center;
+				margin-bottom:10px;
 }
 		}
 	}
@@ -1367,7 +1429,46 @@ text-transform:none;
 }
 
 .blog-metadata{
+	a{
+		color:$black;
+	}
 	span{
+		border-top:1px solid #e6e6e6;
+		padding:10px 0;
 		display:block;
 	}
+	.author{
+		font-style:italic;
+@include rem('font-size',17px);
+	}
+
+.category_title, .share_title{
+			font-family: $sans-serif;
+			@include rem('font-size',13px);
+			text-transform:uppercase;
+			margin-bottom:-5px;
 }
+
+	.category_link_title{
+font-family: $serif;
+@include rem('font-size',20px);
+color:$lightgray;
+display: table;
+font-style:italic;
+	}
+}
+
+.blog{
+.more-link{
+	font-family: $sans-serif;
+	text-transform:uppercase;
+	display: table;
+	margin: 10px 0;
+	letter-spacing: 1px;
+	@include rem('font-size',14px);
+}
+.post{
+	border-bottom:1px solid #e6e6e6;
+}
+}
+

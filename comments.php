@@ -31,7 +31,7 @@ The comments page for Bones
 
 				<?php if ( is_user_logged_in() ) : ?>
 
-				<p class="comments-logged-in-as">Logged in as <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="<?php _e("Log out of this account", "bonestheme"); ?>"><?php _e("Log out", "bonestheme"); ?> <?php _e("&raquo;", "bonestheme"); ?></a></p>
+				<p class="comments-logged-in-as">Logged in as <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="<?php _e("Log out of this account", "bonestheme"); ?>" class="logout_button"><?php _e("Log out", "bonestheme"); ?></a></p>
 				<p><textarea name="comment" id="comment" placeholder="Enter your comment here" tabindex="4"></textarea></p>
 
 				<?php else : ?>
