@@ -260,11 +260,10 @@ nav{
 }
 
 #categories{
-	display:inline-block;
-
-
+height: 135px;
 	ul{
 		text-align:left;
+		
 		
 		li{
 		
@@ -307,12 +306,13 @@ nav{
 }
 
 .sidebar-links{
-	display:block;
+	display:inline;
 		color:$black;
 	text-align:left;
 
 	.etsy.button{
 			margin: 10px 0;
+			padding: 5px 10px;
 	}
 
 	.map-icon, .wholesale-link{
