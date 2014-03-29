@@ -16,8 +16,8 @@ if( isset($_GET['specs']) )
 if( isset($_GET['piece']) )
 	$arr['PROJECT TYPE'] = wordwrap(htmlentities($_GET['piece']), 70, "<br />");
 
-if( isset($_GET['due_date']) )
-	$arr['DUE DATE'] = $_GET['due_date'];
+if( isset($_GET['date']) )
+	$arr['DATE'] = $_GET['date'];
 
 if( isset($_GET['number_of_pieces']) )
 	$arr['NUMBER OF PIECES'] = $_GET['number_of_pieces'];
@@ -25,50 +25,8 @@ if( isset($_GET['number_of_pieces']) )
 if( isset($_GET['quantity']) )
 	$arr['QUANTITY'] = $_GET['quantity'];
 
-/*
-//Get the uploaded file information
-$name_of_uploaded_file = basename($_FILES['attachment']['name']);
-
-//get the file extension of the file
-$type_of_uploaded_file = substr($name_of_uploaded_file, strrpos($name_of_uploaded_file, '.') + 1);
-
-//size in KBs
-$size_of_uploaded_file = $_FILES["attachment"]["size"]/1024;
-
-//Settings
-$max_allowed_file_size = 10000; // size in KB
-$allowed_extensions = array("jpg", "jpeg", "gif", "bmp", "pdf", "png", "doc", "docx", "psd", "ai");
-$upload_folder = '/constellation/files/uploads/';
-
-//Validations
-if($size_of_uploaded_file > $max_allowed_file_size ){
-  die("Size of file should be less than $max_allowed_file_size");
-}
-
-//------ Validate the file extension -----
-$allowed_ext = false;
-for($i=0; $i<sizeof($allowed_extensions); $i++){
-  if(strcasecmp($allowed_extensions[$i],$type_of_uploaded_file) == 0){
-    $allowed_ext = true;
-  }
-}
-
-if(!$allowed_ext){
-  die("The uploaded file is not supported file type. Only the following file types are supported: ".implode(',',$allowed_extensions));
-}
-
-//copy the temp. uploaded file to uploads folder
-$path_of_uploaded_file = $upload_folder . $name_of_uploaded_file;
-$tmp_path = $_FILES["attachment"]["tmp_name"];
-
-if(is_uploaded_file($tmp_path)){
-  if(!copy($tmp_path,$path_of_uploaded_file)){
-    die('error while copying the uploaded file');
-  }
-}
-
-$arr['ATTACHMENT'] = "<a href='".$path_of_uploaded_file."'>".$path_of_uploaded_file.'</a>';
-*/
+if( isset($_GET['newsletter']) )
+  $arr['NEWSLETTER'] = $_GET['newsletter'];
 
 //Create the different parts of the email
 $subject = "Here is your estimate request!";

@@ -86,7 +86,7 @@
 						</fieldset>
 						<fieldset> 
 							<li class="newsletter">
-								<input type="checkbox" name="design"/> Sign up to be notified about news, events, and specials!
+								<input type="checkbox" name="newsletter"/> Sign up to be notified about news, events, and specials!
 							</li>  
 						</fieldset>
 						<li>
