@@ -416,6 +416,8 @@ font-style:italic;
 
 		/* entry content */
 		.entry-content {
+h2{@include rem('font-size',18px);
+clear:left;}
 
 			a{
 		color:$gray;
@@ -460,6 +462,8 @@ font-style:italic;
 
 			blockquote {
 				
+				border-top:1px solid #e6e6e6;
+				border-bottom:1px solid #e6e6e6;
 				/* https://github.com/adobe-webplatform/balance-text */
 				text-wrap: balanced;
 
@@ -498,7 +502,6 @@ font-style:italic;
 
 		.wp-caption {
 			max-width: 100%;
-			background: #eee;
 			padding: 5px;
 
 			/* images inside wp-caption */
@@ -509,9 +512,10 @@ font-style:italic;
 			}
 
 			p.wp-caption-text {
-				font-size: 0.85em;
+				font-size:17px !important;
 				margin: 4px 0 7px;
-				text-align: center;
+				text-align: left;
+				font-style:italic;
 			}
 
 		} /* end .wp-caption */
