@@ -26,7 +26,7 @@
 				<div class="sidebar-links">
 					<a href="https://www.etsy.com/shop/constellationco" class="etsy button">Etsy Shop</a>
 					<a href="mailto:wholesale@constellationco.com?body=Store URL:" class="sidebarlink wholesale-link">Wholesale Inquiries</a>
-					<a href="http://beta.constellationco.com/stores/" class="map-icon sidebarlink">Find a store</a>
+					<a href="/stores/" class="map-icon sidebarlink">Find a store</a>
 				</div>
 			</div>
 		

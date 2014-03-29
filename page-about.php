@@ -89,7 +89,7 @@
 		<section class="three column sidebarbody">
 			<h3>Work With Us</h3>
 			<p>We’d prefer to meet you for a coffee in downtown Seattle, but that’s not always possible. Fill out our estimate request form so we can start a conversation about your project.</p>
-			<a href="">Request an Estimate</a>
+			<a href="/contact/#estimaterequest">Request an Estimate</a>
 		</section>
 	</div>
 

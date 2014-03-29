@@ -22,13 +22,13 @@
 			<section class="three column sidebarbody">
 				<h3>Shop Our Line</h3>
 				<p>We like to think of our products as no matter what, no matter when products. These sentiments transcend occasions and are anytime messages. They won’t go out of season or out of style.</p>
-				<a href="">View Our Products</a>
+				<a href="/product/category/featured/">View Our Products</a>
 				<h3>Work With Us</h3>
 				<p>We’d prefer to meet you for a coffee in downtown Seattle, but that’s not always possible. Fill out our estimate request form so we can start a conversation about your project.</p>
-				<a href="http://beta.constellationco.com/contact/#estimaterequest">Request an Estimate</a>
+				<a href="/contact/#estimaterequest">Request an Estimate</a>
 				<h3>Wholesale Inquiries</h3>
 				<p>We value the Seattle small business community, and we love to work with other local entrepreneurs and retailers. Let’s talk more about creating a meaningful partnership.</p>
-				<a href="">Contact Us</a>
+				<a href="mailto:wholesale@constellationco.com?body=Store URL:">Contact Us</a>
 			</section>
 
 		</div> <!-- end #main -->
