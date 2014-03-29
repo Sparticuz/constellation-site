@@ -602,3 +602,24 @@ margin-right: 2px;
 }
 }
 }
+
+
+.location{
+		article {
+		//set up automatic grid :)
+		@include omega(4n);
+		border-top:1px solid #e6e6e6;
+		padding-top:15px;
+		margin-bottom:50px;
+
+		&:nth-child(5){
+					border:1px solid blue;
+					@include shift(3);
+					@include omega;
+		}
+		&:nth-child(7){
+			border:1px solid red;
+
+		}
+	}
+}
