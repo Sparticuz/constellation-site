@@ -52,6 +52,10 @@ LAYOUT & GRID STYLES
 		text-transform: uppercase;
 		font-weight:400;
 
+		&.oneline{
+			top: 40%;
+		}
+
 		//base mobile style, override further up
 		@include rem('font-size',30px);
 		line-height:35px;

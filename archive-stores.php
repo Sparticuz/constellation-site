@@ -5,7 +5,7 @@
 
 	<figure class="hero specialpage">
 		<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/stores_bg.jpg" class="bleed"/>
-		<figcaption>Find a Store</figcaption>
+		<figcaption class="oneline">Find a Store</figcaption>
 	</figure>
 
 	<div id="inner-content" class="wrap clearfix container">

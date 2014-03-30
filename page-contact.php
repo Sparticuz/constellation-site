@@ -5,7 +5,7 @@
 
 	<figure class="hero ceiling specialpage">
 		<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/contact_bg.jpg" class="bleed"/>
-		<figcaption>Let's Work<br />Together</figcaption>
+		<figcaption>Let's Work Together</figcaption>
 	</figure>
 
 	<div id="inner-content" class="wrap clearfix">

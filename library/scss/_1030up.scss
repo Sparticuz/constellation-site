@@ -21,7 +21,7 @@ be seen on the Desktop.
   //needs to be position relative in order to correctly position the figcaption
 
   figcaption{
-    
+    top:30%;
     @include rem('font-size',77px);
     line-height: 90px;
 
