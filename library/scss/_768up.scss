@@ -589,8 +589,18 @@ fieldset{
 	}
 }
 
+.error404{
+.hero{
+  //needs to be position relative in order to correctly position the figcaption
 
-.errorlabel{
+  figcaption{
+    top:30% !important;
+        
+      }
+    }
+  
+
+	.errorlabel{
 	@include rem('font-size',36px);
 }
 
@@ -601,6 +611,10 @@ fieldset{
 .sorts{
 @include rem('font-size',36px);
 }
+
+}
+
+
 
 #sidebar1{
 	.widget{
