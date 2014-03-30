@@ -166,7 +166,6 @@ nav{
 			/* highlight current page */
 			li.current-menu-item,
 			li.current_page_item,
-			li.current_page_parent,
 			li.current-page-ancestor {
 				a { 
 					color:$black; 
@@ -179,6 +178,20 @@ nav{
 	}
 }
 
+.single-post{
+#navigation{
+	.nav{
+	li.current_page_parent{
+		a { 
+					color:$black; 
+					&:hover{
+						color:$black;
+					}
+				}
+	}
+}
+}
+}
 
 .page-id-24,.page-id-10,.page-id-16{
 	nav{
