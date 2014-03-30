@@ -37,6 +37,17 @@ be seen on the Desktop.
 
 }
 
+.error404{
+  .hero{
+  //needs to be position relative in order to correctly position the figcaption
+
+  figcaption{
+    top:25% !important;
+        
+      }
+    }
+}
+
 #inner-footer{
   padding:0;
 }
