@@ -369,7 +369,7 @@ nav{
 	}
 }
 
-.single, .blog{
+.single, .blog, .search-results{
 	& #content{
 		border-top:1px solid #e6e6e6;
 	}
@@ -1488,7 +1488,7 @@ font-style:italic;
 	}
 }
 
-.blog{
+.blog, .search-results{
 .more-link{
 	font-family: $sans-serif;
 	text-transform:uppercase;

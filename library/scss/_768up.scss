@@ -178,7 +178,7 @@ nav{
 	}
 }
 
-.single-post{
+.single-post, .search-results{
 #navigation{
 	.nav{
 	li.current_page_parent{
@@ -573,7 +573,7 @@ fieldset{
 			margin-bottom: -15px;
 		}
 
-.blog{
+.blog, .search-results{
 	.post{
 		margin-bottom: 25px;
 	}
