@@ -27,7 +27,7 @@
 				<p>We’d prefer to meet you for a coffee in downtown Seattle, but that’s not always possible. Fill out our estimate request form so we can start a conversation about your project.</p>
 				<a href="/contact/#estimaterequest">Request an Estimate</a>
 				<h3>Wholesale Inquiries</h3>
-				<p>We value the Seattle small business community, and we love to work with other local entrepreneurs and retailers. Let’s talk more about creating a meaningful partnership.</p>
+				<p>We value the small business community, and we love to work with entrepreneurs and retailers. Let’s talk more about creating a meaningful partnership.</p>
 				<a href="mailto:wholesale@constellationco.com?body=Store URL:">Contact Us</a>
 			</section>
 
