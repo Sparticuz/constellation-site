@@ -25,7 +25,7 @@ function register_products() {
 			'description' => __( 'This is the custom Product post type', 'bonestheme' ), /* Custom Type Description */
 			'public' => true,
 			'publicly_queryable' => true,
-			'exclude_from_search' => false,
+			'exclude_from_search' => true,
 			'show_ui' => true,
 			'query_var' => true,
 			'menu_position' => 8, /* this is what order you want it to appear in on the left hand side menu */ 

@@ -1489,6 +1489,14 @@ font-style:italic;
 }
 
 .blog, .search-results{
+
+.archive-title{
+	font-family: $sans-serif;
+	@include rem('font-size',20px);
+			text-transform:uppercase;
+			border-bottom:1px solid #e6e6e6;
+			padding-bottom:15px;
+}
 .more-link{
 	font-family: $sans-serif;
 	text-transform:uppercase;
