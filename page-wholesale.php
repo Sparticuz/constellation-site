@@ -5,7 +5,7 @@
 
 	<figure class="hero specialpage">
 		<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/studio_large1.jpg" class="bleed"/>
-		<figcaption>Wholesale</figcaption>
+		<figcaption class="oneline">Wholesale</figcaption>
 	</figure>
 
 	<div id="inner-content" class="wrap clearfix">
