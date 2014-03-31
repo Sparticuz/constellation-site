@@ -369,7 +369,7 @@ nav{
 	}
 }
 
-.single, .blog, .search-results{
+.single, .blog, .search-results, .category{
 	& #content{
 		border-top:1px solid #e6e6e6;
 	}
@@ -1488,7 +1488,7 @@ font-style:italic;
 	}
 }
 
-.blog, .search-results{
+.blog, .search-results, .category{
 
 .archive-title{
 	font-family: $sans-serif;
@@ -1527,4 +1527,8 @@ h2{
 #lookbook{
 	background-color:#e6e6e6;
 	margin-top:-10px;
+}
+
+.archive-title.h2{
+	margin-top:25px;
 }
