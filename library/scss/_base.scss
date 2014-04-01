@@ -634,7 +634,19 @@ clear:left;}
 }
 
 .sidebar-links{
-	display:none;}
+	padding-bottom:20px;
+	a{
+			color:black;
+			text-decoration:none;
+		}
+	.wholesale-link{
+		display:none;
+	}
+	.map-icon{
+		margin-left:10px;
+
+	}
+}
 
 /******************************************************************
 PAGE NAVI STYLES
@@ -1413,7 +1425,8 @@ select{
 		@include omega(4n);
 		border-top:1px solid #e6e6e6;
 		padding-top:15px;
-		margin-bottom:50px;
+		margin-top:15px;
+
 	}
 	.store-location{
 		color:$lightgray;

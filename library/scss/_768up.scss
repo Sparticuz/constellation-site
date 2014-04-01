@@ -657,6 +657,15 @@ margin-right: 2px;
 			border:1px solid red;
 
 		}
+			&:nth-child(8){
+			border:1px solid green;
+			@include shift(3);
+
+		}
+			&:nth-child(9){
+			border:1px solid green;
+
+		}
 	}
 }
 
