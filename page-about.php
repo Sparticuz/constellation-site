@@ -4,7 +4,7 @@
 <div id="content">
 
 	<figure class="hero bleed ceiling specialpage">
-		<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/about_bg.jpg" class="bleed"/>
+		<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/about_bg.jpg" class="bleed"/>
 		<figcaption>About</figcaption>
 	</figure>
 
@@ -15,7 +15,7 @@
 		</section>
 	</div> 
 	
-	<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/woodtype_bg.jpg" class="bleed" />
+	<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/woodtype_bg.jpg" class="bleed" />
 	
 	<div class="wrap clearfix">
 		<section class="eight column">
@@ -25,14 +25,14 @@
 		</section>
 
 		<section class="large_img clearfix row">
-			<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/studio_large.jpg" class="twelve columns first" />
+			<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/studio_large.jpg" class="twelve columns first" />
 		</section>
 
 		<section class="tall_img_double_wide clearfix row">
-			<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/studio_vertical.jpg" class="six columns first">
+			<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/studio_vertical.jpg" class="six columns first">
 			<div class="six columns last">
-				<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/studio_small_1.jpg">
-				<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/studio_small_2.jpg">
+				<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/studio_small_1.jpg">
+				<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/studio_small_2.jpg">
 			</div>
 		</section>
 
@@ -44,7 +44,7 @@
 	</div>
 
 	<figure class="hero">
-		<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/products_bg.jpg" class="bleed"/>
+		<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/products_bg.jpg" class="bleed"/>
 		<figcaption>Products</figcaption>
 	</figure>
 	
@@ -58,9 +58,9 @@
 		</article>
 
 		<section class="triple_threat clearfix row">
-			<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/product_bear.jpg" class="four columns first" />
-			<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/product_journey.jpg" class="four columns" />
-			<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/product_youme.jpg" class="four columns last" />
+			<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/product_bear.jpg" class="four columns first" />
+			<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/product_journey.jpg" class="four columns" />
+			<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/product_youme.jpg" class="four columns last" />
 		</section>
 
 		<article class="eight column">
@@ -69,14 +69,14 @@
 		</article>
 
 		<section class="double_img clearfix row">
-			<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/treehouse_partnering.jpg" class="six columns first" />
-			<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/seedco_partnering.jpg" class="six columns last" />
+			<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/treehouse_partnering.jpg" class="six columns first" />
+			<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/seedco_partnering.jpg" class="six columns last" />
 		</section>
 
 	</div>
 
 	<figure class="hero">
-		<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/clientwork_bg.jpg" class="bleed"/>
+		<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/clientwork_bg.jpg" class="bleed"/>
 		<figcaption>Client Work</figcaption>
 	</figure>
 	
@@ -89,7 +89,7 @@
 		<section class="three column sidebarbody">
 			<h3>Work With Us</h3>
 			<p>We’d prefer to meet you for a coffee in downtown Seattle, but that’s not always possible. Fill out our estimate request form so we can start a conversation about your project.</p>
-			<a href="/contact/#estimaterequest">Request an Estimate</a>
+			<a href="<?php echo get_site_url(); ?>/contact/#estimaterequest">Request an Estimate</a>
 		</section>
 	</div>
 
@@ -99,13 +99,13 @@
 		<div class="wrap clearfix">
 			<article class="twelve columns team">
 				<span class="four columns"><h2>Meet Our<br />Team</h2></span>
-				<span class="four columns"><img src="http://beta.constellationco.com/wp-content/uploads/2014/03/sara_portrait.jpg" /><h3>Sara McNally</h3>
+				<span class="four columns"><img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/sara_portrait.jpg" /><h3>Sara McNally</h3>
 				<span class="occupation">Co-founder, Designer, &amp; Printer</span></span>
-				<span class="four columns"><img src="http://beta.constellationco.com/wp-content/uploads/2014/03/brad_portrait.jpg" /><h3>Brad McNally</h3><span class="occupation">Co-founder &amp; Web Director</span></span>
+				<span class="four columns"><img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/brad_portrait.jpg" /><h3>Brad McNally</h3><span class="occupation">Co-founder &amp; Web Director</span></span>
 			</article>
 			<article class="twelve columns team">
-				<span class="four columns"><img src="http://beta.constellationco.com/wp-content/uploads/2014/03/suzi_portrait.jpg" /><h3>Suzi Mantle</h3><span class="occupation">Bookkeeper</span></span>
-				<span class="four columns"><img src="http://beta.constellationco.com/wp-content/uploads/2014/03/holly_portrait.jpg" /><h3>Holly Power</h3><span class="occupation">Administrative Assistant</span></span>
+				<span class="four columns"><img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/suzi_portrait.jpg" /><h3>Suzi Mantle</h3><span class="occupation">Bookkeeper</span></span>
+				<span class="four columns"><img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/holly_portrait.jpg" /><h3>Holly Power</h3><span class="occupation">Administrative Assistant</span></span>
 			</article>
 			<section class="eight">
 				<h2>Seattle</h2>

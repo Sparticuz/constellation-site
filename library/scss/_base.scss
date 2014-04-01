@@ -218,7 +218,7 @@ HEADER STYLES
 		width:180px;
 		height:55px;
 		display:block;
-		background-image:url('http://beta.constellationco.com/wp-content/themes/constellation-site/library/images/logo.png');
+		background-image:url('/wp-content/themes/constellation-site/library/images/logo.png');
 		background-size:100%;
 		background-repeat: no-repeat;
 		margin: 0 auto;
@@ -1319,8 +1319,7 @@ FOOTER STYLES
 }
 
 .seattle{
- 	@include background-image(url('http://beta.constellationco.com/wp-content/uploads/2014/03/seattle_bg.jpg'));
-	//background-image:url('http://beta.constellationco.com/wp-content/uploads/2014/03/seattle_bg.jpg');
+ 	@include background-image(url('/wp-content/uploads/2014/03/seattle_bg.jpg'));
 	background-position:center bottom;
 	background-repeat:no-repeat;
 	background-size:100%;

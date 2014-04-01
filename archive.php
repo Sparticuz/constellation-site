@@ -10,12 +10,10 @@
 				<h1 class="archive-title h2">
 					<span>Posts Categorized:</span> <?php single_cat_title(); ?>
 				</h1>
-
 			<?php } elseif (is_tag()) { ?>
 				<h1 class="archive-title h2">
 					<span>Posts Tagged:</span> <?php single_tag_title(); ?>
 				</h1>
-
 			<?php } elseif (is_author()) {
 				global $post;
 				$author_id = $post->post_author; ?>

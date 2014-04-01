@@ -4,7 +4,7 @@
 <div id="content">
 
 	<figure class="hero specialpage">
-		<img src="http://beta.constellationco.com/wp-content/uploads/2014/01/peruse_test.jpg" class="bleed"/>
+		<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/01/peruse_test.jpg" class="bleed"/>
 		<figcaption>Peruse the<br />Merchandise</figcaption>
 	</figure>
 
@@ -26,7 +26,7 @@
 				<div class="sidebar-links">
 					<a href="https://www.etsy.com/shop/constellationco" class="etsy button">Etsy Shop</a>
 					<a href="mailto:wholesale@constellationco.com?body=Store URL:" class="sidebarlink wholesale-link">Wholesale Inquiries</a>
-					<a href="/stores/" class="map-icon sidebarlink">Find a store</a>
+					<a href="<?php echo get_site_url(); ?>/stores/" class="map-icon sidebarlink">Find a store</a>
 				</div>
 			</div>
 		

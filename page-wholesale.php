@@ -4,7 +4,7 @@
 <div id="content">
 
 	<figure class="hero specialpage">
-		<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/studio_large1.jpg" class="bleed"/>
+		<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/studio_large1.jpg" class="bleed"/>
 		<figcaption class="oneline">Wholesale</figcaption>
 	</figure>
 <div id="lookbook">
@@ -18,7 +18,7 @@
 </section>
 
 <section class="four columns terms">
-<img src="http://beta.constellationco.com/wp-content/uploads/2014/03/lookbook.png" />
+<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/lookbook.png" />
 </section>
 </section>
 </div>
