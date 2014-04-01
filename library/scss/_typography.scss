@@ -42,10 +42,7 @@ body{
 
 // Intro Paragraph
 
-.entry-content p:first-child {
-	@include rem('font-size',30px);
-	@include rem('line-height:',40px);
-}
+
 
 
 .showcasetitle{

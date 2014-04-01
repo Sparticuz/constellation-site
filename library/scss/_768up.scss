@@ -563,14 +563,19 @@ fieldset{
 }
 
 
-
-.entry-content{
-	p:nth-child(2){
-				@extend .twelve;
+.entry-content>p{
 				@include rem('font-size',30px);
 			}
-		}
 
+.blog, .search-results, .category{
+	p{
+		@include rem('font-size',18px);
+	}
+	p:nth-child(2){
+@include rem('font-size',30px);
+	}
+	}
+	
 		.byline{
 			margin-top: 0;
 			margin-bottom: -15px;
