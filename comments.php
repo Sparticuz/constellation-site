@@ -16,7 +16,7 @@ The comments page for Bones
 	}
 ?>
 
-<?php if ( have_comments() ) : ?>
+
 	<h3 id="comments" class="h2">Join the Conversation (<?php echo get_comments_number();?>)</h3>
 
 	<?php if ( comments_open() ) : ?>
@@ -71,4 +71,4 @@ The comments page for Bones
 		<?php wp_list_comments('type=comment&callback=bones_comments'); ?>
 	</ol>
 
-<?php endif; ?>
+
