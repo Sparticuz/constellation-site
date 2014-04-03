@@ -22,8 +22,8 @@ if( isset($_GET['quantity']) )
 if( isset($_GET['type']) )
 	$arr['TYPE'] = wordwrap(htmlentities($_GET['type']), 70, "<br />");
 
-if( isset($_GET['due_date']) )
-	$arr['DUE DATE'] = $_GET['due_date'];
+if( isset($_GET['date']) )
+	$arr['DUE DATE'] = $_GET['date'];
 
 if( isset($_GET['newsletter']) )
 	$arr['NEWSLETTER'] = $_GET['newsletter'];
