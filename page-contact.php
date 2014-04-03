@@ -60,10 +60,10 @@
 							<li class="six"><label for="email">Email*</label><input type="email" name="email"/></li>
 						</fieldset>
 						<fieldset>
-							<li>
+							<li class="checkboxing">
 								<span>Is your project design, letterpress, or both?</span>
 								<input type="checkbox" name="design"/><label for="design">Design</label>
-								<input type="checkbox" name="letterpress"/><lable for="letterpress">Letterpress</label>
+								<input type="checkbox" name="letterpress"/><label for="letterpress">Letterpress</label>
 							</li>
 							<li class="twelve"><label for="piece">What type of project is it?</label>
 								<textarea name="piece" placeholder="Logo Design, Business Card, Wedding, Etc."></textarea>
@@ -85,7 +85,7 @@
 							<li><label for="quantity">Quantity:<span>How many do you need?</span></label><input type="text" size="40" name="quantity"/></li> 
 						</fieldset>
 						<fieldset> 
-							<li class="newsletter">
+							<li class="newsletter checkboxing">
 								<input type="checkbox" name="newsletter"/><label for="newsletter">Sign up to be notified about news, events, and specials!</label>
 							</li>  
 						</fieldset>

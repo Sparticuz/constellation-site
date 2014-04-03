@@ -1364,6 +1364,8 @@ fieldset{
 
 	&.specs{
 		display: none;
+		border-top: 1px solid #e6e6e6;
+margin-top: 25px;
 	}
 }
 
@@ -1410,6 +1412,28 @@ input[type="submit"]{
 select{
 	width:100%;
 }
+
+
+.checkboxing{
+	span{
+			font-family: $sans-serif;
+	color:$base;
+	@include rem('font-size',13px);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin:15px 0 5px 0;
+	display:block;
+	}
+	label{
+		font-family: $serif;
+		text-transform: none;
+		@include rem('font-size',18px);
+		letter-spacing:0;
+		display:inline-block;
+		padding:0 10px 0 5px;
+	}
+}
+
 
 
 .newsletter{
