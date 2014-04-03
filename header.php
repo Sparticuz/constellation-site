@@ -27,6 +27,11 @@ yMMM-         :hMNddNMNy:yMN   hMs            `MMm
                `:+shmNMMMMMMNmdyo/.               
 
         Conviction, Craftsmanship, & Community
+
+            Letterpress by Sara McNally
+  Site Design and Development by Brad & Kyle McNally
+    Photography by Dorothy Huynh & Jenny Linquist
+              Copy by Cali Pitchel
 -->
 <!--[if lt IE 7]><html <?php language_attributes(); ?> class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if (IE 7)&!(IEMobile)]><html <?php language_attributes(); ?> class="no-js lt-ie9 lt-ie8"><![endif]-->
