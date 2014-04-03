@@ -53,26 +53,26 @@
 			
 			<section class="eight columns">
 				
-				<form id="form" method="get" action="<?php echo get_site_url(); ?>/wp-content/themes/constellation/process.php" enctype="multipart/form-data">
+				<form id="form" method="get" action="<?php echo get_site_url(); ?>/wp-content/themes/constellation-site/process.php" enctype="multipart/form-data">
 					<ul>
 						<fieldset>
-							<li class="six"><label>Name*</label><input type="text" name="name" required/></li>
-							<li class="six"><label>Email</label><input type="email" name="email"/></li>
+							<li class="six"><label for="name">Name*</label><input type="text" name="name" required/></li>
+							<li class="six"><label for="email">Email*</label><input type="email" name="email"/></li>
 						</fieldset>
 						<fieldset>
 							<li>
-								<label>Is your project design, letterpress, or both?<br /></label>
-								<input type="checkbox" name="design"/> Design<br />
-								<input type="checkbox" name="specs"/> Letterpress<br />
+								<span>Is your project design, letterpress, or both?</span>
+								<input type="checkbox" name="design"/><label for="design">Design</label>
+								<input type="checkbox" name="letterpress"/><lable for="letterpress">Letterpress</label>
 							</li>
-							<li class="twelve"><label>What type of project is it?</label>
+							<li class="twelve"><label for="piece">What type of project is it?</label>
 								<textarea name="piece" placeholder="Logo Design, Business Card, Wedding, Etc."></textarea>
 							</li>
-							<li style="clear:both;"><label>When do you need it?</label><input type="date" id="datepicker"/></li>
+							<li style="clear:both;"><label for="date">When do you need it?</label><input type="date" id="datepicker" name="date"/></li>
 						</fieldset>
 						<fieldset class="specs">
 							<li>
-								<label>How many pieces?<span>Save the Date, Invitation &amp; RSVP Card are 3 pieces.</span></label>
+								<label for="number_of_pieces">How many pieces?<span>Save the Date, Invitation &amp; RSVP Card are 3 pieces.</span></label>
 								<select name="number_of_pieces">
 									<option value="0">&mdash;</option>
 									<option value="1">1</option>
@@ -82,11 +82,11 @@
 									<option value="5">5</option>
 								</select>
 							</li>
-							<li><label>Quantity:<span>How many do you need?</span></label><input type="text" size="40" name="quantity"/></li> 
+							<li><label for="quantity">Quantity:<span>How many do you need?</span></label><input type="text" size="40" name="quantity"/></li> 
 						</fieldset>
 						<fieldset> 
 							<li class="newsletter">
-								<input type="checkbox" name="newsletter"/> Sign up to be notified about news, events, and specials!
+								<input type="checkbox" name="newsletter"/><label for="newsletter">Sign up to be notified about news, events, and specials!</label>
 							</li>  
 						</fieldset>
 						<li>
