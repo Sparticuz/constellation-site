@@ -102,7 +102,7 @@
 
 <script type="text/javascript" charset="utf-8">
 	jQuery(document).ready(function($) {
-		$('input[name="specs"]').click(function(){
+		$('input[name="letterpress"]').click(function(){
 				$('fieldset.specs').toggle();
 		});
 	});
