@@ -16,7 +16,7 @@
 				//setup posts to sort alphabetically by the location
 				$posts = get_posts(array(
 					'posts_per_page'=>	-1,
-					'post_type'		=>	'store',
+					'post_type'		=>	'stores',
 					'meta_key'		=>	'location',
 					'orderby'		=>	'meta_value',
 					'order'			=>	'ASC'
