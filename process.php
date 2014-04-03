@@ -30,8 +30,7 @@ if( isset($_GET['newsletter']) )
 
 //Create the different parts of the email
 $subject = "Here is your estimate request!";
-//$to = 'hello@constellationco.com';
-$to = "kyle@kmcnally.net";
+$to = 'hello@constellationco.com';
 $from = $_GET['email'];
 
 //Set up the headers

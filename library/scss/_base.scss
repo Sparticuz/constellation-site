@@ -369,11 +369,6 @@ nav{
 	}
 }
 
-.single, .blog, .search-results, .category{
-	& #content{
-		border-top:1px solid #e6e6e6;
-	}
-}
 
 /*********************
 POSTS & CONTENT STYLES
@@ -423,14 +418,6 @@ font-style:italic;
 				@include rem('font-size',24px);
 			}
 
-.blog, .search-results, .category{
-	p{
-		@include rem('font-size',18px);
-	}
-	p:nth-child(2){
-@include rem('font-size',24px);
-	}
-	}
 
 .rest_of_post p:first-child{
 	margin-top:0px;
@@ -1395,6 +1382,7 @@ input[type="text"], input[type="email"], textarea{
 	font-style:italic;
 	outline: none;
 	width:100%;
+	padding: 5px 7px;
 	&:focus { 
 		border:solid 1px $black;
 	}
@@ -1538,6 +1526,10 @@ text-transform:none;
 			margin-bottom:-5px;
 }
 
+.share_title{
+	margin-top:8px;
+}
+
 	.category_link_title{
 font-family: $serif;
 @include rem('font-size',20px);
@@ -1547,7 +1539,17 @@ font-style:italic;
 	}
 }
 
-.blog, .search-results, .category{
+.blog, .single, .search-results, .category, .search-no-results, .author{
+	& #content{
+		border-top:1px solid #e6e6e6;
+	}
+
+p{
+		@include rem('font-size',18px);
+	}
+	p:nth-child(2){
+@include rem('font-size',24px);
+	}
 
 .archive-title{
 	font-family: $sans-serif;

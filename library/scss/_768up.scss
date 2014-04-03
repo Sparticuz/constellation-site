@@ -572,7 +572,7 @@ fieldset{
 				@include rem('font-size',30px);
 			}
 
-.blog, .search-results, .category{
+.blog, .search-results, .category, .search-no-results, .author{
 	p{
 		@include rem('font-size',18px);
 	}
@@ -586,7 +586,7 @@ fieldset{
 			margin-bottom: -15px;
 		}
 
-.blog, .search-results, .category{
+.blog, .search-results, .category, .search-no-results, .author{
 	.post{
 		margin-bottom: 25px;
 	}

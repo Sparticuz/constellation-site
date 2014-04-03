@@ -51,7 +51,7 @@
 								<p><?php _e("Try your search again.", "bonestheme"); ?></p>
 							</section>
 							<footer class="article-footer">
-								<p><?php _e("This is the error message in the search.php template.", "bonestheme"); ?></p>
+
 							</footer>
 						</article>
 
