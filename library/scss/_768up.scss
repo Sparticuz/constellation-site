@@ -677,3 +677,12 @@ margin-right: 2px;
 .archive-title, .archive-title.h2{
 	margin-top:0;
 }
+
+.thankyou{
+	@include rem('font-size',90px);
+}
+
+.thankzfig{
+	& img{
+				margin-bottom: 50px;
+			}}

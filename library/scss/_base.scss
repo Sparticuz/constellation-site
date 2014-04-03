@@ -225,7 +225,7 @@ HEADER STYLES
 	}
 }
 
-.page-id-24,.page-id-10,.page-id-16,.error404{
+.page-id-24, .page-id-10, .page-id-16, .page-id-5841, .error404{
 	//this targets the pages usually associated with 'ceiling'
 	& #logo{
 		background-position:0 -56px;
@@ -241,7 +241,7 @@ HEADER STYLES
 	}
 }
 
-.error404{
+.error404, .page-id-5841{
 //no idea why this isn't working just above here
 	.nav li a{
 			color:$white !important;
@@ -1233,13 +1233,6 @@ FOOTER STYLES
 	padding-bottom:20px !important;
 }
 
-.littleguy{
-	clear:both;
-	display:block;
-	margin:0 auto;
-	padding-top:50px;
-}
-
 
 .sidebarbody{
 	border-top:1px solid #e6e6e6;
@@ -1500,7 +1493,7 @@ display:block;
 
 .sorts{
 font-family: $serif;
-@include rem('font-size',30px);
+@include rem('font-size',26px);
 text-transform:none;
 }
 
@@ -1575,7 +1568,7 @@ h2{
 }
 
 
-.error404{
+.error404, .page-id-5841{
 .hero.ceiling{
 		margin-bottom: -145px;
 }
@@ -1599,3 +1592,27 @@ h2{
 		color:$gray;
 	}
 }
+
+.thankzfig{
+	& img{
+				max-width:100px;
+				padding-top:0;
+				margin-bottom: 25px;
+			}
+		}
+
+.thankyou{
+	font-family: $serif;
+	text-transform:none;
+	font-style:italic;
+	display:block;
+	margin-bottom:30px;
+	@include rem('font-size',40px);
+}
+
+.page-id-5841{
+	.hero.homepage figcaption{
+		line-height:30px;
+	}
+}
+
