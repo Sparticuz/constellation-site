@@ -66,7 +66,7 @@
 								<input type="checkbox" name="letterpress"/><label for="letterpress">Letterpress</label>
 							</li>
 							<li class="twelve"><label for="piece">What type of project is it?</label>
-								<textarea name="piece" placeholder="Logo Design, Business Card, Wedding, Etc."></textarea>
+								<textarea name="type" placeholder="Logo Design, Business Card, Wedding, Etc."></textarea>
 							</li>
 							<li style="clear:both;"><label for="date">When do you need it?</label><input type="date" id="datepicker" name="date"/></li>
 						</fieldset>

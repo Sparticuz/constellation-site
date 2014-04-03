@@ -19,8 +19,8 @@ if( isset($_GET['number_of_pieces']) )
 if( isset($_GET['quantity']) )
 	$arr['QUANTITY'] = $_GET['quantity'];
 
-if( isset($_GET['piece']) )
-	$arr['PIECE'] = wordwrap(htmlentities($_GET['piece']), 70, "<br />");
+if( isset($_GET['type']) )
+	$arr['TYPE'] = wordwrap(htmlentities($_GET['type']), 70, "<br />");
 
 if( isset($_GET['due_date']) )
 	$arr['DUE DATE'] = $_GET['due_date'];
