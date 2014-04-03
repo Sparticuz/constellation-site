@@ -80,5 +80,5 @@ ini_set("sendmail_from", $from);
 mail($to, $subject, $body, $headers);
 
 //Forward to thanks page
-header('Location: http://www.constellationco.com/thanks');
+header('Location: http://www.constellationco.com/thankyou');
 ?>
