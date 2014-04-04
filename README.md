@@ -1,17 +1,33 @@
 Constellation Theme
 ========
-Based on Bones - A Lightweight Wordpress Development Theme
-Bones is designed to make the life of developers easier. It's built
-using HTML5 & has a strong semantic foundation. It was updated recently
-using some of the HTML5 Boilerplate's recommended markup and setup.
-It's constantly growing so be sure to check back often if you are a
-frequent user. I'm always open to contribution. :)
+Theme for http://www.constellationco.com
 
-Bones Designed by Eddie Machado
-http://themble.com/bones
+Built on
+* Wordpress: http://wordpress.org/
 
-Bones License: WTFPL
-Bones License URI: http://sam.zoy.org/wtfpl/
-Bones - Are You Serious? Yes.
+Built using
+* Bourbon: http://www.bourbon.io
+* Neat: http://neat.bourbon.io
+* Bones: http://themble.com/bones
+* FlexSlider: http://www.woothemes.com/flexslider/
+* jQuery: http://www.jquery.com
+* jQuery-Stickem: https://github.com/davist11/jQuery-Stickem
 
-CC License: All Rights Reserved
+Built with
+* Sublime Text 3: http://www.sublimetext.com/3
+
+CC License: GPLv3
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
