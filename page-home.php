@@ -4,7 +4,9 @@
 <div id="content">
 
 	<figure class="hero homepage ceiling">
-		<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/homepage_bg.jpg" class="bleed"/>
+		<video autoplay loop poster="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/homepage_bg.jpg" id="bgvid">
+			<source src="http://beta.constellationco.com/wp-content/themes/constellation-site/library/Constellation+&+Co.-HD.mp4" type="video/mp4">
+		</video>
 		<figcaption class="why">Using the Historic<br/>Craft of Letterpress<span class="together">to bring people together</span><img class="inheritWidth" src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/card.png" class="littleguy"></figcaption>
 	</figure>
 
