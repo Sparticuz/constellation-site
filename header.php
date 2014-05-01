@@ -83,6 +83,9 @@ yMMM-         :hMNddNMNy:yMN   hMs            `MMm
 </script>
 	<!-- end analytics -->
 
+  <!-- Please call pinit.js only once per page -->
+<script type="text/javascript" async  data-pin-color="white" data-pin-height="28" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
+
 </head>
 
 <body <?php body_class(); ?>>
