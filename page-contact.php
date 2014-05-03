@@ -4,7 +4,7 @@
 <div id="content">
 
 	<figure class="hero ceiling specialpage">
-		<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/contact_bg.jpg" class="bleed"/>
+		<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/contact_bg.jpg" class="bleed" data-pin-no-hover="true"/>
 		<figcaption>Let's Work Together</figcaption>
 	</figure>
 

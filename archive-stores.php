@@ -4,7 +4,7 @@
 <div id="content">
 
 	<figure class="hero specialpage">
-		<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/stores_bg.jpg" class="bleed"/>
+		<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/stores_bg.jpg" class="bleed" data-pin-no-hover="true"/>
 		<figcaption class="oneline">Find a Store</figcaption>
 	</figure>
 

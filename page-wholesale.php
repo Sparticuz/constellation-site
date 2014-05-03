@@ -4,7 +4,7 @@
 <div id="content">
 
 	<figure class="hero specialpage">
-		<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/studio_large1.jpg" class="bleed"/>
+		<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/studio_large1.jpg" class="bleed" data-pin-no-hover="true"/>
 		<figcaption class="oneline">Wholesale</figcaption>
 	</figure>
 <div id="lookbook">
@@ -18,7 +18,7 @@
 </section>
 
 <section class="four columns terms">
-<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/lookbook.png" />
+<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/lookbook.png" data-pin-no-hover="true"/>
 </section>
 </section>
 </div>

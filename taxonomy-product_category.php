@@ -4,7 +4,7 @@
 <div id="content">
 
 	<figure class="hero specialpage">
-		<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/01/peruse_test.jpg" class="bleed"/>
+		<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/01/peruse_test.jpg" class="bleed" data-pin-no-hover="true"/>
 		<figcaption>Peruse the<br />Merchandise</figcaption>
 	</figure>
 
