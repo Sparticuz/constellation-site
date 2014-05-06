@@ -126,7 +126,7 @@ function bones_scripts_and_styles() {
   if (!is_admin()) {
 
     // modernizr (without media query polyfill)
-    wp_register_script( 'bones-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.6.2', false );
+    //wp_register_script( 'bones-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.6.2', false );
 
     // register main stylesheet
     wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
@@ -143,7 +143,7 @@ function bones_scripts_and_styles() {
     wp_register_script( 'bones-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
 	
 	//this is for the balanced text polyfill
-	wp_register_script( 'balanced-text', get_stylesheet_directory_uri() . '/library/js/libs/jquery.balanced-text.js', array( 'jquery' ), '1.2.0', true );
+	//wp_register_script( 'balanced-text', get_stylesheet_directory_uri() . '/library/js/libs/jquery.balanced-text.js', array( 'jquery' ), '1.2.0', true );
 
 	//this is for the flexslider
 	//we should only register if this a product page
@@ -156,7 +156,7 @@ function bones_scripts_and_styles() {
 	wp_enqueue_script('stickem');
 
     // enqueue styles and scripts
-    wp_enqueue_script( 'bones-modernizr' );
+    //wp_enqueue_script( 'bones-modernizr' );
     wp_enqueue_style( 'bones-stylesheet' );
     wp_enqueue_style('bones-ie-only');
 
@@ -173,10 +173,10 @@ function bones_scripts_and_styles() {
     and your site will load faster.
     */
 	wp_deregister_script( 'jquery' );
-	wp_register_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', array(), '1.10.2', false );
+	wp_register_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js', array(), '1.11.1', false );
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'bones-js' );
-	wp_enqueue_script( 'balanced-text' );
+	//wp_enqueue_script( 'balanced-text' );
 	
   }
 }
