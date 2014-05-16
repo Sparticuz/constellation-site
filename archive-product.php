@@ -43,7 +43,12 @@
 									<ul class="slider_<?php the_ID(); ?> slides">
 										<?php foreach($images as $image): ?>
 											<li data-thumb="<?php echo $image['sizes']['thumbnail']; ?>">
-												<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"/>
+												<img
+													src="<?php echo $image['url']; ?>"
+													alt="<?php echo $image['alt']; ?>"
+													data-pin-description="<?php the_title_attribute(); ?>"
+													data-pin-url="<?php the_permalink(); ?>"
+												/>
 											</li>
 										<?php endforeach; ?>
 									</ul>

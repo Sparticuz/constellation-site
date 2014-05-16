@@ -26,7 +26,7 @@
 				<div class="sidebar-links">
 					<a href="https://www.etsy.com/shop/constellationco" class="etsy button">Etsy Shop</a>
 					<a href="mailto:wholesale@constellationco.com?body=Store URL:" class="sidebarlink wholesale-link">Wholesale Inquiries</a>
-					<a href="<?php echo get_site_url(); ?>//stores/" class="map-icon sidebarlink">Find a store</a>
+					<a href="<?php echo get_site_url(); ?>/stores/" class="map-icon sidebarlink">Find a store</a>
 				</div>
 			</div>
 		
@@ -43,7 +43,12 @@
 									<ul class="slider_<?php the_ID(); ?> slides">
 										<?php foreach($images as $image): ?>
 											<li data-thumb="<?php echo $image['sizes']['thumbnail']; ?>">
-												<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"/>
+												<img
+													src="<?php echo $image['url']; ?>"
+													alt="<?php echo $image['alt']; ?>"
+													data-pin-description="<?php the_title_attribute() ?>"
+													data-pin-url="<?php the_permalink(); ?>"
+												/>
 											</li>
 										<?php endforeach; ?>
 									</ul>
