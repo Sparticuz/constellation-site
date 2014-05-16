@@ -176,15 +176,14 @@ function prefix_insert_after_paragraph( $insertion, $paragraph_id, $content ) {
 
 // the following is to add data-pin-attributes to images inside blog posts
 function add_pins_into_content($content) {
-	
 	$content = mb_convert_encoding($content, 'HTML-ENTITIES', "UTF-8");
 	$dom = new DOMDocument();
 	@$dom->loadHTML($content);
 	foreach ($dom->getElementsByTagName('img') as $node) {
-		$node->setAttribute("alt", html_entity_decode(the_title_attribute('echo=0')) );
+		$node->setAttribute("data-pin-description", html_entity_decode(the_title_attribute('echo=0')) );
 		$node->setAttribute("data-pin-url", get_the_permalink() );
 	}
-	$newHtml = preg_replace('/^<!DOCTYPE.+?>/', '', str_replace( array('<html>', '</html>', '<body>', '</body>'), array('', '', '', ''), $dom->saveHTML()));
+	$newHtml = preg_replace('/^<!DOCTYPE.+/', '', str_replace( array('<html>', '</html>', '<body>', '</body>'), array('', '', '', ''), $dom->saveHTML()));
 	return $newHtml;
 }
 add_filter('the_content', 'add_pins_into_content');
