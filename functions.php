@@ -158,7 +158,7 @@ function prefix_insert_post_ads( $content ) {
 	}
 	return $content;
 }
- 
+
 // Parent Function that makes the magic happen
 function prefix_insert_after_paragraph( $insertion, $paragraph_id, $content ) {
 	$closing_p = '</p>';
@@ -173,5 +173,24 @@ function prefix_insert_after_paragraph( $insertion, $paragraph_id, $content ) {
 	}
 	return implode( '', $paragraphs );
 }
+
+// the following is to add data-pin-attributes to images inside blog posts
+function add_pins_into_content($content) {
+	
+	$content = mb_convert_encoding($content, 'HTML-ENTITIES', "UTF-8");
+	$dom = new DOMDocument();
+	@$dom->loadHTML($content);
+
+	foreach ($dom->getElementsByTagName('img') as $node) {
+		//$oldsrc = $node->getAttribute('alt');
+		$node->setAttribute("alt", html_entity_decode(the_title_attribute('echo=0')) );
+		$node->setAttribute("data-pin-url", get_the_permalink() );
+		//$newsrc = ''.get_template_directory_uri().'/library/images/nothing.gif';
+		//$node->setAttribute("src", $newsrc);
+	}
+	$newHtml = preg_replace('/^<!DOCTYPE.+?>/', '', str_replace( array('<html>', '</html>', '<body>', '</body>'), array('', '', '', ''), $dom->saveHTML()));
+	return $newHtml;
+}
+add_filter('the_content', 'add_pins_into_content');
 
 ?>
