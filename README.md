@@ -9,7 +9,7 @@ Built using
 * Bourbon: http://www.bourbon.io
 * Neat: http://neat.bourbon.io
 * Bones: http://themble.com/bones
-* FlexSlider: http://www.woothemes.com/flexslider/
+* FlexSlider: https://github.com/woothemes/FlexSlider
 * jQuery: http://www.jquery.com
 * jQuery-Stickem: https://github.com/davist11/jQuery-Stickem
 
