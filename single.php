@@ -19,7 +19,6 @@
 
 				<section class="entry-content blog-content row clearfix">
 					<?php the_content(); ?>
-					</div></div><!-- these two closing divs are important, they close .rest_of_post and .the_rest from functions.php -->
 				</section> <!-- end article section -->
 
 				<footer class="nine columns comments-container" style="float:right">
