@@ -7,3 +7,6 @@
 [submodule "kyles-pinterest"]
 	path = library/js/libs/pinterest
 	url = https://github.com/Sparticuz/widgets.git
+[submodule "rrssb-buttons"]
+	path = library/scss/rrssb
+	url = https://github.com/kni-labs/rrssb.git
