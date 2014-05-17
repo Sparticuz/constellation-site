@@ -4,3 +4,6 @@
 [submodule "library/js/libs/stickem"]
 	path = library/js/libs/stickem
 	url = https://github.com/davist11/jQuery-Stickem.git
+[submodule "kyles-pinterest"]
+	path = library/js/libs/pinterest
+	url = https://github.com/Sparticuz/widgets.git
