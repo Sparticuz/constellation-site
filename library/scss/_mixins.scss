@@ -77,8 +77,8 @@ http://sachagreif.com/sass-color-variables/
 TYPOGRAPHY
 *********************/
 
-$sans-serif:        "brandon-grotesque", sans-serif;
-$serif:             "garamond-premier-pro", serif;
+$sans-serif:        "brandon-grotesque", Verdana, Geneva, sans-serif;
+$serif:             "garamond-premier-pro","Palatino Linotype","Book Antiqua",Palatino,serif;
 
 // Baseline, measured in pixels
 // The value should be the same as the font-size value for the html element

@@ -5,6 +5,13 @@ body{
 	@include rem('line-height:',28px);
 }
 
+.wf-loading, {
+	visibility: hidden;
+}
+
+.wf-active, .wf-inactive {
+	visibility: visible;
+}
 
 // Light gray text for sidebar body content
 

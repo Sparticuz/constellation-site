@@ -159,8 +159,8 @@ function bones_scripts_and_styles() {
     $wp_styles->add_data( 'bones-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
 
 	//let's load the typekit font too and gwf
-	wp_register_script( 'typekit', '//use.typekit.net/psw0mrb.js', array(), '', false );
-	wp_enqueue_script( 'typekit' );
+	//wp_register_script( 'typekit', '//use.typekit.net/psw0mrb.js', array(), '', false );
+	//wp_enqueue_script( 'typekit' );
 	
 	
     /*
