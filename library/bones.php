@@ -139,9 +139,6 @@ function bones_scripts_and_styles() {
     //adding scripts file in the footer
     wp_register_script( 'bones-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
 	
-	//this is for the balanced text polyfill
-	//wp_register_script( 'balanced-text', get_stylesheet_directory_uri() . '/library/js/libs/jquery.balanced-text.js', array( 'jquery' ), '1.2.0', true );
-
 	//this is for the flexslider
 	//we should only register if this a product page
 	wp_register_script( 'flexslider', get_stylesheet_directory_uri() . '/library/js/libs/FlexSlider/jquery.flexslider-min.js', array( 'jquery' ), '2.2.0', true );
