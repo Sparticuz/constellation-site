@@ -141,14 +141,17 @@ function bones_scripts_and_styles() {
 	
 	//this is for the flexslider
 	//we should only register if this a product page
-	wp_register_script( 'flexslider', get_stylesheet_directory_uri() . '/library/js/libs/FlexSlider/jquery.flexslider-min.js', array( 'jquery' ), '2.2.0', true );
-	wp_register_style( 'flex-css', get_stylesheet_directory_uri() . '/library/js/libs/FlexSlider/flexslider.css', array(), '', 'all');
-	wp_enqueue_style('flex-css');
-	wp_enqueue_script('flexslider');
-	//and stickem menu
-	wp_register_script( 'stickem', get_stylesheet_directory_uri() . '/library/js/libs/stickem/jquery.stickem.js', array( 'jquery' ), '1.4.0', true );
-	wp_enqueue_script('stickem');
+	if ( get_post_type() == 'product') {
+		wp_register_script( 'flexslider', get_stylesheet_directory_uri() . '/library/js/libs/FlexSlider/jquery.flexslider-min.js', array( 'jquery' ), '2.2.0', true );
+		wp_register_style( 'flex-css', get_stylesheet_directory_uri() . '/library/js/libs/FlexSlider/flexslider.css', array(), '', 'all');
+		wp_enqueue_style('flex-css');
+		wp_enqueue_script('flexslider');
 
+		//and stickem menu
+		wp_register_script( 'stickem', get_stylesheet_directory_uri() . '/library/js/libs/stickem/jquery.stickem.js', array( 'jquery' ), '1.4.0', true );
+		wp_enqueue_script('stickem');
+	}
+	
     // enqueue styles and scripts
     wp_enqueue_style( 'bones-stylesheet' );
     wp_enqueue_style('bones-ie-only');
