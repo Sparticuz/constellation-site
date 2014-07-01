@@ -1603,3 +1603,20 @@ font-style:italic;
 	}
 }
 
+#reptag{
+	position:absolute;
+	background-color:$white;
+	font-family:$sans-serif;
+	text-transform:uppercase;
+	text-decoration:none;
+@include rem('font-size',14px);
+	color:$lightgray;
+	display:block;
+	padding:15px;
+	top:0;
+	right:15px;
+}
+
+#reptag:hover{
+	color:$black;
+}
