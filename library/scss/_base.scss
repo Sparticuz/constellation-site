@@ -619,18 +619,18 @@ clear:left;}
 	}
 }
 
-.sidebar-links{
+.sidebar-links {
 	padding-bottom:20px;
-	a{
-			color:black;
-			text-decoration:none;
-		}
+	a {
+		color:black;
+		text-decoration:none;
+		display:inline-block;
+	}
 	.wholesale-link{
 		display:none;
 	}
 	.map-icon{
 		margin-left:10px;
-
 	}
 }
 
@@ -1233,18 +1233,17 @@ FOOTER STYLES
 	border-top:1px solid #e6e6e6;
 }
 
-
 .contact{
 	padding:25px 0;
 	border-bottom:1px solid #e6e6e6;
 	& a{
 		text-decoration: none;
 		color:$black;
+		display:inline-block;
 		&:hover{
 			color:$gray;
 		}
 	}
-	
 }
 
 .contactinfo{
