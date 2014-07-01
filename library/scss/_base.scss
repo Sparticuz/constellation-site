@@ -1606,10 +1606,10 @@ font-style:italic;
 #reptag{
 	position:absolute;
 	background-color:$white;
-	font-family:$sans-serif;
-	text-transform:uppercase;
+	font-family:$serif;
+	font-style:italic;
 	text-decoration:none;
-@include rem('font-size',14px);
+@include rem('font-size',17px);
 	color:$lightgray;
 	display:block;
 	padding:15px;
@@ -1619,4 +1619,6 @@ font-style:italic;
 
 #reptag:hover{
 	color:$black;
+	background-color:$white;
+	opacity:0.8;
 }
