@@ -132,8 +132,8 @@ function bones_scripts_and_styles() {
     wp_register_style( 'bones-ie-only', get_stylesheet_directory_uri() . '/library/css/ie.css', array(), '' );
 
     // comment reply script for threaded comments
-    if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
-      wp_enqueue_script( 'comment-reply' );
+    if ( is_singular() AND comments_open() AND get_post_type() == 'post' ) {
+		wp_enqueue_script( 'comment-reply' );
     }
 
     //adding scripts file in the footer
