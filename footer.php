@@ -63,9 +63,7 @@
 		</div> <!-- end #container -->
 		
 		<!--<div class="bleed">Page Template: <?php //global $template; //echo basename($template); ?></div>-->
-		<!-- all js scripts are loaded in library/bones.php -->
 		<?php wp_footer(); ?>
-		<script type="text/javascript" async data-pin-color="white" data-pin-height="28" data-pin-hover="true" src="<?php echo get_site_url(); ?>/wp-content/themes/constellation-site/library/js/libs/pinterest/pinit.js"></script>
 	</body>
 
 </html> <!-- end page. what a ride! -->
