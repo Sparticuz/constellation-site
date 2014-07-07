@@ -137,6 +137,7 @@ function bones_scripts_and_styles() {
     }
 
     //adding scripts file in the footer
+
     wp_register_script( 'bones-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
 	
 	//this is for the flexslider
@@ -157,11 +158,6 @@ function bones_scripts_and_styles() {
     wp_enqueue_style('bones-ie-only');
 
     $wp_styles->add_data( 'bones-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
-
-	//let's load the typekit font too and gwf
-	//wp_register_script( 'typekit', '//use.typekit.net/psw0mrb.js', array(), '', false );
-	//wp_enqueue_script( 'typekit' );
-	
 	
     /*
     I recommend using a plugin to call jQuery
@@ -172,7 +168,6 @@ function bones_scripts_and_styles() {
 	wp_register_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js', array(), '1.11.0', false );
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'bones-js' );
-	//wp_enqueue_script( 'balanced-text' );
 	
   }
 }
