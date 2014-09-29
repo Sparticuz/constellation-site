@@ -32,9 +32,9 @@
 						<a href="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=110+cherry+street+seattle+wa+98104&amp;aq=&amp;sll=47.602631,-122.333898&amp;sspn=0.008377,0.01929&amp;vpsrc=0&amp;g=110+cherry+street+seattle+wa&amp;ie=UTF8&amp;hq=110+cherry+street+seattle+wa+98104&amp;hnear=&amp;radius=15000&amp;t=m&amp;cid=6147024036454479109&amp;z=12&amp;iwloc=A">
 						<address>
 							<div class="adr">
-								<div class="street-address">110 Cherry St. #204</div>
+								<div class="street-address">1900 West Nickerson St. Suite 101</div>
 								<span class="locality">Seattle</span>, <abbr class="region" title="Washington">WA</abbr>  
-								<span class="postal-code">98104</span>
+								<span class="postal-code">98119</span>
 								<div class="country-name">USA</div>
 							</div>
 						</address>
