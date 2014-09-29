@@ -21,8 +21,8 @@
 			<article class="five columns contact">
 				<h3>Visit Us</h3>
 				<a href="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=110+cherry+street+seattle+wa+98104&amp;aq=&amp;sll=47.602631,-122.333898&amp;sspn=0.008377,0.01929&amp;vpsrc=0&amp;g=110+cherry+street+seattle+wa&amp;ie=UTF8&amp;hq=110+cherry+street+seattle+wa+98104&amp;hnear=&amp;radius=15000&amp;t=m&amp;cid=6147024036454479109&amp;z=12&amp;iwloc=A">
-					<span class="contactinfo">110 Cherry Street #204</span>
-					<span class="contactinfo">Seattle, WA 98104</span>
+					<span class="contactinfo">1900 West Nickerson St. Suite 101</span>
+					<span class="contactinfo">Seattle, WA 98119</span>
 				</a>
 			</article>
 
