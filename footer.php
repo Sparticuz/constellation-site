@@ -29,7 +29,7 @@
 					</div>
 					<div class="two columns widget addy">
 						<h3>Studio</h3>
-						<a href="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=110+cherry+street+seattle+wa+98104&amp;aq=&amp;sll=47.602631,-122.333898&amp;sspn=0.008377,0.01929&amp;vpsrc=0&amp;g=110+cherry+street+seattle+wa&amp;ie=UTF8&amp;hq=110+cherry+street+seattle+wa+98104&amp;hnear=&amp;radius=15000&amp;t=m&amp;cid=6147024036454479109&amp;z=12&amp;iwloc=A">
+						<a href="https://www.google.com/maps/place/Constellation+%26+Co./@47.655638,-122.380877,17z/data=!3m1!4b1!4m2!3m1!1s0x54906aaffd9993c3:0x554e9dcaf6a83505">
 						<address>
 							<div class="adr">
 								<div class="street-address">1900 West Nickerson St. Suite 101</div>
