@@ -11,7 +11,7 @@
 	<div class="wrap clearfix">
 		<section class="eight column">
 			<h2>Our Studio</h2>
-			<p>Every day I walk into the studio, flip the light switch, tie my apron, and get to work. The studio is a special space—it is the fruition of a lot of dreams and hopes and hard work. It’s a place that feels like home. It’s a place infused with heritage. Our building is rich with history—it’s ornate and strong, built in the wave of new construction after the 1889 Seattle fire. I love the exposed brick, the aged wood floors, and the huge window with the natural light it lets in. But what I love most are the possibilities that this place holds. This is where I do what I love—and every day here is a blessing. We take this blessing seriously. Our work is truly a manifestation of our philosophy: to use ink and paper to connect people.</p>
+			<p>Every day I unlock the studio, flip the light switch, tie my apron, and get to work. The studio is a special space—it is the fruition of a lot of dreams and hopes and hard work. It’s a place that feels like home. It’s a place infused with heritage. Our storefront studio and retail space is in the Seattle Fisherman’s Terminal building, a historic nautical spot that recently celebrated its 100th birthday. I love the wall of windows in our space, inviting people and sunlight in. I love smelling fresh ocean air. I love eating lunch on the dock with fishing boats. But what I love most are the possibilities that this place holds. This is where I do what I love—and every day here is a blessing. We take this blessing seriously. Our work is truly a manifestation of our philosophy: to use ink and paper to connect people.</p>
 		</section>
 	</div> 
 	
@@ -83,12 +83,12 @@
 	<div class="wrap clearfix">
 		<article class="eight column">
 			<p>We founded Constellation &amp; Co. on the idea that community is important in life and in business, and that business and life should work well together. We work closely with our clients, getting to know them beyond their preferences about paper and pantone colors, so we can offer them a design that feels authentic. Our clients bring us into their lives at important moments like planning a wedding or launching a business, and we take our involvement in those times seriously. Outside of our company, we work with a large network of creative people and small businesses whose skills and products enable us to tackle bigger projects and offer more exciting work to our customers. The big picture for us is, we can’t do this alone.</p>
-			<p>We offer full service graphic design and letterpress printing for a variety of client projects including wedding invitations, branding and print collateral for small businesses, and a line of letterpress greeting cards and paper gifts available in stores in Seattle and nationwide. We use a mixture of modern and historical technologies to produce work that is sometimes sweet, sometimes sarcastic, but always inspired by handmade processes, vintage ephemera, and collaboration.</p>
+			<p>We offer full service graphic design and letterpress printing for a variety of client projects including wedding invitations, branding and print collateral for small businesses, and a line of letterpress greeting cards and paper gifts available in stores nationwide and in Canada. We use a mixture of modern and historical technologies to produce work that is sometimes sweet, sometimes sarcastic, but always inspired by handmade processes, vintage ephemera, and collaboration.</p>
 		</article>
 
 		<section class="three column sidebarbody">
 			<h3>Work With Us</h3>
-			<p>We’d prefer to meet you for a coffee in downtown Seattle, but that’s not always possible. Fill out our estimate request form so we can start a conversation about your project.</p>
+			<p>We’d prefer to meet you for a coffee in our storefront studio, but that’s not always possible. Fill out our estimate request form so we can start a conversation about your project.</p>
 			<a href="<?php echo get_site_url(); ?>/contact/#estimaterequest">Request an Estimate</a>
 		</section>
 	</div>

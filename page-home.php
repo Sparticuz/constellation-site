@@ -24,7 +24,7 @@
 				<p>We like to think of our products as no matter what, no matter when products. These sentiments transcend occasions and are anytime messages. They won’t go out of season or out of style.</p>
 				<a href="<?php echo get_site_url(); ?>/product/category/featured/">View Our Products</a>
 				<h3>Work With Us</h3>
-				<p>We’d prefer to meet you for a coffee in downtown Seattle, but that’s not always possible. Fill out our estimate request form so we can start a conversation about your project.</p>
+				<p>We’d prefer to meet you for a coffee in our storefront studio, but that’s not always possible. Fill out our estimate request form so we can start a conversation about your project.</p>
 				<a href="<?php echo get_site_url(); ?>/contact/#estimaterequest">Request an Estimate</a>
 				<h3>Wholesale Inquiries</h3>
 				<p>We value the small business community, and we love to work with entrepreneurs and retailers. Let’s talk more about creating a meaningful partnership.</p>
