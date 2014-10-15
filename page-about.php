@@ -113,6 +113,7 @@
 			</section>
 		</div>
 	</div>
+	<div class="fishermans">&nbsp;</div>
 </div>
 
 <?php get_footer(); ?>

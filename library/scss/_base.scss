@@ -1311,6 +1311,14 @@ display: block;
 
 }
 
+.fishermans {
+	@include background-image(url('/wp-content/uploads/2014/10/fishermans-terminal-footer.jpg'));
+	background-position:center bottom;
+	background-repeat:no-repeat;
+	background-size:100%;
+	width:100%;
+}
+
 .learnmore{
 	display:block;
 	text-align: center;
