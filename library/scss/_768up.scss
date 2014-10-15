@@ -110,10 +110,6 @@ HEADER STYLES
 	padding: 0 15px;
 }
 
-.seattle p:last-child {
-padding-bottom: 16em;
-}
-
 h2{
 	@include rem('font-size',34px);
 }
