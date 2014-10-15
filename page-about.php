@@ -111,6 +111,9 @@
 				<h2>Seattle</h2>
 				<p>This city is home to me in a way I couldn’t have predicted. Four years later, I’m still homesick when we leave and giddy when we return home. There’s nowhere in the world like Seattle. It fits us like a glove. This is where we’ve planted our feet, started our careers, grown our business, and made lifelong friends. This is where we’ll raise our kids. This is where we’ll grow old. This city—water &amp; mountains, gold rush &amp; midcentury modern, large yet small—it’s home.</p>
 			</section>
+			<footer class="fishermans-pic">
+				&nbsp;
+			</footer>
 		</div>
 	</div>
 </div>
