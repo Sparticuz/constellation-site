@@ -113,7 +113,9 @@
 			</section>
 		</div>
 	</div>
-	<div class="fishermans">&nbsp;</div>
+		<figure class="hero">
+		<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/10/fishermans-terminal-footer.jpg" class="bleed" data-pin-no-hover="true"/>
+	</figure>
 </div>
 
 <?php get_footer(); ?>
