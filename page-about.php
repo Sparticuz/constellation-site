@@ -25,15 +25,19 @@
 		</section>
 
 		<section class="large_img clearfix row">
-			<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/studio_large.jpg" class="twelve columns first" data-pin-no-hover="true"/>
+			<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/11/sara_shop.jpg" class="twelve columns first" data-pin-no-hover="true"/>
 		</section>
 
 		<section class="tall_img_double_wide clearfix row">
-			<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/studio_vertical.jpg" class="six columns first" data-pin-no-hover="true"/>
+			<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/11/ironhand.jpg" class="six columns first" data-pin-no-hover="true"/>
 			<div class="six columns last">
-				<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/studio_small_1.jpg" data-pin-no-hover="true"/>
-				<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/studio_small_2.jpg" data-pin-no-hover="true"/>
+				<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/11/platen.jpg" data-pin-no-hover="true"/>
+				<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/11/gally.jpg" data-pin-no-hover="true"/>
 			</div>
+		</section>
+			<section class="double_img clearfix row">
+			<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/11/stands.jpg" class="six columns first" data-pin-no-hover="true"/>
+			<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/11/atticus.jpg" class="six columns last" data-pin-no-hover="true"/>
 		</section>
 
 		<article class="eight">
