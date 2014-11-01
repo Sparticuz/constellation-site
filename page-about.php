@@ -11,7 +11,7 @@
 	<div class="wrap clearfix">
 		<section class="eight column">
 			<h2>Our Studio</h2>
-			<p>Every day I unlock the studio, flip the light switch, tie my apron, and get to work. The studio is a special space—it is the fruition of a lot of dreams and hopes and hard work. It’s a place that feels like home. It’s a place infused with heritage. Our storefront studio and retail space is in the Seattle Fisherman’s Terminal building, a historic nautical spot that recently celebrated its 100th birthday. I love the wall of windows in our space, inviting people and sunlight in. I love smelling fresh ocean air. I love eating lunch on the dock with fishing boats. But what I love most are the possibilities that this place holds. This is where I do what I love—and every day here is a blessing. We take this blessing seriously. Our work is truly a manifestation of our philosophy: to use ink and paper to connect people.</p>
+			<p>Every day I open the studio, flip the light switch, tie my apron, and get to work. The studio is a special space—it is the fruition of a lot of dreams and hopes and hard work. It’s a place that feels like home. It’s a place infused with heritage. Our storefront studio and retail space is in the Seattle Fisherman’s Terminal building, a historic nautical spot that recently celebrated its 100th birthday. I love the wall of windows in our space, inviting people and sunlight in. I love smelling fresh ocean air. I love eating lunch on the dock with fishing boats. But what I love most are the possibilities that this place holds. This is where I do what I love—and every day here is a blessing. We take this blessing seriously. Our work is truly a manifestation of our philosophy: to use ink and paper to connect people.</p>
 		</section>
 	</div> 
 	
