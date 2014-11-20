@@ -27,5 +27,5 @@ Icon
 #this needs to be here because the plaintext password is in it
 sftp-config.json
 
-#don't commit css files to git
-*.css
+#don’t commit dist folder
+dist/
