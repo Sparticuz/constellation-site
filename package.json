@@ -16,6 +16,7 @@
   },
   "homepage": "http://www.constellationco.com",
   "devDependencies": {
-    "gulp": "^3.8.10"
+    "gulp": "^3.8.10",
+    "gulp-copy": "0.0.2"
   }
 }
