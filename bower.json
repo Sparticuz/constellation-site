@@ -15,5 +15,11 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "devDependencies": {
+    "flexslider": "#version/2.2.2",
+    "stickem": "~1.4.1",
+    "jquery": "~2.1.1",
+    "widgets": "Sparticuz/widgets#constellation-production"
+  }
 }

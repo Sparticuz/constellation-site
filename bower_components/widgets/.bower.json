@@ -1,0 +1,14 @@
+{
+  "name": "widgets",
+  "homepage": "https://github.com/Sparticuz/widgets",
+  "_release": "b5c0f8ca53",
+  "_resolution": {
+    "type": "branch",
+    "branch": "constellation-production",
+    "commit": "b5c0f8ca5327b367e7c8ab76cf1a99e5b2f71e03"
+  },
+  "_source": "git://github.com/Sparticuz/widgets.git",
+  "_target": "constellation-production",
+  "_originalSource": "Sparticuz/widgets",
+  "_direct": true
+}
