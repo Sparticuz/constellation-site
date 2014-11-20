@@ -1,0 +1,19 @@
+{
+  "name": "constellation-site",
+  "version": "3.0.0",
+  "homepage": "http://www.constellationco.com",
+  "authors": [
+    "Brad McNally <brad@constellationco.com>",
+    "Kyle McNally <kyle@kmcnally.net>"
+  ],
+  "description": "default theme for constellationco.com",
+  "license": "CC BY-SA",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
