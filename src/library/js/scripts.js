@@ -22,9 +22,9 @@ if (!window.getComputedStyle) {
                 });
             }
             return el.currentStyle[prop] ? el.currentStyle[prop] : null;
-        }
+        };
         return this;
-    }
+    };
 }
 
 // as the page loads, call these scripts
@@ -48,7 +48,7 @@ jQuery(document).ready(function($) {
         });
         $('.product_category').click(function(){
             $('.product_category ul').toggleClass('shown');
-        })
+        });
     } /* end less than 768px */
     
     /* if is above or equal to 768px */
