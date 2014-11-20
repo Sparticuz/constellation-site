@@ -14,5 +14,8 @@
   "bugs": {
     "url": "https://github.com/Sparticuz/constellation-site/issues"
   },
-  "homepage": "http://www.constellationco.com"
+  "homepage": "http://www.constellationco.com",
+  "devDependencies": {
+    "gulp": "^3.8.10"
+  }
 }
