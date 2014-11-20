@@ -7,7 +7,7 @@
     "Kyle McNally <kyle@kmcnally.net>"
   ],
   "description": "default theme for constellationco.com",
-  "license": "CC BY-SA",
+  "license": "GPLv3",
   "private": true,
   "ignore": [
     "**/.*",
