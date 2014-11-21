@@ -16,7 +16,7 @@ of the styles inside media queries.
 //
 
 // import normalize
-@import "normalize";
+@import "../../../bower_components/normalize.css/normalize.css";
 // import bourbon
 @import "bourbon/bourbon";
 // import neat

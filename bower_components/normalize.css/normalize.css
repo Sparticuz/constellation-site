@@ -1,4 +1,4 @@
-/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
 /**
  * 1. Set default font family to sans-serif.
@@ -25,7 +25,8 @@ body {
 
 /**
  * Correct `block` display not defined for any HTML5 element in IE 8/9.
- * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
  */
 
@@ -38,6 +39,7 @@ footer,
 header,
 hgroup,
 main,
+menu,
 nav,
 section,
 summary {
@@ -85,7 +87,7 @@ template {
  */
 
 a {
-  background: transparent;
+  background-color: transparent;
 }
 
 /**
@@ -422,40 +424,4 @@ table {
 td,
 th {
   padding: 0;
-}
-
-/******************************************************************
-CUSTOMIZED RESET VALUES
-I added these extra styles as a more personalized reset. Feel free
-to remove them if you like or add your own. If you want to update
-the normalize styles, make sure to edit from this point up.
-******************************************************************/
-
-// proper formatting (http://blog.fontdeck.com/post/9037028497/hyphens) 
-p {
-	-webkit-hyphens: none;
-	-epub-hyphens:   none;
-	-moz-hyphens:    none;
-  hyphens:         none;
-}
-
-b, strong, .strong { font-weight: bold; }
-
-dfn, em, .em { font-style: italic; }
-
-small, .small { font-size: 75%; }
-
-ul, ol {
-	padding: 0;
-	list-style-type: none;
-}
-
-dd {
-	margin: 0;
-}
-
-.sidebar ul,
-.sidebar ol,
-.commentlist {
-	list-style: none;
 }
