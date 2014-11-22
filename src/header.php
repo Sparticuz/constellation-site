@@ -48,6 +48,7 @@ yMMM-         :hMNddNMNy:yMN   hMs            `MMm
 <![endif]-->
 <meta name="msapplication-TileColor" content="#f01d4f">
 <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png">
+<meta name="theme-color" content="#db5945">
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 <?php wp_head(); ?>
 <script type="text/javascript" data-pin-color="white" data-pin-height="28" data-pin-hover="true">
