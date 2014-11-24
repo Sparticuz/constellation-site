@@ -102,14 +102,14 @@
 	<div class="seattle">
 		<div class="wrap clearfix">
 			<article class="twelve columns team">
-				<span class="four columns"><h2>Meet Our<br />Team</h2></span>
-				<span class="four columns"><img src="<?php echo get_template_directory_uri(); ?>/library/images/sara_portrait.jpg" data-pin-no-hover="true"/><h3>Sara McNally</h3>
-				<span class="occupation">Co-founder, Designer, &amp; Printer</span></span>
-				<span class="four columns"><img src="<?php echo get_template_directory_uri(); ?>/library/images/brad_portrait.jpg" data-pin-no-hover="true"/><h3>Brad McNally</h3><span class="occupation">Co-founder &amp; Web Director</span></span>
+				<div class="four columns"><h2>Meet Our<br />Team</h2></div>
+				<div class="four columns"><img src="<?php echo get_template_directory_uri(); ?>/library/images/sara_portrait.jpg" data-pin-no-hover="true"/><h3>Sara McNally</h3>
+				<div class="occupation">Co-founder, Designer, &amp; Printer</div></div>
+				<div class="four columns"><img src="<?php echo get_template_directory_uri(); ?>/library/images/brad_portrait.jpg" data-pin-no-hover="true"/><h3>Brad McNally</h3><div class="occupation">Co-founder &amp; Web Director</div></div>
 			</article>
 			<article class="twelve columns team">
-				<span class="four columns"><img src="<?php echo get_template_directory_uri(); ?>/library/images/suzi_portrait.jpg" data-pin-no-hover="true"/><h3>Suzi Mantle</h3><span class="occupation">Bookkeeper</span></span>
-				<span class="four columns"><img src="<?php echo get_template_directory_uri(); ?>/library/images/holly_portrait.jpg" data-pin-no-hover="true"/><h3>Holly Power</h3><span class="occupation">Administrative Assistant</span></span>
+				<div class="four columns"><img src="<?php echo get_template_directory_uri(); ?>/library/images/suzi_portrait.jpg" data-pin-no-hover="true"/><h3>Suzi Mantle</h3><div class="occupation">Bookkeeper</div></div>
+				<div class="four columns"><img src="<?php echo get_template_directory_uri(); ?>/library/images/holly_portrait.jpg" data-pin-no-hover="true"/><h3>Holly Power</h3><div class="occupation">Administrative Assistant</div></div>
 			</article>
 			<section class="eight">
 				<h2>Seattle</h2>
@@ -117,9 +117,11 @@
 			</section>
 		</div>
 	</div>
-		<figure class="hero">
+	
+	<figure class="hero bleed">
 		<img src="<?php echo get_template_directory_uri(); ?>/library/images/fishermans-terminal-footer.jpg" class="bleed" data-pin-no-hover="true"/>
 	</figure>
+	
 </div>
 
 <?php get_footer(); ?>
