@@ -68,7 +68,7 @@ yMMM-         :hMNddNMNy:yMN   hMs            `MMm
 	ga('create', 'UA-15087480-1', 'constellationco.com');
 	ga('send', 'pageview');
 </script>
-<script type="text/javascript" async data-pin-color="white" data-pin-height="28" data-pin-hover="true" src="<?php echo get_site_url(); ?>/wp-content/themes/constellation-site/library/js/libs/pinterest/pinit.js"></script>
+<script type="text/javascript" async data-pin-color="white" data-pin-height="28" data-pin-hover="true" src="<?php get_bloginfo('template_directory'); ?>/library/js/pinit.js"></script>
 </head>
 <body <?php body_class(); ?>>
 	<div id="container">

@@ -126,10 +126,10 @@ function bones_scripts_and_styles() {
   if (!is_admin()) {
 
     // register main stylesheet
-    wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
+    wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.min.css', array(), '', 'all' );
 
     // ie-only style sheet
-    wp_register_style( 'bones-ie-only', get_stylesheet_directory_uri() . '/library/css/ie.css', array(), '' );
+    wp_register_style( 'bones-ie-only', get_stylesheet_directory_uri() . '/library/css/ie.min.css', array(), '' );
 
     // comment reply script for threaded comments
     if ( is_singular() AND comments_open() AND get_post_type() == 'post' ) {
@@ -138,18 +138,18 @@ function bones_scripts_and_styles() {
 
     //adding scripts file in the footer
 
-    wp_register_script( 'bones-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
+    wp_register_script( 'bones-js', get_stylesheet_directory_uri() . '/library/js/scripts.min.js', array( 'jquery' ), '', true );
 	
 	//this is for the flexslider
 	//we should only register if this a product page
 	if ( get_post_type() == 'product') {
-		wp_register_script( 'flexslider', get_stylesheet_directory_uri() . '/library/js/libs/FlexSlider/jquery.flexslider-min.js', array( 'jquery' ), '2.2.0', true );
-		wp_register_style( 'flex-css', get_stylesheet_directory_uri() . '/library/js/libs/FlexSlider/flexslider.css', array(), '', 'all');
+		wp_register_script( 'flexslider', get_stylesheet_directory_uri() . '/library/js/jquery.flexslider.min.js', array( 'jquery' ), '2.2.0', true );
+		wp_register_style( 'flex-css', get_stylesheet_directory_uri() . '/library/css/flexslider.min.css', array(), '', 'all');
 		wp_enqueue_style('flex-css');
 		wp_enqueue_script('flexslider');
 
 		//and stickem menu
-		wp_register_script( 'stickem', get_stylesheet_directory_uri() . '/library/js/libs/stickem/jquery.stickem.js', array( 'jquery' ), '1.4.0', true );
+		wp_register_script( 'stickem', get_stylesheet_directory_uri() . '/library/js/jquery.stickem.min.js', array( 'jquery' ), '1.4.0', true );
 		wp_enqueue_script('stickem');
 	}
 	
