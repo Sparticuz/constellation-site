@@ -245,7 +245,6 @@ nav{
 
 .stickem{
 	position: relative;
-	text-align: left;
 	border-top:1px solid #e6e6e6;
 	& a{
 		color:$black;
@@ -270,10 +269,12 @@ nav{
 }
 
 #categories{
-height: 135px;
+
+	height: 135px;
+	
 	ul{
 		text-align:left;
-		
+		padding:0;
 		
 		li{
 		
@@ -316,8 +317,7 @@ height: 135px;
 }
 
 .sidebar-links{
-	display:inline;
-		color:$black;
+	color:$black;
 	text-align:left;
 
 	.etsy.button{
