@@ -1134,10 +1134,12 @@ SIDEBARS & ASIDES
 	}
 
 #sidebar1{
+
 	.widget{
 		border-top: 1px solid #e6e6e6;
 		padding:25px 0;
 		@include rem('font-size',20px);
+
 		.textwidget{
 			line-height:25px;
 			color:$lightgray;
@@ -1204,6 +1206,10 @@ FOOTER STYLES
 .footer{
 	@include rem('font-size',17px);
 	margin-top: 30px;
+	ul {
+		list-style: none;
+		padding-left: 0;
+	}
 }
 
 
