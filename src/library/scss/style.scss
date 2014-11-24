@@ -18,9 +18,9 @@ of the styles inside media queries.
 // import normalize
 // normalize is imported via gulp
 // import bourbon
-@import "bourbon/bourbon";
+@import "../../../bower_components/bourbon/dist/bourbon";
 // import neat
-@import "neat/neat";
+@import "../../../bower_components/neat/app/assets/stylesheets/neat";
 // import mixins
 @import "mixins";
 
