@@ -4,7 +4,7 @@
 <div id="content">
 
 	<figure class="hero specialpage">
-		<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/01/peruse_test.jpg" class="bleed" data-pin-no-hover="true"/>
+		<img src="<?php echo get_template_directory_uri(); ?>/library/images/peruse.jpg" class="bleed" data-pin-no-hover="true"/>
 		<figcaption>Peruse the<br />Merchandise</figcaption>
 				<a href="mailto:wholesale@constellationco.com" id="reptag">Reps Wanted</a>
 	</figure>

@@ -40,7 +40,7 @@ yMMM-         :hMNddNMNy:yMN   hMs            `MMm
 <title><?php wp_title(''); ?></title>
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-icon-touch.png">
 <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
 <!--[if IE]>
@@ -51,7 +51,7 @@ yMMM-         :hMNddNMNy:yMN   hMs            `MMm
 <meta name="theme-color" content="#db5945">
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 <?php wp_head(); ?>
-<script type="text/javascript" data-pin-color="white" data-pin-height="28" data-pin-hover="true">
+<script type="text/javascript">
 	//async all the things
 	//Typekit
 	(function(d) {var config = {kitId: 'psw0mrb',scriptTimeout: 3000},
@@ -68,7 +68,7 @@ yMMM-         :hMNddNMNy:yMN   hMs            `MMm
 	ga('create', 'UA-15087480-1', 'constellationco.com');
 	ga('send', 'pageview');
 </script>
-<script type="text/javascript" async data-pin-color="white" data-pin-height="28" data-pin-hover="true" src="<?php get_bloginfo('template_directory'); ?>/library/js/pinit.js"></script>
+<script type="text/javascript" async data-pin-color="white" data-pin-height="28" data-pin-hover="true" src="<?php echo get_template_directory_uri(); ?>/library/js/pinit.js"></script>
 </head>
 <body <?php body_class(); ?>>
 	<div id="container">

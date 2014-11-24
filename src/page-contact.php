@@ -4,7 +4,7 @@
 <div id="content">
 
 	<figure class="hero ceiling specialpage">
-		<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/contact_bg.jpg" class="bleed" data-pin-no-hover="true"/>
+		<img src="<?php echo get_template_directory_uri(); ?>/library/images/contact_bg.jpg" class="bleed" data-pin-no-hover="true"/>
 		<figcaption>Let's Work Together</figcaption>
 	</figure>
 
@@ -53,7 +53,7 @@
 			
 			<section class="eight columns">
 				
-				<form id="form" method="get" action="<?php echo get_site_url(); ?>/wp-content/themes/constellation-site/process.php" enctype="multipart/form-data">
+				<form id="form" method="get" action="<?php echo get_template_directory_uri(); ?>/process.php" enctype="multipart/form-data">
 					<ul>
 						<fieldset>
 							<li class="six"><label for="name">Name*</label><input type="text" name="name" required/></li>
