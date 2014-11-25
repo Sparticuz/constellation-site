@@ -8,6 +8,7 @@ var gulp     = require('gulp'),
 	minify   = require('gulp-minify-css'),
 	imagemin = require('gulp-imagemin'),
 	rename   = require('gulp-rename'),
+	rsync    = require('rsyncwrapper').rsync,
 	concat   = require('gulp-concat');
 
 gulp.task('clean', function() {
@@ -51,7 +52,7 @@ gulp.task('css', function (){
 
 gulp.task('ie-css', function (){
 	//broken, but low priority
-	gulp.src('src/library/scss/ie.scss')
+	return gulp.src('src/library/scss/ie.scss')
 		.pipe(sass())
 		.pipe(gulp.dest('dist/library/css/'))
 		.pipe(minify({keepSpecialComments: 0}))
@@ -95,12 +96,32 @@ gulp.task('imagemin', function (){
 		.pipe(gulp.dest('dist/'));
 });
 
+gulp.task('rsync', function (){
+	rsync({
+		ssh: true,
+		src: 'dist/',
+		dest: 'kyle@apollo.kmcnally.net:/var/www/beta.constellationco.com/wp-content/themes/constellation-site',
+		recursive: true,
+		compareMode: 'checksum',
+		args: ['-vP']
+	}, function(error,stdout,stderr,cmd){
+		process.stdout.write(stdout);
+	});
+});
+
+gulp.task('watch', function(){
+	gulp.watch('src/**',['default']);
+});
+
 //this is the default task runner
-gulp.task('default', ['css','imagemin','dependencies','copy','js']);
+gulp.task('default', ['css','imagemin','dependencies','copy','js'], function(){
+	//gulp.start is deprecated and will be removed in gulp v4
+	gulp.start('rsync');
+});
 
 gulp.task('hintGulp', function (){
 	//this is to hint the gulpfile to check for errors
-	gulp.src('gulpfile.js')
+	return gulp.src('gulpfile.js')
 		.pipe(jshint())
 		.pipe(jshint.reporter('default'));
 });
