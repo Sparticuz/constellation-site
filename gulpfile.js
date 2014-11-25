@@ -8,6 +8,7 @@ var gulp     = require('gulp'),
 	minify   = require('gulp-minify-css'),
 	imagemin = require('gulp-imagemin'),
 	rename   = require('gulp-rename'),
+	newer    = require('gulp-newer'),
 	rsync    = require('rsyncwrapper').rsync,
 	concat   = require('gulp-concat');
 
@@ -20,6 +21,7 @@ gulp.task('clean', function() {
 gulp.task('copy', function () {
 	//copies all the files that i'm not running through any other task
 	return gulp.src(['src/*.php','src/library/*.php','src/favicon.ico','src/style.css'])
+		.pipe(newer('dist/'))
 		.pipe(copy('dist',{'prefix':1}));
 });
 
@@ -27,6 +29,7 @@ gulp.task('js', function (){
 	//jshint's the code, concats all scripts into one file
 	//then runs uglify on it
 	return gulp.src(['src/library/js/*.js'])
+		.pipe(newer('dist/library/js'))
 		.pipe(jshint())
 		.pipe(jshint.reporter('default'))
 		.pipe(concat('scripts.js'))
@@ -44,6 +47,7 @@ gulp.task('css', function (){
 			.pipe(sass())
 		)
 		.pipe(concat('style.css'))
+		.pipe(newer('dist/library/css'))
 		.pipe(gulp.dest('dist/library/css/'))
 		.pipe(minify({keepSpecialComments: 0}))
 		.pipe(rename({extname: '.min.css'}))
@@ -63,6 +67,7 @@ gulp.task('ie-css', function (){
 gulp.task('dependencies', function () {
 	//moves other dependencies that i'm not doing other things with
 	gulp.src('bower_components/flexslider/flexslider.css')
+		.pipe(newer('dist/library/css/'))
 		.pipe(gulp.dest('dist/library/css/'))
 		.pipe(minify({keepSpecialComments: 0}))
 		.pipe(rename({extname: '.min.css'}))
@@ -73,6 +78,7 @@ gulp.task('dependencies', function () {
 			'bower_components/widgets/pinit.js',
 			'bower_components/widgets/pinit_main.js'
 		])
+		.pipe(newer('/dist/library/js'))
 		//.pipe(jshint())
 		//.pipe(jshint.reporter('default'))
 		.pipe(gulp.dest('dist/library/js/'))
@@ -85,6 +91,7 @@ gulp.task('imagemin', function (){
 	//minifies all images found in the template
 	//this does not include images that were uploaded via wordpress!!!
 	gulp.src('src/library/images/*')
+		.pipe(newer('dist/library/images/'))
 		.pipe(imagemin({
 			optimizationLevel: 3,
 			progressive: true,
@@ -92,6 +99,7 @@ gulp.task('imagemin', function (){
 		}))
 		.pipe(gulp.dest('dist/library/images/'));
 	gulp.src(['src/favicon.png','src/screenshot.png'])
+		.pipe(newer('dist/'))
 		.pipe(imagemin())
 		.pipe(gulp.dest('dist/'));
 });
