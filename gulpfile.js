@@ -113,7 +113,7 @@ gulp.task('rsync', function (){
 		compareMode: 'checksum',
 		args: ['-vP']
 	}, function(error,stdout,stderr,cmd){
-		process.stdout.write(stdout);
+		process.stdout.write(stdout+'\nDone!\n');
 	});
 });
 
