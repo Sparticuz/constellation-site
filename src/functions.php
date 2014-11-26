@@ -75,7 +75,7 @@ function bones_register_sidebars() {
 		'before_title' => '<h3>',
 		'after_title' => '</h3>',
 	));
-	
+
 } // don't remove this bracket!
 
 /************* COMMENT LAYOUT *********************/
@@ -101,7 +101,7 @@ function bones_comments($comment, $args, $depth) {
 				<?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
 				</span>
 			</section>
-			
+
 		</article>
 	<!-- </li> is added by WordPress automatically -->
 <?php
@@ -150,9 +150,9 @@ function prefix_insert_post_ads( $content ) {
 
 		//the sharing code
 		$code.= '<span class="share_title">Share</span>';
-		
+
 		$code.='<a href="https://www.facebook.com/sharer/sharer.php?u='.get_the_permalink().'" class="facebook button">Facebook</a>';
-		
+
 		$code.='<a href="http://twitter.com/home?status='.htmlspecialchars(urlencode(html_entity_decode(get_the_title(), ENT_COMPAT, 'UTF-8')), ENT_COMPAT, 'UTF-8').'%20-%20'.get_the_permalink().'" class="twitter button">Twitter</a>';
 
 		$code.='<a href="https://plus.google.com/share?url='.get_the_permalink().'" class="googleplus button">Google +</a>';
@@ -193,5 +193,32 @@ function add_pins_into_content($content) {
 	return $newHtml;
 }
 add_filter('the_content', 'add_pins_into_content');
+
+/********************CUSTOM PASSWORD PAGE *****************/
+/*add_filter( 'the_password_form', 'custom_password_form' );
+function custom_password_form() {
+    global $post;
+    $label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
+    $o = '<form class="protected-post-form" action="' . get_option('siteurl') . '/wp-pass.php" method="post">
+    ' . __( "THIS IS YOUR NEW PASSWORD INTRO TEXT THAT SHOWS ABOVE THE PASSWORD FORM" ) . '
+    <label class="pass-label" for="' . $label . '">' . __( "PASSWORD:" ) . ' </label><input name="post_password" id="' . $label . '" type="password" style="background: #ffffff; border:1px solid #999; color:#333333; padding:10px;" size="20" /><input type="submit" name="Submit" class="button" value="' . esc_attr__( "Submit" ) . '" />
+    </form><p style="font-size:14px;margin:0px;">∗EXTRA TEXT CAN GO HERE...THIS WILL SHOW BELOW THE FORM</p>
+    ';
+    return $o;
+}*/
+
+//custom site map
+function show_sitemap() {
+  if(isset($_GET['show_sitemap'])) {
+    $the_query = new WP_Query(array('post_type' => 'any', 'posts_per_page' => '-1', 'post_status' => 'publish'));
+    $urls = array();
+    while($the_query->have_posts()) {
+      $the_query->the_post();
+      $urls[] = get_permalink();
+    }
+    die(json_encode($urls));
+  }
+}
+add_action('template_redirect', 'show_sitemap');
 
 ?>
