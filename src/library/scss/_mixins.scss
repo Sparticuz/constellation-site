@@ -148,6 +148,7 @@ BUTTONS
 	display:block;
 	text-align:center;
 	margin-bottom:10px;
+	padding: 10px 17px;
 
 	@include transition (background-color 0.5s ease-in-out);
 

@@ -1,10 +1,7 @@
 /******************************************************************
 Stylesheet: Base Mobile Stylesheet
 
-Be light and don't over style since everything here will be
-loaded by mobile devices. You want to keep it as minimal as
-possible. This is called at the top of the main stylsheet
-and will be used across all viewports.
+This is for MOBILE STYLES ONLY!!!
 
 ******************************************************************/
 
@@ -27,18 +24,6 @@ LAYOUT & GRID STYLES
 	margin: 0;
 	@include prefixer(user-select, none, webkit moz ms spec);
 
-	&.homepage{
-		img{
-			max-height:440px;
-			width: auto;
-		}
-
-		& figcaption{
-			//homepage
-			top:35% !important;
-		}
-	}
-
 	figcaption{
 		position:absolute;
 		//for mobile, override on >768
@@ -60,17 +45,24 @@ LAYOUT & GRID STYLES
 
 		&.why{
 			letter-spacing:2px;
-			font-weight:400;
 			text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-			padding:0 30px;
 			& img{
 				max-width:100px;
 				padding-top:25px;
 			}
 		}
+
+		.together{
+			text-transform:lowercase;
+			font-family:$serif;
+			font-style:italic;
+			display:block;
+			letter-spacing: 0;
+		}
 	}
 
 	&.ceiling{
+		//this pushes the image behind the logo and menu
 		top: -137px;
 		margin-bottom: -137px;
 		z-index: -1;
@@ -78,39 +70,6 @@ LAYOUT & GRID STYLES
 		figcaption{
 			//ceiling
 			top:65%;
-		}
-
-	}
-}
-
-.page-id-10,.page-id-16{
-	.hero {
-		img {
-			max-height: 325px;
-			width: auto;
-		}
-	}
-
-	figcaption{
-		top: 45% !important;
-	}
-
-	.ceiling{
-		figcaption{
-			top: 55% !important;
-		}
-	}
-}
-
-//insuring that the card will be in view on iphone 5
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
-	.page-id-10,.page-id-16{
-		figure{
-			img{
-				max-height: 325px;
-				width: auto !important;
-				margin-left:-250px;
-			}
 		}
 	}
 }
@@ -121,7 +80,7 @@ H1, H2, H3, H4, H5 STYLES
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	text-rendering: optimizelegibility;
-	font-weight: 500;
+	font-weight: 400;
 	/*
 	if you're going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
@@ -145,7 +104,7 @@ h2, .h2 {
 	text-transform:uppercase;
 	line-height: 1.3em;
 	margin: .65em 0;
-
+	font-weight: 700;
 	a{
 		color:$base;
 	}
@@ -158,6 +117,7 @@ h3, .h3 {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	margin:0 0 10px 0;
+	font-weight: 700;
 }
 
 h4, .h4 {
@@ -190,32 +150,6 @@ HEADER STYLES
 	}
 }
 
-.page-id-24, .page-id-10, .page-id-16, .page-id-5841, .error404{
-	//this targets the pages usually associated with 'ceiling'
-	& #logo{
-		background-position:0 -56px;
-	}
-	#hamburger {
-		color: $white;
-	}
-	.nav li a{
-		color:$white;
-		&:hover{
-			color:$lightgray;
-		}
-	}
-}
-
-.error404, .page-id-5841{
-//no idea why this isn't working just above here
-	.nav li a{
-			color:$white !important;
-			&:hover{
-			color:$lightgray !important;
-		}
-	}
-}
-
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -227,102 +161,75 @@ easily write one group of styles for
 the navs on the site so our css is cleaner
 and more scalable.
 */
-nav{
-	&#navigation{
+#navigation{
 
-		//this is the main nav menu
-		#navtoggle{
-			position:absolute;
-			text-rendering: optimizeLegibility;
-			right:6%;
-			top:2%;
-			text-decoration: none;
-			@include rem('font-size',38px);
-			font-weight:100;
+	//this is the main nav menu
+	#navtoggle{
+		position:absolute;
+		text-rendering: optimizeLegibility;
+		right:6%;
+		top:2%;
+		@include rem('font-size',38px);
+		text-decoration: none;
+		//show above the nav menu
+		z-index: 9999;
+		//need to look at ceiling and make it black or white
+		//defaults to black
+		color: $black;
+	}
 
-			//show above the nav menu
-			z-index: 9999;
-
-			//need to look at ceiling and make it black or white
-			color: $black;
-		}
-
-		.shown {
-			&+a #hamburger {
-				color: $white;
-			}
-		}
-
-		.nav {
-
-			position:absolute;
-			top:-1em;
-			left:0;
-			@include fill-parent;
-			background-color: rgba($black,0.9);
-			font-family: $sans-serif;
-			text-transform: uppercase;
-			@include rem('font-size',30px);
-			letter-spacing: 0.0625em;
-			//show below the hamburger
-			z-index: 9998;
-			display:table;
-			visibility: hidden;
-			height:0;
-			opacity:0;
-
-			&.shown{
-				height:100%;
-				opacity: 1;
-				visibility: visible;
-
-				//&~#navigation #hamburger{
-				//	color: $white;
-				//}
-
-			}
-
-			li {
-
-				display:table-row;
-
-				a {
-					display:block;
-					display: table-cell;
-					text-decoration: none;
-					padding: 10px 15px;
-					//style the text here!
-					color:$white;
-				}
-
-			} /* end .menu li */
-
-			/* highlight current page */
-			li.current-menu-item,
-			li.current_page_item,
-			li.current-page-ancestor {
-
-				a {
-					color:$white;
-				}
-			}
+	.shown {
+		&+a #hamburger {
+			color: $white;
 		}
 	}
-}
 
-.page-id-24{
-	#content{
-		margin-top:.5em;
+	.nav {
+		position:absolute;
+		top:-1em;
+		left:0;
+		@include fill-parent;
+		background-color: rgba($black,0.9);
+		font-family: $sans-serif;
+		text-transform: uppercase;
+		@include rem('font-size',30px);
+		letter-spacing: 0.0625em;
+		@extend .text-center;
+		//show below the hamburger
+		z-index: 9998;
+		display:table;
+		visibility: hidden;
+		height:0;
+		opacity:0;
+		padding-left:0;
+
+		&.shown{
+			height:100%;
+			opacity: 1;
+			visibility: visible;
+			transition-property: all;
+			transition-duration: .5s;
+			transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+		}
+
+		li {
+			display:table-row;
+
+			a {
+				display:block;
+				display: table-cell;
+				vertical-align: middle;
+				text-decoration: none;
+				//style the text here!
+				color:$white;
+			}
+		} /* end .menu li */
 	}
 }
 
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-
-#content {
-	margin-top: 2em;
-}
 
 img{
 	@include fill-parent();
@@ -929,27 +836,6 @@ SIDEBARS & ASIDES
 FOOTER STYLES
 *********************/
 
-#inner-footer{
-	padding: 0 25px;
-	@include rem('font-size',20px);
-	abbr[title]{
-		//take out dotted border on state abbr
-		border-bottom: 0;
-	}
-}
-
-
-#handmade-footer{
-	background-color: $black;
-	@extend .text-center;
-	@include rem('font-size',34px);
-	font-style: italic;
-	@include pad(45px 0 45px 0);
-	display: block;
-	color: #4d4e4e;
-	padding:30px;
-}
-
 	/*
 	if you checked out the link above:
 	http://www.alistapart.com/articles/organizing-mobile/
@@ -961,13 +847,43 @@ FOOTER STYLES
 	*/
 
 .footer{
-	@include rem('font-size',17px);
+	background-color: #1a1a1a;
 	margin-top: 30px;
 	ul {
 		list-style: none;
 		padding-left: 0;
 	}
+	a{
+		text-decoration: none;
+		color:$lightgray;
+		&:hover{
+			color:$white;
+		}
+	}
+	h3{
+		color:$white;
+	}
 }
+
+#inner-footer{
+	@include rem('font-size',20px);
+	abbr[title]{
+		//take out dotted border on state abbr
+		border-bottom: 0;
+	}
+}
+
+#handmade-footer{
+	background-color: $black;
+	@extend .text-center;
+	@include rem('font-size',34px);
+	font-style: italic;
+	@include pad(45px 0 45px 0);
+	color: #4d4e4e;
+	padding:30px;
+}
+
+
 
 .copyright {
 	padding-bottom:30px;
@@ -987,10 +903,6 @@ FOOTER STYLES
 
 .triple_threat img{
 	padding-bottom:20px !important;
-}
-
-.sidebarbody{
-	border-top:1px solid #e6e6e6;
 }
 
 .contact{
@@ -1023,62 +935,12 @@ FOOTER STYLES
 	margin:0;
 }
 
-.bigquote{
-	font-family: $serif;
-	color:$white;
-	@include rem('font-size',28px);
-	font-style:italic;
-	background-color:$base;
-	display:block;
-	clear:both;
-	padding:25px;
-
-	& q{
-		max-width: 960px;
-		display: block;
-		margin: 0 auto;
-	}
-}
-
-#main{
-}
-
-.manifesto{
-	font-size:20px;
-	line-height:35px;
-	padding-bottom:30px;
-}
-
-.seattle{
-	width:100%;
-	margin-bottom: -30px;
-	background-color: #d5e2eb;
-
-	.team{
-		h3{margin:0;}
-	}
-	& .occupation{
-		margin-bottom: 25px;
-		display: block;
-	}
-
-}
-
 .fishermans {
 	@include background-image(url('/wp-content/uploads/2014/10/fishermans-terminal-footer.jpg'));
 	background-position:center bottom;
 	background-repeat:no-repeat;
 	background-size:100%;
 	width:100%;
-}
-
-.learnmore{
-	display:block;
-	text-align: center;
-}
-
-.button{
-	padding: 10px 17px;
 }
 
 .large_img{
@@ -1288,12 +1150,6 @@ select{
 	@include rem('font-size',40px);
 }
 
-.page-id-5841{
-	.hero.homepage figcaption{
-		line-height:30px;
-	}
-}
-
 #reptag{
 	position:absolute;
 	background-color:$white;
@@ -1310,5 +1166,108 @@ select{
 		color:$black;
 		background-color:$white;
 		opacity:0.8;
+	}
+}
+
+/************* SPECIFIC PAGE HACKS!!!!! ****************/
+
+.hero {
+	&.homepage{
+		img{
+			max-height:440px;
+			width: auto;
+		}
+
+		& figcaption{
+			//homepage
+			top:35%;
+		}
+	}
+}
+
+.page-id-10,.page-id-16{
+	.hero {
+		img {
+			max-height: 325px;
+			width: auto;
+		}
+	}
+
+	figcaption{
+		top: 45%;
+	}
+
+	.ceiling{
+		figcaption{
+			top: 55%;
+		}
+	}
+}
+
+.page-id-24, .page-id-10, .page-id-16, .page-id-5841, .error404{
+	//this targets the pages usually associated with 'ceiling'
+	//it inverts the logo and the hamburger
+	& #logo{
+		background-position:0 -56px;
+	}
+	#hamburger {
+		color: $white;
+	}
+}
+
+.page-id-5841{
+	.hero.homepage figcaption{
+		line-height:30px;
+	}
+}
+
+.home {
+	//*********************HOME page styles
+	.manifesto{
+		font-size:20px;
+		line-height:35px;
+		padding-bottom:30px;
+	}
+
+	.sidebarbody{
+		color:#808080;
+		border-top:1px solid #e6e6e6;
+		@include rem('line-height:',25px);
+		padding-top:30px;
+
+		p{
+			margin:0;
+		}
+		a{
+			display: block;
+			padding-bottom: 30px;
+			color:black;
+			text-decoration:none;
+		}
+	}
+}
+
+.page-id-10 {
+	//***************** ABOUT PAGE ******************/
+	.bigquote{
+		color:$white;
+		@include rem('font-size',28px);
+		font-style:italic;
+		background-color:$base;
+		display:block;
+		padding:25px;
+	}
+
+	.seattle{
+		background-color: #d5e2eb;
+		h3{
+			margin:0;
+		}
+		& .occupation{
+			margin-bottom: 25px;
+		}
+	}
+	.fishermans-bg img {
+		max-height: 400px;
 	}
 }

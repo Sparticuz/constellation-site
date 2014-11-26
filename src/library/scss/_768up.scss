@@ -58,7 +58,7 @@ HEADER STYLES
 		line-height: 65px;
 
 		&.why{
-
+			padding:0 30px;
 			& img{
 				max-width: 85px;
 				padding-top: 15px;
@@ -141,6 +141,7 @@ nav{
 					has the possibility of being a mobile device.
 					*/
 					color:$lightgray;
+					padding: 10px 15px;
 					&:hover, &:focus {
 						color:$black;
 					}
@@ -178,29 +179,12 @@ nav{
 	}
 }
 
-.page-id-24,.page-id-10,.page-id-16{
-	nav{
-		& #navigation{
-			.nav{
-				li{
-					a{
-						color:$white;
-						&:hover, &:focus {
-							color:$lightgray;
-						}
-					}
-				}
-
-				li.current-menu-item,
-				li.current_page_item,
-				li.current-page-ancestor {
-					a {
-						color:$white;
-						&:hover{
-							color:$lightgray;
-						}
-					}
-				}
+.page-id-24, .page-id-10, .page-id-16, .page-id-5841, .error404{
+	#navigation{
+		a{
+			color:$white;
+			&:hover, &:focus {
+				color:$lightgray;
 			}
 		}
 	}
@@ -411,6 +395,9 @@ mobile. Make sure to double check these!
 	padding: 0 25px;
 	@include rem('font-size',17px);
 }
+#handmade-footer{
+	display: block;
+}
 
 .sidebarbody{
 	@include rem('font-size',16px);
@@ -426,7 +413,7 @@ mobile. Make sure to double check these!
 	@include rem('font-size',48px);
 	line-height:57px;
 	padding:75px 25px;
-	p{
+	q{
 		max-width: 960px;
 		display: block;
 		margin: 0 auto;

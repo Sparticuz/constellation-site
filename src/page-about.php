@@ -9,16 +9,16 @@
 	</figure>
 
 	<div class="wrap clearfix">
-		<section class="eight column">
+		<section class="eight columns">
 			<h2>Our Studio</h2>
 			<p>Every day I open the studio, flip the light switch, tie my apron, and get to work. The studio is a special space—it is the fruition of a lot of dreams and hopes and hard work. It’s a place that feels like home. It’s a place infused with heritage. Our storefront studio and retail space is in the Seattle Fisherman’s Terminal building, a historic nautical spot that recently celebrated its 100th birthday. I love the wall of windows in our space, inviting people and sunlight in. I love smelling fresh ocean air. I love eating lunch on the dock with fishing boats. But what I love most are the possibilities that this place holds. This is where I do what I love—and every day here is a blessing. We take this blessing seriously. Our work is truly a manifestation of our philosophy: to use ink and paper to connect people.</p>
 		</section>
-	</div> 
-	
+	</div>
+
 	<img src="<?php echo get_template_directory_uri(); ?>/library/images/woodtype_bg.jpg" class="bleed" data-pin-no-hover="true"/>
-	
+
 	<div class="wrap clearfix">
-		<section class="eight column">
+		<section class="eight columns">
 			<h2>We bring old school to another level.</h2>
 			<p class="intro">This is Gutenberg. This is the eighteenth century. This is corsets and petticoats and embroidery.</p>
 			<p>Our equipment is time-tested and well-worn, but we have restored everything with love—from rust and grime back to pristine printing condition. All of our presses are foot or hand powered and completely hand fed. Each sheet of paper goes through the press one at a time, and once through for each color printed. Same goes for type setting and image making. We use traditional wood and lead type and carefully hand set one letter at a time. Many of our pieces feature one of my hand-carved wood engravings. To say this is a labor of love is an understatement—but we wouldn’t have it any other way.</p>
@@ -40,7 +40,7 @@
 			<img src="<?php echo get_template_directory_uri(); ?>/library/images/atticus.jpg" class="six columns last" data-pin-no-hover="true"/>
 		</section>
 
-		<article class="eight">
+		<article class="eight columns">
 			<h2>Letterpress &amp; Wood Engraving</h2>
 			<p>Wood engraving is a printmaking technique in which an image is carved into an end grain block of wood with sharp metal tools. The image is inked and printed using pressure, much like the letterpress printing process. Dating back to the 15th century, wood engraving is the perfect historic complement to wood and lead type.</p>
 			<p>I’ve fallen in love with the historic craft of engraving. It’s infinitely satisfying to see my ideas become sketches, then printing blocks, then beautiful letterpress prints. Wood engraving and printing on the iron handpress give me new opportunities to express myself, to experiment, and to create in a new medium. Letterpress and wood engraving? A match made in history!</p>
@@ -51,7 +51,7 @@
 		<img src="<?php echo get_template_directory_uri(); ?>/library/images/products_bg.jpg" class="bleed" data-pin-no-hover="true"/>
 		<figcaption>Products</figcaption>
 	</figure>
-	
+
 	<div class="wrap clearfix">
 		<article class="eight column">
 			<h2>We like to think of our cards as no matter what, no matter when cards.</h2>
@@ -83,7 +83,7 @@
 		<img src="<?php echo get_template_directory_uri(); ?>/library/images/clientwork_bg.jpg" class="bleed" data-pin-no-hover="true"/>
 		<figcaption>Client Work</figcaption>
 	</figure>
-	
+
 	<div class="wrap clearfix">
 		<article class="eight column">
 			<p>We founded Constellation &amp; Co. on the idea that community is important in life and in business, and that business and life should work well together. We work closely with our clients, getting to know them beyond their preferences about paper and pantone colors, so we can offer them a design that feels authentic. Our clients bring us into their lives at important moments like planning a wedding or launching a business, and we take our involvement in those times seriously. Outside of our company, we work with a large network of creative people and small businesses whose skills and products enable us to tackle bigger projects and offer more exciting work to our customers. The big picture for us is, we can’t do this alone.</p>
@@ -93,14 +93,13 @@
 		<section class="three column sidebarbody">
 			<h3>Work With Us</h3>
 			<p>We’d prefer to meet you for a coffee in our storefront studio, but that’s not always possible. Fill out our estimate request form so we can start a conversation about your project.</p>
-			<a href="<?php echo get_site_url(); ?>/contact/#estimaterequest">Request an Estimate</a>
+			<a href="<?php echo get_site_url(); ?>/contact/#estimaterequest" class='button'>Request an Estimate</a>
 		</section>
 	</div>
 
 	<span class="bigquote"><q>It’s all about life. Life shouldn’t just happen to you. You’re meant to live it, to experience the joys and the sorrows and everything in between to the fullest.</q></span>
-	
-	<div class="seattle">
-		<div class="wrap clearfix">
+
+	<div class="seattle wrap clearfix">
 			<article class="twelve columns team">
 				<div class="four columns"><h2>Meet Our<br />Team</h2></div>
 				<div class="four columns"><img src="<?php echo get_template_directory_uri(); ?>/library/images/sara_portrait.jpg" data-pin-no-hover="true"/><h3>Sara McNally</h3>
@@ -115,13 +114,12 @@
 				<h2>Seattle</h2>
 				<p>This city is home to me in a way I couldn’t have predicted. Four years later, I’m still homesick when we leave and giddy when we return home. There’s nowhere in the world like Seattle. It fits us like a glove. This is where we’ve planted our feet, started our careers, grown our business, and made lifelong friends. This is where we’ll raise our kids. This is where we’ll grow old. This city—water &amp; mountains, gold rush &amp; midcentury modern, large yet small—it’s home.</p>
 			</section>
-		</div>
 	</div>
-	
-	<figure class="hero bleed">
+
+	<figure class="hero fishermans-bg">
 		<img src="<?php echo get_template_directory_uri(); ?>/library/images/fishermans-terminal-footer.jpg" class="bleed" data-pin-no-hover="true"/>
 	</figure>
-	
+
 </div>
 
 <?php get_footer(); ?>

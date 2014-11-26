@@ -57,7 +57,7 @@ gulp.task('css', function (){
 
 gulp.task('uncss', function (){
 	return gulp.src('src/library/scss/style.scss')
-		.pipe(sass())
+		.pipe(sass({sourcemap: true, sourcemapPath: '../scss'}))
 		.pipe(uncss({
 			html: require('./sitemap.json')
 		}))

@@ -14,24 +14,6 @@ body{
 	visibility: visible;
 }
 
-// Light gray text for sidebar body content
-
-.sidebarbody{
-	color:#808080;
-	@include rem('font-size',18px);
-	@include rem('line-height:',25px);
-	padding-top:30px;
-	& p{
-		margin:0;
-	}
-	& a{
-		display: block;
-		padding-bottom: 30px;
-		color:black;
-		text-decoration:none;
-	}
-}
-
 // Intro Paragraph
 
 .showcasetitle{
@@ -41,23 +23,6 @@ body{
 .quote{
 	@include rem('font-size',48px);
 	font-style: italic;
-}
-
-// Footer Body + Titles
-
-.footer{
-	color:$lightgray;
-	background-color: #1a1a1a;
-	a{
-		text-decoration: none;
-		color:$lightgray;
-		&:hover{
-			color:$white;
-		}
-	}
-	h3{
-		color:$white;
-	}
 }
 
 /*
@@ -73,13 +38,3 @@ address{
 	font-style:normal;
 }
 
-.together{
-	text-transform:lowercase;
-	font-family:$serif;
-	font-weight:400;
-	font-style:italic;
-	display:block;
-	clear:both;
-	letter-spacing: 0;
-
-}
