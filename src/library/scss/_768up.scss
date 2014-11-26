@@ -1,7 +1,4 @@
 /******************************************************************
-Site Name:
-Author:
-
 Stylesheet: Tablet & Small Desktop Stylesheet
 
 Here's where you can start getting into the good stuff.
@@ -9,9 +6,7 @@ This size will work on iPads, other tablets, and desktops.
 So you can start working with more styles, background images,
 and other resources. You'll also notice the grid starts to
 come into play. Have fun!
-
 ******************************************************************/
-
 
 /*********************
 GENERAL STYLES
@@ -50,34 +45,32 @@ HEADER STYLES
 			@include fill-parent;
 			max-height: inherit;
 		}
-		
+
 		& figcaption{
 			//homepage
-			
 		}
 	}
 
 	figcaption{
-		
+
 		top:35%;
 		@include rem('font-size',55px);
 		line-height: 65px;
 
 		&.why{
-			
+
 			& img{
 				max-width: 85px;
 				padding-top: 15px;
-				
+
 			}
 		}
 	}
 
-	&.ceiling{	
+	&.ceiling{
 
 		figcaption{
 			//ceiling
-			
 		}
 
 	}
@@ -104,10 +97,6 @@ HEADER STYLES
 			top: 45% !important;
 		}
 	}
-}
-
-.article-header .wrap{
-	padding: 0 15px;
 }
 
 h2{
@@ -163,8 +152,8 @@ nav{
 			li.current-menu-item,
 			li.current_page_item,
 			li.current-page-ancestor {
-				a { 
-					color:$black; 
+				a {
+					color:$black;
 					&:hover{
 						color:$black;
 					}
@@ -175,23 +164,23 @@ nav{
 }
 
 .single-post, .search-results{
-#navigation{
-	.nav{
-	li.current_page_parent{
-		a { 
-					color:$black; 
+	#navigation{
+		.nav{
+			li.current_page_parent{
+				a {
+					color:$black;
 					&:hover{
 						color:$black;
 					}
 				}
+			}
+		}
 	}
-}
-}
 }
 
 .page-id-24,.page-id-10,.page-id-16{
 	nav{
-		&#navigation{
+		& #navigation{
 			.nav{
 				li{
 					a{
@@ -205,8 +194,8 @@ nav{
 				li.current-menu-item,
 				li.current_page_item,
 				li.current-page-ancestor {
-					a { 
-						color:$white; 
+					a {
+						color:$white;
 						&:hover{
 							color:$lightgray;
 						}
@@ -219,7 +208,6 @@ nav{
 
 #content{
 	margin-top: 1.5em;
-
 }
 
 #inner-content{
@@ -230,13 +218,6 @@ nav{
 
 .product{
 	@include rem('padding',30px 0 30px 0);
-}
-.product-header, .product-content, .product-footer{
-	padding:0 !important;
-}
-
-.paddedspec{
-	padding-top:15px;
 }
 
 //stickem css
@@ -254,42 +235,35 @@ nav{
 
 .content{
 		float: right;
-
 }
 
-.stickit {
-    position: fixed;
-    top: -1px;
-}
-
-.stickit-end {
-    bottom: 40px;
-    position: absolute;
-    left: 0;
+.stickit, .stickit-end {
+	position: fixed;
+	top: -1px;
 }
 
 #categories{
 
 	height: 135px;
-	
+
 	ul{
 		text-align:left;
 		padding:0;
-		
+
 		li{
-		
+
 			&.product_category{
 				//This targets the header
 				background-color: transparent;
 				padding-top: 0;
 				padding-bottom: 0;
 				font-size:0px;
-		
+
 				ul{
 					//This is the menu
 					visibility: visible;
 					opacity: 1;
-		
+
 					&.shown{
 					}
 
@@ -316,13 +290,17 @@ nav{
 	}
 }
 
+/*********************
+SIDEBARS & ASIDES
+*********************/
+
 .sidebar-links{
 	color:$black;
 	text-align:left;
 
 	.etsy.button{
-			margin: 10px 0;
-			padding: 5px 10px;
+		margin: 10px 0;
+		padding: 5px 10px;
 	}
 
 	.map-icon, .wholesale-link{
@@ -333,7 +311,6 @@ nav{
 		text-decoration: none;
 		&:active,&:hover{
 			color:$black;
-
 		}
 		&:visited{
 			color:$black;
@@ -342,38 +319,30 @@ nav{
 }
 
 .sidebar-links{
-.map-icon{
-	margin-left:0;
-}
-}
-
-/*********************
-SIDEBARS & ASIDES
-*********************/
-
-.sidebar {
+	.map-icon{
+		margin-left:0;
+	}
 }
 
-	.widget {
-		padding: 30px 0;
-		
+.widget {
+	padding: 30px 0;
 
-		ul {
-			li {
-				border-bottom: none;
-				padding: 0;
-				&:first-child {}
-				&:last-child {}
-				a {}
-				/* deep nesting */
+	ul {
+		li {
+			border-bottom: none;
+			padding: 0;
+			&:first-child {}
+			&:last-child {}
+			a {}
+			/* deep nesting */
 
-				ul {
-					//margin-top: 0.75em;
-					//padding-left: 1em;
-				}
+			ul {
+				//margin-top: 0.75em;
+				//padding-left: 1em;
 			}
 		}
 	}
+}
 
 #sidebar1{
 	.widget{
@@ -416,19 +385,12 @@ mobile. Make sure to double check these!
 
 	.contact-info{
 		margin-left: -15px;
-margin-right: 30px;
+		margin-right: 30px;
 	}
 }
 
-
-
-.row{
-
-}
-
-
 .flexslider{
-padding: 0 !important;
+	padding: 0;
 }
 
 #main{
@@ -440,15 +402,15 @@ padding: 0 !important;
 	line-height:50px !important;
 	padding-bottom:0;
 	padding-right: 30px;
-	p{margin-top:0;}
+	p{
+		margin-top:0;
+	}
 }
-
 
 #inner-footer{
 	padding: 0 25px;
 	@include rem('font-size',17px);
 }
-
 
 .sidebarbody{
 	@include rem('font-size',16px);
@@ -458,26 +420,17 @@ padding: 0 !important;
 
 .sidebarlink{
 	@include rem('font-size',16px);
-
 }
-
-.wholesalelink{
-	border-top:1px solid #e6e6e6;
-	margin-top:15px;
-	padding-top:15px;
-}
-
 
 .bigquote{
-@include rem('font-size',48px);
+	@include rem('font-size',48px);
 	line-height:57px;
-		padding:75px 25px;
-		p{
-			max-width: 960px;
-display: block;
-margin: 0 auto;
-		}
-
+	padding:75px 25px;
+	p{
+		max-width: 960px;
+		display: block;
+		margin: 0 auto;
+	}
 }
 
 #navtoggle{
@@ -490,7 +443,7 @@ margin: 0 auto;
 }
 
 .contact{
-border:0;
+	border:0;
 }
 
 .contactinfo{
@@ -524,8 +477,7 @@ border:0;
 	}
 }
 
-
-.six.columns.last img:nth-child(1) { 
+.six.columns.last img:nth-child(1) {
 		padding-top:0;}
 
 fieldset{
@@ -543,7 +495,7 @@ fieldset{
 			margin-top:0;
 		}
 		}
-		
+
 		&.sidebarbody{
 			padding:40px 0;
 		}
@@ -559,28 +511,26 @@ fieldset{
 }
 
 .store-location{
-		@include rem('font-size',17px);
-
+	@include rem('font-size',17px);
 }
 
-
 .entry-content>p{
-				@include rem('font-size',30px);
-			}
+	@include rem('font-size',30px);
+}
 
 .blog, .search-results, .category, .search-no-results, .author{
 	p{
 		@include rem('font-size',18px);
 	}
 	p:nth-child(2){
-@include rem('font-size',30px);
+		@include rem('font-size',30px);
 	}
-	}
-	
-		.byline{
-			margin-top: 0;
-			margin-bottom: -15px;
-		}
+}
+
+time{
+	margin-top: 0;
+	margin-bottom: -15px;
+}
 
 .blog, .search-results, .category, .search-no-results, .author{
 	.post{
@@ -588,58 +538,47 @@ fieldset{
 	}
 }
 
-
-
-
 .blog-metadata{
 	@include rem('font-size',16px);
-		.category_link_title{
-@include rem('font-size',16px);
+	.category_link_title{
+		@include rem('font-size',16px);
 	}
 }
 
 .error404{
-.hero{
-  //needs to be position relative in order to correctly position the figcaption
-
-  figcaption{
-    top:30% !important;
-        
-      }
-    }
-  
+	.hero{
+		//needs to be position relative in order to correctly position the figcaption
+		figcaption{
+			top:30% !important;
+		}
+	}
 
 	.errorlabel{
-	@include rem('font-size',36px);
+		@include rem('font-size',36px);
+	}
+
+	.fourohfour{
+		@include rem('font-size',275px);
+	}
+
+	.sorts{
+		@include rem('font-size',36px);
+	}
 }
-
-.fourohfour{
-@include rem('font-size',275px);
-}
-
-.sorts{
-@include rem('font-size',36px);
-}
-
-}
-
-
 
 #sidebar1{
 	.widget{
-input[type="submit"]{
-		
-height: 30px;
-width: 33px;
-background-color: white;
-float: right;
-position: relative;
-top: -57px;
-margin-right: 2px;
+		input[type="submit"]{
+			height: 30px;
+			width: 33px;
+			background-color: white;
+			float: right;
+			position: relative;
+			top: -57px;
+			margin-right: 2px;
+		}
+	}
 }
-}
-}
-
 
 .location{
 		article {
@@ -670,15 +609,12 @@ margin-right: 2px;
 	}
 }
 
-.archive-title, .archive-title.h2{
-	margin-top:0;
-}
-
 .thankyou{
 	@include rem('font-size',90px);
 }
 
 .thankzfig{
 	& img{
-				margin-bottom: 50px;
-			}}
+		margin-bottom: 50px;
+	}
+}

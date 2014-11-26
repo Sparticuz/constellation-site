@@ -33,7 +33,7 @@
 				<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 					<?php the_content(); ?>
 				</article> <!-- end article -->
-				
+
 			<?php endwhile; ?>
 
 			<?php endif; ?>

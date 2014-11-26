@@ -5,6 +5,7 @@ body{
 	@include rem('line-height:',28px);
 }
 
+//This is for hiding the page until the fonts are loaded
 .wf-loading, {
 	visibility: hidden;
 }
@@ -31,26 +32,7 @@ body{
 	}
 }
 
-// Metadata, Captions, Form Text, Categories
-
-.meta{
-	font-style: italic;
-	@include rem('font-size',16px);
-	@include rem('line-height:',25px);
-	a{
-		color:$base;
-	}
-	&.categories{
-	a{
-		color:$lightgray;
-	}
-	}
-}
-
 // Intro Paragraph
-
-
-
 
 .showcasetitle{
 	@include rem('font-size',30px);

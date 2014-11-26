@@ -1,7 +1,4 @@
 /******************************************************************
-Site Name: Constellation & Co
-Author: Brad & Kyle McNally
-
 Stylesheet: Base Mobile Stylesheet
 
 Be light and don't over style since everything here will be
@@ -28,13 +25,14 @@ LAYOUT & GRID STYLES
 	text-align:center;
 	overflow: hidden;
 	margin: 0;
+	@include prefixer(user-select, none, webkit moz ms spec);
 
 	&.homepage{
 		img{
 			max-height:440px;
 			width: auto;
 		}
-		
+
 		& figcaption{
 			//homepage
 			top:35% !important;
@@ -72,11 +70,11 @@ LAYOUT & GRID STYLES
 		}
 	}
 
-	&.ceiling{	
+	&.ceiling{
 		top: -137px;
 		margin-bottom: -137px;
 		z-index: -1;
-	
+
 		figcaption{
 			//ceiling
 			top:65%;
@@ -106,44 +104,16 @@ LAYOUT & GRID STYLES
 
 //insuring that the card will be in view on iphone 5
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
-.page-id-10,.page-id-16{
-	figure{
-		img{
-			max-height: 325px;
-			width: auto !important;
-			margin-left:-250px;
+	.page-id-10,.page-id-16{
+		figure{
+			img{
+				max-height: 325px;
+				width: auto !important;
+				margin-left:-250px;
+			}
 		}
 	}
 }
-}
-
-/*********************
-LINK STYLES
-*********************/
-
-// a, a:visited {
-// 	color: $link-color;
-
-// 	/* on hover */
-// 	&:hover, &:focus {
-// 		color: $link-hover;
-// 	}
-
-// 	/* on click */
-// 	&:active {
-
-// 	}
-
-// 	/* mobile tap color */
-// 	&:link {
-// 		/*
-// 		this highlights links on iPhones/iPads.
-// 		so it basically works like the :hover selector
-// 		for mobile devices.
-// 		*/
-// 		-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
-// 	}
-// }
 
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
@@ -176,15 +146,10 @@ h2, .h2 {
 	line-height: 1.3em;
 	margin: .65em 0;
 
-	&.title{
-		font-family:$serif;
-		@include rem('font-size',30px);
-	}
 	a{
 		color:$base;
 	}
 }
-
 
 h3, .h3 {
 	font-family: $sans-serif;
@@ -212,7 +177,7 @@ HEADER STYLES
 
 .header {
 	padding-top: 2.2em;
-	@extend .text-center;
+	//@extend .text-center;
 
 	#logo {
 		width:180px;
@@ -279,9 +244,7 @@ nav{
 			z-index: 9999;
 
 			//need to look at ceiling and make it black or white
-
 			color: $black;
-
 		}
 
 		.shown {
@@ -289,7 +252,6 @@ nav{
 				color: $white;
 			}
 		}
-
 
 		.nav {
 
@@ -308,7 +270,6 @@ nav{
 			visibility: hidden;
 			height:0;
 			opacity:0;
-			
 
 			&.shown{
 				height:100%;
@@ -321,7 +282,6 @@ nav{
 
 			}
 
-
 			li {
 
 				display:table-row;
@@ -333,19 +293,7 @@ nav{
 					padding: 10px 15px;
 					//style the text here!
 					color:$white;
-					/*
-					remember this is for mobile ONLY, so there's no need
-					to even declare hover styles here, you can do it in
-					the style.scss file where it's relevant. We want to
-					keep this file as small as possible!
-					*/
-					&:hover, &:focus {
-					}
 				}
-
-				&:first-child {}
-
-				&:last-child {}
 
 			} /* end .menu li */
 
@@ -357,7 +305,6 @@ nav{
 				a {
 					color:$white;
 				}
-
 			}
 		}
 	}
@@ -368,7 +315,6 @@ nav{
 		margin-top:.5em;
 	}
 }
-
 
 /*********************
 POSTS & CONTENT STYLES
@@ -388,152 +334,83 @@ img{
 	}
 }
 
-		.single-title,
-		.page-title, .h2 {
-			color: $base;
-			font-family: $sans-serif;
-			@include rem('font-size',28px);
-			text-transform:uppercase;
-			margin: 0.25em 0 0.5em 0;
-		}
+.single-title, .page-title, .h2 {
+	color: $base;
+	font-family: $sans-serif;
+	@include rem('font-size',28px);
+	text-transform:uppercase;
+	margin: 0.25em 0 0.5em 0;
+}
 
-		.blogdate{
-			font-style:italic;
-			color:$base;
-			letter-spacing: 1px;
-			margin: 0;
-		}
+time{
+	font-style:italic;
+	color:$base;
+	letter-spacing: 1px;
+	margin-bottom: -10px;
+}
 
-		/* post meta */
-		.byline {
-			color: $black;
-margin-bottom: -10px;
-font-style:italic;
-
-			time {}
-		}
-
-		/* entry content */
+/* entry content */
 .entry-content>p{
-				@include rem('font-size',24px);
-			}
-
+	@include rem('font-size',24px);
+}
 
 .rest_of_post p:first-child{
 	margin-top:0px;
 }
 
-		.entry-content {
-h2{@include rem('font-size',18px);
-clear:left;}
+.entry-content {
+	h2{
+		@include rem('font-size',18px);
+		clear:left;
+	}
 
-			a{
+	a{
 		color:$gray;
 		text-decoration:none;
+	}
 
-			}
-/*
-			img:first-child{
-				@extend .twelve;
-			}*/
-			p {
-				
-			}
-			img {
-			padding-bottom:10px;
-			}
+	img {
+		padding-bottom:10px;
+	}
 
-			ul, ol, table, dl {}
+	blockquote {
+		border-top:1px solid #e6e6e6;
+		border-bottom:1px solid #e6e6e6;
+		/* https://github.com/adobe-webplatform/balance-text */
+		text-wrap: balanced;
+	}
 
-			ul, ol {
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+} /* end .entry-content */
 
-				li {}
+.wp-caption {
+	max-width: 100%;
 
-			}
+	/* images inside wp-caption */
+	img {
+		max-width: 100%;
+		margin-bottom: 0;
+		width: 100%;
+	}
 
-			ul {
+	p.wp-caption-text {
+		font-size:17px !important;
+		margin: 4px 0 7px;
+		text-align: left;
+		font-style:italic;
+	}
 
-				li {}
-
-			}
-
-			ol {
-
-				li {}
-
-			}
-
-			blockquote {
-				
-				border-top:1px solid #e6e6e6;
-				border-bottom:1px solid #e6e6e6;
-				/* https://github.com/adobe-webplatform/balance-text */
-				text-wrap: balanced;
-
-				&:before {}
-
-			}
-
-			dl {}
-
-			dt {}
-
-			dd {
-				margin-left: 0;
-				font-size: 0.9em;
-				color: #787878;
-				margin-bottom: 1.5em;
-			}
-
-			img {
-				max-width: 100%;
-				height: auto;
-			}
-
-			video, object {
-				max-width: 100%;
-				height: auto;
-			}
-
-			pre {
-				background: #eee;
-				border: 1px solid #cecece;
-				padding: 10px;
-			}
-
-		} /* end .entry-content */
-
-		.wp-caption {
-			max-width: 100%;
-
-			/* images inside wp-caption */
-			img {
-				max-width: 100%;
-				margin-bottom: 0;
-				width: 100%;
-			}
-
-			p.wp-caption-text {
-				font-size:17px !important;
-				margin: 4px 0 7px;
-				text-align: left;
-				font-style:italic;
-			}
-
-		} /* end .wp-caption */
-
-		.size-full {}
-		.size-large {}
-		.size-medium {}
-		.size-thumbnail {}
-
+} /* end .wp-caption */
 
 //this targets products
 .product{
 	border-top: 1px solid #e6e6e6;
-	
 
 	.product-header{
+
 		h2{
 			-webkit-margin-before: 0;
 			-webkit-margin-after: 0;
@@ -541,16 +418,80 @@ clear:left;}
 			font-family:$serif;
 			text-transform:none;
 			padding-bottom:5px;
-		a{
-			color:$black;
-		&:hover{
-			color:$gray;
-		}
 
-		}
+			a{
+				color:$black;
+				&:hover{
+					color:$gray;
+				}
+			}
 		}
 	}
+}
 
+.blog-metadata{
+	//padding-bottom:25px;
+	a{
+		color:$black;
+	}
+	span{
+		border-top:1px solid #e6e6e6;
+		padding:10px 0;
+		display:block;
+	}
+	.author{
+		font-style:italic;
+		@include rem('font-size',17px);
+	}
+
+	.category_title, .share_title{
+		font-family: $sans-serif;
+		@include rem('font-size',13px);
+		text-transform:uppercase;
+		margin-bottom:-5px;
+	}
+
+	.share_title{
+		margin-top:8px;
+	}
+
+	.category_link_title{
+		font-family: $serif;
+		@include rem('font-size',20px);
+		color:$lightgray;
+		display: table;
+		font-style:italic;
+	}
+}
+
+.blog, .single, .search-results, .category, .search-no-results, .author{
+	& #content{
+		border-top:1px solid #e6e6e6;
+	}
+
+	.archive-title{
+		font-family: $sans-serif;
+		@include rem('font-size',20px);
+		text-transform:uppercase;
+		border-bottom:1px solid #e6e6e6;
+		padding-bottom:15px;
+	}
+
+	.more-link{
+		font-family: $sans-serif;
+		text-transform:uppercase;
+		display: table;
+		margin: 10px 0;
+		letter-spacing: 1px;
+		@include rem('font-size',14px);
+	}
+	.post{
+		border-bottom:1px solid #e6e6e6;
+	}
+	h2{
+		margin: .65em 0 0 0;
+		padding-bottom:10px;
+	}
 }
 
 #categories{
@@ -744,31 +685,6 @@ PAGE NAVI STYLES
 
 	} /* end .bones_page_navi */
 
-	/* fallback previous & next links */
-	.wp-prev-next {
-
-		ul {}
-
-		.prev-link {
-			float: left;
-		}
-
-		.next-link {
-			float: right;
-		}
-
-	} /* end .wp-prev-next */
-
-.paged{
-			li.bpn-prev-link {
-			display:inline-block;
-			a {
-				&:hover,
-				&:focus {}
-			}
-		}
-}
-
 /******************************************************************
 COMMENT STYLES
 ******************************************************************/
@@ -777,24 +693,13 @@ COMMENT STYLES
 #comments {
 	font-family:$serif;
 	text-transform:none;
-	/* number of comments span */
-	span {
-
-	}
-
 }
-
-.comment-nav {
-
-	ul {
-
-		li {}
-
-	}
-}
-
 
 .commentlist {
+
+	form{
+		width: 90%;
+	}
 
 	li {
 		position: relative;
@@ -802,7 +707,6 @@ COMMENT STYLES
 		overflow: hidden;
 		list-style-type: none;
 		padding:0;
-
 
 		article{
 			padding:15px 0;
@@ -814,24 +718,7 @@ COMMENT STYLES
 
 		ul.children {
 			margin: 0;
-
-			li {}
-
-			/* variations */
-			.comment {}
-			.alt {}
-			.odd {}
-			.even {}
-			.depth-1 {}           /* change number for different depth */
-			.byuser {}
-			.bypostauthor {}
-			.comment-author-admin {}
-
 		} /* end .commentlist li ul.children */
-	}
-
-	li[class*=depth-] {
-		
 	}
 
 	li.depth-1 {
@@ -855,43 +742,19 @@ COMMENT STYLES
 	li.depth-4 {
 		padding-left:40px;
 	}
-	li.depth-5 {
-		padding-left:40px;
-	}
 
-	/* general comment classes */
-	.alt {}
-	.odd {
-		//background: #eee;
-	}
-	.even {
-		//background: #fefefe;
-	}
-	.parent {}
 	.comment {
 		border-top:1px solid #e6e6e6;
 	}
-	.children {}
-	.pingback {}
-	.bypostauthor {}
-	.comment-author {}
-	.comment-author-admin {}
-	.thread-alt {}
-	.thread-odd {}
-	.thread-even {}
 
 	/* vcard */
 	.vcard {
-	
 
 		cite.fn {
 			font-weight: 700;
 			font-style: normal;
 			font-family:$sans-serif;
 			text-transform:uppercase;
-
-			a.url {}
-
 		}
 
 		time {
@@ -910,62 +773,20 @@ COMMENT STYLES
 
 		}
 
-		img.photo {}
-
-		img.avatar {
-			position: absolute;
-			left: 10px;
-			padding: 2px;
-			border: 1px solid #cecece;
-			background: #fff;
-		}
-
 	} /* end .commentlist .vcard */
 
-
-	/* comment meta */
-	.comment-meta {
-
-		a {}
-
+	.comment-edit-link{
+		color:$gray;
+		padding-left:5px;
+		font-family:$sans-serif;
+		text-transform:uppercase;
+		@include rem('font-size',13px);
 	}
-
-	.commentmetadata {
-
-		a {}
-
-	}
-
-	/* comment content */
-	.comment_content {
-
-
-		p {
-			margin: 0.7335em 0 1.5em;
-			font-size: 1em;
-			line-height: 1.5em;
-		}
-
-	} /* end .commentlist .comment_content */
-
-.comment-edit-link{
-	color:$gray;
-	padding-left:5px;
-	font-family:$sans-serif;
-	text-transform:uppercase;
-	@include rem('font-size',13px);
-}
 
 	/* comment reply link */
 	.comment-reply-link {
 		text-decoration: none;
-		//float: right;
-		//background: #4598bb;
-		//padding: 3px 5px;
 		color: $lightgray;
-		//margin-bottom: 10px;
-		//font-weight: 700;
-		//font-size: 0.9em;
 
 		&:hover,
 		&:focus {
@@ -984,11 +805,8 @@ COMMENT FORM STYLES
 	margin: 0;
 	padding-bottom: 2.2em;
 
-
-
 	form {
 		margin: 0.75em 0;
-		
 
 		li {
 			list-style-type: none;
@@ -1019,10 +837,7 @@ COMMENT FORM STYLES
 				outline: none;
 				border-color: #fbc2c4;
 				background-color: #f6e7eb;
-				-webkit-box-shadow: none;
-				   -moz-box-shadow: none;
-				    -ms-box-shadow: none;
-						box-shadow: none;
+				@include prefixer(box-shadow, none, webkit moz ms spec);
 			}
 		}
 
@@ -1041,97 +856,51 @@ COMMENT FORM STYLES
 			width: 100%;
 			height: 150px;
 		}
-
 	}
 }
 
-	/* comment submit button */
-	#submit {}
-
-	/* comment form title */
-	#comment-form-title {
-		margin: 0 0 1.1em;
-	}
-
-	/* cancel comment reply link */
-	#cancel-comment-reply {
-		a {
-					text-transform:uppercase;
-		font-family:$sans-serif;
-		@include rem('font-size',13px);
-		color:$base;
-		}
-	}
-
-	/* logged in comments */
-	.comments-logged-in-as {
-		a{
-			color:$gray;
-			text-decoration:none;
-		}
-	}
-
-	.logout_button{
+/* cancel comment reply link */
+#cancel-comment-reply {
+	a {
 		text-transform:uppercase;
 		font-family:$sans-serif;
 		@include rem('font-size',13px);
-		float:right;
+		color:$base;
 	}
+}
 
-	/* allowed tags */
-	#allowed_tags {
-		margin: 1.5em 10px 0.7335em 0;
+/* logged in comments */
+.comments-logged-in-as {
+	a{
+		color:$gray;
+		text-decoration:none;
 	}
+}
 
-	/* no comments */
-	.nocomments {
-		margin: 0 20px 1.1em;
-	}
+.logout_button{
+	text-transform:uppercase;
+	font-family:$sans-serif;
+	@include rem('font-size',13px);
+	float:right;
+}
 
-.commentlist{
-	form{
-		width: 90%;
-	}
+/* no comments */
+.nocomments {
+	margin: 0 20px 1.1em;
 }
 
 /*********************
 SIDEBARS & ASIDES
 *********************/
 
-.sidebar {
+.widget {
+	padding: 30px 0 0 0;
+
+	ul {
+		margin: 0px;
+	}
+
 }
-
-	.widget_text{
-	}
-
-	.widget-title {
-		@include pad(10px 0);
-	}
-
-	.widget {
-		padding: 30px 0 0 0;
-
-
-
-		ul {
-			margin: 0px;
-
-			li {
-
-				&:first-child {}
-
-				&:last-child {}
-
-				a {}
-
-				/* deep nesting */
-				ul {}
-
-			}
-
-		}
-
-	}
 
 #sidebar1{
 
@@ -1148,14 +917,11 @@ SIDEBARS & ASIDES
 			color:$lightgray;
 			text-decoration:none;
 			&:hover{
-			color:$black;
-		}
+				color:$black;
+			}
 		}
 		input[type="text"]{
 			padding: 5px 9px;
-		}
-		#connect-widget{
-			
 		}
 	}
 }
@@ -1193,15 +959,6 @@ FOOTER STYLES
 	override these styles for the desktop
 	view.
 	*/
-	.footer-links {
-
-		ul {
-
-			li {}
-
-		}
-
-	} /* end .footer-links */
 
 .footer{
 	@include rem('font-size',17px);
@@ -1212,19 +969,17 @@ FOOTER STYLES
 	}
 }
 
+.copyright {
+	padding-bottom:30px;
+}
 
-	.copyright {
-		padding-bottom:30px;
-	}
+.six.columns.last img:nth-child(1) {
+	padding-top: 20px;
+}
 
-.four.columns.last img:nth-child(2) { 
-		padding-top: 20px;}
-
-.six.columns.last img:nth-child(1) { 
-		padding-top: 20px;}
-
-.six.columns.last img:nth-child(2) { 
-		padding-top: 20px;}
+.six.columns.last img:nth-child(2) {
+	padding-top: 20px;
+}
 
 .double_img img{
 	padding-bottom:20px;
@@ -1233,7 +988,6 @@ FOOTER STYLES
 .triple_threat img{
 	padding-bottom:20px !important;
 }
-
 
 .sidebarbody{
 	border-top:1px solid #e6e6e6;
@@ -1316,7 +1070,6 @@ FOOTER STYLES
 	background-repeat:no-repeat;
 	background-size:100%;
 	width:100%;
-
 }
 
 .learnmore{
@@ -1344,7 +1097,7 @@ fieldset{
 	&.specs{
 		display: none;
 		border-top: 1px solid #e6e6e6;
-margin-top: 25px;
+		margin-top: 25px;
 	}
 }
 
@@ -1362,10 +1115,10 @@ label{
 		text-transform: none;
 		letter-spacing:normal;
 		font-style:italic;
-			@include rem('font-size',17px);
-			color:$lightgray;
-			clear:both;
-			display:block;
+		@include rem('font-size',17px);
+		color:$lightgray;
+		clear:both;
+		display:block;
 	}
 }
 
@@ -1375,7 +1128,7 @@ input[type="text"], input[type="email"], textarea{
 	outline: none;
 	width:100%;
 	padding: 5px 7px;
-	&:focus { 
+	&:focus {
 		border:solid 1px $black;
 	}
 }
@@ -1396,13 +1149,13 @@ select{
 
 .checkboxing{
 	span{
-			font-family: $sans-serif;
-	color:$base;
-	@include rem('font-size',13px);
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	margin:15px 0 5px 0;
-	display:block;
+		font-family: $sans-serif;
+		color:$base;
+		@include rem('font-size',13px);
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		margin:15px 0 5px 0;
+		display:block;
 	}
 	label{
 		font-family: $serif;
@@ -1412,11 +1165,8 @@ select{
 		display:inline-block;
 		padding:0 10px 0 5px;
 		margin: 0px 0 5px 0;
-
 	}
 }
-
-
 
 .newsletter{
 	border-top:1px solid #e6e6e6;
@@ -1451,7 +1201,7 @@ select{
 //FlexSlider overrides
 //don't use /library/js/libs/FlexSlider/FlexSlider.css!!!
 .flexslider{
-	padding: 25px 0 0 0 !important;
+	padding: 25px 0 0 0;
 	margin: 0;
 	background: inherit;
 	border: inherit;
@@ -1474,98 +1224,32 @@ select{
 
 //404
 .errorlabel{
-			font-family: $sans-serif;
-			text-transform: uppercase;
-			@include rem('font-size',24px);
-			display:block;
-			clear:both;
-			padding-bottom: 55px;
+	font-family: $sans-serif;
+	text-transform: uppercase;
+	@include rem('font-size',24px);
+	display:block;
+	clear:both;
+	padding-bottom: 55px;
 }
 
 .fourohfour{
-font-family: $serif;
-@include rem('font-size',150px);
-display:block;
-			clear:both;
-			padding-bottom: 50px;
+	font-family: $serif;
+	@include rem('font-size',150px);
+	display:block;
+	clear:both;
+	padding-bottom: 50px;
 }
 
 .sorts{
-font-family: $serif;
-@include rem('font-size',26px);
-text-transform:none;
+	font-family: $serif;
+	@include rem('font-size',26px);
+	text-transform:none;
 }
-
-.blog-metadata{
-	padding-bottom:25px;
-	a{
-		color:$black;
-	}
-	span{
-		border-top:1px solid #e6e6e6;
-		padding:10px 0;
-		display:block;
-	}
-	.author{
-		font-style:italic;
-@include rem('font-size',17px);
-	}
-
-.category_title, .share_title{
-			font-family: $sans-serif;
-			@include rem('font-size',13px);
-			text-transform:uppercase;
-			margin-bottom:-5px;
-}
-
-.share_title{
-	margin-top:8px;
-}
-
-	.category_link_title{
-font-family: $serif;
-@include rem('font-size',20px);
-color:$lightgray;
-display: table;
-font-style:italic;
-	}
-}
-
-.blog, .single, .search-results, .category, .search-no-results, .author{
-	& #content{
-		border-top:1px solid #e6e6e6;
-	}
-
-	.archive-title{
-		font-family: $sans-serif;
-		@include rem('font-size',20px);
-		text-transform:uppercase;
-		border-bottom:1px solid #e6e6e6;
-		padding-bottom:15px;
-	}
-
-	.more-link{
-		font-family: $sans-serif;
-		text-transform:uppercase;
-		display: table;
-		margin: 10px 0;
-		letter-spacing: 1px;
-		@include rem('font-size',14px);
-	}
-	.post{
-		border-bottom:1px solid #e6e6e6;
-	}
-	h2{
-		margin: .65em 0 0 0;
-		padding-bottom:10px;
-	}
-}
-
 
 .error404, .page-id-5841{
-.hero.ceiling{
+	.hero.ceiling{
 		margin-bottom: -145px;
-}
+	}
 
 	.footer{
 		margin-top:0;
@@ -1589,11 +1273,11 @@ font-style:italic;
 
 .thankzfig{
 	& img{
-				max-width:100px;
-				padding-top:0;
-				margin-bottom: 25px;
-			}
-		}
+		max-width:100px;
+		padding-top:0;
+		margin-bottom: 25px;
+	}
+}
 
 .thankyou{
 	font-family: $serif;
@@ -1616,16 +1300,15 @@ font-style:italic;
 	font-family:$serif;
 	font-style:italic;
 	text-decoration:none;
-@include rem('font-size',17px);
+	@include rem('font-size',17px);
 	color:$lightgray;
 	display:block;
 	padding:15px;
 	top:0;
 	right:15px;
-}
-
-#reptag:hover{
-	color:$black;
-	background-color:$white;
-	opacity:0.8;
+	&:hover{
+		color:$black;
+		background-color:$white;
+		opacity:0.8;
+	}
 }
