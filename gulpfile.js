@@ -10,6 +10,7 @@ var gulp     = require('gulp'),
 	rename   = require('gulp-rename'),
 	newer    = require('gulp-newer'),
 	rsync    = require('rsyncwrapper').rsync,
+	uncss    = require('gulp-uncss'),
 	concat   = require('gulp-concat');
 
 gulp.task('clean', function() {
@@ -29,7 +30,7 @@ gulp.task('js', function (){
 	//jshint's the code, concats all scripts into one file
 	//then runs uglify on it
 	return gulp.src(['src/library/js/*.js'])
-		.pipe(newer('dist/library/js'))
+		.pipe(newer('dist/library/js/scripts.min.js'))
 		.pipe(jshint())
 		.pipe(jshint.reporter('default'))
 		.pipe(concat('scripts.js'))
@@ -47,11 +48,20 @@ gulp.task('css', function (){
 			.pipe(sass())
 		)
 		.pipe(concat('style.css'))
-		.pipe(newer('dist/library/css'))
+		//.pipe(newer('dist/library/css'))
 		.pipe(gulp.dest('dist/library/css/'))
 		.pipe(minify({keepSpecialComments: 0}))
 		.pipe(rename({extname: '.min.css'}))
 		.pipe(gulp.dest('dist/library/css/'));
+});
+
+gulp.task('uncss', function (){
+	return gulp.src('src/library/scss/style.scss')
+		.pipe(sass())
+		.pipe(uncss({
+			html: require('./sitemap.json')
+		}))
+		.pipe(gulp.dest('./out'));
 });
 
 gulp.task('ie-css', function (){
