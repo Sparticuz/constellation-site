@@ -18,7 +18,7 @@
 				</section>
 
 				<section class="four columns terms">
-					<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/lookbook.png" data-pin-no-hover="true"/>
+					<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/12/lookbook.png" data-pin-no-hover="true"/>
 				</section>
 			</section>
 		</div>
