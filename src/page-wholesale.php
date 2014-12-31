@@ -3,7 +3,7 @@
 
 <div id="content">
 	<figure class="hero specialpage">
-		<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/03/studio_large1.jpg" class="bleed" data-pin-no-hover="true"/>
+		<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2014/11/fishermans_homepage_bg.jpg" class="bleed" data-pin-no-hover="true"/>
 		<figcaption class="oneline">Wholesale</figcaption>
 	</figure>
 
