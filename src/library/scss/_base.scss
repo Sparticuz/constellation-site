@@ -406,6 +406,8 @@ time{
 	ul{
 		text-align: center;
 		letter-spacing: 1px;
+		padding-left: 0;
+		list-style: none;
 
 		li{
 			font-family: $sans-serif;
@@ -450,10 +452,6 @@ time{
 							&:hover, &:focus {
 								color:$black;
 							}
-						}
-
-						&.cat-item-4{
-							border:none;
 						}
 
 						&.current-cat a{
@@ -849,6 +847,7 @@ FOOTER STYLES
 .footer{
 	background-color: #1a1a1a;
 	margin-top: 30px;
+	color:$lightgray;
 	ul {
 		list-style: none;
 		padding-left: 0;
@@ -1169,6 +1168,15 @@ select{
 	}
 }
 
+.bigquote{
+		color:$white;
+		@include rem('font-size',28px);
+		font-style:italic;
+		background-color:$base;
+		display:block;
+		padding:25px;
+	}
+
 /************* SPECIFIC PAGE HACKS!!!!! ****************/
 
 .hero {
@@ -1202,8 +1210,9 @@ select{
 			top: 55%;
 		}
 	}
-}
 
+}
+ul,ol {list-style: none;}
 .page-id-24, .page-id-10, .page-id-16, .page-id-5841, .error404{
 	//this targets the pages usually associated with 'ceiling'
 	//it inverts the logo and the hamburger
@@ -1212,6 +1221,9 @@ select{
 	}
 	#hamburger {
 		color: $white;
+	}
+	.menu-item a{
+		color: $white !important;
 	}
 }
 
@@ -1249,17 +1261,8 @@ select{
 
 .page-id-10 {
 	//***************** ABOUT PAGE ******************/
-	.bigquote{
-		color:$white;
-		@include rem('font-size',28px);
-		font-style:italic;
-		background-color:$base;
-		display:block;
-		padding:25px;
-	}
-
 	.seattle{
-		background-color: #d5e2eb;
+		//background-color: #d5e2eb;
 		h3{
 			margin:0;
 		}

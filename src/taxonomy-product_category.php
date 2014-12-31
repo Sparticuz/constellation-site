@@ -20,17 +20,17 @@
 							'use_desc_for_title' => 0, //this
 							'title_li'           => 'Select A Category &#8595;', //this
 							'taxonomy'           => 'product_category' //this
-						); 		
+						);
 						wp_list_categories($args); ?>
 					</ul>
 				</nav>
 				<div class="sidebar-links">
-					<a href="https://www.etsy.com/shop/constellationco" class="etsy button">Etsy Shop</a>
+					<a href="https://www.etsy.com/shop/constellationco" class="etsy button" style="width:100%">Etsy Shop</a>
 					<a href="mailto:wholesale@constellationco.com?body=Store URL:" class="sidebarlink wholesale-link">Wholesale Inquiries</a>
 					<a href="<?php echo get_site_url(); ?>/stores/" class="map-icon sidebarlink">Find a store</a>
 				</div>
 			</div>
-		
+
 			<section id="main" class="ten columns last content" role="main">
 
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -67,14 +67,14 @@
 							</section>
 
 							<footer class="product-footer">
-								<?php $specs = get_field_object('specifications'); 
+								<?php $specs = get_field_object('specifications');
 									if($specs): ?>
 									<ul class="specs">
 										<?php foreach( $specs['value'] as $spec ): ?>
 											<li class="<?php echo $spec; ?>"><?php echo $specs['choices'][$spec]; ?></li>
 										<?php endforeach; ?>
 									</ul>
-								<?php endif; ?>	
+								<?php endif; ?>
 							</footer>
 						</section>
 
@@ -82,7 +82,7 @@
 				<?php endwhile; ?>
 
 				<?php bones_page_navi(); ?>
-				
+
 				<?php else : ?>
 
 					<article id="post-not-found" class="hentry clearfix">
