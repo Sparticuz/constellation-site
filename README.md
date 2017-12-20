@@ -1,5 +1,7 @@
 Constellation Theme
 ========
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/Sparticuz/constellation-site.svg)](https://greenkeeper.io/)
 Theme for http://www.constellationco.com
 
 Built on
